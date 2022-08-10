@@ -1,4 +1,10 @@
-
 VAR_CONFIG
-
+	::gFan1 AT %QX."X20DOF322".DigitalOutput03;
+	::gFan2 AT %QX."X20DOF322".DigitalOutput04;
+	::gFan3 AT %QX."X20DOF322".DigitalOutput05;
+	::gFan4 AT %QX."X20DOF322".DigitalOutput06;
+	::gHeater1 AT %QX."X20DOF322".DigitalOutput09;
+	::gHeater2 AT %QX."X20DOF322".DigitalOutput10;
+	::gHeater3 AT %QX."X20DOF322".DigitalOutput11;
+	::gHeater4 AT %QX."X20DOF322".DigitalOutput12;
 END_VAR

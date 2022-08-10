@@ -1,8 +1,14 @@
-
+(*Fan Variables*)
 VAR
-
+	gFan1 : BOOL;
+	gFan2 : BOOL;
+	gFan3 : BOOL;
+	gFan4 : BOOL;
 END_VAR
-
-VAR CONSTANT
-
+(*Heater Variables*)
+VAR
+	gHeater1 : BOOL;
+	gHeater2 : BOOL;
+	gHeater3 : BOOL;
+	gHeater4 : BOOL;
 END_VAR
