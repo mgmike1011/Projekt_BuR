@@ -5,3 +5,4 @@ Temp/
 *.isopen
 *.orig
 NodeRed/.config.nodes.json
+NodeRed/.config.nodes.json.backup
