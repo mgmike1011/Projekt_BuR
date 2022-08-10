@@ -4,4 +4,6 @@ Temp/
 /*.set
 *.isopen
 *.orig
-NodeRed/.config.nodes.json
+!NodeRed/
+NodeRed/*
+!NodeRed/flows.json
