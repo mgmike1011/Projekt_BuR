@@ -7,4 +7,8 @@ VAR_CONFIG
 	::gHeater2 AT %QX."X20DOF322".DigitalOutput10;
 	::gHeater3 AT %QX."X20DOF322".DigitalOutput11;
 	::gHeater4 AT %QX."X20DOF322".DigitalOutput12;
+	::gTempInt1 AT %IW."X20cAT6402".Temperature03;
+	::gTempInt2 AT %IW."X20cAT6402".Temperature04;
+	::gTempInt3 AT %IW."X20cAT6402".Temperature05;
+	::gTempInt4 AT %IW."X20cAT6402".Temperature06;
 END_VAR

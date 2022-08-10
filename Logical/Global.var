@@ -12,3 +12,14 @@ VAR
 	gHeater3 : BOOL;
 	gHeater4 : BOOL;
 END_VAR
+(*Temperature Variables*)
+VAR
+	gTempInt1 : INT;
+	gTempInt2 : INT;
+	gTempInt3 : INT;
+	gTempInt4 : INT;
+	gTemp1 : REAL; (*Temperature zone 1 in Celsius degree.*)
+	gTemp2 : REAL; (*Temperature zone 2 in Celsius degree.*)
+	gTemp3 : REAL; (*Temperature zone 3 in Celsius degree.*)
+	gTemp4 : REAL; (*Temperature zone 4 in Celsius degree.*)
+END_VAR
