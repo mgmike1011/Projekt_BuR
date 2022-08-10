@@ -4,3 +4,4 @@ Temp/
 /*.set
 *.isopen
 *.orig
+NodeRed/.config.nodes.json
