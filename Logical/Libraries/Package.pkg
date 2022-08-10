@@ -13,5 +13,12 @@
     <Object Type="Library" Language="Binary" Description="Core library for mapp components">MpBase</Object>
     <Object Type="Library" Language="Binary" Description="Communication library for mappView widgets">MpServer</Object>
     <Object Type="Library" Language="Binary" Description="Temperature control">MpTemp</Object>
+    <Object Type="Library" Language="Binary" Description="IotMqtt rev05">IotMqtt</Object>
+    <Object Type="Library" Language="binary" Description="This library contains FBs for the handling of certificates.">ArCert</Object>
+    <Object Type="Library" Language="binary" Description="The SYS_LIB library contains functions for memory management and operating system manipulation as well as hardware-specific functions.">sys_lib</Object>
+    <Object Type="Library" Language="binary" Description="Information about the respective target system can be read using the AsHW library.">AsHW</Object>
+    <Object Type="Library" Language="binary" Description="This library contains FBKs to evaluate statistics and can be used for system generation device statistics.">AsETH</Object>
+    <Object Type="Library" Language="binary" Description="The ArEventLog library can be used to collect additional error information and for further processing.">ArEventLog</Object>
+    <Object Type="Library" Language="binary" Description="The AsIODiag library provides functions for creating and evaluating I/O module information.">AsIODiag</Object>
   </Objects>
 </Package>
