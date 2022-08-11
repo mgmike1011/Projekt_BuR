@@ -277,7 +277,7 @@
         "seg2": "",
         "className": "",
         "x": 670,
-        "y": 140,
+        "y": 180,
         "wires": []
     },
     {
@@ -336,7 +336,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 700,
-        "y": 180,
+        "y": 60,
         "wires": [
             []
         ]
@@ -365,7 +365,7 @@
         "seg2": "",
         "className": "",
         "x": 670,
-        "y": 360,
+        "y": 440,
         "wires": []
     },
     {
@@ -382,7 +382,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 240,
+        "y": 280,
         "wires": []
     },
     {
@@ -424,7 +424,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 700,
-        "y": 400,
+        "y": 320,
         "wires": [
             []
         ]
@@ -453,7 +453,7 @@
         "seg2": "",
         "className": "",
         "x": 670,
-        "y": 580,
+        "y": 700,
         "wires": []
     },
     {
@@ -470,7 +470,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 460,
+        "y": 540,
         "wires": []
     },
     {
@@ -512,7 +512,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 700,
-        "y": 620,
+        "y": 580,
         "wires": [
             []
         ]
@@ -541,7 +541,7 @@
         "seg2": "",
         "className": "",
         "x": 670,
-        "y": 800,
+        "y": 960,
         "wires": []
     },
     {
@@ -558,7 +558,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 680,
+        "y": 800,
         "wires": []
     },
     {
@@ -619,7 +619,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 60,
+        "y": 100,
         "wires": []
     },
     {
@@ -636,7 +636,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 280,
+        "y": 360,
         "wires": []
     },
     {
@@ -653,7 +653,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 500,
+        "y": 620,
         "wires": []
     },
     {
@@ -670,7 +670,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 720,
+        "y": 880,
         "wires": []
     },
     {
@@ -685,7 +685,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 100,
+        "y": 140,
         "wires": [
             [
                 "a6671fd24f17c58b"
@@ -706,7 +706,7 @@
         "layout": "row-center",
         "className": "",
         "x": 650,
-        "y": 100,
+        "y": 140,
         "wires": []
     },
     {
@@ -723,7 +723,7 @@
         "layout": "row-center",
         "className": "",
         "x": 650,
-        "y": 320,
+        "y": 400,
         "wires": []
     },
     {
@@ -740,7 +740,7 @@
         "layout": "row-center",
         "className": "",
         "x": 650,
-        "y": 540,
+        "y": 660,
         "wires": []
     },
     {
@@ -757,7 +757,7 @@
         "layout": "row-center",
         "className": "",
         "x": 650,
-        "y": 760,
+        "y": 920,
         "wires": []
     },
     {
@@ -772,7 +772,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 320,
+        "y": 400,
         "wires": [
             []
         ]
@@ -789,7 +789,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 540,
+        "y": 660,
         "wires": [
             []
         ]
@@ -806,7 +806,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 760,
+        "y": 920,
         "wires": [
             []
         ]
@@ -824,11 +824,12 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 490,
+        "x": 470,
         "y": 20,
         "wires": [
             [
-                "73736625e4114183"
+                "73736625e4114183",
+                "f460d0eb218848ae"
             ]
         ]
     },
@@ -845,11 +846,12 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 490,
-        "y": 240,
+        "x": 470,
+        "y": 280,
         "wires": [
             [
-                "0818906543b39652"
+                "0818906543b39652",
+                "b404e38ea2cd2b26"
             ]
         ]
     },
@@ -867,10 +869,11 @@
         "rh": 0,
         "inputs": 0,
         "x": 490,
-        "y": 460,
+        "y": 540,
         "wires": [
             [
-                "6bf786ab447a3b4f"
+                "6bf786ab447a3b4f",
+                "68a21166d781d8c0"
             ]
         ]
     },
@@ -888,10 +891,95 @@
         "rh": 0,
         "inputs": 0,
         "x": 490,
-        "y": 680,
+        "y": 800,
         "wires": [
             [
-                "693912a50dfea180"
+                "693912a50dfea180",
+                "1e02974daf3c7c43"
+            ]
+        ]
+    },
+    {
+        "id": "534d3755a2256e4f",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "SetPoints/setPoint1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 100,
+        "wires": [
+            [
+                "550c9f1e10d2644c"
+            ]
+        ]
+    },
+    {
+        "id": "936b721ad91e210a",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "SetPoints/setPoint2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 360,
+        "wires": [
+            [
+                "8e1286b325de308b"
+            ]
+        ]
+    },
+    {
+        "id": "0acd974e695df323",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "SetPoints/setPoint3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 620,
+        "wires": [
+            [
+                "d231553fd271ec2e"
+            ]
+        ]
+    },
+    {
+        "id": "52eaa04181ead95f",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "SetPoints/setPoint4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 470,
+        "y": 880,
+        "wires": [
+            [
+                "4dca01c00c5faa2e"
             ]
         ]
     },
