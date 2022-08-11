@@ -8,11 +8,19 @@
         "env": []
     },
     {
+        "id": "352fcc860ddcd8e8",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "0349933493185ff4",
         "type": "ui_group",
         "name": "Do usunięcia",
         "tab": "ed08ea8ae00afeef",
-        "order": 1,
+        "order": 2,
         "disp": true,
         "width": "3",
         "collapse": false,
@@ -128,9 +136,9 @@
         "type": "ui_group",
         "name": "STREFA 1",
         "tab": "ed08ea8ae00afeef",
-        "order": 2,
+        "order": 3,
         "disp": true,
-        "width": "8",
+        "width": "7",
         "collapse": false,
         "className": ""
     },
@@ -139,9 +147,9 @@
         "type": "ui_group",
         "name": "STREFA 2",
         "tab": "ed08ea8ae00afeef",
-        "order": 3,
+        "order": 4,
         "disp": true,
-        "width": "8",
+        "width": "7",
         "collapse": false,
         "className": ""
     },
@@ -150,9 +158,9 @@
         "type": "ui_group",
         "name": "STREFA 3",
         "tab": "ed08ea8ae00afeef",
-        "order": 4,
+        "order": 5,
         "disp": true,
-        "width": "8",
+        "width": "7",
         "collapse": false,
         "className": ""
     },
@@ -161,9 +169,9 @@
         "type": "ui_group",
         "name": "STREFA 4",
         "tab": "ed08ea8ae00afeef",
-        "order": 5,
+        "order": 6,
         "disp": true,
-        "width": "8",
+        "width": "7",
         "collapse": false,
         "className": ""
     },
@@ -173,7 +181,7 @@
         "z": "12421ff9dde586d7",
         "name": "spacer",
         "group": "7ac9664a2bf3d9f2",
-        "order": 3,
+        "order": 4,
         "width": 1,
         "height": 1
     },
@@ -183,7 +191,7 @@
         "z": "12421ff9dde586d7",
         "name": "spacer",
         "group": "bda376001a4a078a",
-        "order": 2,
+        "order": 4,
         "width": 1,
         "height": 1
     },
@@ -193,7 +201,7 @@
         "z": "12421ff9dde586d7",
         "name": "spacer",
         "group": "617c289c1fe65e5b",
-        "order": 2,
+        "order": 4,
         "width": 1,
         "height": 1
     },
@@ -203,125 +211,47 @@
         "z": "12421ff9dde586d7",
         "name": "spacer",
         "group": "4156a645b40f200d",
-        "order": 2,
+        "order": 4,
         "width": 1,
         "height": 1
     },
     {
-        "id": "02faee74f8ecf03a",
-        "type": "ui_slider",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "label": "went2",
-        "tooltip": "",
-        "group": "0349933493185ff4",
-        "order": 10,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "className": "",
-        "x": 130,
-        "y": 180,
-        "wires": [
-            [
-                "0818906543b39652",
-                "b404e38ea2cd2b26",
-                "335abbb6457492ef"
-            ]
-        ]
+        "id": "f2aed52371d902c0",
+        "type": "mqtt-broker",
+        "name": "ProjektBuR",
+        "broker": "127.0.0.1",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
     },
     {
-        "id": "d31e2c34d0433b6b",
-        "type": "ui_slider",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "label": "went1",
-        "tooltip": "",
-        "group": "0349933493185ff4",
+        "id": "a5181302843e8fd8",
+        "type": "ui_group",
+        "name": "Blok ogólny, do zmian",
+        "tab": "ed08ea8ae00afeef",
         "order": 1,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "className": "",
-        "x": 130,
-        "y": 120,
-        "wires": [
-            [
-                "73736625e4114183",
-                "f460d0eb218848ae",
-                "35be2aee50a84c1c"
-            ]
-        ]
-    },
-    {
-        "id": "be8e027ba15d2ab0",
-        "type": "ui_slider",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "label": "went3",
-        "tooltip": "",
-        "group": "0349933493185ff4",
-        "order": 11,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "className": "",
-        "x": 130,
-        "y": 240,
-        "wires": [
-            [
-                "6bf786ab447a3b4f",
-                "68a21166d781d8c0",
-                "61238c0d5592c901"
-            ]
-        ]
-    },
-    {
-        "id": "57b2f52fb5511027",
-        "type": "ui_slider",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "label": "went4",
-        "tooltip": "",
-        "group": "0349933493185ff4",
-        "order": 12,
-        "width": 0,
-        "height": 0,
-        "passthru": true,
-        "outs": "all",
-        "topic": "topic",
-        "topicType": "msg",
-        "min": 0,
-        "max": "100",
-        "step": 1,
-        "className": "",
-        "x": 130,
-        "y": 300,
-        "wires": [
-            [
-                "693912a50dfea180",
-                "1e02974daf3c7c43",
-                "8fa13984f3c8a70f"
-            ]
-        ]
+        "disp": true,
+        "width": "28",
+        "collapse": false,
+        "className": ""
     },
     {
         "id": "35be2aee50a84c1c",
@@ -329,7 +259,7 @@
         "z": "12421ff9dde586d7",
         "name": "",
         "group": "7ac9664a2bf3d9f2",
-        "order": 4,
+        "order": 5,
         "width": 0,
         "height": 0,
         "gtype": "gage",
@@ -347,7 +277,7 @@
         "seg2": "",
         "className": "",
         "x": 670,
-        "y": 180,
+        "y": 140,
         "wires": []
     },
     {
@@ -364,7 +294,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 100,
+        "y": 60,
         "wires": []
     },
     {
@@ -373,10 +303,10 @@
         "z": "12421ff9dde586d7",
         "name": "",
         "group": "7ac9664a2bf3d9f2",
-        "order": 5,
+        "order": 6,
         "width": 0,
         "height": 0,
-        "label": "historia temperatury",
+        "label": "Historia Temperatury",
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
@@ -406,7 +336,7 @@
         "useDifferentColor": false,
         "className": "",
         "x": 700,
-        "y": 220,
+        "y": 180,
         "wires": [
             []
         ]
@@ -417,9 +347,9 @@
         "z": "12421ff9dde586d7",
         "name": "",
         "group": "bda376001a4a078a",
-        "order": 3,
-        "width": 0,
-        "height": 0,
+        "order": 5,
+        "width": "0",
+        "height": "0",
         "gtype": "gage",
         "title": "Wentylator 2",
         "label": "%",
@@ -435,7 +365,7 @@
         "seg2": "",
         "className": "",
         "x": 670,
-        "y": 320,
+        "y": 360,
         "wires": []
     },
     {
@@ -443,7 +373,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "bda376001a4a078a",
-        "order": 4,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -452,7 +382,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 360,
+        "y": 280,
         "wires": []
     },
     {
@@ -461,10 +391,10 @@
         "z": "12421ff9dde586d7",
         "name": "",
         "group": "bda376001a4a078a",
-        "order": 5,
+        "order": 6,
         "width": 0,
         "height": 0,
-        "label": "",
+        "label": "Historia Temperatury",
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
@@ -493,7 +423,7 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 650,
+        "x": 700,
         "y": 400,
         "wires": [
             []
@@ -505,7 +435,7 @@
         "z": "12421ff9dde586d7",
         "name": "",
         "group": "617c289c1fe65e5b",
-        "order": 3,
+        "order": 5,
         "width": 0,
         "height": 0,
         "gtype": "gage",
@@ -523,7 +453,7 @@
         "seg2": "",
         "className": "",
         "x": 670,
-        "y": 500,
+        "y": 580,
         "wires": []
     },
     {
@@ -531,7 +461,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "617c289c1fe65e5b",
-        "order": 4,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -540,7 +470,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 540,
+        "y": 500,
         "wires": []
     },
     {
@@ -549,10 +479,10 @@
         "z": "12421ff9dde586d7",
         "name": "",
         "group": "617c289c1fe65e5b",
-        "order": 5,
+        "order": 6,
         "width": 0,
         "height": 0,
-        "label": "",
+        "label": "Historia Temperatury",
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
@@ -581,8 +511,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 650,
-        "y": 580,
+        "x": 700,
+        "y": 620,
         "wires": [
             []
         ]
@@ -593,7 +523,7 @@
         "z": "12421ff9dde586d7",
         "name": "",
         "group": "4156a645b40f200d",
-        "order": 3,
+        "order": 5,
         "width": 0,
         "height": 0,
         "gtype": "gage",
@@ -611,7 +541,7 @@
         "seg2": "",
         "className": "",
         "x": 670,
-        "y": 680,
+        "y": 800,
         "wires": []
     },
     {
@@ -619,7 +549,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "4156a645b40f200d",
-        "order": 4,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -637,10 +567,10 @@
         "z": "12421ff9dde586d7",
         "name": "",
         "group": "4156a645b40f200d",
-        "order": 5,
+        "order": 6,
         "width": 0,
         "height": 0,
-        "label": "",
+        "label": "Historia Temperatury",
         "chartType": "line",
         "legend": "false",
         "xformat": "HH:mm:ss",
@@ -669,8 +599,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 650,
-        "y": 760,
+        "x": 700,
+        "y": 840,
         "wires": [
             []
         ]
@@ -689,7 +619,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 60,
+        "y": 20,
         "wires": []
     },
     {
@@ -706,7 +636,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 280,
+        "y": 240,
         "wires": []
     },
     {
@@ -740,80 +670,192 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 640,
+        "y": 680,
         "wires": []
     },
     {
-        "id": "629cb119beea1dd6",
-        "type": "switch",
+        "id": "0504a7f967f2a2c1",
+        "type": "function",
         "z": "12421ff9dde586d7",
-        "name": "",
-        "property": "payload",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "1",
-                "vt": "num"
-            },
-            {
-                "t": "eq",
-                "v": "Chłodzenie",
-                "vt": "msg"
-            },
-            {
-                "t": "eq",
-                "v": "Grzanie",
-                "vt": "msg"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 3,
-        "x": 550,
-        "y": 960,
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 100,
         "wires": [
             [
-                "b83150d3158c21f8"
-            ],
-            [],
-            []
-        ]
-    },
-    {
-        "id": "340987459216e8aa",
-        "type": "ui_numeric",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "label": "numeric",
-        "tooltip": "",
-        "group": "0349933493185ff4",
-        "order": 4,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "topic",
-        "topicType": "msg",
-        "format": "{{value}}",
-        "min": 0,
-        "max": 10,
-        "step": 1,
-        "className": "",
-        "x": 360,
-        "y": 960,
-        "wires": [
-            [
-                "629cb119beea1dd6"
+                "a6671fd24f17c58b"
             ]
         ]
     },
     {
-        "id": "b83150d3158c21f8",
+        "id": "19ed5921e9df5d62",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "StanStrefa1",
+        "qos": "1",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 100,
+        "wires": [
+            [
+                "0504a7f967f2a2c1"
+            ]
+        ]
+    },
+    {
+        "id": "a6671fd24f17c58b",
         "type": "ui_text",
         "z": "12421ff9dde586d7",
-        "group": "0349933493185ff4",
-        "order": 5,
+        "group": "7ac9664a2bf3d9f2",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Stan: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 650,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "d070a168102d2999",
+        "type": "ui_text",
+        "z": "12421ff9dde586d7",
+        "group": "bda376001a4a078a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Stan: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 650,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "eab1465fef3f2b10",
+        "type": "ui_text",
+        "z": "12421ff9dde586d7",
+        "group": "617c289c1fe65e5b",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Stan: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 650,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "166f78788aac5fc6",
+        "type": "ui_text",
+        "z": "12421ff9dde586d7",
+        "group": "4156a645b40f200d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Stan: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 650,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "168844b73175f93a",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "91c3f9b93a64083e",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0bc599f943c8a5da",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "305611be53477d62",
+        "type": "mqtt out",
+        "z": "352fcc860ddcd8e8",
+        "name": "",
+        "topic": "StanStrefa1",
+        "qos": "1",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f2aed52371d902c0",
+        "x": 170,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "4f75852f23a434e2",
+        "type": "ui_text",
+        "z": "352fcc860ddcd8e8",
+        "group": "a5181302843e8fd8",
+        "order": 0,
         "width": 0,
         "height": 0,
         "name": "",
@@ -821,24 +863,57 @@
         "format": "{{msg.payload}}",
         "layout": "row-center",
         "className": "",
-        "x": 750,
-        "y": 900,
+        "x": 150,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "0504a7f967f2a2c1",
-        "type": "function",
-        "z": "12421ff9dde586d7",
-        "name": "function 1",
-        "func": "\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 240,
-        "y": 780,
+        "id": "6b15b39b2dcddebc",
+        "type": "ui_numeric",
+        "z": "352fcc860ddcd8e8",
+        "name": "",
+        "label": "numeric",
+        "tooltip": "",
+        "group": "0349933493185ff4",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "wrap": false,
+        "passthru": true,
+        "topic": "payload",
+        "topicType": "msg",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "className": "",
+        "x": 160,
+        "y": 380,
         "wires": [
+            [
+                "305611be53477d62"
+            ]
+        ]
+    },
+    {
+        "id": "ed128785bb8ae9a5",
+        "type": "aedes broker",
+        "z": "352fcc860ddcd8e8",
+        "name": "",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [],
             []
         ]
     }
