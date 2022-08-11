@@ -218,8 +218,8 @@
     {
         "id": "f2aed52371d902c0",
         "type": "mqtt-broker",
-        "name": "ProjektBuR",
-        "broker": "127.0.0.1",
+        "name": "Mqtt broker",
+        "broker": "localhost",
         "port": "1883",
         "clientid": "",
         "autoConnect": true,
@@ -285,7 +285,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "7ac9664a2bf3d9f2",
-        "order": 2,
+        "order": 1,
         "width": 0,
         "height": 0,
         "name": "",
@@ -294,7 +294,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 60,
+        "y": 20,
         "wires": []
     },
     {
@@ -373,7 +373,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "bda376001a4a078a",
-        "order": 2,
+        "order": 1,
         "width": 0,
         "height": 0,
         "name": "",
@@ -382,7 +382,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 280,
+        "y": 240,
         "wires": []
     },
     {
@@ -461,7 +461,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "617c289c1fe65e5b",
-        "order": 2,
+        "order": 1,
         "width": 0,
         "height": 0,
         "name": "",
@@ -470,7 +470,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 500,
+        "y": 460,
         "wires": []
     },
     {
@@ -549,7 +549,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "4156a645b40f200d",
-        "order": 2,
+        "order": 1,
         "width": 0,
         "height": 0,
         "name": "",
@@ -558,7 +558,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 720,
+        "y": 680,
         "wires": []
     },
     {
@@ -610,7 +610,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "7ac9664a2bf3d9f2",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -619,7 +619,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 20,
+        "y": 60,
         "wires": []
     },
     {
@@ -627,7 +627,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "bda376001a4a078a",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -636,7 +636,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 240,
+        "y": 280,
         "wires": []
     },
     {
@@ -644,7 +644,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "617c289c1fe65e5b",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -653,7 +653,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 460,
+        "y": 500,
         "wires": []
     },
     {
@@ -661,7 +661,7 @@
         "type": "ui_text",
         "z": "12421ff9dde586d7",
         "group": "4156a645b40f200d",
-        "order": 1,
+        "order": 2,
         "width": 0,
         "height": 0,
         "name": "",
@@ -670,7 +670,7 @@
         "layout": "row-center",
         "className": "",
         "x": 700,
-        "y": 680,
+        "y": 720,
         "wires": []
     },
     {
@@ -689,27 +689,6 @@
         "wires": [
             [
                 "a6671fd24f17c58b"
-            ]
-        ]
-    },
-    {
-        "id": "19ed5921e9df5d62",
-        "type": "mqtt in",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "topic": "StanStrefa1",
-        "qos": "1",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 230,
-        "y": 100,
-        "wires": [
-            [
-                "0504a7f967f2a2c1"
             ]
         ]
     },
@@ -830,6 +809,90 @@
         "y": 760,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "6c2a7e230279150c",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Temps/Temp1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 490,
+        "y": 20,
+        "wires": [
+            [
+                "73736625e4114183"
+            ]
+        ]
+    },
+    {
+        "id": "8d3438237b0d0612",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Temps/Temp2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 490,
+        "y": 240,
+        "wires": [
+            [
+                "0818906543b39652"
+            ]
+        ]
+    },
+    {
+        "id": "fa9814553ac1f278",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Temps/Temp3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 490,
+        "y": 460,
+        "wires": [
+            [
+                "6bf786ab447a3b4f"
+            ]
+        ]
+    },
+    {
+        "id": "145426fc365d8b24",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Temps/Temp4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 490,
+        "y": 680,
+        "wires": [
+            [
+                "693912a50dfea180"
+            ]
         ]
     },
     {
