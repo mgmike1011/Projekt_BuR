@@ -103,59 +103,43 @@ PROGRAM _CYCLIC
 			// Zone 1
 			IF EnableZone1 THEN
 				TempController[0].Enable := TRUE;
-				IF TempController[0].HeatValue > TempController[0].CoolValue THEN
-					ZoneStatus[0] := STATE_HEATING;
-				ELSIF TempController[0].HeatValue < TempController[0].CoolValue THEN
-					ZoneStatus[0] := STATE_HEATING;
-				ELSE
-					ZoneStatus[0] := STATE_IDLE_ZONE;	
-				END_IF;
 			ELSE
+				TempController[0].Enable := FALSE;
 				ZoneStatus[0] := STATE_IDLE_ZONE;	
 			END_IF;
 			// Zone 2
 			IF EnableZone2 THEN
-				TempController[1].Enable := TRUE;
-				IF TempController[1].HeatValue > TempController[1].CoolValue THEN
-					ZoneStatus[1] := STATE_HEATING;
-				ELSIF TempController[1].HeatValue < TempController[1].CoolValue THEN
-					ZoneStatus[1] := STATE_HEATING;
-				ELSE
-					ZoneStatus[1] := STATE_IDLE_ZONE;	
-				END_IF;
+				TempController[1].Enable := TRUE;	
 			ELSE
+				TempController[1].Enable := FALSE;
 				ZoneStatus[1] := STATE_IDLE_ZONE;	
 			END_IF;
 			// Zone 3
 			IF EnableZone3 THEN
 				TempController[2].Enable := TRUE;
-				IF TempController[2].HeatValue > TempController[2].CoolValue THEN
-					ZoneStatus[2] := STATE_HEATING;
-				ELSIF TempController[2].HeatValue < TempController[2].CoolValue THEN
-					ZoneStatus[2] := STATE_HEATING;
-				ELSE
-					ZoneStatus[2] := STATE_IDLE_ZONE;	
-				END_IF;
 			ELSE
+				TempController[2].Enable := FALSE;
 				ZoneStatus[2] := STATE_IDLE_ZONE;	
 			END_IF;
 			// Zone 4
 			IF EnableZone4 THEN
 				TempController[3].Enable := TRUE;
-				IF TempController[3].HeatValue > TempController[3].CoolValue THEN
-					ZoneStatus[3] := STATE_HEATING;
-				ELSIF TempController[3].HeatValue < TempController[3].CoolValue THEN
-					ZoneStatus[3] := STATE_HEATING;
-				ELSE
-					ZoneStatus[3] := STATE_IDLE_ZONE;	
-				END_IF;
 			ELSE
+				TempController[3].Enable := FALSE;
 				ZoneStatus[3] := STATE_IDLE_ZONE;	
 			END_IF;
 			
 		STATE_WORKING_AUTOMATIC:
 			TempGroup.Control := TRUE;
 			AutomaticMode;
+			// Switch state conditions
+			IF NOT Automatic_work THEN
+				STATUS := STATE_IDLE;
+			ELSIF gSTOP THEN
+				STATUS := STATE_IDLE;
+			ELSIF Automatic_work AND (TuneEnable OR Manual_work) AND gStart THEN
+				STATUS := STATE_ERROR;
+			END_IF;
 			
 		STATE_STOP:
 			TempGroup.Control := FALSE;
@@ -178,11 +162,12 @@ PROGRAM _CYCLIC
 			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
 			// Switch state conditions
-			IF NOT gError AND NOT gStart AND NOT gSTOP AND NOT WorkEnable AND NOT TuneEnable THEN
+			IF NOT gError AND NOT gStart AND NOT gSTOP AND NOT (Manual_work OR Automatic_work) AND NOT TuneEnable THEN
 				STATUS := STATE_IDLE;
 			END_IF;
-		
 	END_CASE;
+	// Update info about zone state
+	ZoneStateUpdate;
 	// ############################################
 	// Calling functionblocks
 	FOR iCnt := 0 TO ELEMENTS_NUMBER DO

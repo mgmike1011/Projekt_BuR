@@ -7,5 +7,6 @@
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>TuningAction.st</File>
     <File>AutomaticMode.st</File>
+    <File>ZoneStateUpdate.st</File>
   </Files>
 </Program>

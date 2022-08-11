@@ -1,5 +1,4 @@
 VAR
-	WorkEnable : BOOL;
 	TuneEnable : BOOL;
 	iCnt : USINT;
 END_VAR
