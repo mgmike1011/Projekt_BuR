@@ -5,4 +5,6 @@ Temp/
 *.isopen
 *.orig
 NodeRed/
+!NodeRed/
+NodeRed/*
 !NodeRed/flows.json
