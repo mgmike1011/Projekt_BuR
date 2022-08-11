@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Package SubType="mappControl" PackageType="mappControl" xmlns="http://br-automation.co.at/AS/Package">
-  <Objects />
+  <Objects>
+    <Object Type="File">HeatGroup.tempgroup</Object>
+    <Object Type="File">HeatZone1.tempcontroller</Object>
+    <Object Type="File">HeatZone2.tempcontroller</Object>
+    <Object Type="File">HeatZone3.tempcontroller</Object>
+    <Object Type="File">HeatZone4.tempcontroller</Object>
+  </Objects>
 </Package>
