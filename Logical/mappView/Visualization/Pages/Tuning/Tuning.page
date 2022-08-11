@@ -3,5 +3,6 @@
   <Assignments>
     <Assignment type="Content" baseContentRefId="LEFT" areaRefId="left" backColor="rgba(253, 153, 0, 1)" />
     <Assignment type="Content" baseContentRefId="Tuning" areaRefId="main" backColor="rgba(245, 245, 245, 1)" />
+    <Assignment type="Content" baseContentRefId="TOP" areaRefId="top" backColor="rgba(255, 204, 153, 1)" />
   </Assignments>
 </pdef:Page>
