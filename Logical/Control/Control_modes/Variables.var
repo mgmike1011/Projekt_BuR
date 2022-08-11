@@ -1,0 +1,8 @@
+VAR
+	Start : BOOL;
+	Stop : BOOL;
+	Step : INT;
+	Auto_mode : BOOL;
+	Manual_mode : BOOL;
+	TON_0 : TON;
+END_VAR

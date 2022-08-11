@@ -1,0 +1,12 @@
+VAR CONSTANT
+	NR_OF_TOPICS : INT := 4;
+END_VAR
+VAR
+	TONtimer : TON;
+	IotMqttParameters : IotMqttClientParType;
+	IotMqttClient_0 : IotMqttClient;
+	IotMqttLink : IoTMqttComIdentType;
+	IotMqttPublish_0 : IotMqttPublish;
+	PublishMessage : STRING[80];
+	TopicCounter : {REDUND_UNREPLICABLE} CTU;
+END_VAR
