@@ -11,7 +11,7 @@
     <!--<BindingsSet refId="" />-->
   </BindingsSets>
   <EventBindingsSets>
-    <!--<EventBindingsSet refId="" />-->
+		<!--<EventBindingsSet refId="" />-->
   </EventBindingsSets>
   <Dialogs>
     <!--<Dialog refId="" />-->
