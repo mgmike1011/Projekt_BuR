@@ -1,7 +1,7 @@
 
 TYPE
 	MACHINE_WORKING_STATE : 
-		( (*Stan pracy dzialania calej maszyny*)
+		( (*Working state of whole machine*)
 		STATE_IDLE,
 		STATE_TUNING,
 		STATE_WORKING_MANUAL,
@@ -10,13 +10,13 @@ TYPE
 		STATE_STOP
 		);
 	ZONE_WORKING_STATE : 
-		(
+		( (*Working state of each zone*)
 		STATE_IDLE_ZONE,
 		STATE_HEATING,
 		STATE_COOLING
 		);
 	AUTOMATIC_MODE_STATE : 
-		(
+		( (*Step of automatic mode*)
 		STEP_INIT,
 		STEP1,
 		STEP2,

@@ -37,20 +37,20 @@ VAR CONSTANT
 END_VAR
 (*Machine working type*)
 VAR
-	Automatic_work : BOOL;
-	Manual_work : BOOL;
+	Automatic_work : BOOL := FALSE;
+	Manual_work : BOOL := FALSE;
 END_VAR
 (*Manual control*)
 VAR
-	EnableZone1 : BOOL;
-	EnableZone2 : BOOL;
-	EnableZone3 : BOOL;
-	EnableZone4 : BOOL;
+	EnableZone1 : BOOL := FALSE;
+	EnableZone2 : BOOL := FALSE;
+	EnableZone3 : BOOL := FALSE;
+	EnableZone4 : BOOL := FALSE;
 END_VAR
 (*Automatic control*)
 VAR
 	AutoStep : AUTOMATIC_MODE_STATE := STEP_INIT;
-	CycleNumber : DINT;
+	CycleNumber : DINT := 0;
 END_VAR
 (* ########## MQTT communication variables ########### *)
 (*PWM % Heater Zone 1  ->  TempController[0].HeatValue*)
