@@ -1,5 +1,5 @@
 VAR CONSTANT
-	NR_OF_TOPICS : INT := 4;
+	NR_OF_TOPICS : INT := 8;
 END_VAR
 VAR
 	TONtimer : TON;
@@ -9,4 +9,5 @@ VAR
 	IotMqttPublish_0 : IotMqttPublish;
 	PublishMessage : STRING[80];
 	TopicCounter : {REDUND_UNREPLICABLE} CTU;
+	doSend : BOOL := TRUE;
 END_VAR
