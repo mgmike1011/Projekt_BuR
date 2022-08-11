@@ -2,20 +2,22 @@ PROGRAM _INIT
 	//
 	// Init Code
 	//
-	// Temp Controller-parameters
-	TempControllerPar[0].Tuning.SetPointHeat := 100;
-	TempControllerPar[0].Tuning.SetPointCool := 30;
-	TempControllerPar[1].Tuning.SetPointHeat := 100;
-	TempControllerPar[1].Tuning.SetPointCool := 30;
-	TempControllerPar[2].Tuning.SetPointHeat := 100;
-	TempControllerPar[2].Tuning.SetPointCool := 30;
-	TempControllerPar[3].Tuning.SetPointHeat := 100;
-	TempControllerPar[3].Tuning.SetPointCool := 30;
+	// Temp Controller-parameters:
+		// Setpoints
+	TempControllerPar[0].Tuning.SetPointHeat := SetTempHeatTuning1;
+	TempControllerPar[0].Tuning.SetPointCool := SetTempCoolTuning1;
+	TempControllerPar[1].Tuning.SetPointHeat := SetTempHeatTuning2;
+	TempControllerPar[1].Tuning.SetPointCool := SetTempCoolTuning2;
+	TempControllerPar[2].Tuning.SetPointHeat := SetTempHeatTuning3;
+	TempControllerPar[2].Tuning.SetPointCool := SetTempCoolTuning3;
+	TempControllerPar[3].Tuning.SetPointHeat := SetTempHeatTuning4;
+	TempControllerPar[3].Tuning.SetPointCool := SetTempCoolTuning4;
+		// Tuning mode - tuning heating and cooling controllers
 	TempControllerPar[0].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
 	TempControllerPar[1].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
 	TempControllerPar[2].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
 	TempControllerPar[3].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
-	// Temp Controller 
+	// Temperature Controller 
 	TempController[0].MpLink := ADR(gTempController_1);
 	TempController[0].Parameters := ADR(TempControllerPar[0]);
 	TempController[0].Enable := TRUE;
@@ -35,8 +37,8 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	// Mapping inputs
-	// Mapping temperature sensors
+	// Mapping inputs:
+		// Mapping temperature sensors
 	TempController[0].ActualTemperature := gTemp1;
 	TempController[1].ActualTemperature := gTemp2;
 	TempController[2].ActualTemperature := gTemp3;
@@ -46,18 +48,27 @@ PROGRAM _CYCLIC
 	TempController[1].SetTemperature := SetTemp2;
 	TempController[2].SetTemperature := SetTemp3;
 	TempController[3].SetTemperature := SetTemp4;
+	// #################################################	
+	
 	// Machine working status
 	CASE STATUS OF
 		STATE_IDLE:
 			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
-			IF TuneEnable AND gStart AND NOT gSTOP AND NOT WorkEnable THEN
+			TempController[0].Enable := FALSE;
+			TempController[1].Enable := FALSE;
+			TempController[2].Enable := FALSE;
+			TempController[3].Enable := FALSE;
+			// GOTO Tunning
+			IF TuneEnable AND gStart AND NOT gSTOP AND NOT (Automatic_work OR Manual_work) THEN
 				STATUS := STATE_TUNING;
-			ELSIF WorkEnable AND gStart AND NOT gSTOP AND NOT TuneEnable THEN
-				STATUS := STATE_WORKING;
+			ELSIF Manual_work AND gStart AND NOT gSTOP AND NOT (TuneEnable OR Automatic_work) THEN
+				STATUS := STATE_WORKING_MANUAL;
+			ELSIF Automatic_work AND gStart AND NOT gSTOP AND NOT (TuneEnable OR Manual_work) THEN
+				STATUS := STATE_WORKING_AUTOMATIC;
 			ELSIF gSTOP THEN
 				STATUS := STATE_STOP;
-			ELSIF TuneEnable AND WorkEnable AND gStart THEN
+			ELSIF TuneEnable AND (Automatic_work OR Manual_work) AND gStart THEN
 				STATUS := STATE_ERROR;
 			END_IF;
 			
@@ -65,48 +76,47 @@ PROGRAM _CYCLIC
 			TempGroup.Control := FALSE;
 			// Tuning Parameters
 			IF EDGEPOS(TempGroup.TuningDone) THEN
-				TempGroup.Tune := FALSE;
-				TuneEnable := FALSE;
-				FOR iCnt := 0  TO ELEMENTS_NUMBER DO
-					// Heating PID params
-					TempControllerPar[iCnt].PID.Heat.ProportionalGain := TempController[iCnt].Info.Tuning.PIDParameters.Heat.ProportionalGain;
-					TempControllerPar[iCnt].PID.Heat.IntegrationTime := TempController[iCnt].Info.Tuning.PIDParameters.Heat.IntegrationTime;
-					TempControllerPar[iCnt].PID.Heat.FilterTime := TempController[iCnt].Info.Tuning.PIDParameters.Heat.FilterTime;
-					TempControllerPar[iCnt].PID.Heat.DerivativeTime:= TempController[iCnt].Info.Tuning.PIDParameters.Heat.DerivativeTime;
-					// Cooling PID params
-					TempControllerPar[iCnt].PID.Cool.ProportionalGain := TempController[iCnt].Info.Tuning.PIDParameters.Cool.ProportionalGain;
-					TempControllerPar[iCnt].PID.Cool.IntegrationTime := TempController[iCnt].Info.Tuning.PIDParameters.Cool.IntegrationTime;
-					TempControllerPar[iCnt].PID.Cool.FilterTime := TempController[iCnt].Info.Tuning.PIDParameters.Cool.FilterTime;
-					TempControllerPar[iCnt].PID.Cool.DerivativeTime:= TempController[iCnt].Info.Tuning.PIDParameters.Cool.DerivativeTime;
-				END_FOR;
-				TuneEnable := FALSE;
+				TuningAction; // Getting the data
+				TuneEnable := FALSE; // Tune off
 				STATUS := STATE_IDLE;
 			ELSE
 				TempGroup.Tune := TRUE;
 				IF gSTOP THEN
-	  				STATUS := STATE_ERROR;
+					STATUS := STATE_STOP;
 				END_IF;
 			END_IF;
 			
-		STATE_WORKING:
-			TempGroup.Control := TRUE;
-			IF NOT WorkEnable THEN
+		STATE_WORKING_MANUAL:
+			(*TempGroup.Control := TRUE;*)
+			IF NOT Manual_work THEN
 				STATUS := STATE_IDLE;
 			ELSIF gSTOP THEN
 				STATUS := STATE_STOP;
-			ELSIF WorkEnable AND TuneEnable AND gStart THEN
+			ELSIF Manual_work AND (TuneEnable OR Automatic_work) AND gStart THEN
 				STATUS := STATE_ERROR;
 			END_IF;
+			TempController[0].Enable := EnableZone1;
+			TempController[1].Enable := EnableZone2;
+			TempController[2].Enable := EnableZone3;
+			TempController[3].Enable := EnableZone4;
 			
 		STATE_STOP:
 			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
+			TempController[0].Enable := FALSE;
+			TempController[1].Enable := FALSE;
+			TempController[2].Enable := FALSE;
+			TempController[3].Enable := FALSE;
 			IF NOT gSTOP THEN
-	  			STATUS := STATE_IDLE;
+				STATUS := STATE_IDLE;
 			END_IF;
 			
 		STATE_ERROR:
 			gError := TRUE;
+			TempController[0].Enable := FALSE;
+			TempController[1].Enable := FALSE;
+			TempController[2].Enable := FALSE;
+			TempController[3].Enable := FALSE;
 			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
 			IF NOT gError AND NOT gStart AND NOT gSTOP AND NOT WorkEnable AND NOT TuneEnable THEN
@@ -114,7 +124,7 @@ PROGRAM _CYCLIC
 			END_IF;
 		
 	END_CASE;
-
+	// ############################################
 	// Calling functionblocks
 	FOR iCnt := 0 TO ELEMENTS_NUMBER DO
 		TempController[iCnt]();
@@ -131,7 +141,6 @@ PROGRAM _CYCLIC
 	gHeater2 := TempController[1].Heat;
 	gHeater3 := TempController[2].Heat;
 	gHeater4 := TempController[3].Heat;
-	
 END_PROGRAM
 
 PROGRAM _EXIT

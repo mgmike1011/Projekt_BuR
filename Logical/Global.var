@@ -1,23 +1,23 @@
 (*Fan Variables*)
 VAR
-	gFan1 : BOOL;
-	gFan2 : BOOL;
-	gFan3 : BOOL;
-	gFan4 : BOOL;
+	gFan1 : BOOL; (*Fan control zone 1*)
+	gFan2 : BOOL; (*Fan control zone 2*)
+	gFan3 : BOOL; (*Fan control zone 3*)
+	gFan4 : BOOL; (*Fan control zone 4*)
 END_VAR
 (*Heater Variables*)
 VAR
-	gHeater1 : BOOL;
-	gHeater2 : BOOL;
-	gHeater3 : BOOL;
-	gHeater4 : BOOL;
+	gHeater1 : BOOL; (*Heater control zone 1*)
+	gHeater2 : BOOL; (*Heater control zone 2*)
+	gHeater3 : BOOL; (*Heater control zone 3*)
+	gHeater4 : BOOL; (*Heater control zone 4*)
 END_VAR
 (*Temperature Variables*)
 VAR
-	gTempInt1 : INT;
-	gTempInt2 : INT;
-	gTempInt3 : INT;
-	gTempInt4 : INT;
+	gTempInt1 : INT; (*Temperature zone 1 INT*)
+	gTempInt2 : INT; (*Temperature zone 2 INT*)
+	gTempInt3 : INT; (*Temperature zone 3 INT*)
+	gTempInt4 : INT; (*Temperature zone 3 INT*)
 	gTemp1 : REAL; (*Temperature zone 1 in Celsius degree.*)
 	gTemp2 : REAL; (*Temperature zone 2 in Celsius degree.*)
 	gTemp3 : REAL; (*Temperature zone 3 in Celsius degree.*)
@@ -25,7 +25,7 @@ VAR
 END_VAR
 (*Control machine variables*)
 VAR
-	gStart : BOOL;
-	gError : BOOL;
-	gSTOP : BOOL;
+	gStart : BOOL; (*Machine start*)
+	gError : BOOL; (*Machine error occured*)
+	gSTOP : BOOL; (*Main machine STOP *)
 END_VAR
