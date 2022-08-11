@@ -1,16 +1,5 @@
 
-PROGRAM _INIT
-	
-	gHeater1;
-	gHeater2;
-	gHeater3;
-	gHeater4;
-	
-	gTemp1;
-	gTemp2;
-	gTemp3;
-	gTemp4;
-	
+PROGRAM _INIT	
 	SetTemp1 := 30;
 	SetTemp2 := 30;
 	SetTemp3 := 30;

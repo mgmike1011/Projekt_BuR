@@ -41,6 +41,8 @@
   <Module Name="X20cAT6402" Type="X20cAT6402" Version="1.2.0.0">
     <Connection Connector="SS1" TargetModule="X20TB12a" TargetConnector="SS" />
     <Connection Connector="SL" TargetModule="X20cBM11a" TargetConnector="SL1" />
+    <Parameter ID="DisableChannel01" Value="on" />
+    <Parameter ID="DisableChannel02" Value="on" />
   </Module>
   <Module Name="X20cBM11a" Type="X20cBM11" Version="1.1.0.0">
     <Connection Connector="X2X1" TargetModule="X20BM11a" TargetConnector="X2X2" />
