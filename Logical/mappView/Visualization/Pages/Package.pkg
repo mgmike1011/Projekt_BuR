@@ -4,5 +4,12 @@
   <Objects>
     <Object Type="Package" Description="AreaContents">AreaContents</Object>
     <Object Type="Package">MainPage</Object>
+    <Object Type="Package">ALARM</Object>
+    <Object Type="Package">AUTOMATIC</Object>
+    <Object Type="Package">MANUAL</Object>
+    <Object Type="Package">RECEPT</Object>
+    <Object Type="Package">Tuning</Object>
+    <Object Type="Package">AUDIT</Object>
+    <Object Type="Package">OEE</Object>
   </Objects>
 </Package>

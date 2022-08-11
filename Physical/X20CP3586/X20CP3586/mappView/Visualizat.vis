@@ -1,46 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vdef:Visualization id="ProjectVizu" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-	<StartPage pageRefId="MainPage" />
+  <StartPage pageRefId="MainPage" />
   <Pages>
-    <Page refId="MainPage"/>
+    <Page refId="MainPage" />
+    <Page refId="ALARM" />
+    <Page refId="AUTOMATIC" />
+    <Page refId="MANUAL" />
+    <Page refId="RECEPT" />
+    <Page refId="Tuning" />
+    <Page refId="AUDIT" />
+    <Page refId="OEE" />
   </Pages>
-  <Navigations>
-    <!--<Navigation refId="" />-->
-  </Navigations>  
-  <BindingsSets>
-    <!--<BindingsSet refId="" />-->
-  </BindingsSets>
-  <EventBindingsSets>
-		<!--<EventBindingsSet refId="" />-->
-  </EventBindingsSets>
-  <Dialogs>
-    <!--<Dialog refId="" />-->
-  </Dialogs>
+  <Navigations />
+  <BindingsSets />
+  <EventBindingsSets />
+  <Dialogs />
   <Contents>
-    <!--<Content refId="" />-->
+    <Content refId="TOP" />
+    <Content refId="LEFT" />
+    <Content refId="START_PAGE" />
+    <Content refId="ALARM" />
+    <Content refId="AUTOMATIC" />
+    <Content refId="MANUAL" />
+    <Content refId="RECEPT" />
+    <Content refId="Tuning" />
+    <Content refId="AUDIT" />
+    <Content refId="OEE" />
   </Contents>
-  <SnippetsSets>
-    <!--<SnippetsSet refId=""/>-->
-  </SnippetsSets>
-  <ExpressionsSets>
-    <!--<ExpressionsSet refId=""/>-->
-  </ExpressionsSets>
-  <VariablesSets>
-    <!--<VariablesSet refId="" />-->
-  </VariablesSets>
-  <!--<StartTheme themeRefId="" />
-  <Themes>
-    <Theme refId=""/>
-  </Themes>-->
+  <SnippetsSets />
+  <VariablesSets />
+  <ExpressionsSets />
   <Configurations>
     <Configuration key="activityCount" value="false" />
-	  <Gestures>
-		  <!--<SystemGesture1 touchPoints="2" />
+    <Gestures>
+      <!--<SystemGesture1 touchPoints="2" />
 		  <SystemGesture2 touchPoints="2" />
 		  <SystemGesture3 touchPoints="2" />-->
-	  </Gestures>
+    </Gestures>
     <VirtualKeyboards>
       <!--<InputProcessing onKeyDown="true" />-->
-    </VirtualKeyboards> 
+    </VirtualKeyboards>
   </Configurations>
 </vdef:Visualization>
