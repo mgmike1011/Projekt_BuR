@@ -7,5 +7,6 @@
     <Object Type="Program" Language="IEC">TempControl</Object>
     <Object Type="Program" Language="IEC">MQTT</Object>
     <Object Type="Program" Language="IEC">Control_modes</Object>
+    <Object Type="Program" Language="IEC">AuditTrail</Object>
   </Objects>
 </Package>

@@ -1,0 +1,8 @@
+VAR
+	MpAuditTrail_0 : MpAuditTrail;
+	TypeVar : WSTRING[100];
+	MessageVar : WSTRING[100] := "Hello World";
+	CommentVar : WSTRING[100];
+	TriggerEvent : BOOL;
+	CustomEventStatus : DINT;
+END_VAR
