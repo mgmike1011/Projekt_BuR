@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/Alarms</prop>
+  </header>
+  <body>
+    <tu tuid="HighTemperature1">
+      <tuv xml:lang="de">
+        <seg>Höhe Temperatur 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wysoka temperatura 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>High Temperature 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HighTemperature2">
+      <tuv xml:lang="de">
+        <seg>Höhe Temperatur 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wysoka temperatura 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>High Temperature 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HighTemperature3">
+      <tuv xml:lang="de">
+        <seg>Höhe Temperatur 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wysoka temperatura 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>High Temperature 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HighTemperature4">
+      <tuv xml:lang="de">
+        <seg>Höhe Temperatur 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wysoka temperatura 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>High Temperature 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HT1Message">
+      <tuv xml:lang="de">
+        <seg>Die Temperatur in Zone eins ist zu hoch</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zbyt wysoka temperatura w strefie pierwszej</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The temperature in zone one is too high</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HT2Message">
+      <tuv xml:lang="de">
+        <seg>Die Temperatur in Zone zwei ist zu hoch</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zbyt wysoka temperatura w strefie drugiej</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The temperature in zone two is too high</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HT4Message">
+      <tuv xml:lang="de">
+        <seg>Die Temperatur in Zone vier ist zu hoch</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zbyt wysoka temperatura w strefie czwartej</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The temperature in zone four is too high</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HT3Message">
+      <tuv xml:lang="de">
+        <seg>Die Temperatur in Zone drei ist zu hoch</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zbyt wysoka temperatura w strefie trzeciej</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>The temperature in zone three is too high</seg>
+      </tuv>
+    </tu>
+    <tu tuid="X20BC8083">
+      <tuv xml:lang="de">
+        <seg>Kein Modul X20BC8083</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Brak modułu X20BC8083</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Missing module X20BC8083</seg>
+      </tuv>
+    </tu>
+    <tu tuid="X20PS9400a">
+      <tuv xml:lang="de">
+        <seg>Kein Modul X20PS9400a</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Brak modułu X20PS9400a</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Missing module X20PS9400a</seg>
+      </tuv>
+    </tu>
+    <tu tuid="X20DOF322">
+      <tuv xml:lang="de">
+        <seg>Kein Modul X20DOF322</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Brak modułu X20DOF322</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Missing module X20DOF322</seg>
+      </tuv>
+    </tu>
+    <tu tuid="X20cAT6402">
+      <tuv xml:lang="de">
+        <seg>Kein Modul X20cAT6402</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Brak modułu X20cAT6402</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Missing module X20cAT6402</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ModuleMessage1">
+      <tuv xml:lang="de">
+        <seg>Kein Modul</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Brak modułu</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Missing module</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ModuleMessage2">
+      <tuv xml:lang="de">
+        <seg>Kein Modul</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Brak modułu</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Missing module</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ModuleMessage3">
+      <tuv xml:lang="de">
+        <seg>Kein Modul</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Brak modułu</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Missing module</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ModuleMessage4">
+      <tuv xml:lang="de">
+        <seg>Kein Modul</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Brak modułu</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Missing module</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

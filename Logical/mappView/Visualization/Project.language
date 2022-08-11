@@ -10,4 +10,8 @@
     <Property ID="LanguageName" Value="Polish" />
     <Property ID="NativeName" Value="polski" />
   </Element>
+  <Element ID="de" Type="Language">
+    <Property ID="LanguageName" Value="German" />
+    <Property ID="NativeName" Value="Deutsch" />
+  </Element>
 </Configuration>

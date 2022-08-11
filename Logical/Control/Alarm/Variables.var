@@ -1,0 +1,7 @@
+VAR
+	MpAlarmXCore_0 : MpAlarmXCore;
+	first_module : BOOL;
+	second_module : BOOL;
+	third_module : BOOL;
+	fourth_module : BOOL;
+END_VAR

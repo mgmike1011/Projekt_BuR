@@ -1,5 +1,56 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
-  <Element ID="gAlarmXCore" Type="mpalarmxcore" />
+  <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="&lt;$IAT/Alarms/HighTemperature1&gt;" />
+        <Property ID="Message" Value="&lt;$IAT/Alarms/HT1Message&gt;" />
+        <Property ID="Code" Value="1037" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="&lt;$IAT/Alarms/HighTemperature2&gt;" />
+        <Property ID="Message" Value="&lt;$IAT/Alarms/HT2Message&gt;" />
+        <Property ID="Code" Value="1038" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="&lt;$IAT/Alarms/HighTemperature3&gt;" />
+        <Property ID="Message" Value="&lt;$IAT/Alarms/HT3Message&gt;" />
+        <Property ID="Code" Value="1039" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="&lt;$IAT/Alarms/HighTemperature4&gt;" />
+        <Property ID="Message" Value="&lt;$IAT/Alarms/HT4Message&gt;" />
+        <Property ID="Code" Value="1040" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[4]">
+        <Property ID="Name" Value="&lt;$IAT/Alarms/ModuleMessage1&gt;" />
+        <Property ID="Message" Value="&lt;$IAT/Alarms/X20BC8083&gt;" />
+        <Property ID="Code" Value="1308" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[5]">
+        <Property ID="Name" Value="&lt;$IAT/Alarms/ModuleMessage2&gt;" />
+        <Property ID="Message" Value="&lt;$IAT/Alarms/X20PS9400a&gt;" />
+        <Property ID="Code" Value="1309" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[6]">
+        <Property ID="Name" Value="&lt;$IAT/Alarms/ModuleMessage3&gt;" />
+        <Property ID="Message" Value="&lt;$IAT/Alarms/X20DOF322&gt;" />
+        <Property ID="Code" Value="1310" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+      <Group ID="[7]">
+        <Property ID="Name" Value="&lt;$IAT/Alarms/ModuleMessage4&gt;" />
+        <Property ID="Message" Value="&lt;$IAT/Alarms/X20cAT6402&gt;" />
+        <Property ID="Code" Value="1311" />
+        <Selector ID="Behavior" Value="PersistentAlarm" />
+      </Group>
+    </Group>
+  </Element>
 </Configuration>

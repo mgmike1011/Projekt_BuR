@@ -11,4 +11,8 @@ VAR_CONFIG
 	::gTempInt2 AT %IW."X20cAT6402".Temperature04;
 	::gTempInt3 AT %IW."X20cAT6402".Temperature05;
 	::gTempInt4 AT %IW."X20cAT6402".Temperature06;
+	::Alarm:first_module AT %IX."X20BC8083".ModuleOk;
+	::Alarm:second_module AT %IX."X20PS9400a".ModuleOk;
+	::Alarm:third_module AT %IX."X20DOF322".ModuleOk;
+	::Alarm:fourth_module AT %IX."X20cAT6402".ModuleOk;
 END_VAR

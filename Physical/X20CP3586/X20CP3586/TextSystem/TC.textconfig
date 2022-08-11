@@ -8,7 +8,11 @@
       <Group ID="TargetLanguages">
         <Property ID="TargetLanguage[1]" Value="en" />
         <Property ID="TargetLanguage[2]" Value="pl" />
+        <Property ID="TargetLanguage[3]" Value="de" />
       </Group>
+    </Group>
+    <Group ID="TargetFiles">
+      <Property ID="TargetFile[1]" Value="mappView.Resources.Texts.Alarms.tmx" />
     </Group>
   </Element>
 </Configuration>
