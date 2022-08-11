@@ -15,4 +15,12 @@ VAR_CONFIG
 	::Alarm:second_module AT %IX."X20PS9400a".ModuleOk;
 	::Alarm:third_module AT %IX."X20DOF322".ModuleOk;
 	::Alarm:fourth_module AT %IX."X20cAT6402".ModuleOk;
+	::Alarm:FanAlarm1 AT %IX."X20DOF322".StatusDigitalOutput03;
+	::Alarm:FanAlarm2 AT %IX."X20DOF322".StatusDigitalOutput04;
+	::Alarm:FanAlarm3 AT %IX."X20DOF322".StatusDigitalOutput05;
+	::Alarm:FanAlarm4 AT %IX."X20DOF322".StatusDigitalOutput06;
+	::Alarm:HeaterAlarm1 AT %IX."X20DOF322".StatusDigitalOutput09;
+	::Alarm:HeaterAlarm2 AT %IX."X20DOF322".StatusDigitalOutput10;
+	::Alarm:HeaterAlarm3 AT %IX."X20DOF322".StatusDigitalOutput11;
+	::Alarm:HeaterAlarm4 AT %IX."X20DOF322".StatusDigitalOutput12;
 END_VAR

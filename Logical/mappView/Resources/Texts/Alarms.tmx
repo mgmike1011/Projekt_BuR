@@ -7,43 +7,43 @@
   <body>
     <tu tuid="HighTemperature1">
       <tuv xml:lang="de">
-        <seg>Höhe Temperatur 1</seg>
+        <seg>Höhe Temperatur</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Wysoka temperatura 1</seg>
+        <seg>Wysoka temperatura</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>High Temperature 1</seg>
+        <seg>High Temperature</seg>
       </tuv>
     </tu>
     <tu tuid="HighTemperature2">
       <tuv xml:lang="de">
-        <seg>Höhe Temperatur 2</seg>
+        <seg>Höhe Temperatur</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Wysoka temperatura 2</seg>
+        <seg>Wysoka temperatura</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>High Temperature 2</seg>
+        <seg>High Temperature</seg>
       </tuv>
     </tu>
     <tu tuid="HighTemperature3">
       <tuv xml:lang="de">
-        <seg>Höhe Temperatur 3</seg>
+        <seg>Höhe Temperatur</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Wysoka temperatura 3</seg>
+        <seg>Wysoka temperatura</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>High Temperature 3</seg>
+        <seg>High Temperature</seg>
       </tuv>
     </tu>
     <tu tuid="HighTemperature4">
       <tuv xml:lang="de">
-        <seg>Höhe Temperatur 4</seg>
+        <seg>Höhe Temperatur</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Wysoka temperatura 4</seg>
+        <seg>Wysoka temperatura</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>High Temperature 4</seg>
@@ -179,6 +179,182 @@
       </tuv>
       <tuv xml:lang="en">
         <seg>Missing module</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanAlarmN1">
+      <tuv xml:lang="de">
+        <seg>Lüfterdefekt</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria wentylatora</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg> Fan failure</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanAlarmN2">
+      <tuv xml:lang="de">
+        <seg>Lüfterdefekt</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria wentylatora</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg> Fan failure</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanAlarmN3">
+      <tuv xml:lang="de">
+        <seg>Lüfterdefekt</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria wentylatora</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg> Fan failure</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanAlarmN4">
+      <tuv xml:lang="de">
+        <seg>Lüfterdefekt</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria wentylatora</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Fan failure</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanAlarmMessage1">
+      <tuv xml:lang="de">
+        <seg>Der erste Lüfter ist ausgefallen. Überprüfen Sie die Verbindung.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria wentylatora pierwszego. Sprawdź podłączenie.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>First fan failure. Check the connection.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanAlarmMessage2">
+      <tuv xml:lang="de">
+        <seg>Zweiter Lüfterausfall. Überprüfen Sie die Verbindung.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria wentylatora drugiego. Sprawdź podłączenie.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Second fan failure. Check the connection.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanAlarmMessage3">
+      <tuv xml:lang="de">
+        <seg>Dritter Lüfter ausgefallen. Überprüfen Sie die Verbindung.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria wentylatora trzeciego. Sprawdź podłączenie.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Third fan failed. Check the connection.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanAlarmMessage4">
+      <tuv xml:lang="de">
+        <seg>Vierter Lüfter ausgefallen. Überprüfen Sie die Verbindung.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria wentylatora czwartego. Sprawdź podłączenie.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Fourth fan failed. Check the connection.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterAlarmN1">
+      <tuv xml:lang="de">
+        <seg>Sensorfehler</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria czujnika</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sensor failure</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterAlarmN2">
+      <tuv xml:lang="de">
+        <seg>Sensorfehler</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria czujnika</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sensor failure</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterAlarmN3">
+      <tuv xml:lang="de">
+        <seg>Sensorfehler</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria czujnika</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sensor failure</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterAlarmN4">
+      <tuv xml:lang="de">
+        <seg>Sensorfehler</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria czujnika</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sensor failure</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterAlarmMess1">
+      <tuv xml:lang="de">
+        <seg>Ausfall des ersten Temperatursensors. Überprüfen Sie die Verbindung.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria pierwszego czujnika temperatury. Sprawdź podłączenie.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Failure of the first temperature sensor. Check the connection.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterAlarmMess2">
+      <tuv xml:lang="de">
+        <seg>Ausfall des zweiten Temperatursensors. Überprüfen Sie die Verbindung.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria drugiego czujnika temperatury. Sprawdź podłączenie.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Failure of the second temperature sensor. Check the connection.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterAlarmMess3">
+      <tuv xml:lang="de">
+        <seg>Ausfall des dritten Temperatursensors. Überprüfen Sie die Verbindung.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria trzeciego czujnika temperatury. Sprawdź podłączenie.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Failure of the third temperature sensor. Check the connection.</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterAlarmMess4">
+      <tuv xml:lang="de">
+        <seg>Ausfall der vierte Temperatursensors. Überprüfen Sie die Verbindung.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Awaria czwartego czujnika temperatury. Sprawdź podłączenie.</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Failure of the fourth temperature sensor. Check the connection.</seg>
       </tuv>
     </tu>
   </body>
