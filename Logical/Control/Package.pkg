@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="File" Private="true">Types.typ</Object>
     <Object Type="File" Private="true">Variables.var</Object>
+    <Object Type="Program" Language="IEC">MQTT</Object>
   </Objects>
 </Package>
