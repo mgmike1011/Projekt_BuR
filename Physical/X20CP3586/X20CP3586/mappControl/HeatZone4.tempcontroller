@@ -4,6 +4,22 @@
   <Element ID="gTempController_4" Type="tempcontroller">
     <Group ID="TempController">
       <Property ID="Type" Value="2" />
+      <Property ID="AmbientTemperature" Value="24.0" />
+      <Property ID="SystemCheck" Value="1" />
+      <Group ID="SystemParameters">
+        <Group ID="Heat">
+          <Property ID="Gain" Value="1.82" />
+          <Property ID="TimeConstant1" Value="1190.69" />
+          <Property ID="TimeConstant2" Value="27.42677" />
+          <Property ID="DelayTime" Value="6.5" />
+        </Group>
+        <Group ID="Cool">
+          <Property ID="Gain" Value="0.7767" />
+          <Property ID="TimeConstant1" Value="182.975" />
+          <Property ID="TimeConstant2" Value="11.978" />
+          <Property ID="DelayTime" Value="4.0" />
+        </Group>
+      </Group>
     </Group>
   </Element>
 </Configuration>
