@@ -20,7 +20,10 @@ END_VAR
 VAR
 	STATUS : MACHINE_WORKING_STATE := STATE_IDLE; (*Status dzialania calej maszyny*)
 END_VAR
-(*Automatic mode status - step*)
+(*Zones status*)
+VAR
+	ZoneStatus : ARRAY[0..ELEMENTS_NUMBER] OF ZONE_WORKING_STATE;
+END_VAR
 (*Temperature controller functionblocks.*)
 VAR
 	TempControllerPar : ARRAY[0..ELEMENTS_NUMBER] OF MpTempControllerParType; (*Tablica 4 dodatkow do kontrolerow - po jednym dla kazdej ze stref*)
@@ -44,4 +47,7 @@ VAR
 	EnableZone3 : BOOL;
 	EnableZone4 : BOOL;
 END_VAR
-(**)
+(*Automatic control*)
+VAR
+	CycleNumber : DINT;
+END_VAR

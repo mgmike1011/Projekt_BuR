@@ -95,10 +95,61 @@ PROGRAM _CYCLIC
 			ELSIF Manual_work AND (TuneEnable OR Automatic_work) AND gStart THEN
 				STATUS := STATE_ERROR;
 			END_IF;
-			TempController[0].Enable := EnableZone1;
-			TempController[1].Enable := EnableZone2;
-			TempController[2].Enable := EnableZone3;
-			TempController[3].Enable := EnableZone4;
+			// Zone 1
+			IF EnableZone1 THEN
+				TempController[0].Enable := TRUE;
+				IF TempController[0].HeatValue > TempController[0].CoolValue THEN
+					ZoneStatus[0] := STATE_HEATING;
+				ELSIF TempController[0].HeatValue < TempController[0].CoolValue THEN
+					ZoneStatus[0] := STATE_HEATING;
+				ELSE
+					ZoneStatus[0] := STATE_IDLE_ZONE;	
+				END_IF;
+			ELSE
+				ZoneStatus[0] := STATE_IDLE_ZONE;	
+			END_IF;
+			// Zone 2
+			IF EnableZone2 THEN
+				TempController[1].Enable := TRUE;
+				IF TempController[1].HeatValue > TempController[1].CoolValue THEN
+					ZoneStatus[1] := STATE_HEATING;
+				ELSIF TempController[1].HeatValue < TempController[1].CoolValue THEN
+					ZoneStatus[1] := STATE_HEATING;
+				ELSE
+					ZoneStatus[1] := STATE_IDLE_ZONE;	
+				END_IF;
+			ELSE
+				ZoneStatus[1] := STATE_IDLE_ZONE;	
+			END_IF;
+			// Zone 3
+			IF EnableZone3 THEN
+				TempController[2].Enable := TRUE;
+				IF TempController[2].HeatValue > TempController[2].CoolValue THEN
+					ZoneStatus[2] := STATE_HEATING;
+				ELSIF TempController[2].HeatValue < TempController[2].CoolValue THEN
+					ZoneStatus[2] := STATE_HEATING;
+				ELSE
+					ZoneStatus[2] := STATE_IDLE_ZONE;	
+				END_IF;
+			ELSE
+				ZoneStatus[2] := STATE_IDLE_ZONE;	
+			END_IF;
+			// Zone 4
+			IF EnableZone4 THEN
+				TempController[3].Enable := TRUE;
+				IF TempController[3].HeatValue > TempController[3].CoolValue THEN
+					ZoneStatus[3] := STATE_HEATING;
+				ELSIF TempController[3].HeatValue < TempController[3].CoolValue THEN
+					ZoneStatus[3] := STATE_HEATING;
+				ELSE
+					ZoneStatus[3] := STATE_IDLE_ZONE;	
+				END_IF;
+			ELSE
+				ZoneStatus[3] := STATE_IDLE_ZONE;	
+			END_IF;
+			
+		STATE_WORKING_AUTOMATIC:
+			
 			
 		STATE_STOP:
 			TempGroup.Control := FALSE;
