@@ -1,4 +1,5 @@
 VAR
+	TONtimer : TON;
 	IotMqttParameters : IotMqttClientParType;
 	IotMqttClient_0 : IotMqttClient;
 	IotMqttLink : IoTMqttComIdentType;
