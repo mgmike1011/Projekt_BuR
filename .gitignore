@@ -4,3 +4,6 @@ Temp/
 /*.set
 *.isopen
 *.orig
+!NodeRed/
+NodeRed/*
+!NodeRed/flows.json
