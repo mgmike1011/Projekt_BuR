@@ -1,0 +1,6 @@
+VAR
+	SetTemp1 : REAL;
+	SetTemp2 : REAL;
+	SetTemp3 : REAL;
+	SetTemp4 : REAL;
+END_VAR
