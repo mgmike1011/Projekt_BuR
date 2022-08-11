@@ -59,7 +59,7 @@ PROGRAM _CYCLIC
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := FALSE;
 			TempController[3].Enable := FALSE;
-			// GOTO Tunning
+			// Switch state conditions
 			IF TuneEnable AND gStart AND NOT gSTOP AND NOT (Automatic_work OR Manual_work) THEN
 				STATUS := STATE_TUNING;
 			ELSIF Manual_work AND gStart AND NOT gSTOP AND NOT (TuneEnable OR Automatic_work) THEN
@@ -74,6 +74,10 @@ PROGRAM _CYCLIC
 			
 		STATE_TUNING:
 			TempGroup.Control := FALSE;
+			TempController[0].Enable := TRUE;
+			TempController[1].Enable := TRUE;
+			TempController[2].Enable := TRUE;
+			TempController[3].Enable := TRUE;
 			// Tuning Parameters
 			IF EDGEPOS(TempGroup.TuningDone) THEN
 				TuningAction; // Getting the data
@@ -87,7 +91,8 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		STATE_WORKING_MANUAL:
-			(*TempGroup.Control := TRUE;*)
+			TempGroup.Control := TRUE;
+			// Switch state conditions
 			IF NOT Manual_work THEN
 				STATUS := STATE_IDLE;
 			ELSIF gSTOP THEN
@@ -149,7 +154,8 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		STATE_WORKING_AUTOMATIC:
-			
+			TempGroup.Control := TRUE;
+			AutomaticMode;
 			
 		STATE_STOP:
 			TempGroup.Control := FALSE;
@@ -158,6 +164,7 @@ PROGRAM _CYCLIC
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := FALSE;
 			TempController[3].Enable := FALSE;
+			// Switch state conditions
 			IF NOT gSTOP THEN
 				STATUS := STATE_IDLE;
 			END_IF;
@@ -170,6 +177,7 @@ PROGRAM _CYCLIC
 			TempController[3].Enable := FALSE;
 			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
+			// Switch state conditions
 			IF NOT gError AND NOT gStart AND NOT gSTOP AND NOT WorkEnable AND NOT TuneEnable THEN
 				STATUS := STATE_IDLE;
 			END_IF;

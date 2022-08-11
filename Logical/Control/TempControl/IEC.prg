@@ -6,5 +6,6 @@
     <File Description="Local data types" Private="true">Types.typ</File>
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>TuningAction.st</File>
+    <File>AutomaticMode.st</File>
   </Files>
 </Program>

@@ -49,5 +49,6 @@ VAR
 END_VAR
 (*Automatic control*)
 VAR
+	AutoStep : AUTOMATIC_MODE_STATE := STEP_INIT;
 	CycleNumber : DINT;
 END_VAR
