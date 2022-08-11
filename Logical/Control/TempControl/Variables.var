@@ -1,4 +1,5 @@
 VAR
+	WorkEnable : BOOL;
 	TuneEnable : BOOL;
 END_VAR
 VAR CONSTANT

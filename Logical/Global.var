@@ -23,3 +23,9 @@ VAR
 	gTemp3 : REAL; (*Temperature zone 3 in Celsius degree.*)
 	gTemp4 : REAL; (*Temperature zone 4 in Celsius degree.*)
 END_VAR
+(*Control machine variables*)
+VAR
+	gStart : BOOL;
+	gError : BOOL;
+	gSTOP : BOOL;
+END_VAR

@@ -2,7 +2,7 @@ PROGRAM _INIT
 	//
 	// Init Code
 	//
-	// Temp Controller
+	// Temp Controller-parameters
 	TempControllerPar[0].Tuning.SetPointHeat := 100;
 	TempControllerPar[0].Tuning.SetPointCool := 30;
 	TempControllerPar[1].Tuning.SetPointHeat := 100;
@@ -15,6 +15,7 @@ PROGRAM _INIT
 	TempControllerPar[1].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
 	TempControllerPar[2].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
 	TempControllerPar[3].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
+	// Temp Controller 
 	TempController[0].MpLink := ADR(gTempController_1);
 	TempController[0].Parameters := ADR(TempControllerPar[0]);
 	TempController[0].Enable := TRUE;
@@ -45,27 +46,75 @@ PROGRAM _CYCLIC
 	TempController[1].SetTemperature := SetTemp2;
 	TempController[2].SetTemperature := SetTemp3;
 	TempController[3].SetTemperature := SetTemp4;
-	// Tuning Parameters
-	IF TuneEnable THEN
-		IF EDGEPOS(TempGroup.TuningDone) THEN
+	// Machine working status
+	CASE STATUS OF
+		STATE_IDLE:
+			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
-			TuneEnable := FALSE;
-			FOR iCnt := 0  TO ELEMENTS_NUMBER DO
-				// Heating PID params
-	  			TempControllerPar[iCnt].PID.Heat.ProportionalGain := TempController[iCnt].Info.Tuning.PIDParameters.Heat.ProportionalGain;
-				TempControllerPar[iCnt].PID.Heat.IntegrationTime := TempController[iCnt].Info.Tuning.PIDParameters.Heat.IntegrationTime;
-				TempControllerPar[iCnt].PID.Heat.FilterTime := TempController[iCnt].Info.Tuning.PIDParameters.Heat.FilterTime;
-				TempControllerPar[iCnt].PID.Heat.DerivativeTime:= TempController[iCnt].Info.Tuning.PIDParameters.Heat.DerivativeTime;
-				// Cooling PID params
-				TempControllerPar[iCnt].PID.Cool.ProportionalGain := TempController[iCnt].Info.Tuning.PIDParameters.Cool.ProportionalGain;
-				TempControllerPar[iCnt].PID.Cool.IntegrationTime := TempController[iCnt].Info.Tuning.PIDParameters.Cool.IntegrationTime;
-				TempControllerPar[iCnt].PID.Cool.FilterTime := TempController[iCnt].Info.Tuning.PIDParameters.Cool.FilterTime;
-				TempControllerPar[iCnt].PID.Cool.DerivativeTime:= TempController[iCnt].Info.Tuning.PIDParameters.Cool.DerivativeTime;
-			END_FOR;
-		ELSE
-			TempGroup.Tune := TRUE;
-		END_IF;
-	END_IF;
+			IF TuneEnable AND gStart AND NOT gSTOP AND NOT WorkEnable THEN
+				STATUS := STATE_TUNING;
+			ELSIF WorkEnable AND gStart AND NOT gSTOP AND NOT TuneEnable THEN
+				STATUS := STATE_WORKING;
+			ELSIF gSTOP THEN
+				STATUS := STATE_STOP;
+			ELSIF TuneEnable AND WorkEnable AND gStart THEN
+				STATUS := STATE_ERROR;
+			END_IF;
+			
+		STATE_TUNING:
+			TempGroup.Control := FALSE;
+			// Tuning Parameters
+			IF EDGEPOS(TempGroup.TuningDone) THEN
+				TempGroup.Tune := FALSE;
+				TuneEnable := FALSE;
+				FOR iCnt := 0  TO ELEMENTS_NUMBER DO
+					// Heating PID params
+					TempControllerPar[iCnt].PID.Heat.ProportionalGain := TempController[iCnt].Info.Tuning.PIDParameters.Heat.ProportionalGain;
+					TempControllerPar[iCnt].PID.Heat.IntegrationTime := TempController[iCnt].Info.Tuning.PIDParameters.Heat.IntegrationTime;
+					TempControllerPar[iCnt].PID.Heat.FilterTime := TempController[iCnt].Info.Tuning.PIDParameters.Heat.FilterTime;
+					TempControllerPar[iCnt].PID.Heat.DerivativeTime:= TempController[iCnt].Info.Tuning.PIDParameters.Heat.DerivativeTime;
+					// Cooling PID params
+					TempControllerPar[iCnt].PID.Cool.ProportionalGain := TempController[iCnt].Info.Tuning.PIDParameters.Cool.ProportionalGain;
+					TempControllerPar[iCnt].PID.Cool.IntegrationTime := TempController[iCnt].Info.Tuning.PIDParameters.Cool.IntegrationTime;
+					TempControllerPar[iCnt].PID.Cool.FilterTime := TempController[iCnt].Info.Tuning.PIDParameters.Cool.FilterTime;
+					TempControllerPar[iCnt].PID.Cool.DerivativeTime:= TempController[iCnt].Info.Tuning.PIDParameters.Cool.DerivativeTime;
+				END_FOR;
+				TuneEnable := FALSE;
+				STATUS := STATE_IDLE;
+			ELSE
+				TempGroup.Tune := TRUE;
+				IF gSTOP THEN
+	  				STATUS := STATE_ERROR;
+				END_IF;
+			END_IF;
+			
+		STATE_WORKING:
+			TempGroup.Control := TRUE;
+			IF NOT WorkEnable THEN
+				STATUS := STATE_IDLE;
+			ELSIF gSTOP THEN
+				STATUS := STATE_STOP;
+			ELSIF WorkEnable AND TuneEnable AND gStart THEN
+				STATUS := STATE_ERROR;
+			END_IF;
+			
+		STATE_STOP:
+			TempGroup.Control := FALSE;
+			TempGroup.Tune := FALSE;
+			IF NOT gSTOP THEN
+	  			STATUS := STATE_IDLE;
+			END_IF;
+			
+		STATE_ERROR:
+			gError := TRUE;
+			TempGroup.Control := FALSE;
+			TempGroup.Tune := FALSE;
+			IF NOT gError AND NOT gStart AND NOT gSTOP AND NOT WorkEnable AND NOT TuneEnable THEN
+				STATUS := STATE_IDLE;
+			END_IF;
+		
+	END_CASE;
+
 	// Calling functionblocks
 	FOR iCnt := 0 TO ELEMENTS_NUMBER DO
 		TempController[iCnt]();

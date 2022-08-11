@@ -3,4 +3,5 @@ VAR
 	SetTemp2 : REAL;
 	SetTemp3 : REAL;
 	SetTemp4 : REAL;
+	STATUS : WORKING_STATE := STATE_IDLE;
 END_VAR

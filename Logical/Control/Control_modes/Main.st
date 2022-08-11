@@ -1,15 +1,19 @@
 
-PROGRAM _INIT	
+PROGRAM _INIT
+	//
+	// Init code
+	//
 	SetTemp1 := 30;
 	SetTemp2 := 30;
 	SetTemp3 := 30;
 	SetTemp4 := 30;
-	 
 END_PROGRAM
 
 
 PROGRAM _CYCLIC
-	
+	//
+	// Cyclic code - automatic mode
+	//
 	IF Auto_mode AND NOT Manual_mode THEN
 		
 		IF Start = 1 THEN
@@ -71,9 +75,9 @@ PROGRAM _CYCLIC
 END_PROGRAM
 
 				
-PROGRAM _EXIT
-				
-		
-	 
+PROGRAM _EXIT		
+	//
+	// Exit code
+	//
 END_PROGRAM
 
