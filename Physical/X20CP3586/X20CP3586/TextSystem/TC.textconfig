@@ -13,6 +13,15 @@
     </Group>
     <Group ID="TargetFiles">
       <Property ID="TargetFile[1]" Value="mappView.Resources.Texts.Alarms.tmx" />
+      <Property ID="TargetFile[2]" Value="mappView.Resources.Texts.AlarmPage.tmx" />
+      <Property ID="TargetFile[3]" Value="Libraries.MpAudit.TxtEvent.tmx" />
+      <Property ID="TargetFile[4]" Value="Libraries.MpAudit.TxtCustom.tmx" />
+      <Property ID="TargetFile[5]" Value="Libraries.MpAudit.TxtDatapoints.tmx" />
+      <Property ID="TargetFile[6]" Value="Libraries.MpAudit.TxtUser.tmx" />
+      <Property ID="TargetFile[7]" Value="Libraries.MpAudit.TxtRecipe.tmx" />
+      <Property ID="TargetFile[8]" Value="Libraries.MpAudit.TxtEventF.tmx" />
+      <Property ID="TargetFile[9]" Value="Libraries.MpAudit.TxtUserF.tmx" />
+      <Property ID="TargetFile[10]" Value="Libraries.MpAudit.TxtRecipeF.tmx" />
     </Group>
   </Element>
 </Configuration>
