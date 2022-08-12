@@ -1,5 +1,0 @@
-VAR
-	MpFileManagerUI_0 : MpFileManagerUI;
-	MpFileMngSetup : MpFileManagerUISetupType;
-	MpFileMngConnect : MpFileManagerUIConnectType;
-END_VAR

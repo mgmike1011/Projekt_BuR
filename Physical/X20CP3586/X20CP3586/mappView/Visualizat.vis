@@ -18,8 +18,8 @@
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
-    <EventBindingsSet refId="TOP_eventbinding" />
     <EventBindingsSet refId="FILEMNG_eventbinding" />
+    <EventBindingsSet refId="TOP_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="dialog_0" />

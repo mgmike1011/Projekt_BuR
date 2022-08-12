@@ -5,8 +5,8 @@
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="OpenExplorerButton" event="Click" />
       <EventHandler>
         <Action>
-          <Target xsi:type="widgets.brease.MotionPad.Action" contentRefId="FILEMNG" widgetRefId="MotionPad1">
-            <Method xsi:type="widgets.brease.MotionPad.Action.OpenFileExplorer" />
+          <Target xsi:type="widgets.brease.TextPad.Action" contentRefId="FILEMNG" widgetRefId="TextPad1">
+            <Method xsi:type="widgets.brease.TextPad.Action.OpenFileExplorer" />
           </Target>
         </Action>
       </EventHandler>
@@ -15,8 +15,8 @@
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="SaveAsButton" event="Click" />
       <EventHandler>
         <Action>
-          <Target xsi:type="widgets.brease.MotionPad.Action" contentRefId="FILEMNG" widgetRefId="MotionPad1">
-            <Method xsi:type="widgets.brease.MotionPad.Action.SaveAs" />
+          <Target xsi:type="widgets.brease.TextPad.Action" contentRefId="FILEMNG" widgetRefId="TextPad1">
+            <Method xsi:type="widgets.brease.TextPad.Action.SaveAs" />
           </Target>
         </Action>
       </EventHandler>
