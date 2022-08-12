@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="ALARM" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList" top="60" left="80" width="1560" height="360" zIndex="0" itemsPerPage="4">
+    <Widget xsi:type="widgets.brease.AlarmList" id="AlarmList" top="60" left="80" width="1560" height="360" zIndex="0" itemsPerPage="4" nextText="$IAT/AlarmPage/NextListButton" previousText="$IAT/AlarmPage/PreviousListButton">
       <Widgets>
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItemDate" width="290" zIndex="0" columnType="timestamp" text="$IAT/AlarmPage/DateList" />
         <Widget xsi:type="widgets.brease.AlarmListItem" id="AlarmListItemName" width="240" zIndex="1" columnType="name" text="$IAT/AlarmPage/NameList" />
@@ -13,7 +13,7 @@
     </Widget>
     <Widget xsi:type="widgets.brease.Button" id="ButtonAck" top="440" left="1300" width="150" height="40" zIndex="1" text="$IAT/AlarmPage/AckButton" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonAckAll" top="440" left="1490" width="150" height="40" zIndex="2" text="$IAT/AlarmPage/AckAllButton" />
-    <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistory" top="540" left="80" width="1560" height="310" zIndex="3" itemsPerPage="4">
+    <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistory" top="540" left="80" width="1560" height="310" zIndex="3" itemsPerPage="4" nextText="$IAT/AlarmPage/NextListButton" previousText="$IAT/AlarmPage/PreviousListButton">
       <Widgets>
         <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItemDate" width="290" zIndex="0" columnType="timestamp" text="$IAT/AlarmPage/DateList" />
         <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItemName" width="240" zIndex="1" columnType="name" text="$IAT/AlarmPage/NameList" />
