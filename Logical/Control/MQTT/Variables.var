@@ -14,3 +14,6 @@ VAR
 	SetPoints : MQTT_SETPOINTS;
 	MessagePointer : STRING[80];
 END_VAR
+VAR CONSTANT
+	FanPointer : STRING[80] := 'MQTT:Fans';
+END_VAR

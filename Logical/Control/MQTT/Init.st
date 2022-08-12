@@ -17,6 +17,7 @@ ACTION Init:
 	IotMqttPublish_0.PvName			:= ADR(MessagePointer);
 	IotMqttPublish_0.PublishMode		:= IOTMQTT_PUB_MODE_TRIGGER;
 	IotMqttPublish_0.DataFormat		:= IOTMQTT_VAR_JSON;
-
+	IotMqttPublish_0.SamplingTime	:= T#1ms;
+	
 	TopicCounter.PV := NR_OF_TOPICS-1;
 END_ACTION

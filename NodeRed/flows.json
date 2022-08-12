@@ -290,7 +290,7 @@
         "height": 0,
         "name": "",
         "label": "Aktualna Temperatura:",
-        "format": "{{msg.payload}}°C",
+        "format": "{{payload[\"MQTT:Temps\"].Temp1}}°C",
         "layout": "row-center",
         "className": "",
         "x": 700,
@@ -812,94 +812,6 @@
         ]
     },
     {
-        "id": "6c2a7e230279150c",
-        "type": "mqtt in",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "topic": "Temps/Temp1",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 470,
-        "y": 20,
-        "wires": [
-            [
-                "73736625e4114183",
-                "f460d0eb218848ae"
-            ]
-        ]
-    },
-    {
-        "id": "8d3438237b0d0612",
-        "type": "mqtt in",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "topic": "Temps/Temp2",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 470,
-        "y": 280,
-        "wires": [
-            [
-                "0818906543b39652",
-                "b404e38ea2cd2b26"
-            ]
-        ]
-    },
-    {
-        "id": "fa9814553ac1f278",
-        "type": "mqtt in",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "topic": "Temps/Temp3",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 490,
-        "y": 540,
-        "wires": [
-            [
-                "6bf786ab447a3b4f",
-                "68a21166d781d8c0"
-            ]
-        ]
-    },
-    {
-        "id": "145426fc365d8b24",
-        "type": "mqtt in",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "topic": "Temps/Temp4",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 490,
-        "y": 800,
-        "wires": [
-            [
-                "693912a50dfea180",
-                "1e02974daf3c7c43"
-            ]
-        ]
-    },
-    {
         "id": "534d3755a2256e4f",
         "type": "mqtt in",
         "z": "12421ff9dde586d7",
@@ -997,9 +909,11 @@
         "rh": 0,
         "inputs": 0,
         "x": 270,
-        "y": 1260,
+        "y": 1240,
         "wires": [
-            []
+            [
+                "b50faf274fcb25ac"
+            ]
         ]
     },
     {
@@ -1018,7 +932,9 @@
         "x": 270,
         "y": 1340,
         "wires": [
-            []
+            [
+                "10bfb3af02521dba"
+            ]
         ]
     },
     {
@@ -1037,8 +953,134 @@
         "x": 280,
         "y": 1420,
         "wires": [
+            [
+                "55c19ddf5faab8b8"
+            ]
+        ]
+    },
+    {
+        "id": "6c2a7e230279150c",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Temps/Temp1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1290,
+        "y": 160,
+        "wires": [
             []
         ]
+    },
+    {
+        "id": "8d3438237b0d0612",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Temps/Temp2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1270,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fa9814553ac1f278",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Temps/Temp3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1289.8125,
+        "y": 296.8187561035156,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "145426fc365d8b24",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Temps/Temp4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1290,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55c19ddf5faab8b8",
+        "type": "debug",
+        "z": "12421ff9dde586d7",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "10bfb3af02521dba",
+        "type": "debug",
+        "z": "12421ff9dde586d7",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "b50faf274fcb25ac",
+        "type": "debug",
+        "z": "12421ff9dde586d7",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 480,
+        "y": 1240,
+        "wires": []
     },
     {
         "id": "305611be53477d62",

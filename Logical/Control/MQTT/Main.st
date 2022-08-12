@@ -8,9 +8,13 @@ PROGRAM _CYCLIC
 	(* Insert code here *)
 	IotMqttPublish_0.Trigger:=FALSE;
 	TopicCounter.CU := FALSE;
+	IotMqttPublish_0.Update := FALSE;
 	doSend := NOT doSend;
 	IF NOT IotMqttPublish_0.Busy AND doSend THEN
-	TopicSelectionTransmision;
+		AsaignVars;
+		TopicSelectionTransmision;
+	ELSE
+		IotMqttPublish_0.Trigger :=TRUE;
 	END_IF
 	TopicCounter();
 	IotMqttClient_0();
