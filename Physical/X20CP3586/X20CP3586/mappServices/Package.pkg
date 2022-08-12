@@ -7,5 +7,7 @@
     <Object Type="File">ConfigAudi.mpaudittrail</Object>
     <Object Type="File">ConfigData.mpdatarecorder</Object>
     <Object Type="File">ConfigAHis.mpalarmxhistory</Object>
+    <Object Type="File">ConfigFile.mpfilemanagerui</Object>
+    <Object Type="File">Config.mpfilemanager</Object>
   </Objects>
 </Package>

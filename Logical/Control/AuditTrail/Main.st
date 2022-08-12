@@ -3,7 +3,7 @@ PROGRAM _INIT
 	
 	MpAuditTrail_0.MpLink := ADR(gAuditTrail);
 	MpAuditTrail_0.Enable := TRUE;
-	MpAuditTrail_0.DeviceName := ADR('CF');
+	MpAuditTrail_0.DeviceName := ADR('AUDIT');
 	MpAuditTrail_0();
 	
 END_PROGRAM

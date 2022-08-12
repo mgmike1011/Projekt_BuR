@@ -10,5 +10,6 @@
     <Object Type="Program" Language="IEC">OEE</Object>
     <Object Type="Program" Language="IEC">AuditTrail</Object>
     <Object Type="Program" Language="IEC">DataMgmt</Object>
+    <Object Type="Program" Language="IEC">FileCtrl</Object>
   </Objects>
 </Package>
