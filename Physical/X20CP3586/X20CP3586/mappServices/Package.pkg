@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="File">ConfigAlar.mpalarmxcore</Object>
     <Object Type="File">ConfigAudi.mpaudittrail</Object>
+    <Object Type="File">ConfigData.mpdatarecorder</Object>
   </Objects>
 </Package>
