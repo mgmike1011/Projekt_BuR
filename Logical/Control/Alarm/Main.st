@@ -4,7 +4,20 @@ PROGRAM _INIT
 	MpAlarmXCore_0.MpLink :=  ADR(gAlarmXCore);
 	MpAlarmXCore_0.Enable := TRUE;
 	MpAlarmXCore_0();
-	
+	//initialization
+	first_module;
+	second_module;
+	third_module;
+	fourth_module;
+	HeaterAlarm1;
+	HeaterAlarm2;
+	HeaterAlarm3;
+	HeaterAlarm4;
+	FanAlarm1;
+	FanAlarm2;
+	FanAlarm3;
+	FanAlarm4;
+	TempAlarmLimit;
 END_PROGRAM
 
 PROGRAM _CYCLIC
