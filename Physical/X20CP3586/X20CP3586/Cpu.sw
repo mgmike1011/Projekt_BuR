@@ -68,5 +68,6 @@
     <LibraryObject Name="dataobj" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="brsystem" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="aruser" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="AsMath" Source="Libraries.AsMath.lby" Memory="UserROM" Language="binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>
