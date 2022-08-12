@@ -52,6 +52,14 @@ VAR
 	AutoStep : AUTOMATIC_MODE_STATE := STEP_INIT;
 	CycleNumber : DINT := 0;
 END_VAR
+(*Simulation mode*)
+VAR
+	SimulateGroupEnable : BOOL := FALSE;
+	SimulateZone1Enable : BOOL := FALSE;
+	SimulateZone2Enable : BOOL := FALSE;
+	SimulateZone3Enable : BOOL := FALSE;
+	SimulateZone4Enable : BOOL := FALSE;
+END_VAR
 (* ########## MQTT communication variables ########### *)
 (*PWM % Heater Zone 1  ->  TempController[0].HeatValue*)
 (*PWM % Heater Zone 2  ->  TempController[1].HeatValue*)

@@ -103,13 +103,29 @@ PROGRAM _CYCLIC
 			// Zone 1
 			IF EnableZone1 THEN
 				TempController[0].Enable := TRUE;
+				// Simulation zone 1
+				IF SimulateZone1Enable THEN
+					TempController[0].Control := FALSE;
+					TempController[0].Simulate := TRUE;
+				ELSE
+					TempController[0].Control := TRUE;
+					TempController[0].Simulate := FALSE;
+				END_IF;
 			ELSE
 				TempController[0].Enable := FALSE;
 				ZoneStatus[0] := STATE_IDLE_ZONE;	
 			END_IF;
 			// Zone 2
 			IF EnableZone2 THEN
-				TempController[1].Enable := TRUE;	
+				TempController[1].Enable := TRUE;
+				// Simulation zone 2
+				IF SimulateZone2Enable THEN
+					TempController[1].Control := FALSE;
+					TempController[1].Simulate := TRUE;
+				ELSE
+					TempController[1].Control := TRUE;
+					TempController[1].Simulate := FALSE;
+				END_IF;
 			ELSE
 				TempController[1].Enable := FALSE;
 				ZoneStatus[1] := STATE_IDLE_ZONE;	
@@ -117,6 +133,14 @@ PROGRAM _CYCLIC
 			// Zone 3
 			IF EnableZone3 THEN
 				TempController[2].Enable := TRUE;
+				// Simulation zone 3
+				IF SimulateZone3Enable THEN
+					TempController[2].Control := FALSE;
+					TempController[2].Simulate := TRUE;
+				ELSE
+					TempController[2].Control := TRUE;
+					TempController[2].Simulate := FALSE;
+				END_IF;
 			ELSE
 				TempController[2].Enable := FALSE;
 				ZoneStatus[2] := STATE_IDLE_ZONE;	
@@ -124,6 +148,14 @@ PROGRAM _CYCLIC
 			// Zone 4
 			IF EnableZone4 THEN
 				TempController[3].Enable := TRUE;
+				// Simulation zone 4
+				IF SimulateZone4Enable THEN
+					TempController[3].Control := FALSE;
+					TempController[3].Simulate := TRUE;
+				ELSE
+					TempController[3].Control := TRUE;
+					TempController[3].Simulate := FALSE;
+				END_IF;
 			ELSE
 				TempController[3].Enable := FALSE;
 				ZoneStatus[3] := STATE_IDLE_ZONE;	
