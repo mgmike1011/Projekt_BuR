@@ -1,5 +1,216 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
-  <Element ID="gAlarmXCore" Type="mpalarmxcore" />
+  <Element ID="gAlarmXCore" Type="mpalarmxcore">
+    <Group ID="mapp.AlarmX.Core.Configuration">
+      <Group ID="[0]">
+        <Property ID="Name" Value="{$IAT/Alarms/HighTemperature1}" />
+        <Property ID="Message" Value="{$IAT/Alarms/HT1Message}" />
+        <Property ID="Code" Value="1037" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::gTemp1" />
+            <Selector ID="HighLimitEnable" Value="Dynamic">
+              <Property ID="LimitPV" Value="::Alarm:TempAlarmLimit" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[1]">
+        <Property ID="Name" Value="{$IAT/Alarms/HighTemperature2}" />
+        <Property ID="Message" Value="{$IAT/Alarms/HT2Message}" />
+        <Property ID="Code" Value="1038" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::gTemp2" />
+            <Selector ID="HighLimitEnable" Value="Dynamic">
+              <Property ID="LimitPV" Value="::Alarm:TempAlarmLimit" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[2]">
+        <Property ID="Name" Value="{$IAT/Alarms/HighTemperature3}" />
+        <Property ID="Message" Value="{$IAT/Alarms/HT3Message}" />
+        <Property ID="Code" Value="1039" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::gTemp3" />
+            <Selector ID="HighLimitEnable" Value="Dynamic">
+              <Property ID="LimitPV" Value="::Alarm:TempAlarmLimit" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[3]">
+        <Property ID="Name" Value="{$IAT/Alarms/HighTemperature4}" />
+        <Property ID="Message" Value="{$IAT/Alarms/HT4Message}" />
+        <Property ID="Code" Value="1040" />
+        <Selector ID="Behavior" Value="LevelMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::gTemp4" />
+            <Selector ID="HighLimitEnable" Value="Dynamic">
+              <Property ID="LimitPV" Value="::Alarm:TempAlarmLimit" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[4]">
+        <Property ID="Name" Value="{$IAT/Alarms/ModuleMessage1}" />
+        <Property ID="Message" Value="{$IAT/Alarms/X20BC8083}" />
+        <Property ID="Code" Value="1308" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:first_module" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="0" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[5]">
+        <Property ID="Name" Value="{$IAT/Alarms/ModuleMessage2}" />
+        <Property ID="Message" Value="{$IAT/Alarms/X20PS9400a}" />
+        <Property ID="Code" Value="1309" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:second_module" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="0" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[6]">
+        <Property ID="Name" Value="{$IAT/Alarms/ModuleMessage3}" />
+        <Property ID="Message" Value="{$IAT/Alarms/X20DOF322}" />
+        <Property ID="Code" Value="1310" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:third_module" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="0" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[7]">
+        <Property ID="Name" Value="{$IAT/Alarms/ModuleMessage4}" />
+        <Property ID="Message" Value="{$IAT/Alarms/X20cAT6402}" />
+        <Property ID="Code" Value="1311" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:fourth_module" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="0" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[8]">
+        <Property ID="Name" Value="{$IAT/Alarms/FanAlarmN1}" />
+        <Property ID="Message" Value="{$IAT/Alarms/FanAlarmMessage1}" />
+        <Property ID="Code" Value="1446" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:FanAlarm1" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="1" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[9]">
+        <Property ID="Name" Value="{$IAT/Alarms/FanAlarmN2}" />
+        <Property ID="Message" Value="{$IAT/Alarms/FanAlarmMessage2}" />
+        <Property ID="Code" Value="1447" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:FanAlarm2" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="1" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[10]">
+        <Property ID="Name" Value="{$IAT/Alarms/FanAlarmN3}" />
+        <Property ID="Message" Value="{$IAT/Alarms/FanAlarmMessage3}" />
+        <Property ID="Code" Value="1448" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:FanAlarm3" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="1" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[11]">
+        <Property ID="Name" Value="{$IAT/Alarms/FanAlarmN4}" />
+        <Property ID="Message" Value="{$IAT/Alarms/FanAlarmMessage4}" />
+        <Property ID="Code" Value="1449" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:FanAlarm4" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="1" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[12]">
+        <Property ID="Name" Value="{$IAT/Alarms/HeaterAlarmN1}" />
+        <Property ID="Message" Value="{$IAT/Alarms/HeaterAlarmMess1}" />
+        <Property ID="Severity" Value="1455" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:HeaterAlarm1" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="1" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[13]">
+        <Property ID="Name" Value="{$IAT/Alarms/HeaterAlarmN2}" />
+        <Property ID="Message" Value="{$IAT/Alarms/HeaterAlarmMess2}" />
+        <Property ID="Severity" Value="1456" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:HeaterAlarm2" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="1" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[14]">
+        <Property ID="Name" Value="{$IAT/Alarms/HeaterAlarmN3}" />
+        <Property ID="Message" Value="{$IAT/Alarms/HeaterAlarmMess3}" />
+        <Property ID="Severity" Value="1457" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:HeaterAlarm3" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="1" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="[15]">
+        <Property ID="Name" Value="{$IAT/Alarms/HeaterAlarmN4}" />
+        <Property ID="Message" Value="{$IAT/Alarms/HeaterAlarmMess4}" />
+        <Property ID="Severity" Value="1458" />
+        <Selector ID="Behavior" Value="DiscreteValueMonitoring">
+          <Group ID="Monitoring">
+            <Property ID="MonitoredPV" Value="::Alarm:HeaterAlarm4" />
+            <Group ID="TriggerValues">
+              <Property ID="[0]" Value="1" />
+            </Group>
+          </Group>
+        </Selector>
+      </Group>
+    </Group>
+  </Element>
 </Configuration>

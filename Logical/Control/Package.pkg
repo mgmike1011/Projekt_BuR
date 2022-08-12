@@ -4,7 +4,9 @@
   <Objects>
     <Object Type="File" Private="true">ControlTypes.typ</Object>
     <Object Type="File" Private="true">ControlVariables.var</Object>
+    <Object Type="Program" Language="IEC">Alarm</Object>
     <Object Type="Program" Language="IEC">TempControl</Object>
     <Object Type="Program" Language="IEC">MQTT</Object>
+    <Object Type="Program" Language="IEC">AuditTrail</Object>
   </Objects>
 </Package>
