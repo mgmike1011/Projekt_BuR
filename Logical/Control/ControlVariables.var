@@ -18,7 +18,7 @@ VAR
 END_VAR
 (*Machine status - step.*)
 VAR
-	STATUS : MACHINE_WORKING_STATE := STATE_IDLE; (*Status dzialania calej maszyny*)
+	STATUS : MACHINE_WORKING_STATE := STATE_IDLE; (*Whole machine working status *)
 END_VAR
 (*Zones status*)
 VAR
@@ -26,10 +26,10 @@ VAR
 END_VAR
 (*Temperature controller functionblocks.*)
 VAR
-	TempControllerPar : ARRAY[0..ELEMENTS_NUMBER] OF MpTempControllerParType; (*Tablica 4 dodatkow do kontrolerow - po jednym dla kazdej ze stref*)
-	TempController : ARRAY[0..ELEMENTS_NUMBER] OF MpTempController; (*Tablica 4 kontrolerow - po jednym dla kazdej ze stref*)
-	TempGroup : MpTempGroup; (*Grupa kontrolerow*)
-	TempGroupPar : MpTempGroupParType; (*Dodatek do grupy kontrolerow*)
+	TempControllerPar : ARRAY[0..ELEMENTS_NUMBER] OF MpTempControllerParType; (*Array of 4 additions to controllers*)
+	TempController : ARRAY[0..ELEMENTS_NUMBER] OF MpTempController; (*Array of 4 controllers - one for each zone*)
+	TempGroup : MpTempGroup; (*Controller group*)
+	TempGroupPar : MpTempGroupParType; (*Adition to controllergroup*)
 END_VAR
 (*Const elements.*)
 VAR CONSTANT

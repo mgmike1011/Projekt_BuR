@@ -48,8 +48,6 @@ PROGRAM _CYCLIC
 	TempController[1].SetTemperature := SetTemp2;
 	TempController[2].SetTemperature := SetTemp3;
 	TempController[3].SetTemperature := SetTemp4;
-	// #################################################	
-	
 	// Machine working status
 	CASE STATUS OF
 		STATE_IDLE:
@@ -70,6 +68,7 @@ PROGRAM _CYCLIC
 				STATUS := STATE_STOP;
 			ELSIF TuneEnable AND (Automatic_work OR Manual_work) AND gStart THEN
 				STATUS := STATE_ERROR;
+				gError := TRUE;
 			END_IF;
 			
 		STATE_TUNING:
@@ -99,6 +98,7 @@ PROGRAM _CYCLIC
 				STATUS := STATE_STOP;
 			ELSIF Manual_work AND (TuneEnable OR Automatic_work) AND gStart THEN
 				STATUS := STATE_ERROR;
+				gError := TRUE;
 			END_IF;
 			// Zone 1
 			IF EnableZone1 THEN
@@ -136,9 +136,10 @@ PROGRAM _CYCLIC
 			IF NOT Automatic_work THEN
 				STATUS := STATE_IDLE;
 			ELSIF gSTOP THEN
-				STATUS := STATE_IDLE;
+				STATUS := STATE_STOP;
 			ELSIF Automatic_work AND (TuneEnable OR Manual_work) AND gStart THEN
 				STATUS := STATE_ERROR;
+				gError := TRUE;
 			END_IF;
 			
 		STATE_STOP:
@@ -154,7 +155,6 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		STATE_ERROR:
-			gError := TRUE;
 			TempController[0].Enable := FALSE;
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := FALSE;
@@ -168,7 +168,6 @@ PROGRAM _CYCLIC
 	END_CASE;
 	// Update info about zone state
 	ZoneStateUpdate;
-	// ############################################
 	// Calling functionblocks
 	FOR iCnt := 0 TO ELEMENTS_NUMBER DO
 		TempController[iCnt]();
