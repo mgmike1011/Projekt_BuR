@@ -7,7 +7,7 @@
 </Binding>
 <Binding mode="twoWay">
 <Source xsi:type="mapp" refId="gAlarmXHistory" attribute="link" />
-<Target xsi:type="brease" contentRefId="ALARM" widgetRefId="AlarmHistory" attribute="mpLink" />
+			<Target xsi:type="brease" contentRefId="ALARM" widgetRefId="AlarmHistory" attribute="mpLink" />
 </Binding>
 </Bindings>
 </BindingsSet>
