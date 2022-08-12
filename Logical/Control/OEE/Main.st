@@ -22,15 +22,15 @@ PROGRAM	_CYCLIC
 		OEEParChange :=	FALSE;
 	END_IF;
 		
-	//MpOEECore_1.PieceCounter //DODAC LICZBE CYKLI Z CONTROL VARIABLES INT
+	MpOEECore_1.PieceCounter := CycleNumber;
 	
-	//MpOEECore_1.RejectCounter jako int
-	
-	IF step = 0 THEN //ZAMIENIC STEP NA TEN Z CONTROL VARIABLES 
-		MpOEECore_1.Downtime := TRUE;//DAJE INFO CZY MASZYNA DZIALA DO BLOKU
-	ELSE
-		MpOEECore_1.Downtime := FALSE;
+	IF RejectCycle THEN
+		MpOEECore_1.RejectCounter := MpOEECore_1.RejectCounter + 1;
+		RejectCycle := 0;
+		CycleNumber := CycleNumber - 1;
 	END_IF;
+
+	MpOEECore_1.Downtime := NOT(STATUS = STATE_WORKING_AUTOMATIC) ;
 
 	MpOEECore_1.Reset := (RsetOEE);//resetowanie statystyk
 	

@@ -1,5 +1,5 @@
 VAR
-	step : USINT;
+	RejectCycle : BOOL;
 	MpOEECore_1 : MpOeeCore;
 	IdealCycleTime_1 : MpOeeCoreParType;
 	IdealCycleTimeChange : TIME;
