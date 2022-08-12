@@ -24,6 +24,9 @@
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="CF" />
     <Parameter ID="FileDevicePath1" Value="C:\BRAudit" />
+    <Group ID="FileDevice2" />
+    <Parameter ID="FileDeviceName2" Value="OEE" />
+    <Parameter ID="FileDevicePath2" Value="C:/OEE" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>
