@@ -1,0 +1,4 @@
+VAR
+	TuneEnable : BOOL;
+	iCnt : USINT;
+END_VAR
