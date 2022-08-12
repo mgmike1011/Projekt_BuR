@@ -6,5 +6,6 @@
     <Object Type="File">ConfigAlar.mpalarmxcore</Object>
     <Object Type="File">ConfigAudi.mpaudittrail</Object>
     <Object Type="File">ConfigAHis.mpalarmxhistory</Object>
+    <Object Type="File">report.mpreportcore</Object>
   </Objects>
 </Package>

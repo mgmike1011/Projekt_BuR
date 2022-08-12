@@ -13,6 +13,7 @@
     <Task Name="MQTT" Source="Control.MQTT.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="OEE" Source="Control.OEE.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="AuditTrail" Source="Control.AuditTrail.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="MpReport1" Source="Control.MpReport.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -70,5 +71,6 @@
     <LibraryObject Name="standard" Source="Libraries.standard.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="MpOee" Source="Libraries.MpOee.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpAudit" Source="Libraries.MpAudit.lby" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="MpReport" Source="Libraries.MpReport.lby" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>

@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gReport" Type="mpreportcore">
+    <Group ID="MpReport">
+      <Group ID="Settings">
+        <Property ID="ResourceDeviceName" Value="OEERaport" />
+        <Group ID="LanguageDependent">
+          <Group ID="[0]">
+            <Property ID="Language" Value="en" />
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="PageLayouts">
+        <Group ID="[0]">
+          <Property ID="Name" Value="Layout" />
+          <Property ID="Orientation" Value="2" />
+        </Group>
+      </Group>
+      <Group ID="Styles">
+        <Group ID="Text">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+            <Property ID="Size" Value="8" />
+          </Group>
+        </Group>
+        <Group ID="Table">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+          </Group>
+        </Group>
+        <Group ID="Line">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+          </Group>
+        </Group>
+        <Group ID="Chart">
+          <Group ID="PieChart">
+            <Group ID="[0]" />
+          </Group>
+          <Group ID="LineChart">
+            <Group ID="[0]">
+              <Property ID="Name" Value="LineChartBasic" />
+            </Group>
+          </Group>
+          <Group ID="BarChart">
+            <Group ID="[0]">
+              <Property ID="Name" Value="BarChartStyle" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="Tables">
+        <Selector ID="[0]">
+          <Property ID="Name" Value="ProductionTab" />
+          <Property ID="TableStyle" Value="Default" />
+          <Property ID="TextStyle" Value="Default" />
+          <Group ID="[0]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Nr." />
+              <Property ID="Width" Value="10" />
+            </Selector>
+            <Selector ID="[1]" Value="TextId">
+              <Property ID="Source" Value="Product Name" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[2]" Value="TextId">
+              <Property ID="Source" Value="Batch Size" />
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[3]" Value="TextId">
+              <Property ID="Source" Value="Quality rate" />
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[4]" Value="TextId">
+              <Property ID="Source" Value="Time" />
+              <Property ID="Width" Value="20" />
+            </Selector>
+          </Group>
+          <Group ID="[1]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="1" />
+              <Property ID="Width" Value="10" />
+            </Selector>
+            <Selector ID="[1]" Value="TextId">
+              <Property ID="Source" Value="Product Yellow" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[2]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductYellow.BatchSize" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[3]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductYellow.Quality" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[4]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductYellow.Time" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+          </Group>
+          <Group ID="[2]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="2" />
+              <Property ID="Width" Value="10" />
+            </Selector>
+            <Selector ID="[1]" Value="TextId">
+              <Property ID="Source" Value="Product Red" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[2]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductRed.BatchSize" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[3]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductRed.Quality" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[4]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductRed.Time" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+          </Group>
+          <Group ID="[3]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="3" />
+              <Property ID="Width" Value="10" />
+            </Selector>
+            <Selector ID="[1]" Value="TextId">
+              <Property ID="Source" Value="Product Blue" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[2]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductBlue.BatchSize" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[3]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductBlue.Quality" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[4]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductBlue.Time" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+          </Group>
+          <Group ID="[4]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="4" />
+              <Property ID="Width" Value="10" />
+            </Selector>
+            <Selector ID="[1]" Value="TextId">
+              <Property ID="Source" Value="Product Orange" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[2]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductOrange.BatchSize" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[3]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductOrange.Quality" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[4]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductOrange.Time" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+          </Group>
+          <Group ID="[5]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="5" />
+              <Property ID="Width" Value="10" />
+            </Selector>
+            <Selector ID="[1]" Value="TextId">
+              <Property ID="Source" Value="Product Green" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[2]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductGreen.BatchSize" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[3]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductGreen.Quality" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+            <Selector ID="[4]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::Production:ProductGreen.Time" />
+              </Selector>
+              <Property ID="Width" Value="20" />
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="Contents">
+        <Group ID="[0]">
+          <Property ID="Name" Value="ContentHeader" />
+          <Selector ID="[0]">
+            <Property ID="Text" Value="Production Report" />
+            <Property ID="TextStyle" Value="Default" />
+          </Selector>
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Name" Value="ContentLine" />
+          <Selector ID="[0]" Value="Line">
+            <Property ID="LineStyle" Value="Default" />
+          </Selector>
+        </Group>
+        <Group ID="[2]">
+          <Property ID="Name" Value="ContentProductionTable" />
+          <Selector ID="[0]" Value="Table">
+            <Property ID="Table" Value="ProductionTab" />
+          </Selector>
+        </Group>
+      </Group>
+      <Group ID="Reports">
+        <Group ID="[0]">
+          <Property ID="Name" Value="MyReport" />
+          <Property ID="PageLayout" Value="Layout" />
+          <Property ID="Header" Value="ContentHeader" />
+          <Group ID="[0]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="ContentLine" />
+            </Group>
+          </Group>
+          <Group ID="[1]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="ContentProductionTable" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

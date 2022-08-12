@@ -23,7 +23,7 @@
     <Content refId="START_PAGE" />
     <Content refId="ALARM" />
     <Content refId="AUTOMATIC" />
-		<Content refId="MANUAL" />
+    <Content refId="MANUAL" />
     <Content refId="RECEPT" />
     <Content refId="Tuning" />
     <Content refId="AUDIT" />
