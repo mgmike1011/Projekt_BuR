@@ -70,6 +70,10 @@ PROGRAM _CYCLIC
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := FALSE;
 			TempController[3].Enable := FALSE;
+			TempController[0].Simulate := FALSE;
+			TempController[1].Simulate := FALSE;
+			TempController[2].Simulate := FALSE;
+			TempController[3].Simulate := FALSE;
 			// Switch state conditions
 			IF TuneEnable AND gStart AND NOT gSTOP AND NOT (Automatic_work OR Manual_work) THEN
 				STATUS := STATE_TUNING;
@@ -90,6 +94,10 @@ PROGRAM _CYCLIC
 			TempController[1].Enable := TRUE;
 			TempController[2].Enable := TRUE;
 			TempController[3].Enable := TRUE;
+			TempController[0].Simulate := FALSE;
+			TempController[1].Simulate := FALSE;
+			TempController[2].Simulate := FALSE;
+			TempController[3].Simulate := FALSE;
 			// Tuning Parameters
 			IF EDGEPOS(TempGroup.TuningDone) THEN
 				TuningAction; // Getting the data
@@ -118,7 +126,7 @@ PROGRAM _CYCLIC
 				TempController[0].Enable := TRUE;
 				// Simulation zone 1
 				IF SimulateZone1Enable THEN
-					TempController[0].Control := FALSE;
+					TempController[0].Control := TRUE;
 					TempController[0].Simulate := TRUE;
 				ELSE
 					TempController[0].Control := TRUE;
@@ -133,7 +141,7 @@ PROGRAM _CYCLIC
 				TempController[1].Enable := TRUE;
 				// Simulation zone 2
 				IF SimulateZone2Enable THEN
-					TempController[1].Control := FALSE;
+					TempController[1].Control := TRUE;
 					TempController[1].Simulate := TRUE;
 				ELSE
 					TempController[1].Control := TRUE;
@@ -148,7 +156,7 @@ PROGRAM _CYCLIC
 				TempController[2].Enable := TRUE;
 				// Simulation zone 3
 				IF SimulateZone3Enable THEN
-					TempController[2].Control := FALSE;
+					TempController[2].Control := TRUE;
 					TempController[2].Simulate := TRUE;
 				ELSE
 					TempController[2].Control := TRUE;
@@ -163,7 +171,7 @@ PROGRAM _CYCLIC
 				TempController[3].Enable := TRUE;
 				// Simulation zone 4
 				IF SimulateZone4Enable THEN
-					TempController[3].Control := FALSE;
+					TempController[3].Control := TRUE;
 					TempController[3].Simulate := TRUE;
 				ELSE
 					TempController[3].Control := TRUE;
@@ -194,6 +202,10 @@ PROGRAM _CYCLIC
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := FALSE;
 			TempController[3].Enable := FALSE;
+			TempController[0].Simulate := FALSE;
+			TempController[1].Simulate := FALSE;
+			TempController[2].Simulate := FALSE;
+			TempController[3].Simulate := FALSE;
 			// Switch state conditions
 			IF NOT gSTOP THEN
 				STATUS := STATE_IDLE;
@@ -204,6 +216,10 @@ PROGRAM _CYCLIC
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := FALSE;
 			TempController[3].Enable := FALSE;
+			TempController[0].Simulate := FALSE;
+			TempController[1].Simulate := FALSE;
+			TempController[2].Simulate := FALSE;
+			TempController[3].Simulate := FALSE;
 			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
 			// Switch state conditions
