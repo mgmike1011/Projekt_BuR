@@ -3,7 +3,7 @@ PROGRAM _INIT
 	
 	MpDataRecorder_0.MpLink := ADR(gDataRecorder);
 	MpDataRecorder_0.Enable := TRUE;
-	MpDataRecorder_0.DeviceName := ADR('HD');
+	MpDataRecorder_0.DeviceName := ADR('DATA');
 	MpDataRecorder_0.RecordMode := mpDATA_RECORD_MODE_VALUE;
 	
 	MpDataRegPar_0.MpLink := ADR(gDataRecorder);
