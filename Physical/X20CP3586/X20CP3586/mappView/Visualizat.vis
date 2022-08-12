@@ -17,8 +17,11 @@
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
+    <EventBindingsSet refId="TOP_eventbinding" />
   </EventBindingsSets>
-  <Dialogs />
+  <Dialogs>
+    <Dialog refId="dialog_0" />
+  </Dialogs>
   <Contents>
     <Content refId="TOP" />
     <Content refId="LEFT" />
