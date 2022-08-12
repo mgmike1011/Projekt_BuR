@@ -1,10 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?AutomationStudio FileVersion="4.9"?>
 <Configuration>
-  <Element ID="Anonymous" Type="User">               
-    <Property ID="UserID" Value="1" />    
+  <Element ID="Anonymous" Type="User">
+    <Property ID="UserID" Value="1" />
     <Group ID="Roles">
-      <Property ID="Role[1]" Value="Everyone" />
+      <Property ID="Role[1]" Value="Anonymous" />
+    </Group>
+  </Element>
+  <Element ID="Operator" Type="User">
+    <Property ID="UserID" Value="2" />
+    <Property ID="Password" Value="pWithdZR0DYvzb9pm8okZUsi0SECnXPCbsGoA8e1pRnaUfWvFOU=" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Operator" />
+    </Group>
+  </Element>
+  <Element ID="Administrator" Type="User">
+    <Property ID="UserID" Value="3" />
+    <Property ID="Password" Value="eWgPhGa0ln3imvQi2Ho3zdLAmYnr+Fahqj5wNxyV3oofYb0rvu8=" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Administrator" />
     </Group>
   </Element>
 </Configuration>
