@@ -16,17 +16,6 @@
         "env": []
     },
     {
-        "id": "0349933493185ff4",
-        "type": "ui_group",
-        "name": "Do usunięcia",
-        "tab": "ed08ea8ae00afeef",
-        "order": 2,
-        "disp": true,
-        "width": "3",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "ef4821db8ede55e8",
         "type": "ui_base",
         "theme": {
@@ -249,7 +238,7 @@
         "tab": "ed08ea8ae00afeef",
         "order": 1,
         "disp": true,
-        "width": "28",
+        "width": "40",
         "collapse": false,
         "className": ""
     },
@@ -678,7 +667,7 @@
         "type": "function",
         "z": "12421ff9dde586d7",
         "name": "in: 0-3 -> out: stan strefy",
-        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Strojenie\"\n    break;\n    case 2:\n        newMsg.payload = \"Praca Manualna\"\n    break;\n    case 3:\n        newMsg.payload = \"Praca Automatyczna\"\n        break;\n    case 4:\n        newMsg.payload = \"Błąd\"\n        break;\n    case 5:\n        newMsg.payload = \"Stop\"\n        break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -759,57 +748,6 @@
         "x": 650,
         "y": 920,
         "wires": []
-    },
-    {
-        "id": "168844b73175f93a",
-        "type": "function",
-        "z": "12421ff9dde586d7",
-        "name": "in: 0-3 -> out: stan strefy",
-        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "91c3f9b93a64083e",
-        "type": "function",
-        "z": "12421ff9dde586d7",
-        "name": "in: 0-3 -> out: stan strefy",
-        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0bc599f943c8a5da",
-        "type": "function",
-        "z": "12421ff9dde586d7",
-        "name": "in: 0-3 -> out: stan strefy",
-        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 920,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "6c2a7e230279150c",
@@ -984,6 +922,231 @@
         ]
     },
     {
+        "id": "0298c3035f0917f3",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Strojenie\"\n    break;\n    case 2:\n        newMsg.payload = \"Praca Manualna\"\n    break;\n    case 3:\n        newMsg.payload = \"Praca Automatyczna\"\n        break;\n    case 4:\n        newMsg.payload = \"Błąd\"\n        break;\n    case 5:\n        newMsg.payload = \"Stop\"\n        break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 400,
+        "wires": [
+            [
+                "d070a168102d2999"
+            ]
+        ]
+    },
+    {
+        "id": "077fe37fcaa72ce0",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Strojenie\"\n    break;\n    case 2:\n        newMsg.payload = \"Praca Manualna\"\n    break;\n    case 3:\n        newMsg.payload = \"Praca Automatyczna\"\n        break;\n    case 4:\n        newMsg.payload = \"Błąd\"\n        break;\n    case 5:\n        newMsg.payload = \"Stop\"\n        break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 660,
+        "wires": [
+            [
+                "eab1465fef3f2b10"
+            ]
+        ]
+    },
+    {
+        "id": "5d39f49a8c936c57",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Strojenie\"\n    break;\n    case 2:\n        newMsg.payload = \"Praca Manualna\"\n    break;\n    case 3:\n        newMsg.payload = \"Praca Automatyczna\"\n        break;\n    case 4:\n        newMsg.payload = \"Błąd\"\n        break;\n    case 5:\n        newMsg.payload = \"Stop\"\n        break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 920,
+        "wires": [
+            [
+                "166f78788aac5fc6"
+            ]
+        ]
+    },
+    {
+        "id": "b572b2ab9bf8760e",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Zones/Zone1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 140,
+        "wires": [
+            [
+                "0504a7f967f2a2c1"
+            ]
+        ]
+    },
+    {
+        "id": "3c5559cf6594c50c",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Zones/Zone2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 400,
+        "wires": [
+            [
+                "0298c3035f0917f3"
+            ]
+        ]
+    },
+    {
+        "id": "c6d7d5c0c412f28d",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Zones/Zone3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 660,
+        "wires": [
+            [
+                "077fe37fcaa72ce0"
+            ]
+        ]
+    },
+    {
+        "id": "b6146d796fedb56c",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Zones/Zone4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 920,
+        "wires": [
+            [
+                "5d39f49a8c936c57"
+            ]
+        ]
+    },
+    {
+        "id": "425af94440ce6fa8",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Fans/Fan1",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 480,
+        "y": 180,
+        "wires": [
+            [
+                "35be2aee50a84c1c"
+            ]
+        ]
+    },
+    {
+        "id": "7e9c20cad024621f",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Fans/Fan2",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 500,
+        "y": 440,
+        "wires": [
+            [
+                "335abbb6457492ef"
+            ]
+        ]
+    },
+    {
+        "id": "ddb8f0452e369fab",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Fans/Fan3",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 500,
+        "y": 700,
+        "wires": [
+            [
+                "61238c0d5592c901"
+            ]
+        ]
+    },
+    {
+        "id": "265396f7435f6a9a",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "Fans/Fan4",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 500,
+        "y": 960,
+        "wires": [
+            [
+                "8fa13984f3c8a70f"
+            ]
+        ]
+    },
+    {
         "id": "305611be53477d62",
         "type": "mqtt out",
         "z": "352fcc860ddcd8e8",
@@ -1025,7 +1188,7 @@
         "name": "",
         "label": "numeric",
         "tooltip": "",
-        "group": "0349933493185ff4",
+        "group": "",
         "order": 5,
         "width": 0,
         "height": 0,
