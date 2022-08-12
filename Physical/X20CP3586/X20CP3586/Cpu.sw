@@ -10,7 +10,6 @@
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
     <Task Name="MQTT" Source="Control.MQTT.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="Control_mo" Source="Control.Control_modes.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
