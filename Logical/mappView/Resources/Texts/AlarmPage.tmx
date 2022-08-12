@@ -107,5 +107,16 @@
         <seg>Old state</seg>
       </tuv>
     </tu>
+    <tu tuid="SeverityList">
+      <tuv xml:lang="de">
+        <seg>Schwere</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dotkliwość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Severity</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
