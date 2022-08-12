@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/AlarmPage</prop>
+  </header>
+  <body>
+    <tu tuid="DateList">
+      <tuv xml:lang="de">
+        <seg>Datum</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Data</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Date</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NameList">
+      <tuv xml:lang="de">
+        <seg>Name</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nazwa</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Name</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MessageList">
+      <tuv xml:lang="de">
+        <seg>Nachricht</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Treść</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Message</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CodeList">
+      <tuv xml:lang="de">
+        <seg>Nummer</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Numer</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Code</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StateList">
+      <tuv xml:lang="de">
+        <seg>Zustand</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Stan</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>State</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AckButton">
+      <tuv xml:lang="de">
+        <seg>Anerkennen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zatwierdź</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AckAllButton">
+      <tuv xml:lang="de">
+        <seg>Alles anerkennen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zatwierdź wszystkie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Acknowledge all</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
