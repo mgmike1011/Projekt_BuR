@@ -7,5 +7,7 @@
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>Init.st</File>
     <File>TopicSelectionTransmision.st</File>
+    <File Private="true">LocalFunctions.fun</File>
+    <File>JSON_PARSER.st</File>
   </Files>
 </Program>

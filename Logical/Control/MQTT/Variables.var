@@ -10,4 +10,6 @@ VAR
 	TopicCounter : {REDUND_UNREPLICABLE} CTU;
 	doSend : BOOL := TRUE;
 	Enum_to_Dint : DINT;
+	Fans : Fans_struct;
+	Parser : JSON_PARSER;
 END_VAR

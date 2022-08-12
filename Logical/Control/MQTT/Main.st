@@ -9,9 +9,7 @@ PROGRAM _CYCLIC
 	IotMqttPublish_0.Send :=FALSE;
 	TopicCounter.CU := FALSE;
 	doSend := NOT doSend;
-	
 	TopicSelectionTransmision;
-
 	TopicCounter();
 	IotMqttClient_0();
 	IotMqttPublish_0();
