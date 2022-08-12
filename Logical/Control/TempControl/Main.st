@@ -17,6 +17,19 @@ PROGRAM _INIT
 	TempControllerPar[1].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
 	TempControllerPar[2].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
 	TempControllerPar[3].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
+	// PID Controller
+	FOR iCnt := 0  TO ELEMENTS_NUMBER DO
+		// Heating PID params
+		TempControllerPar[iCnt].PID.Heat.ProportionalGain := PIDProportionaGainHEAT[iCnt];
+		TempControllerPar[iCnt].PID.Heat.IntegrationTime := PIDIntegrationTimeHEAT[iCnt];
+		TempControllerPar[iCnt].PID.Heat.FilterTime := PIDFilterTimeHEAT[iCnt];
+		TempControllerPar[iCnt].PID.Heat.DerivativeTime:= PIDDerivativeTimeHEAT[iCnt];
+		// Cooling PID params
+		TempControllerPar[iCnt].PID.Cool.ProportionalGain := PIDProportionaGainCOOL[iCnt];
+		TempControllerPar[iCnt].PID.Cool.IntegrationTime := PIDIntegrationTimeCOOL[iCnt];
+		TempControllerPar[iCnt].PID.Cool.FilterTime := PIDFilterTimeCOOL[iCnt];
+		TempControllerPar[iCnt].PID.Cool.DerivativeTime := PIDDerivativeTimeCOOL[iCnt];
+	END_FOR;
 	// Temperature Controller 
 	TempController[0].MpLink := ADR(gTempController_1);
 	TempController[0].Parameters := ADR(TempControllerPar[0]);
