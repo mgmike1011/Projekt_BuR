@@ -1,6 +1,78 @@
+(*Temperature setpoints to all zones.*)
 VAR
-	SetTemp1 : REAL;
-	SetTemp2 : REAL;
-	SetTemp3 : REAL;
-	SetTemp4 : REAL;
+	SetTemp1 : REAL := 30;
+	SetTemp2 : REAL := 30;
+	SetTemp3 : REAL := 30;
+	SetTemp4 : REAL := 30;
 END_VAR
+(*Temperature tuning setpoints to all zones.*)
+VAR
+	SetTempHeatTuning1 : REAL := 100;
+	SetTempHeatTuning2 : REAL := 100;
+	SetTempHeatTuning3 : REAL := 100;
+	SetTempHeatTuning4 : REAL := 100;
+	SetTempCoolTuning1 : REAL := 30;
+	SetTempCoolTuning2 : REAL := 30;
+	SetTempCoolTuning3 : REAL := 30;
+	SetTempCoolTuning4 : REAL := 30;
+END_VAR
+(*Machine status - step.*)
+VAR
+	STATUS : MACHINE_WORKING_STATE := STATE_IDLE; (*Whole machine working status *)
+END_VAR
+(*Zones status*)
+VAR
+	ZoneStatus : ARRAY[0..ELEMENTS_NUMBER] OF ZONE_WORKING_STATE;
+END_VAR
+(*Temperature controller functionblocks.*)
+VAR
+	TempControllerPar : ARRAY[0..ELEMENTS_NUMBER] OF MpTempControllerParType; (*Array of 4 additions to controllers*)
+	TempController : ARRAY[0..ELEMENTS_NUMBER] OF MpTempController; (*Array of 4 controllers - one for each zone*)
+	TempGroup : MpTempGroup; (*Controller group*)
+	TempGroupPar : MpTempGroupParType; (*Adition to controllergroup*)
+END_VAR
+(*Const elements.*)
+VAR CONSTANT
+	ELEMENTS_NUMBER : USINT := 3; (*Numbers of controling zones - 4 (0,1,2,3)*)
+END_VAR
+(*Machine working type*)
+VAR
+	Automatic_work : BOOL := FALSE;
+	Manual_work : BOOL := FALSE;
+END_VAR
+(*Manual control*)
+VAR
+	EnableZone1 : BOOL := FALSE;
+	EnableZone2 : BOOL := FALSE;
+	EnableZone3 : BOOL := FALSE;
+	EnableZone4 : BOOL := FALSE;
+END_VAR
+(*Automatic control*)
+VAR
+	AutoStep : AUTOMATIC_MODE_STATE := STEP_INIT;
+	CycleNumber : DINT := 0;
+END_VAR
+(* ########## MQTT communication variables ########### *)
+(*PWM % Heater Zone 1  ->  TempController[0].HeatValue*)
+(*PWM % Heater Zone 2  ->  TempController[1].HeatValue*)
+(*PWM % Heater Zone 3  ->  TempController[2].HeatValue*)
+(*PWM % Heater Zone 4  ->  TempController[3].HeatValue*)
+(*PWM % FAN Zone 1  ->  TempController[0].CoolValue*)
+(*PWM % FAN Zone 2  ->  TempController[1].CoolValue*)
+(*PWM % FAN Zone 3  ->  TempController[2].CoolValue*)
+(*PWM % FAN Zone 4  ->  TempController[3].CoolValue*)
+(*Set Temperature Zone 1  ->  SetTemp1*)
+(*Set Temperature Zone 2  ->  SetTemp2*)
+(*Set Temperature Zone 3  ->  SetTemp3*)
+(*Set Temperature Zone 4  ->  SetTemp4*)
+(*Actual Temperature Zone 1  ->  gTemp1*)
+(*Actual Temperature Zone 2  ->  gTemp2*)
+(*Actual Temperature Zone 3  ->  gTemp3*)
+(*Actual Temperature Zone 4  ->  gTemp4*)
+(*Status dzialania calej maszyny -> STATUS (typ: MACHINE_WORKING_STATE)*)
+(*Status dzialania trybu automatycznego -> AutoStep (typ: AUTOMATIC_MODE_STATUS)*)
+(*Status dzialania strefy 1 -> ZoneStatus[0] (typ: ZONE_WORKING_STATUS)*)
+(*Status dzialania strefy 2 -> ZoneStatus[1] (typ: ZONE_WORKING_STATUS)*)
+(*Status dzialania strefy 3 -> ZoneStatus[2] (typ: ZONE_WORKING_STATUS)*)
+(*Status dzialania strefy 4 -> ZoneStatus[3] (typ: ZONE_WORKING_STATUS)*)
+(*Ilosc wykonanych cykli w trybie automatycznym -> CycleNumber*)

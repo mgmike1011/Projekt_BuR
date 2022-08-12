@@ -1,13 +1,4 @@
 VAR
 	TuneEnable : BOOL;
-END_VAR
-VAR CONSTANT
-	ELEMENTS_NUMBER : USINT := 3;
-END_VAR
-VAR
-	TempController : ARRAY[0..ELEMENTS_NUMBER] OF MpTempController;
-	TempControllerPar : ARRAY[0..ELEMENTS_NUMBER] OF MpTempControllerParType;
-	TempGroup : MpTempGroup;
-	TempGroupPar : MpTempGroupParType;
 	iCnt : USINT;
 END_VAR
