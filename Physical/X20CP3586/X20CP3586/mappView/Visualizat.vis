@@ -10,6 +10,7 @@
     <Page refId="Tuning" />
     <Page refId="AUDIT" />
     <Page refId="OEE" />
+    <Page refId="FILEMNG" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -17,6 +18,7 @@
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
+    <EventBindingsSet refId="FILEMNG_eventbinding" />
   </EventBindingsSets>
   <Dialogs />
   <Contents>
@@ -30,6 +32,7 @@
     <Content refId="Tuning" />
     <Content refId="AUDIT" />
     <Content refId="OEE" />
+    <Content refId="FILEMNG" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
