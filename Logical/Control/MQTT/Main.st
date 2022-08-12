@@ -6,12 +6,12 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here *)
-	IotMqttPublish_0.Send :=FALSE;
+	IotMqttPublish_0.Trigger:=FALSE;
 	TopicCounter.CU := FALSE;
 	doSend := NOT doSend;
-	
+	IF NOT IotMqttPublish_0.Busy AND doSend THEN
 	TopicSelectionTransmision;
-
+	END_IF
 	TopicCounter();
 	IotMqttClient_0();
 	IotMqttPublish_0();

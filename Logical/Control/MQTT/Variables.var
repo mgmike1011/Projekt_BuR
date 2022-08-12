@@ -1,13 +1,16 @@
 VAR CONSTANT
-	NR_OF_TOPICS : INT := 8;
+	NR_OF_TOPICS : INT := 3;
 END_VAR
 VAR
-	TONtimer : TON;
 	IotMqttParameters : IotMqttClientParType;
 	IotMqttClient_0 : IotMqttClient;
 	IotMqttLink : IoTMqttComIdentType;
-	IotMqttPublish_0 : IotMqttPublish;
+	IotMqttPublish_0 : IotMqttRegParPublish;
 	PublishMessage : STRING[80];
 	TopicCounter : {REDUND_UNREPLICABLE} CTU;
 	doSend : BOOL := TRUE;
+	Temps : MQTT_TEMPS;
+	Fans : MQTT_FANS;
+	SetPoints : MQTT_SETPOINTS;
+	MessagePointer : STRING[80];
 END_VAR

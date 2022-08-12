@@ -7,5 +7,6 @@
     <File Description="Local variables" Private="true">Variables.var</File>
     <File>Init.st</File>
     <File>TopicSelectionTransmision.st</File>
+    <File>AsaignVars.st</File>
   </Files>
 </Program>
