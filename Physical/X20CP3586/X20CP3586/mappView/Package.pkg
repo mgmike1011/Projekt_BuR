@@ -5,5 +5,6 @@
     <Object Type="File">Config.mappviewcfg</Object>
     <Object Type="File">Visualizat.vis</Object>
     <Object Type="File">ALARM.binding</Object>
+    <Object Type="File">ALARM.eventbinding</Object>
   </Objects>
 </Package>
