@@ -1,0 +1,7 @@
+VAR
+	MpDataRecorder_0 : MpDataRecorder;
+	MpDataRegPar_0 : MpDataRegPar;
+	MpDataRegPar_1 : MpDataRegPar;
+	MpDataRegPar_2 : MpDataRegPar;
+	MpDataRegPar_3 : MpDataRegPar;
+END_VAR

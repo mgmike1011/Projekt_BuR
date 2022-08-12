@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="File">Alarms.tmx</Object>
     <Object Type="File">LeftContentButton.tmx</Object>
+    <Object Type="File">AlarmPage.tmx</Object>
   </Objects>
 </Package>

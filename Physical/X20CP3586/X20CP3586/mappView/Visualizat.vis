@@ -12,8 +12,12 @@
     <Page refId="OEE" />
   </Pages>
   <Navigations />
-  <BindingsSets />
-  <EventBindingsSets />
+  <BindingsSets>
+    <BindingsSet refId="ALARM_binding" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="ALARM_eventbinding" />
+  </EventBindingsSets>
   <Dialogs />
   <Contents>
     <Content refId="TOP" />
