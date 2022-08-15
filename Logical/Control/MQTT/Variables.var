@@ -6,10 +6,12 @@ VAR
 	IotMqttClient_0 : IotMqttClient;
 	IotMqttLink : IoTMqttComIdentType;
 	IotMqttPublish_0 : IotMqttPublish;
-	PublishMessage : STRING[80];
+	PublishMessage : STRING[256];
 	TopicCounter : {REDUND_UNREPLICABLE} CTU;
 	doSend : BOOL := TRUE;
-	Enum_to_Dint : DINT;
 	Fans : Fans_struct;
 	Parser : JSON_PARSER;
+	Test : Test_struct;
+	real : REFERENCE TO REAL;
+	Dint : DINT;
 END_VAR

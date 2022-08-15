@@ -3,11 +3,8 @@
 	VAR_INPUT
 		PV : {REDUND_UNREPLICABLE} STRING[80];
 	END_VAR
-	VAR
-		JSON_String : STRING[256];
-	END_VAR
 	VAR_OUTPUT
-		Output_string : STRING[80];
+		Output_string : STRING[256];
 	END_VAR
 	VAR
 		String_bufer : STRING[80];
@@ -28,5 +25,7 @@
 		Member_dim : UINT;
 		Member_value_as_string : STRING[80];
 		Member_adres : UDINT;
+		Real_buffer : REFERENCE TO REAL;
+		Real_buffer1 : REAL;
 	END_VAR
 END_FUNCTION_BLOCK

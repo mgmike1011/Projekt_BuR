@@ -5,12 +5,27 @@ PROGRAM _INIT
 END_PROGRAM
 
 PROGRAM _CYCLIC
-	(* Insert code here *)
+	(* Insert code here	*)
+	//doSend := NOT doSend;
+	Dint :=ADR(Test.New_Member2);
+	real ACCESS Dint;
 	IotMqttPublish_0.Send :=FALSE;
-	TopicCounter.CU := FALSE;
-	doSend := NOT doSend;
-	TopicSelectionTransmision;
-	TopicCounter();
+	IF	NOT	doSend THEN
+		IotMqttPublish_0.Send :=TRUE;
+		Parser(PV := 'MQTT:Test');
+		Parser();
+		PublishMessage := Parser.Output_string;
+		IotMqttPublish_0.Topic:= ADR('TEST');
+		IotMqttPublish_0.Buffer					:= ADR(PublishMessage);
+		IotMqttPublish_0.BufferLength			:= brsstrlen(ADR(PublishMessage));
+		IotMqttPublish_0.Send :=TRUE;
+	END_IF
+	
+	
+
+//	TopicCounter.CU := FALSE;
+	//	TopicSelectionTransmision;
+//	TopicCounter();
 	IotMqttClient_0();
 	IotMqttPublish_0();
 	
