@@ -12,9 +12,27 @@ TYPE
 		New_Member : STRING[80] := 'loooooong test';
 	END_STRUCT;
 	Fans_struct : 	STRUCT 
-		Fan1 : INT := 1;
-		Fan2 : INT := 2;
-		Fan3 : INT := 3;
-		Fan4 : INT := 4;
+		Fan1 : REAL := 0.0;
+		Fan2 : REAL := 0.0;
+		Fan3 : REAL := 0.0;
+		Fan4 : REAL := 0.0;
+	END_STRUCT;
+	SetPoints : 	STRUCT 
+		SetPoint1 : REAL;
+		SetPoint2 : REAL;
+		SetPoint3 : REAL;
+		SetPoint4 : REAL;
+	END_STRUCT;
+	Temperatures : 	STRUCT 
+		Temp1 : REAL;
+		Temp2 : REAL;
+		Temp3 : REAL;
+		Temp4 : REAL;
+	END_STRUCT;
+	Zone_status : 	STRUCT 
+		Zone1 : DINT;
+		Zone2 : DINT;
+		Zone3 : DINT;
+		Zone4 : DINT;
 	END_STRUCT;
 END_TYPE

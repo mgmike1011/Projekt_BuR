@@ -1,5 +1,5 @@
 VAR CONSTANT
-	NR_OF_TOPICS : INT := 16;
+	NR_OF_TOPICS : INT := 4;
 END_VAR
 VAR
 	IotMqttParameters : IotMqttClientParType;
@@ -9,9 +9,10 @@ VAR
 	PublishMessage : STRING[256];
 	TopicCounter : {REDUND_UNREPLICABLE} CTU;
 	doSend : BOOL := TRUE;
-	Fans : Fans_struct;
 	Parser : JSON_PARSER;
 	Test : Test_struct;
-	real : REFERENCE TO REAL;
-	Dint : DINT;
+	Temps : Temperatures;
+	SetPoint : SetPoints;
+	Zones : Zone_status;
+	Fans : Fans_struct;
 END_VAR
