@@ -16,17 +16,6 @@
         "env": []
     },
     {
-        "id": "0349933493185ff4",
-        "type": "ui_group",
-        "name": "Do usunięcia",
-        "tab": "ed08ea8ae00afeef",
-        "order": 2,
-        "disp": true,
-        "width": "3",
-        "collapse": false,
-        "className": ""
-    },
-    {
         "id": "ef4821db8ede55e8",
         "type": "ui_base",
         "theme": {
@@ -249,9 +238,125 @@
         "tab": "ed08ea8ae00afeef",
         "order": 1,
         "disp": true,
-        "width": "28",
+        "width": "40",
         "collapse": false,
         "className": ""
+    },
+    {
+        "id": "ba0e4bfb5dc84ba8",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "FANS",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "35be2aee50a84c1c",
+                "335abbb6457492ef",
+                "61238c0d5592c901",
+                "8fa13984f3c8a70f"
+            ]
+        ]
+    },
+    {
+        "id": "83c2bb1e34bd43ab",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "SETPOINTS",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 250,
+        "y": 100,
+        "wires": [
+            [
+                "550c9f1e10d2644c",
+                "8e1286b325de308b",
+                "d231553fd271ec2e",
+                "4dca01c00c5faa2e"
+            ]
+        ]
+    },
+    {
+        "id": "550c9f1e10d2644c",
+        "type": "ui_text",
+        "z": "12421ff9dde586d7",
+        "group": "7ac9664a2bf3d9f2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperatura Zadana: ",
+        "format": "{{msg.payload.SetPoint1}}°C",
+        "layout": "row-center",
+        "className": "",
+        "x": 600,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "8e1286b325de308b",
+        "type": "ui_text",
+        "z": "12421ff9dde586d7",
+        "group": "bda376001a4a078a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperatura Zadana: ",
+        "format": "{{msg.payload.SetPoint2}}°C",
+        "layout": "row-center",
+        "className": "",
+        "x": 600,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d231553fd271ec2e",
+        "type": "ui_text",
+        "z": "12421ff9dde586d7",
+        "group": "617c289c1fe65e5b",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperatura Zadana: ",
+        "format": "{{msg.payload.SetPoint3}}°C",
+        "layout": "row-center",
+        "className": "",
+        "x": 600,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4dca01c00c5faa2e",
+        "type": "ui_text",
+        "z": "12421ff9dde586d7",
+        "group": "4156a645b40f200d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperatura Zadana: ",
+        "format": "{{msg.payload.SetPoint4}}°C",
+        "layout": "row-center",
+        "className": "",
+        "x": 600,
+        "y": 160,
+        "wires": []
     },
     {
         "id": "35be2aee50a84c1c",
@@ -265,7 +370,7 @@
         "gtype": "gage",
         "title": "Wentylator 1",
         "label": "%",
-        "format": "{{value}}",
+        "format": "{{msg.payload.Fan1}}",
         "min": 0,
         "max": "100",
         "colors": [
@@ -276,8 +381,89 @@
         "seg1": "",
         "seg2": "",
         "className": "",
-        "x": 670,
-        "y": 180,
+        "x": 570,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "335abbb6457492ef",
+        "type": "ui_gauge",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "group": "bda376001a4a078a",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "gtype": "gage",
+        "title": "Wentylator 2",
+        "label": "%",
+        "format": "{{msg.payload.Fan2}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 570,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "61238c0d5592c901",
+        "type": "ui_gauge",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "group": "617c289c1fe65e5b",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Wentylator 3",
+        "label": "%",
+        "format": "{{msg.payload.Fan3}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 570,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "8fa13984f3c8a70f",
+        "type": "ui_gauge",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "group": "4156a645b40f200d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Wentylator 4",
+        "label": "%",
+        "format": "{{msg.payload.Fan4}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 570,
+        "y": 380,
         "wires": []
     },
     {
@@ -290,11 +476,11 @@
         "height": 0,
         "name": "",
         "label": "Aktualna Temperatura:",
-        "format": "{{msg.payload}}°C",
+        "format": "{{msg.payload.Temp1}}°C",
         "layout": "row-center",
         "className": "",
-        "x": 700,
-        "y": 20,
+        "x": 600,
+        "y": 540,
         "wires": []
     },
     {
@@ -335,38 +521,11 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 700,
-        "y": 60,
+        "x": 600,
+        "y": 580,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "335abbb6457492ef",
-        "type": "ui_gauge",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "group": "bda376001a4a078a",
-        "order": 5,
-        "width": "0",
-        "height": "0",
-        "gtype": "gage",
-        "title": "Wentylator 2",
-        "label": "%",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "className": "",
-        "x": 670,
-        "y": 440,
-        "wires": []
     },
     {
         "id": "0818906543b39652",
@@ -381,8 +540,8 @@
         "format": "{{msg.payload}}°C",
         "layout": "row-center",
         "className": "",
-        "x": 700,
-        "y": 280,
+        "x": 600,
+        "y": 660,
         "wires": []
     },
     {
@@ -423,38 +582,11 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 700,
-        "y": 320,
+        "x": 600,
+        "y": 700,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "61238c0d5592c901",
-        "type": "ui_gauge",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "group": "617c289c1fe65e5b",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "Wentylator 3",
-        "label": "%",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "className": "",
-        "x": 670,
-        "y": 700,
-        "wires": []
     },
     {
         "id": "6bf786ab447a3b4f",
@@ -469,8 +601,8 @@
         "format": "{{msg.payload}}°C",
         "layout": "row-center",
         "className": "",
-        "x": 700,
-        "y": 540,
+        "x": 600,
+        "y": 780,
         "wires": []
     },
     {
@@ -511,38 +643,11 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 700,
-        "y": 580,
+        "x": 600,
+        "y": 820,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "8fa13984f3c8a70f",
-        "type": "ui_gauge",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "group": "4156a645b40f200d",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "gtype": "gage",
-        "title": "Wentylator 4",
-        "label": "%",
-        "format": "{{value}}",
-        "min": 0,
-        "max": "100",
-        "colors": [
-            "#00b500",
-            "#e6e600",
-            "#ca3838"
-        ],
-        "seg1": "",
-        "seg2": "",
-        "className": "",
-        "x": 670,
-        "y": 960,
-        "wires": []
     },
     {
         "id": "693912a50dfea180",
@@ -557,8 +662,8 @@
         "format": "{{msg.payload}}°C",
         "layout": "row-center",
         "className": "",
-        "x": 700,
-        "y": 800,
+        "x": 600,
+        "y": 900,
         "wires": []
     },
     {
@@ -599,93 +704,69 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 700,
-        "y": 840,
+        "x": 600,
+        "y": 940,
         "wires": [
             []
         ]
     },
     {
-        "id": "550c9f1e10d2644c",
-        "type": "ui_text",
+        "id": "b57b5287b03e3c44",
+        "type": "mqtt in",
         "z": "12421ff9dde586d7",
-        "group": "7ac9664a2bf3d9f2",
-        "order": 2,
-        "width": 0,
-        "height": 0,
         "name": "",
-        "label": "Temperatura Zadana: ",
-        "format": "{{msg.payload}}°C",
-        "layout": "row-center",
-        "className": "",
-        "x": 700,
-        "y": 100,
-        "wires": []
+        "topic": "TEMPERATURES",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 740,
+        "wires": [
+            [
+                "0b1f331c329e0473",
+                "258f048bcad02f00",
+                "5f72a694a098069e",
+                "703ad5d68939bcca"
+            ]
+        ]
     },
     {
-        "id": "8e1286b325de308b",
-        "type": "ui_text",
+        "id": "0b1f331c329e0473",
+        "type": "function",
         "z": "12421ff9dde586d7",
-        "group": "bda376001a4a078a",
-        "order": 2,
-        "width": 0,
-        "height": 0,
         "name": "",
-        "label": "Temperatura Zadana: ",
-        "format": "{{msg.payload}}°C",
-        "layout": "row-center",
-        "className": "",
-        "x": 700,
-        "y": 360,
-        "wires": []
-    },
-    {
-        "id": "d231553fd271ec2e",
-        "type": "ui_text",
-        "z": "12421ff9dde586d7",
-        "group": "617c289c1fe65e5b",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Temperatura Zadana: ",
-        "format": "{{msg.payload}}°C",
-        "layout": "row-center",
-        "className": "",
-        "x": 700,
-        "y": 620,
-        "wires": []
-    },
-    {
-        "id": "4dca01c00c5faa2e",
-        "type": "ui_text",
-        "z": "12421ff9dde586d7",
-        "group": "4156a645b40f200d",
-        "order": 2,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "Temperatura Zadana: ",
-        "format": "{{msg.payload}}°C",
-        "layout": "row-center",
-        "className": "",
-        "x": 700,
-        "y": 880,
-        "wires": []
+        "func": "var newMsg = { payload: msg.payload.length };\nnewMsg.payload = msg.payload.Temp1;\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 560,
+        "wires": [
+            [
+                "73736625e4114183",
+                "f460d0eb218848ae"
+            ]
+        ]
     },
     {
         "id": "0504a7f967f2a2c1",
         "type": "function",
         "z": "12421ff9dde586d7",
         "name": "in: 0-3 -> out: stan strefy",
-        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload.Zone1){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 140,
+        "y": 1020,
         "wires": [
             [
                 "a6671fd24f17c58b"
@@ -706,7 +787,7 @@
         "layout": "row-center",
         "className": "",
         "x": 650,
-        "y": 140,
+        "y": 1020,
         "wires": []
     },
     {
@@ -723,7 +804,7 @@
         "layout": "row-center",
         "className": "",
         "x": 650,
-        "y": 400,
+        "y": 1080,
         "wires": []
     },
     {
@@ -740,7 +821,7 @@
         "layout": "row-center",
         "className": "",
         "x": 650,
-        "y": 660,
+        "y": 1140,
         "wires": []
     },
     {
@@ -757,97 +838,46 @@
         "layout": "row-center",
         "className": "",
         "x": 650,
-        "y": 920,
+        "y": 1200,
         "wires": []
     },
     {
-        "id": "168844b73175f93a",
-        "type": "function",
-        "z": "12421ff9dde586d7",
-        "name": "in: 0-3 -> out: stan strefy",
-        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 400,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "91c3f9b93a64083e",
-        "type": "function",
-        "z": "12421ff9dde586d7",
-        "name": "in: 0-3 -> out: stan strefy",
-        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0bc599f943c8a5da",
-        "type": "function",
-        "z": "12421ff9dde586d7",
-        "name": "in: 0-3 -> out: stan strefy",
-        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 450,
-        "y": 920,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6c2a7e230279150c",
+        "id": "c66681ee2ebcf7b9",
         "type": "mqtt in",
         "z": "12421ff9dde586d7",
         "name": "",
-        "topic": "Temps/Temp1",
+        "topic": "ZONES",
         "qos": "2",
-        "datatype": "auto-detect",
+        "datatype": "json",
         "broker": "f2aed52371d902c0",
         "nl": false,
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 470,
-        "y": 20,
+        "x": 150,
+        "y": 1100,
         "wires": [
             [
-                "73736625e4114183",
-                "f460d0eb218848ae"
+                "0504a7f967f2a2c1",
+                "d1af225735f31bbe",
+                "0eccf91a56a0b537",
+                "cca79abab80744c3"
             ]
         ]
     },
     {
-        "id": "8d3438237b0d0612",
-        "type": "mqtt in",
+        "id": "258f048bcad02f00",
+        "type": "function",
         "z": "12421ff9dde586d7",
         "name": "",
-        "topic": "Temps/Temp2",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 470,
-        "y": 280,
+        "func": "var newMsg = { payload: msg.payload.length };\nnewMsg.payload = msg.payload.Temp2;\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 397.8125,
+        "y": 680.818603515625,
         "wires": [
             [
                 "0818906543b39652",
@@ -856,20 +886,18 @@
         ]
     },
     {
-        "id": "fa9814553ac1f278",
-        "type": "mqtt in",
+        "id": "5f72a694a098069e",
+        "type": "function",
         "z": "12421ff9dde586d7",
         "name": "",
-        "topic": "Temps/Temp3",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 490,
-        "y": 540,
+        "func": "var newMsg = { payload: msg.payload.length };\nnewMsg.payload = msg.payload.Temp3;\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 800,
         "wires": [
             [
                 "6bf786ab447a3b4f",
@@ -878,20 +906,18 @@
         ]
     },
     {
-        "id": "145426fc365d8b24",
-        "type": "mqtt in",
+        "id": "703ad5d68939bcca",
+        "type": "function",
         "z": "12421ff9dde586d7",
         "name": "",
-        "topic": "Temps/Temp4",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 490,
-        "y": 800,
+        "func": "var newMsg = { payload: msg.payload.length };\nnewMsg.payload = msg.payload.Temp4;\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 920,
         "wires": [
             [
                 "693912a50dfea180",
@@ -900,149 +926,59 @@
         ]
     },
     {
-        "id": "534d3755a2256e4f",
-        "type": "mqtt in",
+        "id": "d1af225735f31bbe",
+        "type": "function",
         "z": "12421ff9dde586d7",
-        "name": "",
-        "topic": "SetPoints/setPoint1",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 470,
-        "y": 100,
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload.Zone2){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1080,
         "wires": [
             [
-                "550c9f1e10d2644c"
+                "d070a168102d2999"
             ]
         ]
     },
     {
-        "id": "936b721ad91e210a",
-        "type": "mqtt in",
+        "id": "0eccf91a56a0b537",
+        "type": "function",
         "z": "12421ff9dde586d7",
-        "name": "",
-        "topic": "SetPoints/setPoint2",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 470,
-        "y": 360,
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload.Zone3){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1140,
         "wires": [
             [
-                "8e1286b325de308b"
+                "eab1465fef3f2b10"
             ]
         ]
     },
     {
-        "id": "0acd974e695df323",
-        "type": "mqtt in",
+        "id": "cca79abab80744c3",
+        "type": "function",
         "z": "12421ff9dde586d7",
-        "name": "",
-        "topic": "SetPoints/setPoint3",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 470,
-        "y": 620,
+        "name": "in: 0-3 -> out: stan strefy",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nswitch (msg.payload.Zone4){\n    case 0:\n        newMsg.payload = \"bezczynność\";\n    break;\n    case 1:\n        newMsg.payload = \"Grzanie\"\n    break;\n    case 2:\n        newMsg.payload = \"Chłodzenie\"\n    break;\n    default:\n        newMsg.payload = \"zepsuło się\"\n}\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 1200,
         "wires": [
             [
-                "d231553fd271ec2e"
-            ]
-        ]
-    },
-    {
-        "id": "52eaa04181ead95f",
-        "type": "mqtt in",
-        "z": "12421ff9dde586d7",
-        "name": "",
-        "topic": "SetPoints/setPoint4",
-        "qos": "2",
-        "datatype": "auto-detect",
-        "broker": "f2aed52371d902c0",
-        "nl": false,
-        "rap": true,
-        "rh": 0,
-        "inputs": 0,
-        "x": 470,
-        "y": 880,
-        "wires": [
-            [
-                "4dca01c00c5faa2e"
-            ]
-        ]
-    },
-    {
-        "id": "305611be53477d62",
-        "type": "mqtt out",
-        "z": "352fcc860ddcd8e8",
-        "name": "",
-        "topic": "StanStrefa1",
-        "qos": "1",
-        "retain": "true",
-        "respTopic": "",
-        "contentType": "",
-        "userProps": "",
-        "correl": "",
-        "expiry": "",
-        "broker": "f2aed52371d902c0",
-        "x": 170,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "4f75852f23a434e2",
-        "type": "ui_text",
-        "z": "352fcc860ddcd8e8",
-        "group": "a5181302843e8fd8",
-        "order": 0,
-        "width": 0,
-        "height": 0,
-        "name": "",
-        "label": "text",
-        "format": "{{msg.payload}}",
-        "layout": "row-center",
-        "className": "",
-        "x": 150,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "6b15b39b2dcddebc",
-        "type": "ui_numeric",
-        "z": "352fcc860ddcd8e8",
-        "name": "",
-        "label": "numeric",
-        "tooltip": "",
-        "group": "0349933493185ff4",
-        "order": 5,
-        "width": 0,
-        "height": 0,
-        "wrap": false,
-        "passthru": true,
-        "topic": "payload",
-        "topicType": "msg",
-        "format": "{{value}}",
-        "min": 0,
-        "max": 10,
-        "step": 1,
-        "className": "",
-        "x": 160,
-        "y": 380,
-        "wires": [
-            [
-                "305611be53477d62"
+                "166f78788aac5fc6"
             ]
         ]
     },

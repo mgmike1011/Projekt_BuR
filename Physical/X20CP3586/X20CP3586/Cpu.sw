@@ -10,11 +10,11 @@
   <TaskClass Name="Cyclic#3" />
   <TaskClass Name="Cyclic#4">
     <Task Name="Alarm" Source="Control.Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="MQTT" Source="Control.MQTT.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="OEE" Source="Control.OEE.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="AuditTrail" Source="Control.AuditTrail.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="MpReport1" Source="Control.MpReport.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="DataMgmt" Source="Control.DataMgmt.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="MQTT" Source="Control.MQTT.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />
@@ -42,9 +42,14 @@
     <BinaryObject Name="HeatZone2" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="HeatZone1" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="HeatZone4" Source="" Memory="UserROM" Language="Binary" />
-    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="TC" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="HeatGroup" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="ConfigAudi" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="ConfigAHis" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="ConfigAlar" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="ConfigData" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="ConfigOEE" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>
     <LibraryObject Name="CoTrace" Source="Libraries.CoTrace.lby" Memory="UserROM" Language="binary" Debugging="true" />
@@ -75,6 +80,8 @@
     <LibraryObject Name="MpData" Source="Libraries.MpData.lby" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="DataObj" Source="Libraries.DataObj.lby" Memory="UserROM" Language="binary" Debugging="true" />
     <LibraryObject Name="brsystem" Source="Libraries.brsystem.lby" Memory="UserROM" Language="binary" Debugging="true" />
+    <LibraryObject Name="arssl" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
+    <LibraryObject Name="aruser" Source="" Memory="UserROM" Language="Binary" Debugging="true" />
     <LibraryObject Name="MpFile" Source="Libraries.MpFile.lby" Memory="UserROM" Language="Binary" Debugging="true" />
   </Libraries>
 </SwConfiguration>
