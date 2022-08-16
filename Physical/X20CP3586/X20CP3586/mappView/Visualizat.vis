@@ -19,6 +19,7 @@
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
     <EventBindingsSet refId="TOP_eventbinding" />
+    <EventBindingsSet refId="Tuning_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="dialog_0" />

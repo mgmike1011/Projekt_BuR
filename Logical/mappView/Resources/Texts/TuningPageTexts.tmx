@@ -139,5 +139,62 @@ Kühlregler</seg>
         <seg>Tuning</seg>
       </tuv>
     </tu>
+    <tu tuid="TuningOntxt">
+      <tuv xml:lang="de">
+        <seg>Tuning-Modus
+
+</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Tryb strojenia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tunning mode</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tunningbtntxt">
+      <tuv xml:lang="de">
+        <seg>Tuning</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strojenie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tunning</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Starttxt">
+      <tuv xml:lang="de">
+        <seg>Start</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Rozpocznij</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Stoptxt">
+      <tuv xml:lang="de">
+        <seg>STOP</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>STOP</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>STOP</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SystemInfotxt">
+      <tuv xml:lang="de">
+        <seg>Systeminformationen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Informacje o systemie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>System info</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
