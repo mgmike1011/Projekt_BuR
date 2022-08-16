@@ -1,16 +1,7 @@
 VAR
-	MpAlarmXCore_0 : MpAlarmXCore;
-	first_module : BOOL;
-	second_module : BOOL;
-	third_module : BOOL;
-	fourth_module : BOOL;
-	HeaterAlarm1 : BOOL;
-	HeaterAlarm2 : BOOL;
-	HeaterAlarm3 : BOOL;
-	HeaterAlarm4 : BOOL;
-	FanAlarm1 : BOOL;
-	FanAlarm2 : BOOL;
-	FanAlarm3 : BOOL;
-	FanAlarm4 : BOOL;
-	TempAlarmLimit : REAL := 50;
+	mpAlarmXlist : MpAlarmXListUI;
+	mpAlarmXlistConnect : MpAlarmXListUIConnectType;
+	i : UDINT;
+	stringBuffer : STRING[256];
+	MpAlarmXlistSetup : MpAlarmXListUISetupType;
 END_VAR

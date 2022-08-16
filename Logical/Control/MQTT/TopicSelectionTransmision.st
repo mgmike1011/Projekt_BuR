@@ -22,6 +22,11 @@ ACTION TopicSelectionTransmision:
 				IotMqttPublish_0.Topic:= ADR('ZONES');
 				Parser();
 				PublishMessage := Parser.Output_string;
+			4:
+				Parser.PV := 'Alarms';
+				IotMqttPublish_0.Topic:= ADR('ALARMS');
+				Parser();
+				PublishMessage := Parser.Output_string;
 			
 		END_CASE
 		IotMqttPublish_0.Buffer					:= ADR(PublishMessage);

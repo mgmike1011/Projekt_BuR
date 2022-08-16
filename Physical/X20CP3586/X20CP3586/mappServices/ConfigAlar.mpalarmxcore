@@ -11,7 +11,7 @@
           <Group ID="Monitoring">
             <Property ID="MonitoredPV" Value="::gTemp1" />
             <Selector ID="HighLimitEnable" Value="Dynamic">
-              <Property ID="LimitPV" Value="::Alarm:TempAlarmLimit" />
+              <Property ID="LimitPV" Value="::Alarms.TempAlarmLimit" />
             </Selector>
           </Group>
         </Selector>
@@ -24,7 +24,7 @@
           <Group ID="Monitoring">
             <Property ID="MonitoredPV" Value="::gTemp2" />
             <Selector ID="HighLimitEnable" Value="Dynamic">
-              <Property ID="LimitPV" Value="::Alarm:TempAlarmLimit" />
+              <Property ID="LimitPV" Value="::Alarms.TempAlarmLimit" />
             </Selector>
           </Group>
         </Selector>
@@ -37,7 +37,7 @@
           <Group ID="Monitoring">
             <Property ID="MonitoredPV" Value="::gTemp3" />
             <Selector ID="HighLimitEnable" Value="Dynamic">
-              <Property ID="LimitPV" Value="::Alarm:TempAlarmLimit" />
+              <Property ID="LimitPV" Value="::Alarms.TempAlarmLimit" />
             </Selector>
           </Group>
         </Selector>
@@ -50,7 +50,7 @@
           <Group ID="Monitoring">
             <Property ID="MonitoredPV" Value="::gTemp4" />
             <Selector ID="HighLimitEnable" Value="Dynamic">
-              <Property ID="LimitPV" Value="::Alarm:TempAlarmLimit" />
+              <Property ID="LimitPV" Value="::Alarms.TempAlarmLimit" />
             </Selector>
           </Group>
         </Selector>
@@ -61,7 +61,7 @@
         <Property ID="Code" Value="1308" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:first_module" />
+            <Property ID="MonitoredPV" Value="::Alarms.first_module" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="0" />
             </Group>
@@ -74,7 +74,7 @@
         <Property ID="Code" Value="1309" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:second_module" />
+            <Property ID="MonitoredPV" Value="::Alarms.second_module" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="0" />
             </Group>
@@ -87,7 +87,7 @@
         <Property ID="Code" Value="1310" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:third_module" />
+            <Property ID="MonitoredPV" Value="::Alarms.third_module" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="0" />
             </Group>
@@ -100,7 +100,7 @@
         <Property ID="Code" Value="1311" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:fourth_module" />
+            <Property ID="MonitoredPV" Value="::Alarms.fourth_module" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="0" />
             </Group>
@@ -113,7 +113,7 @@
         <Property ID="Code" Value="1446" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:FanAlarm1" />
+            <Property ID="MonitoredPV" Value="::Alarms.FanAlarm1" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="1" />
             </Group>
@@ -126,7 +126,7 @@
         <Property ID="Code" Value="1447" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:FanAlarm2" />
+            <Property ID="MonitoredPV" Value="::Alarms.FanAlarm2" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="1" />
             </Group>
@@ -139,7 +139,7 @@
         <Property ID="Code" Value="1448" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:FanAlarm3" />
+            <Property ID="MonitoredPV" Value="::Alarms.FanAlarm3" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="1" />
             </Group>
@@ -152,7 +152,7 @@
         <Property ID="Code" Value="1449" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:FanAlarm4" />
+            <Property ID="MonitoredPV" Value="::Alarms.FanAlarm4" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="1" />
             </Group>
@@ -165,7 +165,7 @@
         <Property ID="Severity" Value="1455" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:HeaterAlarm1" />
+            <Property ID="MonitoredPV" Value="::Alarms.HeaterAlarm1" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="1" />
             </Group>
@@ -178,7 +178,7 @@
         <Property ID="Severity" Value="1456" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:HeaterAlarm2" />
+            <Property ID="MonitoredPV" Value="::Alarms.HeaterAlarm2" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="1" />
             </Group>
@@ -191,7 +191,7 @@
         <Property ID="Severity" Value="1457" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:HeaterAlarm3" />
+            <Property ID="MonitoredPV" Value="::Alarms.HeaterAlarm3" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="1" />
             </Group>
@@ -204,7 +204,7 @@
         <Property ID="Severity" Value="1458" />
         <Selector ID="Behavior" Value="DiscreteValueMonitoring">
           <Group ID="Monitoring">
-            <Property ID="MonitoredPV" Value="::Alarm:HeaterAlarm4" />
+            <Property ID="MonitoredPV" Value="::Alarms.HeaterAlarm4" />
             <Group ID="TriggerValues">
               <Property ID="[0]" Value="1" />
             </Group>

@@ -36,8 +36,8 @@
     <Content refId="Tuning" />
     <Content refId="AUDIT" />
     <Content refId="OEE" />
-    <Content refId="FILEMNG" />
     <Content refId="LoginDialogC" />
+    <Content refId="FILEMNG" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />

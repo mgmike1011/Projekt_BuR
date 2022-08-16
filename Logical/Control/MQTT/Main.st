@@ -6,19 +6,6 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	(* Insert code here	*)
-	//doSend := NOT doSend;
-	
-//	IF	NOT	doSend THEN
-//		IotMqttPublish_0.Send :=TRUE;
-//		Parser(PV := 'MQTT:Test');
-//		Parser();
-//		PublishMessage := Parser.Output_string;
-//		IotMqttPublish_0.Topic:= ADR('TEST');
-//		IotMqttPublish_0.Buffer					:= ADR(PublishMessage);
-//		IotMqttPublish_0.BufferLength			:= brsstrlen(ADR(PublishMessage));
-//		IotMqttPublish_0.Send :=TRUE;
-//	END_IF
-	
 	UpdateStructs;
 	doSend := NOT doSend;
 	IotMqttPublish_0.Send :=FALSE;

@@ -20,4 +20,5 @@ ACTION UpdateStructs:
 	Zones.Zone3 := ZoneStatus[2];
 	Zones.Zone4 := ZoneStatus[3];
 	
+
 END_ACTION
