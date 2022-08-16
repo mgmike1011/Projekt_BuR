@@ -22,6 +22,7 @@
       <Property ID="TargetFile[8]" Value="Libraries.MpAudit.TxtEventF.tmx" />
       <Property ID="TargetFile[9]" Value="Libraries.MpAudit.TxtUserF.tmx" />
       <Property ID="TargetFile[10]" Value="Libraries.MpAudit.TxtRecipeF.tmx" />
+      <Property ID="TargetFile[11]" Value="mappView.Resources.Texts.LeftContentButton.tmx" />
     </Group>
   </Element>
 </Configuration>

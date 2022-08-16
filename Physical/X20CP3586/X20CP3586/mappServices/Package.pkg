@@ -5,7 +5,9 @@
     <Object Type="File">ConfigOEE.mpoeecore</Object>
     <Object Type="File">ConfigAlar.mpalarmxcore</Object>
     <Object Type="File">ConfigAudi.mpaudittrail</Object>
+    <Object Type="File">ConfigData.mpdatarecorder</Object>
     <Object Type="File">ConfigAHis.mpalarmxhistory</Object>
     <Object Type="File">report.mpreportcore</Object>
+    <Object Type="File">ConfigFile.mpfilemanager</Object>
   </Objects>
 </Package>
