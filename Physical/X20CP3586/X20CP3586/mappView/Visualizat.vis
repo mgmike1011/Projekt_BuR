@@ -21,6 +21,7 @@
     <EventBindingsSet refId="ALARM_eventbinding" />
     <EventBindingsSet refId="TOP_eventbinding" />
     <EventBindingsSet refId="LoginDialogC_eventbinding" />
+    <EventBindingsSet refId="OEE_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />
@@ -36,11 +37,13 @@
     <Content refId="Tuning" />
     <Content refId="AUDIT" />
     <Content refId="OEE" />
-    <Content refId="LoginDialogC" />
     <Content refId="FILEMNG" />
+    <Content refId="LoginDialogC" />
   </Contents>
   <SnippetsSets />
-  <VariablesSets />
+  <VariablesSets>
+    <VariablesSet refId="svar_0" />
+  </VariablesSets>
   <ExpressionsSets />
   <StartTheme themeRefId="BuRThemeMobileGray" />
   <Themes>

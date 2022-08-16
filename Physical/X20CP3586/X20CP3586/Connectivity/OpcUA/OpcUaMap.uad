@@ -37,7 +37,31 @@
         <Variable Name="gTempInt2" />
         <Variable Name="gTempInt3" />
         <Variable Name="gTempInt4" />
+        <Variable Name="CycleNumber" />
       </GlobalVariables>
+      <Task Name="OEE">
+        <Variable Name="MpOEECore_1">
+          <Variable Name="RejectCounter" />
+          <Variable Name="Availability" />
+          <Variable Name="Performance" />
+          <Variable Name="Quality" />
+          <Variable Name="OEE" />
+        </Variable>
+        <Variable Name="RsetOEE" />
+        <Variable Name="IdealCycleTime_1">
+          <Variable Name="IdealCycleTime" />
+        </Variable>
+        <Variable Name="ICTm" />
+        <Variable Name="ICTms" />
+        <Variable Name="ICTs" />
+        <Variable Name="startOEE" />
+        <Variable Name="RejectCycle" />
+      </Task>
+      <Task Name="MpReport1">
+        <Variable Name="MpReportCore_1">
+          <Variable Name="Generate" />
+        </Variable>
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/OEEPage</prop>
+  </header>
+  <body>
+    <tu tuid="CycleNr">
+      <tuv xml:lang="de">
+        <seg>Zyklusnummer:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Numer cyklu:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Number of cycles:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Mon unité</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BadCycleNr">
+      <tuv xml:lang="de">
+        <seg>Anzahl der schlechten Zyklen:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Liczba błędnych cykli:</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Number of bad cycles:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Unité</seg>
+      </tuv>
+    </tu>
+    <tu tuid="DiscardCycle">
+      <tuv xml:lang="de">
+        <seg>Zyklus verwerfen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Odrzuć cykl</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Discard cycle</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ma description</seg>
+      </tuv>
+    </tu>
+    <tu tuid="RsetStat">
+      <tuv xml:lang="de">
+        <seg>Statistik Zurücksetzen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Resetowanie statystyk</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Reset statistics</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Availability">
+      <tuv xml:lang="de">
+        <seg>Verfügbarkeit</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dostępność</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Availability</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Performance">
+      <tuv xml:lang="de">
+        <seg>Leistung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wydajność</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Performance</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Quality">
+      <tuv xml:lang="de">
+        <seg>Qualität</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jakość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Quality</seg>
+      </tuv>
+    </tu>
+    <tu tuid="OEE">
+      <tuv xml:lang="de">
+        <seg>OEE</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>OEE</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>OEE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MpRepGenerate">
+      <tuv xml:lang="de">
+        <seg>Generieren Sie einen OEE-Bericht</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Generuj Raport OEE</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Generate OEE report</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StartOEE">
+      <tuv xml:lang="de">
+        <seg>Fangen Sie an, Daten zu sammeln</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Rozpocznij zbieranie danych</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start collecting data</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IdealCycleTimeChange">
+      <tuv xml:lang="de">
+        <seg>Ändern Sie die ideale Zykluszeit</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zmień idealny czas cyklu przejścia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Change ideal cycle time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="IdealCycleTime">
+      <tuv xml:lang="de">
+        <seg>Ideale Zykluszeit</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas idealnego cyklu</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Ideal cycle time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="assignTime">
+      <tuv xml:lang="de">
+        <seg>Zeit zuweisen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przypisz czas</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Assign time</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
