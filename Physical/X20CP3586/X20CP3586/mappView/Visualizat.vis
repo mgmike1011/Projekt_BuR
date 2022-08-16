@@ -15,11 +15,17 @@
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ALARM_binding" />
+    <BindingsSet refId="Tuning_binding" />
     <BindingsSet refId="LoginDialogC_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
     <EventBindingsSet refId="TOP_eventbinding" />
+    <EventBindingsSet refId="Tuning_eventbinding" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="dialog_0" />
+    <Dialog refId="SystemInfoDialog" />
     <EventBindingsSet refId="LoginDialogC_eventbinding" />
     <EventBindingsSet refId="OEE_eventbinding" />
   </EventBindingsSets>
@@ -37,6 +43,7 @@
     <Content refId="Tuning" />
     <Content refId="AUDIT" />
     <Content refId="OEE" />
+    <Content refId="SystemInfoDialogContent" />
     <Content refId="FILEMNG" />
     <Content refId="LoginDialogC" />
   </Contents>

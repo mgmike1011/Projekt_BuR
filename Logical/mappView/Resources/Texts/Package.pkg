@@ -5,6 +5,8 @@
     <Object Type="File">Alarms.tmx</Object>
     <Object Type="File">LeftContentButton.tmx</Object>
     <Object Type="File">AlarmPage.tmx</Object>
+    <Object Type="File">TuningPageTexts.tmx</Object>
+    <Object Type="File">SystemInfoDialogTexts.tmx</Object>
     <Object Type="File">OEEPage.tmx</Object>
     <Object Type="File">ProjectTitle.tmx</Object>
     <Object Type="File">LoginText.tmx</Object>

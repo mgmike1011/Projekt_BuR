@@ -16,7 +16,9 @@
     </ACLAliases>
     <EURangeViolationAliases />
     <EURangesAliases />
-    <EngineeringUnitAliases />
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="5457219" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="second [unit of time]" Symbol="s" />
+    </EngineeringUnitAliases>
   </Aliases>
   <DefaultView AclId="2">
     <Module Name="&lt;Default&gt;">
@@ -37,7 +39,69 @@
         <Variable Name="gTempInt2" />
         <Variable Name="gTempInt3" />
         <Variable Name="gTempInt4" />
+        <Variable Name="Automatic_work" />
+        <Variable Name="AutoStep" />
         <Variable Name="CycleNumber" />
+        <Variable Name="ELEMENTS_NUMBER" />
+        <Variable Name="EnableZone1" />
+        <Variable Name="EnableZone2" />
+        <Variable Name="EnableZone3" />
+        <Variable Name="EnableZone4" />
+        <Variable Name="gAlarmXCore" />
+        <Variable Name="gAlarmXHistory" />
+        <Variable Name="gAuditTrail" />
+        <Variable Name="gDataRecorder" />
+        <Variable Name="gError" />
+        <Variable Name="gOeeCore" />
+        <Variable Name="gStart" />
+        <Variable Name="gSTOP" />
+        <Variable Name="gTempController_1" />
+        <Variable Name="gTempController_2" />
+        <Variable Name="gTempController_3" />
+        <Variable Name="gTempController_4" />
+        <Variable Name="gTempGroup_1" />
+        <Variable Name="Manual_work" />
+        <Variable Name="PIDDerivativeTimeCOOL" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDDerivativeTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDFilterTimeCOOL" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDFilterTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDIntegrationTimeCOOL" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDIntegrationTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDProportionaGainCOOL" EnableArrayElements="True" />
+        <Variable Name="PIDProportionaGainHEAT" EnableArrayElements="True" />
+        <Variable Name="SetTemp1" />
+        <Variable Name="SetTemp2" />
+        <Variable Name="SetTemp3" />
+        <Variable Name="SetTemp4" />
+        <Variable Name="SetTempCoolTuning1" />
+        <Variable Name="SetTempCoolTuning2" />
+        <Variable Name="SetTempCoolTuning3" />
+        <Variable Name="SetTempCoolTuning4" />
+        <Variable Name="SetTempHeatTuning1" />
+        <Variable Name="SetTempHeatTuning2" />
+        <Variable Name="SetTempHeatTuning3" />
+        <Variable Name="SetTempHeatTuning4" />
+        <Variable Name="SimulateZone1Enable" />
+        <Variable Name="SimulateZone2Enable" />
+        <Variable Name="SimulateZone3Enable" />
+        <Variable Name="SimulateZone4Enable" />
+        <Variable Name="STATUS" />
+        <Variable Name="TempController" />
+        <Variable Name="TempControllerPar" />
+        <Variable Name="TempGroup" />
+        <Variable Name="TempGroupPar" />
+        <Variable Name="TimeStep1" />
+        <Variable Name="TimeStep2" />
+        <Variable Name="TimeStep3" />
+        <Variable Name="TimeStep4" />
+        <Variable Name="TimeStep5" />
+        <Variable Name="TimStep1" />
+        <Variable Name="TimStep2" />
+        <Variable Name="TimStep3" />
+        <Variable Name="TimStep4" />
+        <Variable Name="TimStep5" />
+        <Variable Name="ZoneStatus" />
+        <Variable Name="TuneEnable" />
       </GlobalVariables>
       <Task Name="OEE">
         <Variable Name="MpOEECore_1">
