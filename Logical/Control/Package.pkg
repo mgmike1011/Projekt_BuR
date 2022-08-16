@@ -9,6 +9,7 @@
     <Object Type="Program" Language="IEC">MQTT</Object>
     <Object Type="Program" Language="IEC">OEE</Object>
     <Object Type="Program" Language="IEC">AuditTrail</Object>
+    <Object Type="Program" Language="IEC">MpReport</Object>
     <Object Type="Program" Language="IEC">DataMgmt</Object>
   </Objects>
 </Package>

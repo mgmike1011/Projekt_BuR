@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/left</prop>
+  </header>
+  <body>
+    <tu tuid="MainPageButton">
+      <tuv xml:lang="pl">
+        <seg>Stron Główna </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Main Page</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AlarmPageButton">
+      <tuv xml:lang="pl">
+        <seg>Alarmy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Alarms</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutomaticPageButt">
+      <tuv xml:lang="pl">
+        <seg>Automatyczny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Automatic</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManualPageButton">
+      <tuv xml:lang="pl">
+        <seg>Ręczny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual</seg>
+      </tuv>
+    </tu>
+    <tu tuid="RecptPageButton">
+      <tuv xml:lang="pl">
+        <seg>Receptury</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recipes </seg>
+      </tuv>
+    </tu>
+    <tu tuid="TuningPageButton">
+      <tuv xml:lang="pl">
+        <seg>Strojenie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tuning</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuditPageButton">
+      <tuv xml:lang="pl">
+        <seg>Audyt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Audit</seg>
+      </tuv>
+    </tu>
+    <tu tuid="OeePageButton">
+      <tuv xml:lang="pl">
+        <seg>OEE </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>OEE </seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
