@@ -55,7 +55,7 @@
       <EventHandler>
         <Action>
           <Target xsi:type="clientSystem.Action">
-            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="SystemInfoDialog" mode="modeless" />
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="SystemInfoDialog" mode="modeless" headerText="$IAT/TuningPage/SystemInfotxt" />
           </Target>
         </Action>
       </EventHandler>

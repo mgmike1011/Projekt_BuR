@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/SystemInfoDialog</prop>
+  </header>
+  <body>
+    <tu tuid="HeaterZonetxt">
+      <tuv xml:lang="de">
+        <seg>Gegenstände erhitzen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obiekty grzewcze</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Heaters</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CoolZonetxt">
+      <tuv xml:lang="de">
+        <seg>Kühleinrichtungen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obiekty chłodzące</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cooling objects</seg>
+      </tuv>
+    </tu>
+    <tu tuid="T1">
+      <tuv xml:lang="de">
+        <seg>T1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>T1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>T1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="T2">
+      <tuv xml:lang="de">
+        <seg>T2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>T2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>T2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Gaintxt">
+      <tuv xml:lang="de">
+        <seg>Verstärkung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wzmocnienie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Gain</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Delaytxt">
+      <tuv xml:lang="de">
+        <seg>Verzögerung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Opóźnienie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Delay</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

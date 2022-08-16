@@ -6,5 +6,6 @@
     <Object Type="File">LeftContentButton.tmx</Object>
     <Object Type="File">AlarmPage.tmx</Object>
     <Object Type="File">TuningPageTexts.tmx</Object>
+    <Object Type="File">SystemInfoDialogTexts.tmx</Object>
   </Objects>
 </Package>
