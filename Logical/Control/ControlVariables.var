@@ -50,6 +50,16 @@ END_VAR
 (*Automatic control*)
 VAR
 	AutoStep : AUTOMATIC_MODE_STATE := STEP_INIT;
+	TimeStep1 : TIME := T#5s; (*Min time of step 1*)
+	TimeStep2 : TIME := T#5s; (*Min time of step 2*)
+	TimeStep3 : TIME := T#5s; (*Min time of step 3*)
+	TimeStep4 : TIME := T#5s; (*Min time of step 4*)
+	TimeStep5 : TIME := T#5s; (*Min time of step 5*)
+	TimStep1 : TON;
+	TimStep2 : TON;
+	TimStep3 : TON;
+	TimStep4 : TON;
+	TimStep5 : TON;
 	CycleNumber : DINT := 0;
 END_VAR
 (*Simulation mode*)
