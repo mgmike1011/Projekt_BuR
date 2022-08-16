@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Configuration>
+  <Element ID="gReport" Type="mpreportcore">
+    <Group ID="MpReport">
+      <Group ID="Settings">
+        <Property ID="ResourceDeviceName" Value="OEERaport" />
+        <Group ID="LanguageDependent">
+          <Group ID="[0]">
+            <Property ID="Language" Value="en" />
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="PageLayouts">
+        <Group ID="[0]">
+          <Property ID="Name" Value="Layout" />
+          <Property ID="Orientation" Value="2" />
+        </Group>
+      </Group>
+      <Group ID="Styles">
+        <Group ID="Text">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+            <Property ID="Size" Value="8" />
+          </Group>
+        </Group>
+        <Group ID="Table">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+          </Group>
+        </Group>
+        <Group ID="Line">
+          <Group ID="[0]">
+            <Property ID="Name" Value="Default" />
+          </Group>
+        </Group>
+        <Group ID="Chart">
+          <Group ID="PieChart">
+            <Group ID="[0]" />
+          </Group>
+          <Group ID="LineChart">
+            <Group ID="[0]">
+              <Property ID="Name" Value="LineChartBasic" />
+            </Group>
+          </Group>
+          <Group ID="BarChart">
+            <Group ID="[0]">
+              <Property ID="Name" Value="BarChartStyle" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
+      <Group ID="Tables">
+        <Selector ID="[0]">
+          <Property ID="Name" Value="OEE Table" />
+          <Property ID="TableStyle" Value="Default" />
+          <Property ID="TextStyle" Value="Default" />
+          <Group ID="[0]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Availability" />
+            </Selector>
+            <Selector ID="[1]" Value="TextId">
+              <Property ID="Source" Value="Performance" />
+            </Selector>
+            <Selector ID="[2]" Value="TextId">
+              <Property ID="Source" Value="Quality" />
+            </Selector>
+            <Selector ID="[3]" Value="TextId">
+              <Property ID="Source" Value="OEE" />
+            </Selector>
+          </Group>
+          <Group ID="[1]">
+            <Selector ID="[0]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Availability" />
+              </Selector>
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Performance" />
+              </Selector>
+            </Selector>
+            <Selector ID="[2]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Quality" />
+              </Selector>
+            </Selector>
+            <Selector ID="[3]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.OEE" />
+              </Selector>
+            </Selector>
+          </Group>
+        </Selector>
+      </Group>
+      <Group ID="Contents">
+        <Group ID="[0]">
+          <Property ID="Name" Value="ContentHeader" />
+          <Selector ID="[0]">
+            <Property ID="Text" Value="Raport OEE" />
+            <Property ID="TextStyle" Value="Default" />
+          </Selector>
+          <Selector ID="[1]" Value="DateTime" />
+        </Group>
+        <Group ID="[1]">
+          <Property ID="Name" Value="ContentLine" />
+          <Selector ID="[0]" Value="Line">
+            <Property ID="LineStyle" Value="Default" />
+          </Selector>
+        </Group>
+        <Group ID="[2]">
+          <Property ID="Name" Value="ContentProductionTable" />
+          <Selector ID="[0]" Value="Table">
+            <Property ID="Table" Value="OEE Table" />
+          </Selector>
+        </Group>
+        <Group ID="[3]">
+          <Property ID="Name" Value="ContentOEETab" />
+          <Selector ID="[0]" Value="Table">
+            <Property ID="Table" Value="OEE Table" />
+          </Selector>
+        </Group>
+      </Group>
+      <Group ID="Reports">
+        <Group ID="[0]">
+          <Property ID="Name" Value="ReportOEE" />
+          <Property ID="PageLayout" Value="Layout" />
+          <Property ID="Header" Value="ContentHeader" />
+          <Group ID="[0]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="ContentLine" />
+            </Group>
+          </Group>
+          <Group ID="[1]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="ContentProductionTable" />
+            </Group>
+          </Group>
+        </Group>
+      </Group>
+    </Group>
+  </Element>
+</Configuration>

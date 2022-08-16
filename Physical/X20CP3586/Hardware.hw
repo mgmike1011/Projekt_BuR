@@ -33,6 +33,9 @@
     <Group ID="FileDevice4" />
     <Parameter ID="FileDeviceName4" Value="FILE" />
     <Parameter ID="FileDevicePath4" Value="C:\BRFileManager" />
+    <Group ID="FileDevice5" />
+    <Parameter ID="FileDeviceName5" Value="OEEReport" />
+    <Parameter ID="FileDevicePath5" Value="C:/OEEReport" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>
