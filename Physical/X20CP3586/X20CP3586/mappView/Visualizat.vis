@@ -15,13 +15,14 @@
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ALARM_binding" />
+    <BindingsSet refId="RECEPT_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
     <EventBindingsSet refId="TOP_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
-		<Dialog refId="LoginDialogP" />
+    <Dialog refId="LoginDialogP" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />

@@ -9,5 +9,6 @@
     <Object Type="File">ConfigAHis.mpalarmxhistory</Object>
     <Object Type="File">report.mpreportcore</Object>
     <Object Type="File">ConfigFile.mpfilemanager</Object>
+    <Object Type="File">RecipeCon.mprecipecsv</Object>
   </Objects>
 </Package>

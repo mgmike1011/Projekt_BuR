@@ -13,4 +13,5 @@ VAR
 	FanAlarm3 : BOOL;
 	FanAlarm4 : BOOL;
 	TempAlarmLimit : REAL := 50;
+	MpAlarmXHistory_0 : MpAlarmXHistory;
 END_VAR

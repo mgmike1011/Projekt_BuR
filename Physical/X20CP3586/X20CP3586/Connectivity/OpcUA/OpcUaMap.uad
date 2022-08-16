@@ -38,6 +38,10 @@
         <Variable Name="gTempInt3" />
         <Variable Name="gTempInt4" />
       </GlobalVariables>
+      <Task Name="Recipe">
+        <Variable Name="RecipeUIConnect" />
+        <Variable Name="RecipeUISetup" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
