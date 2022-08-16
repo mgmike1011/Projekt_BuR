@@ -103,6 +103,13 @@
         <Variable Name="ZoneStatus" />
         <Variable Name="TuneEnable" />
       </GlobalVariables>
+      <Task Name="FileCtrl">
+        <Variable Name="MpFileMngConnect">
+          <Variable Name="File">
+            <Variable Name="List">
+              <Variable Name="Items" EnableArrayElements="True" />
+            </Variable>
+          </Variable>
       <Task Name="OEE">
         <Variable Name="MpOEECore_1">
           <Variable Name="RejectCounter" />
