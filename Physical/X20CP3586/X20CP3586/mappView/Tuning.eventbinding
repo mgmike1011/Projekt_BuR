@@ -50,5 +50,15 @@
         </Sequence>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="Tuning.ButtonInfo.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="Tuning" widgetRefId="ButtonInfo" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="SystemInfoDialog" mode="modeless" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>

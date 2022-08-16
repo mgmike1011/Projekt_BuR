@@ -4,5 +4,6 @@
   <Objects>
     <Object Type="Package" Description="AreaContents">AreaContents</Object>
     <Object Type="Package">Dialog</Object>
+    <Object Type="Package">SystemInfoDialog</Object>
   </Objects>
 </Package>
