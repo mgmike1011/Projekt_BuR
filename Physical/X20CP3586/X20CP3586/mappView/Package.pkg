@@ -7,6 +7,7 @@
     <Object Type="File">ALARM.binding</Object>
     <Object Type="File">ALARM.eventbinding</Object>
     <Object Type="File">TOP.eventbinding</Object>
+    <Object Type="File">LoginDialogC.eventbinding</Object>
     <Object Type="File">FILEMNG.eventbinding</Object>
   </Objects>
 </Package>
