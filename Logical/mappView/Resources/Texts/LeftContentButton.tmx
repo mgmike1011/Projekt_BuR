@@ -6,6 +6,9 @@
   </header>
   <body>
     <tu tuid="MainPageButton">
+      <tuv xml:lang="de">
+        <seg>Hauptseite</seg>
+      </tuv>
       <tuv xml:lang="pl">
         <seg>Stron Główna </seg>
       </tuv>
@@ -17,6 +20,9 @@
       </tuv>
     </tu>
     <tu tuid="AlarmPageButton">
+      <tuv xml:lang="de">
+        <seg>Alarm</seg>
+      </tuv>
       <tuv xml:lang="pl">
         <seg>Alarmy</seg>
       </tuv>
@@ -25,6 +31,9 @@
       </tuv>
     </tu>
     <tu tuid="AutomaticPageButt">
+      <tuv xml:lang="de">
+        <seg>Automatisch</seg>
+      </tuv>
       <tuv xml:lang="pl">
         <seg>Automatyczny</seg>
       </tuv>
@@ -33,6 +42,9 @@
       </tuv>
     </tu>
     <tu tuid="ManualPageButton">
+      <tuv xml:lang="de">
+        <seg>Handbuch</seg>
+      </tuv>
       <tuv xml:lang="pl">
         <seg>Ręczny</seg>
       </tuv>
@@ -41,6 +53,9 @@
       </tuv>
     </tu>
     <tu tuid="RecptPageButton">
+      <tuv xml:lang="de">
+        <seg>Rezepturen</seg>
+      </tuv>
       <tuv xml:lang="pl">
         <seg>Receptury</seg>
       </tuv>
@@ -49,6 +64,9 @@
       </tuv>
     </tu>
     <tu tuid="TuningPageButton">
+      <tuv xml:lang="de">
+        <seg>Abstimmung</seg>
+      </tuv>
       <tuv xml:lang="pl">
         <seg>Strojenie</seg>
       </tuv>
@@ -57,6 +75,9 @@
       </tuv>
     </tu>
     <tu tuid="AuditPageButton">
+      <tuv xml:lang="de">
+        <seg>Prüfung</seg>
+      </tuv>
       <tuv xml:lang="pl">
         <seg>Audyt</seg>
       </tuv>
@@ -65,11 +86,25 @@
       </tuv>
     </tu>
     <tu tuid="OeePageButton">
+      <tuv xml:lang="de">
+        <seg>OEE </seg>
+      </tuv>
       <tuv xml:lang="pl">
         <seg>OEE </seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>OEE </seg>
+      </tuv>
+    </tu>
+    <tu tuid="FilePageButton">
+      <tuv xml:lang="de">
+        <seg>Datei</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Pliki</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>File</seg>
       </tuv>
     </tu>
   </body>

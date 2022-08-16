@@ -10,11 +10,13 @@
     <Page refId="Tuning" />
     <Page refId="AUDIT" />
     <Page refId="OEE" />
+    <Page refId="FILEMNG" />
   </Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ALARM_binding" />
     <BindingsSet refId="Tuning_binding" />
+    <BindingsSet refId="LoginDialogC_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
@@ -24,6 +26,11 @@
   <Dialogs>
     <Dialog refId="dialog_0" />
     <Dialog refId="SystemInfoDialog" />
+    <EventBindingsSet refId="LoginDialogC_eventbinding" />
+    <EventBindingsSet refId="OEE_eventbinding" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="LoginDialogP" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -37,9 +44,13 @@
     <Content refId="AUDIT" />
     <Content refId="OEE" />
     <Content refId="SystemInfoDialogContent" />
+    <Content refId="FILEMNG" />
+    <Content refId="LoginDialogC" />
   </Contents>
   <SnippetsSets />
-  <VariablesSets />
+  <VariablesSets>
+    <VariablesSet refId="svar_0" />
+  </VariablesSets>
   <ExpressionsSets />
   <StartTheme themeRefId="BuRThemeMobileGray" />
   <Themes>

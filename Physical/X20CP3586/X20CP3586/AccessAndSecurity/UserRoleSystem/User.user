@@ -23,7 +23,7 @@
   </Element>
   <Element ID="a" Type="User">
     <Property ID="UserID" Value="4" />
-    <Property ID="Password" Value="Ac6kMSrS7d6Aaw196odIcTlO557IZj2XINnUL/gxzHx2ebWdScs=" />
+    <Property ID="Password" Value="fV9A4Bkkzqq6ZT9LKWiUWomtEnyoYLotCX1ofGT7TeLjB6Wi9AA=" />
     <Group ID="Roles">
       <Property ID="Role[1]" Value="Administrators" />
     </Group>

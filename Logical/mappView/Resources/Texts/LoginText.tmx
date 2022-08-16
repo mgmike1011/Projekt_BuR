@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/LoginDialogC</prop>
+  </header>
+  <body>
+    <tu tuid="password">
+      <tuv xml:lang="de">
+        <seg>Passwort</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Hasło</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Password </seg>
+      </tuv>
+    </tu>
+    <tu tuid="Login">
+      <tuv xml:lang="de">
+        <seg>Anmeldung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zaloguj się </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Login</seg>
+      </tuv>
+    </tu>
+    <tu tuid="failed">
+      <tuv xml:lang="de">
+        <seg>Falsche Anmeldeinformationen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Niepoprawne dane logowania</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set User failed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="successful">
+      <tuv xml:lang="de">
+        <seg>Anmeldung erfolgreich</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Logowanie udane</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Login successful</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AuthorisationF">
+      <tuv xml:lang="de">
+        <seg>Autorisierung fehlgeschlagen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Autoryzacja nie powiodła się</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Authorisation failed</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Username">
+      <tuv xml:lang="de">
+        <seg>Nutzername</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Użytkownik </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Username</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
