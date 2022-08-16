@@ -38,6 +38,15 @@
         <Variable Name="gTempInt3" />
         <Variable Name="gTempInt4" />
       </GlobalVariables>
+      <Task Name="FileCtrl">
+        <Variable Name="MpFileMngConnect">
+          <Variable Name="File">
+            <Variable Name="List">
+              <Variable Name="Items" EnableArrayElements="True" />
+            </Variable>
+          </Variable>
+        </Variable>
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

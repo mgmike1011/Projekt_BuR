@@ -21,7 +21,7 @@
     <EventBindingsSet refId="TOP_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
-		<Dialog refId="LoginDialogP" />
+    <Dialog refId="LoginDialogP" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
