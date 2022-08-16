@@ -196,5 +196,16 @@ Kühlregler</seg>
         <seg>System info</seg>
       </tuv>
     </tu>
+    <tu tuid="Statustxt">
+      <tuv xml:lang="de">
+        <seg>Status</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Status</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Status</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

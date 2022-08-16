@@ -112,5 +112,7 @@
         <Widget xsi:type="widgets.brease.Button" id="ButtonStart" top="235" left="128" width="175" height="60" zIndex="7" text="$IAT/TuningPage/Starttxt" />
       </Widgets>
     </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label21" top="848" left="15" zIndex="12" text="$IAT/TuningPage/Statustxt" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.ListBox" id="ListBox1" top="840" left="105" width="148" height="46" zIndex="13" dataProvider="[{'value':'0','text':'IDLE'},{'value':'1','text':'Tuning'},{'value':'3','text':'Manual'},{'value':'4','text':'Auto'},{'value':'5','text':'ERROR'},{'value':'6','text':'STOP'}]" selectedValue="0" enable="false" />
   </Widgets>
 </Content>

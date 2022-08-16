@@ -136,12 +136,12 @@
 <Target xsi:type="brease" contentRefId="Tuning" widgetRefId="NumericOutputTfCool4" attribute="node" />
 </Binding>
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gStart" attribute="value" />
-<Target xsi:type="brease" contentRefId="Tuning" widgetRefId="ToggleButtonStart" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:TuneEnable" attribute="value" />
 <Target xsi:type="brease" contentRefId="Tuning" widgetRefId="ToggleButtonTunning" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:STATUS" attribute="value" />
+<Target xsi:type="brease" contentRefId="Tuning" widgetRefId="ListBox1" attribute="selectedIndex" />
 </Binding>
 </Bindings>
 </BindingsSet>
