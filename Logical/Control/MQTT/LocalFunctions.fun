@@ -1,13 +1,13 @@
 
 {REDUND_ERROR} FUNCTION_BLOCK JSON_PARSER (*Parses Struct of base types to JSON string*) (*$GROUP=User,$CAT=User,$GROUPICON=User.png,$CATICON=User.png*)
 	VAR_INPUT
-		PV : {REDUND_UNREPLICABLE} STRING[80];
+		PV : {REDUND_UNREPLICABLE} STRING[512];
 	END_VAR
 	VAR_OUTPUT
-		Output_string : STRING[256];
+		Output_string : STRING[1024];
 	END_VAR
 	VAR
-		String_bufer : STRING[80];
+		String_bufer : STRING[512];
 		Dword_buffer : REFERENCE TO DWORD;
 		Bool_buffer : REFERENCE TO BOOL;
 		Word_buffer : REFERENCE TO WORD;
@@ -23,7 +23,7 @@
 		Member_name : STRING[80];
 		PV_acces_string : STRING[80];
 		Member_dim : UINT;
-		Member_value_as_string : STRING[80];
+		Member_value_as_string : STRING[512];
 		Member_adres : UDINT;
 		Real_buffer : REFERENCE TO REAL;
 		Real_buffer1 : REAL;

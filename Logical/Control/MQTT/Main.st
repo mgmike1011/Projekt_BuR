@@ -18,7 +18,7 @@ PROGRAM _CYCLIC
 //		IotMqttPublish_0.BufferLength			:= brsstrlen(ADR(PublishMessage));
 //		IotMqttPublish_0.Send :=TRUE;
 //	END_IF
-	
+	IF run THEN
 	UpdateStructs;
 	doSend := NOT doSend;
 	IotMqttPublish_0.Send :=FALSE;
@@ -29,6 +29,7 @@ PROGRAM _CYCLIC
 	TopicCounter();
 	IotMqttClient_0();
 	IotMqttPublish_0();
+	END_IF
 	
 END_PROGRAM
 

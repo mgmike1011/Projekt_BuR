@@ -1,12 +1,15 @@
+VAR
+	run : BOOL;
+END_VAR
 VAR CONSTANT
-	NR_OF_TOPICS : INT := 4;
+	NR_OF_TOPICS : INT := 5;
 END_VAR
 VAR
 	IotMqttParameters : IotMqttClientParType;
 	IotMqttClient_0 : IotMqttClient;
 	IotMqttLink : IoTMqttComIdentType;
 	IotMqttPublish_0 : IotMqttPublish;
-	PublishMessage : STRING[256];
+	PublishMessage : STRING[1024];
 	TopicCounter : {REDUND_UNREPLICABLE} CTU;
 	doSend : BOOL := TRUE;
 	Parser : JSON_PARSER;
