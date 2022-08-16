@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="OEE_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="OEE.BtnRsetStat.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="OEE" widgetRefId="BtnRsetStat" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::OEE:RsetOEE">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="OEE.BtnRepGenerate.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="OEE" widgetRefId="BtnRepGenerate" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::MpReport1:MpReportCore_1.Generate">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="OEE.BtnAssignICT.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="OEE" widgetRefId="BtnAssignICT" event="Click" />
+      <Operand datatype="ANY_INT" name="msICT">
+        <ReadTarget xsi:type="session.VariableAction.Read" refId="msICT">
+          <Method xsi:type="session.VariableAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="ANY_INT" name="sICT">
+        <ReadTarget xsi:type="session.VariableAction.Read" refId="sICT">
+          <Method xsi:type="session.VariableAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="ANY_INT" name="mICT">
+        <ReadTarget xsi:type="session.VariableAction.Read" refId="mICT">
+          <Method xsi:type="session.VariableAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::OEE:ICTms">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=msICT" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::OEE:ICTs">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=sICT" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::OEE:ICTm">
+            <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="=mICT" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="OEE.BtnStartOEE.Click">
+      <Source xsi:type="widgets.brease.ToggleButton.Event" contentRefId="OEE" widgetRefId="BtnStartOEE" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::OEE:startOEE">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="OEE.BtnDiscardCycle.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="OEE" widgetRefId="BtnDiscardCycle" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::OEE:RejectCycle">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>

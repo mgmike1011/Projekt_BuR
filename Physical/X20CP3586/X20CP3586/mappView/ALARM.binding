@@ -9,5 +9,60 @@
 <Source xsi:type="mapp" refId="gAlarmXHistory" attribute="link" />
 			<Target xsi:type="brease" contentRefId="ALARM" widgetRefId="AlarmHistory" attribute="mpLink" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:CycleNumber" attribute="node" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="OutputCycleNr" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.RejectCounter" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="OutputBadCycleNr" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Availability" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="OutputAvailability" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Performance" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="OutputPerformance" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Quality" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="OutputQuality" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.OEE" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="OutputOEE" attribute="value" />
+</Binding>
+
+
+<!--<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::OEE:IdealCycleTimeFromSourceDT" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="OutputIdealCycleTime" attribute="value" />
+</Binding>-->
+
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="msICT" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumINmsICT" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="sICT" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumINsekICT" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="mICT" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumINminICT" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:ICTms" attribute="node" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTmsICT" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:ICTs" attribute="node" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTsekICT" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:ICTm" attribute="node" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTminICT" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>

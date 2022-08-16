@@ -3,34 +3,35 @@ ACTION TopicSelectionTransmision:
 	IF doSend THEN
 		CASE TopicCounter.CV OF
 			0:
-				PublishMessage := REAL_TO_STRING(gTemp1);
-				IotMqttPublish_0.Topic:= ADR('Temps/Temp1');
+				Parser.PV := 'MQTT:Fans';
+				IotMqttPublish_0.Topic:= ADR('FANS');
+				Parser();
+				PublishMessage := Parser.Output_string;
 			1:
-				PublishMessage := REAL_TO_STRING(gTemp2);
-				IotMqttPublish_0.Topic:= ADR('Temps/Temp2');
+				Parser.PV := 'MQTT:SetPoint';
+				IotMqttPublish_0.Topic:= ADR('SETPOINTS');
+				Parser();
+				PublishMessage := Parser.Output_string;
 			2:
-				PublishMessage := REAL_TO_STRING(gTemp3);
-				IotMqttPublish_0.Topic:= ADR('Temps/Temp3');
+				Parser.PV := 'MQTT:Temps';
+				IotMqttPublish_0.Topic:= ADR('TEMPERATURES');
+				Parser();
+				PublishMessage := Parser.Output_string;
 			3:
-				PublishMessage := REAL_TO_STRING(gTemp4);
-				IotMqttPublish_0.Topic:= ADR('Temps/Temp4');
+				Parser.PV := 'MQTT:Zones';
+				IotMqttPublish_0.Topic:= ADR('ZONES');
+				Parser();
+				PublishMessage := Parser.Output_string;
 			4:
-				PublishMessage := REAL_TO_STRING(SetTemp1);
-				IotMqttPublish_0.Topic:= ADR('SetPoints/setPoint1');
-			5:
-				PublishMessage := REAL_TO_STRING(SetTemp2);
-				IotMqttPublish_0.Topic:= ADR('SetPoints/setPoint2');
-			6:
-				PublishMessage := REAL_TO_STRING(SetTemp3);
-				IotMqttPublish_0.Topic:= ADR('SetPoints/setPoint3');
-			7:
-				PublishMessage := REAL_TO_STRING(SetTemp4);
-				IotMqttPublish_0.Topic:= ADR('SetPoints/setPoint4');
+				Parser.PV := 'Alarms';
+				IotMqttPublish_0.Topic:= ADR('ALARMS');
+				Parser();
+				PublishMessage := Parser.Output_string;
+			
 		END_CASE
 		IotMqttPublish_0.Buffer					:= ADR(PublishMessage);
 		IotMqttPublish_0.BufferLength			:= brsstrlen(ADR(PublishMessage));
 		IotMqttPublish_0.Send :=TRUE;
-		
 		TopicCounter.CU := TRUE;
 		TopicCounter.RESET := TopicCounter.Q;
 		
