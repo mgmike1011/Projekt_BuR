@@ -19,8 +19,10 @@
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
     <EventBindingsSet refId="TOP_eventbinding" />
+    <EventBindingsSet refId="LoginDialogC_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
+    <Dialog refId="LoginDialogP" />
     <Dialog refId="dialog_0" />
   </Dialogs>
   <Contents>
@@ -34,6 +36,7 @@
     <Content refId="Tuning" />
     <Content refId="AUDIT" />
     <Content refId="OEE" />
+    <Content refId="LoginDialogC" />
     <Content refId="FILEMNG" />
   </Contents>
   <SnippetsSets />
