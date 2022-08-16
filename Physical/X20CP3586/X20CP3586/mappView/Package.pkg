@@ -9,5 +9,6 @@
     <Object Type="File">TOP.eventbinding</Object>
     <Object Type="File">FILEMNG.eventbinding</Object>
     <Object Type="File">LoginDialogC.eventbinding</Object>
+    <Object Type="File">LoginDialogC.binding</Object>
   </Objects>
 </Package>

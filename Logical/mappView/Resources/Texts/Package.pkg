@@ -6,5 +6,6 @@
     <Object Type="File">LeftContentButton.tmx</Object>
     <Object Type="File">AlarmPage.tmx</Object>
     <Object Type="File">ProjectTitle.tmx</Object>
+    <Object Type="File">LoginText.tmx</Object>
   </Objects>
 </Package>
