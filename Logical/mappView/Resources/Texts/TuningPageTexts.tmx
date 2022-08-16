@@ -4,5 +4,140 @@
     <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
     <prop type="x-BR-TS:Namespace">IAT/TuningPage</prop>
   </header>
-  <body />
+  <body>
+    <tu tuid="TuningPageTitletxt">
+      <tuv xml:lang="de">
+        <seg>Abstimmungsparameter der Zonenregler</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strojenie parametrów regulatorów stref</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tuning controller parameters for each zone</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone4txt">
+      <tuv xml:lang="de">
+        <seg>Zone 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone3txt">
+      <tuv xml:lang="de">
+        <seg>Zone 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone2txt">
+      <tuv xml:lang="de">
+        <seg>Zone 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone1txt">
+      <tuv xml:lang="de">
+        <seg>Zone 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeatControllertxt">
+      <tuv xml:lang="de">
+        <seg>Heizungsregler</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sterownik grzania</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Heat controller</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CoolControllertxt">
+      <tuv xml:lang="de">
+        <seg>
+
+Kühlregler</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sterownik chłodzenia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cool controller</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Kptxt">
+      <tuv xml:lang="de">
+        <seg>Kp</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Kp</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Kp</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Titxt">
+      <tuv xml:lang="de">
+        <seg>Ti</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ti</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Ti</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tdtxt">
+      <tuv xml:lang="de">
+        <seg>Td</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Td</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Td</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tfiltertxt">
+      <tuv xml:lang="de">
+        <seg>Tf</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Tf</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tf</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tuningtxt">
+      <tuv xml:lang="de">
+        <seg>Schmücken</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strojenie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tuning</seg>
+      </tuv>
+    </tu>
+  </body>
 </tmx>

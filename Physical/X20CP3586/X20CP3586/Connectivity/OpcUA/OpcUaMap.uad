@@ -16,7 +16,9 @@
     </ACLAliases>
     <EURangeViolationAliases />
     <EURangesAliases />
-    <EngineeringUnitAliases />
+    <EngineeringUnitAliases>
+      <EngineeringUnit Id="1" UnitId="5457219" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="second [unit of time]" Symbol="s" />
+    </EngineeringUnitAliases>
   </Aliases>
   <DefaultView AclId="2">
     <Module Name="&lt;Default&gt;">
@@ -59,14 +61,14 @@
         <Variable Name="gTempController_4" />
         <Variable Name="gTempGroup_1" />
         <Variable Name="Manual_work" />
-        <Variable Name="PIDDerivativeTimeCOOL" />
-        <Variable Name="PIDDerivativeTimeHEAT" />
-        <Variable Name="PIDFilterTimeCOOL" />
-        <Variable Name="PIDFilterTimeHEAT" />
-        <Variable Name="PIDIntegrationTimeCOOL" />
-        <Variable Name="PIDIntegrationTimeHEAT" />
-        <Variable Name="PIDProportionaGainCOOL" />
-        <Variable Name="PIDProportionaGainHEAT" />
+        <Variable Name="PIDDerivativeTimeCOOL" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDDerivativeTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDFilterTimeCOOL" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDFilterTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDIntegrationTimeCOOL" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDIntegrationTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
+        <Variable Name="PIDProportionaGainCOOL" EnableArrayElements="True" />
+        <Variable Name="PIDProportionaGainHEAT" EnableArrayElements="True" />
         <Variable Name="SetTemp1" />
         <Variable Name="SetTemp2" />
         <Variable Name="SetTemp3" />
@@ -99,6 +101,7 @@
         <Variable Name="TimStep4" />
         <Variable Name="TimStep5" />
         <Variable Name="ZoneStatus" />
+        <Variable Name="TuneEnable" />
       </GlobalVariables>
     </Module>
   </DefaultView>

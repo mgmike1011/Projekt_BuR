@@ -39,6 +39,7 @@ END_VAR
 VAR
 	Automatic_work : BOOL := FALSE;
 	Manual_work : BOOL := FALSE;
+	TuneEnable : BOOL := FALSE;
 END_VAR
 (*Manual control*)
 VAR
