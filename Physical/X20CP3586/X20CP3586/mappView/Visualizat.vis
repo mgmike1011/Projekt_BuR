@@ -15,6 +15,7 @@
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ALARM_binding" />
+    <BindingsSet refId="LoginDialogC_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
