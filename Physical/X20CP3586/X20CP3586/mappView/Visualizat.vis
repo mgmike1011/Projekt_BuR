@@ -10,6 +10,7 @@
     <Page refId="Tuning" />
     <Page refId="AUDIT" />
     <Page refId="OEE" />
+    <Page refId="FILEMNG" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -35,6 +36,7 @@
     <Content refId="AUDIT" />
     <Content refId="OEE" />
     <Content refId="LoginDialogC" />
+    <Content refId="FILEMNG" />
   </Contents>
   <SnippetsSets />
   <VariablesSets />
