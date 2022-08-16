@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/top</prop>
+  </header>
+  <body>
+    <tu tuid="ProTitle">
+      <tuv xml:lang="de">
+        <seg>Temperaturanlage mit Datenerfassung in die Cloud</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obiekt temperaturowy z akwizycją danych do chmury
+</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature facility with data acquisition to the cloud</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -11,7 +11,7 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="TuningPageButton" top="0" left="-3" width="175" height="60" zIndex="5" pageId="Tuning" text="$IAT/left/TuningPageButton" margin="15px" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="AuditPageButton" top="0" left="-3" width="175" height="60" zIndex="6" pageId="AUDIT" text="$IAT/left/AuditPageButton" margin="15px" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="OeePageButton" top="0" left="-3" width="175" height="60" zIndex="7" pageId="OEE" text="$IAT/left/OeePageButton" margin="15px" />
-        <Widget xsi:type="widgets.brease.NavigationButton" id="FilePageButton" top="0" left="-3" width="175" height="60" zIndex="8" pageId="FILEMNG" text="NavigationButton1" margin="15px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="FilePageButton" top="0" left="-3" width="175" height="60" zIndex="8" pageId="FILEMNG" text="$IAT/left/FilePageButton" margin="15px" />
       </Widgets>
     </Widget>
   </Widgets>
