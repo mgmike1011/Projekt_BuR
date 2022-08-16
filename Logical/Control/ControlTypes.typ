@@ -40,6 +40,6 @@ TYPE
 		second_module : BOOL;
 		first_module : BOOL;
 		TempAlarmLimit : REAL := 50;
-		ActiveAlarms : STRING[128] := 'test';
+		ActiveAlarms : STRING[512] := 'test';
 	END_STRUCT;
 END_TYPE
