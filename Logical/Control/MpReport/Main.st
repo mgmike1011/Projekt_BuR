@@ -3,7 +3,7 @@ PROGRAM _INIT
 	MpReportCore_1.MpLink := ADR(gReport);
 	MpReportCore_1.Enable := TRUE;
 	MpReportCore_1.DeviceName := ADR('OEEReport');
-	MpReportCore_1.Name := ADR('MyReport');
+	MpReportCore_1.Name := ADR('ReportOEE');
 	MpReportCore_1();
 END_PROGRAM
 
