@@ -9,9 +9,9 @@
     <Object Type="File">TOP.eventbinding</Object>
     <Object Type="File">Tuning.binding</Object>
     <Object Type="File">Tuning.eventbinding</Object>
-    <Object Type="File">FILEMNG.eventbinding</Object>
     <Object Type="File">OEE.eventbinding</Object>
     <Object Type="File">LoginDialogC.eventbinding</Object>
+    <Object Type="File">RECEPT.binding</Object>
     <Object Type="File">LoginDialogC.binding</Object>
     <Object Type="File">AUTOMATIC.binding</Object>
     <Object Type="File">AUTOMATIC.eventbinding</Object>

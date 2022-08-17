@@ -1,0 +1,9 @@
+VAR
+	MpFileManagerUI_0 : MpFileManagerUI;
+	MpFileMngConnect : MpFileManagerUIConnectType;
+	MpFileMngSetup : MpFileManagerUISetupType;
+	i : INT;
+	StartValue : INT;
+	StopValue : INT;
+	Step : INT;
+END_VAR

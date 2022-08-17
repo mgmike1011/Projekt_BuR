@@ -59,8 +59,8 @@
     <Configuration key="activityCount" value="false" />
     <Gestures>
       <!--<SystemGesture1 touchPoints="2" />
-			<SystemGesture2 touchPoints="2" />
-			<SystemGesture3 touchPoints="2" />-->
+		  <SystemGesture2 touchPoints="2" />
+		  <SystemGesture3 touchPoints="2" />-->
     </Gestures>
     <VirtualKeyboards>
       <!--<InputProcessing onKeyDown="true" />-->
