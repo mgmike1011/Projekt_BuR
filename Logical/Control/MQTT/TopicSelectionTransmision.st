@@ -27,7 +27,21 @@ ACTION TopicSelectionTransmision:
 				IotMqttPublish_0.Topic:= ADR('ALARMS');
 				Parser();
 				PublishMessage := Parser.Output_string;
-			
+			5:
+				Parser.PV := 'MQTT:Heaters';
+				IotMqttPublish_0.Topic:= ADR('HEATERS');
+				Parser();
+				PublishMessage := Parser.Output_string;
+			6:
+				Parser.PV := 'OEE';
+				IotMqttPublish_0.Topic:= ADR('OEE');
+				Parser();
+				PublishMessage := Parser.Output_string;
+			7:
+				Parser.PV := 'MQTT:MachineState';
+				IotMqttPublish_0.Topic:= ADR('STATE');
+				Parser();
+				PublishMessage := Parser.Output_string;
 		END_CASE
 		IotMqttPublish_0.Buffer					:= ADR(PublishMessage);
 		IotMqttPublish_0.BufferLength			:= brsstrlen(ADR(PublishMessage));
