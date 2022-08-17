@@ -50,5 +50,73 @@
         </Sequence>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="EventBinding_5">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:SimulateZone1Enable" event="ValueChanged" />
+      <EventHandler condition="NOT newValue">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MANUAL" widgetRefId="SimOffImage1">
+            <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MANUAL" widgetRefId="SimOffImage1">
+            <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_6">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:SimulateZone2Enable" event="ValueChanged" />
+      <EventHandler condition="NOT newValue">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MANUAL" widgetRefId="SimOffImageZone2">
+            <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MANUAL" widgetRefId="SimOffImageZone2">
+            <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_7">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:SimulateZone3Enable" event="ValueChanged" />
+      <EventHandler condition="NOT newValue">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MANUAL" widgetRefId="SimOffImageZone3">
+            <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MANUAL" widgetRefId="SimOffImageZone3">
+            <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_8">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:SimulateZone4Enable" event="ValueChanged" />
+      <EventHandler condition="NOT newValue">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MANUAL" widgetRefId="SimOffImageZone4">
+            <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue">
+        <Action>
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="MANUAL" widgetRefId="SimOffImageZone4">
+            <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="false" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>

@@ -113,5 +113,21 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gStart" attribute="value" />
 <Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="Image1" attribute="visible" />
 </Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone1Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="SimOffImage2" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone4Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="SimOffImage8" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone3Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="SimOffImage6" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone2Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="SimOffImage4" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>

@@ -54,14 +54,14 @@
       <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:SimulateZone1Enable" event="ValueChanged" />
       <EventHandler condition="NOT newValue ">
         <Action>
-          <Target xsi:type="widgets.brease.Image.Action" contentRefId="AUTOMATIC" widgetRefId="SimOffImage1">
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="AUTOMATIC" widgetRefId="SimOffImageZone1">
             <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="true" />
           </Target>
         </Action>
       </EventHandler>
       <EventHandler condition="newValue = TRUE">
         <Action>
-          <Target xsi:type="widgets.brease.Image.Action" contentRefId="AUTOMATIC" widgetRefId="SimOffImage1">
+          <Target xsi:type="widgets.brease.Image.Action" contentRefId="AUTOMATIC" widgetRefId="SimOffImageZone1">
             <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="false" />
           </Target>
         </Action>
