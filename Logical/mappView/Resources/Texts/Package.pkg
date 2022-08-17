@@ -10,5 +10,6 @@
     <Object Type="File">OEEPage.tmx</Object>
     <Object Type="File">ProjectTitle.tmx</Object>
     <Object Type="File">LoginText.tmx</Object>
+    <Object Type="File">StartPageText.tmx</Object>
   </Objects>
 </Package>

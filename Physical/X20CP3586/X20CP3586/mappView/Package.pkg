@@ -13,5 +13,7 @@
     <Object Type="File">OEE.eventbinding</Object>
     <Object Type="File">LoginDialogC.eventbinding</Object>
     <Object Type="File">LoginDialogC.binding</Object>
+    <Object Type="File">START_PAGE.binding</Object>
+    <Object Type="File">START_PAGE.eventbinding</Object>
   </Objects>
 </Package>
