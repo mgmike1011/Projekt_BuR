@@ -13,6 +13,9 @@
     <Object Type="File">LoginDialogC.eventbinding</Object>
     <Object Type="File">RECEPT.binding</Object>
     <Object Type="File">LoginDialogC.binding</Object>
+    <Object Type="File">SERVICE.eventbinding</Object>
+    <Object Type="File">START_PAGE.binding</Object>
+    <Object Type="File">START_PAGE.eventbinding</Object>
     <Object Type="File">AUTOMATIC.binding</Object>
     <Object Type="File">AUTOMATIC.eventbinding</Object>
     <Object Type="File">MANUAL.binding</Object>

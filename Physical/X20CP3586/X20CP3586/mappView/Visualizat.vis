@@ -11,12 +11,14 @@
     <Page refId="AUDIT" />
     <Page refId="OEE" />
     <Page refId="FILEMNG" />
+    <Page refId="SERVICE" />
   </Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ALARM_binding" />
     <BindingsSet refId="LoginDialogC_binding" />
     <BindingsSet refId="Tuning_binding" />
+    <BindingsSet refId="START_PAGE_binding" />
     <BindingsSet refId="AUTOMATIC_binding" />
     <BindingsSet refId="MANUAL_binding" />
   </BindingsSets>
@@ -26,6 +28,8 @@
     <EventBindingsSet refId="LoginDialogC_eventbinding" />
     <EventBindingsSet refId="OEE_eventbinding" />
     <EventBindingsSet refId="Tuning_eventbinding" />
+    <EventBindingsSet refId="SERVICE_eventbinding" />
+    <EventBindingsSet refId="START_PAGE_eventbinding" />
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
     <EventBindingsSet refId="MANUAL_eventbinding" />
   </EventBindingsSets>
@@ -47,6 +51,7 @@
     <Content refId="FILEMNG" />
     <Content refId="LoginDialogC" />
     <Content refId="SystemInfoDialogContent" />
+    <Content refId="SERVICE" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
@@ -61,8 +66,8 @@
     <Configuration key="activityCount" value="false" />
     <Gestures>
       <!--<SystemGesture1 touchPoints="2" />
-		  <SystemGesture2 touchPoints="2" />
-		  <SystemGesture3 touchPoints="2" />-->
+			<SystemGesture2 touchPoints="2" />
+			<SystemGesture3 touchPoints="2" />-->
     </Gestures>
     <VirtualKeyboards>
       <!--<InputProcessing onKeyDown="true" />-->

@@ -12,5 +12,6 @@
     <Object Type="Package">AUDIT</Object>
     <Object Type="Package">OEE</Object>
     <Object Type="Package">FILEMNG</Object>
+    <Object Type="Package">SERVICE</Object>
   </Objects>
 </Package>

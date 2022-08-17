@@ -39,10 +39,10 @@
         <Variable Name="gHeater2" />
         <Variable Name="gHeater3" />
         <Variable Name="gHeater4" />
-        <Variable Name="gTemp1" EngineeringUnitId="2" />
-        <Variable Name="gTemp2" EngineeringUnitId="2" />
-        <Variable Name="gTemp3" EngineeringUnitId="2" />
-        <Variable Name="gTemp4" EngineeringUnitId="2" />
+        <Variable Name="gTemp1" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
+        <Variable Name="gTemp2" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
+        <Variable Name="gTemp3" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
+        <Variable Name="gTemp4" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
         <Variable Name="gTempInt1" />
         <Variable Name="gTempInt2" />
         <Variable Name="gTempInt3" />
@@ -134,6 +134,8 @@
         <Variable Name="ICTs" />
         <Variable Name="startOEE" />
         <Variable Name="RejectCycle" />
+        <Variable Name="StatusString" />
+        <Variable Name="StateIdle" />
       </Task>
       <Task Name="MpReport1">
         <Variable Name="MpReportCore_1">

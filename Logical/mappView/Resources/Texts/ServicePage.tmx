@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/Service</prop>
+  </header>
+  <body>
+    <tu tuid="sim">
+      <tuv xml:lang="de">
+        <seg>Simulation</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Symulacja</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Simulation</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="simZone1">
+      <tuv xml:lang="de">
+        <seg>Zone 1 simulieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Symulacja strefy 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Simulate zone 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="simZone2">
+      <tuv xml:lang="de">
+        <seg>Zone 2 simulieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Symulacja strefy 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Simulate zone 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="simZone3">
+      <tuv xml:lang="de">
+        <seg>Zone 3 simulieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Symulacja strefy 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Simulate zone 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="simZone4">
+      <tuv xml:lang="de">
+        <seg>Zone 4 simulieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Symulacja strefy 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Simulate zone 4</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
