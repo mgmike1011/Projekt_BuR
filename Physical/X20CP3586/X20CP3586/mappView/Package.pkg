@@ -11,6 +11,7 @@
     <Object Type="File">Tuning.eventbinding</Object>
     <Object Type="File">OEE.eventbinding</Object>
     <Object Type="File">LoginDialogC.eventbinding</Object>
+    <Object Type="File">RECEPT.binding</Object>
     <Object Type="File">LoginDialogC.binding</Object>
   </Objects>
 </Package>

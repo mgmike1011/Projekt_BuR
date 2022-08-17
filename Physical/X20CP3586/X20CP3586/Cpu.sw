@@ -12,6 +12,7 @@
   </TaskClass>
   <TaskClass Name="Cyclic#4">
     <Task Name="Alarm" Source="Control.Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="Recipe" Source="Control.Recipe.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="OEE" Source="Control.OEE.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="AuditTrail" Source="Control.AuditTrail.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="MpReport1" Source="Control.MpReport.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -53,6 +54,7 @@
     <BinaryObject Name="ConfigOEE" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="report" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="ConfigFile" Source="" Memory="UserROM" Language="Binary" />
+    <BinaryObject Name="RecipeCon" Source="" Memory="UserROM" Language="Binary" />
     <BinaryObject Name="Config" Source="" Memory="UserROM" Language="Binary" />
   </Binaries>
   <Libraries>

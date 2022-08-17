@@ -36,6 +36,9 @@
     <Group ID="FileDevice5" />
     <Parameter ID="FileDeviceName5" Value="DISK" />
     <Parameter ID="FileDevicePath5" Value="C:\BRFileManager" />
+    <Group ID="FileDevice6" />
+    <Parameter ID="FileDeviceName6" Value="RECIPE" />
+    <Parameter ID="FileDevicePath6" Value="C:/BrRecipe" />
     <Group ID="FtpUser1" />
     <Parameter ID="FtpUsername1" Value="Admin" />
     <Parameter ID="FtpUserPassword1" Value="5wGvT8auoKyFZyijp5IHEBz1PpSmCNNWGV/kzWv0+cU=" />

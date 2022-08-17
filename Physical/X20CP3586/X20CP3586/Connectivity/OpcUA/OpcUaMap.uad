@@ -103,6 +103,10 @@
         <Variable Name="ZoneStatus" />
         <Variable Name="TuneEnable" />
       </GlobalVariables>
+      <Task Name="Recipe">
+        <Variable Name="RecipeUIConnect" />
+        <Variable Name="RecipeUISetup" />
+        </Task>
       <Task Name="OEE">
         <Variable Name="MpOEECore_1">
           <Variable Name="RejectCounter" />

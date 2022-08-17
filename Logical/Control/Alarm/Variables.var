@@ -1,4 +1,5 @@
 VAR
+	MpAlarmXHistory_0 : MpAlarmXHistory;
 	mpAlarmXlist : MpAlarmXListUI;
 	mpAlarmXlistConnect : MpAlarmXListUIConnectType;
 	i : UDINT;
