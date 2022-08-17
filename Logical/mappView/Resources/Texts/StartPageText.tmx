@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/START_PAGE</prop>
+  </header>
+  <body>
+    <tu tuid="Zone1">
+      <tuv xml:lang="de">
+        <seg>Zone 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 1</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone2">
+      <tuv xml:lang="de">
+        <seg>Zone 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 2</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone3">
+      <tuv xml:lang="de">
+        <seg>Zone 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 3</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone4">
+      <tuv xml:lang="de">
+        <seg>Zone 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 4</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CurrentlyTemperature">
+      <tuv xml:lang="de">
+        <seg>Aktuelle Temperatur</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Aktulna temperatura</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current Temperature</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SetTemperature">
+      <tuv xml:lang="de">
+        <seg>Temperatur einstellen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ustawiona Temperatura </seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set Temperature</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanInfo">
+      <tuv xml:lang="de">
+        <seg>Fan</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wentylator</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Fan</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HaterInfo">
+      <tuv xml:lang="de">
+        <seg>Heizung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Grzałka</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Heater</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Components">
+      <tuv xml:lang="de">
+        <seg>Komponentenzustand</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Stan komponentów</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Components condition</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StartPage">
+      <tuv xml:lang="de">
+        <seg>Startseite</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strona Startowa</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Start Page</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
