@@ -8,5 +8,6 @@ VAR
 	IdealCycleTimeINT : DINT;
 	ICTm : DINT;
 	ICTs : DINT;
+	StatusString : STRING[80];
 	ICTms : DINT;
 END_VAR

@@ -9,6 +9,7 @@ PROGRAM	_INIT
 	ICTm := 0;
 	ICTs := 0;
 	ICTms := 0;
+	StatusString := '';
 END_PROGRAM
 
 PROGRAM	_CYCLIC
@@ -37,6 +38,21 @@ PROGRAM	_CYCLIC
 	//	MpOEECore_1.Parameters := ADR(IdealCycleTime_1.IdealCycleTime);
 	//	OEEParChange :=	FALSE;
 	//END_IF;
+	
+	CASE STATUS OF
+		STATE_IDLE:
+			StatusString := 'STATE_IDLE';
+		STATE_TUNING:
+			StatusString := 'STATE_TUNING';
+		STATE_WORKING_MANUAL:
+			StatusString := 'STATE_WORKING_MANUAL';
+		STATE_WORKING_AUTOMATIC:
+			StatusString := 'STATE_WORKING_AUTOMATIC';
+		STATE_ERROR:
+			StatusString := 'STATE_ERROR';
+		STATE_STOP:
+			StatusString := 'STATE_STOP';
+	END_CASE;
 			
 END_PROGRAM
 

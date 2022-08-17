@@ -120,6 +120,7 @@
         <Variable Name="ICTs" />
         <Variable Name="startOEE" />
         <Variable Name="RejectCycle" />
+        <Variable Name="StatusString" />
       </Task>
       <Task Name="MpReport1">
         <Variable Name="MpReportCore_1">
