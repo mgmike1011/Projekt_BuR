@@ -1,4 +1,118 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="Tuning" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Widgets />
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Label" id="LabelTitle" top="15" left="0" width="1710" height="74" zIndex="0" text="$IAT/TuningPage/TuningPageTitletxt" textAlign="center" fontSize="25px" bold="true" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="Zone1GroupBox" top="180" left="14" width="300" height="280" zIndex="1" text="$IAT/TuningPage/Zone1txt" fontSize="18px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="14" zIndex="0" text="$IAT/TuningPage/Kptxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="KpHeatNumericOutput" top="20" left="179" zIndex="1" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TiLabel" top="80" left="14" zIndex="2" text="$IAT/TuningPage/Titxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label4" top="140" left="14" zIndex="3" text="$IAT/TuningPage/Tdtxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TfLabel" top="200" left="14" zIndex="4" text="$IAT/TuningPage/Tfiltertxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="TiHeat1NumericOutput" top="80" left="180" width="97" zIndex="5" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput3" top="140" left="179" zIndex="6" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput4" top="200" left="179" zIndex="7" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="Zone2GroupBox" top="180" left="330" width="300" height="280" zIndex="2" text="$IAT/TuningPage/Zone2txt" fontSize="18px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="20" left="14" zIndex="0" text="$IAT/TuningPage/Kptxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TiLabel1" top="80" left="14" zIndex="1" text="$IAT/TuningPage/Titxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label5" top="140" left="14" zIndex="2" text="$IAT/TuningPage/Tdtxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TfLabel1" top="200" left="14" zIndex="3" text="$IAT/TuningPage/Tfiltertxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="20" left="180" zIndex="4" maxValue="10000" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTiHeat2" top="80" left="180" zIndex="5" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTd2" top="140" left="180" zIndex="6" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTf2" top="200" left="180" zIndex="7" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="Zone3GroupBox" top="180" left="645" width="300" height="280" zIndex="3" text="$IAT/TuningPage/Zone3txt" fontSize="18px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label6" top="20" left="14" zIndex="0" text="$IAT/TuningPage/Kptxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TiLabel2" top="80" left="14" zIndex="1" text="$IAT/TuningPage/Titxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="140" left="14" zIndex="2" text="$IAT/TuningPage/Tdtxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TfLabel2" top="200" left="14" zIndex="3" text="$IAT/TuningPage/Tfiltertxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputKp3" top="20" left="180" zIndex="4" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput5" top="81" left="180" zIndex="5" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput6" top="141" left="180" zIndex="6" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTf3" top="200" left="180" zIndex="7" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="Zone4GroupBox" top="180" left="960" width="300" height="280" zIndex="4" text="$IAT/TuningPage/Zone4txt" fontSize="18px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="20" left="14" zIndex="0" text="$IAT/TuningPage/Kptxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TiLabel3" top="80" left="14" zIndex="1" text="$IAT/TuningPage/Titxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="140" left="14" zIndex="2" text="$IAT/TuningPage/Tdtxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TfLabel3" top="200" left="14" zIndex="3" text="$IAT/TuningPage/Tfiltertxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputKp4" top="20" left="180" zIndex="4" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTi4" top="80" left="180" zIndex="5" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTd4" top="140" left="180" zIndex="6" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTf4" top="200" left="180" zIndex="7" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="LabelHeatController" top="105" left="15" width="286" height="75" zIndex="5" text="$IAT/TuningPage/HeatControllertxt" fontSize="22px" bold="true" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="Zone1" top="540" left="12" width="300" height="280" zIndex="6" text="$IAT/TuningPage/Zone1txt" fontSize="18px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label2" top="20" left="14" zIndex="0" text="$IAT/TuningPage/Kptxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TiLabel4" top="80" left="14" zIndex="1" text="$IAT/TuningPage/Titxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="140" left="14" zIndex="2" text="$IAT/TuningPage/Tdtxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TfLabel4" top="200" left="14" zIndex="3" text="$IAT/TuningPage/Tfiltertxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputKpCool1" top="20" left="180" zIndex="4" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTiCool1" top="80" left="180" zIndex="5" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTdCool1" top="140" left="180" zIndex="6" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTfCool1" top="200" left="180" zIndex="7" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="Zone2" top="540" left="330" width="300" height="280" zIndex="7" text="$IAT/TuningPage/Zone2txt" fontSize="18px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label11" top="20" left="14" zIndex="0" text="$IAT/TuningPage/Kptxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TiLabel5" top="80" left="14" zIndex="1" text="$IAT/TuningPage/Titxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label12" top="140" left="14" zIndex="2" text="$IAT/TuningPage/Tdtxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TfLabel5" top="200" left="14" zIndex="3" text="$IAT/TuningPage/Tfiltertxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputKpCool2" top="20" left="180" zIndex="4" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTi2" top="80" left="180" zIndex="5" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput8" top="140" left="180" zIndex="6" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput9" top="200" left="180" zIndex="7" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="Zone3" top="540" left="645" width="300" height="280" zIndex="8" text="$IAT/TuningPage/Zone3txt" fontSize="18px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label13" top="20" left="14" zIndex="0" text="$IAT/TuningPage/Kptxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TiLabel6" top="80" left="14" zIndex="1" text="$IAT/TuningPage/Titxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label14" top="140" left="14" zIndex="2" text="$IAT/TuningPage/Tdtxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TfLabel6" top="200" left="14" zIndex="3" text="$IAT/TuningPage/Tfiltertxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputKpCool3" top="20" left="180" zIndex="4" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTiCool3" top="80" left="180" zIndex="5" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTdCool3" top="140" left="180" zIndex="6" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTfCool3" top="200" left="180" zIndex="7" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="Zone4" top="540" left="960" width="300" height="280" zIndex="9" text="$IAT/TuningPage/Zone4txt" fontSize="18px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label15" top="20" left="14" zIndex="0" text="$IAT/TuningPage/Kptxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TiLabel7" top="80" left="14" zIndex="1" text="$IAT/TuningPage/Titxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="Label16" top="140" left="14" zIndex="2" text="$IAT/TuningPage/Tdtxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.Label" id="TfLabel7" top="200" left="14" zIndex="3" text="$IAT/TuningPage/Tfiltertxt" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputKpCool4" top="20" left="180" zIndex="4" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTiCool4" top="80" left="180" zIndex="5" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTdCool4" top="140" left="180" zIndex="6" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutputTfCool4" top="200" left="180" zIndex="7" unit="{'metric':'SEC','imperial':'SEC','imperial-us':'SEC'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="LabelHeatController1" top="465" left="13" width="286" height="75" zIndex="10" text="$IAT/TuningPage/CoolControllertxt" fontSize="22px" bold="true" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="TunningGroupBox" top="180" left="1275" width="435" height="640" zIndex="11" text="$IAT/TuningPage/Tuningtxt" fontSize="18px" bold="true">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Label17" top="0" left="0" width="420" height="68" zIndex="0" text="$IAT/TuningPage/TuningOntxt" fontSize="18px" bold="true" margin="5px" />
+        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonTunning" top="90" left="123" width="175" height="60" zIndex="1" text="$IAT/TuningPage/Tunningbtntxt" margin="5px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label18" top="158" left="0" width="419" height="55" zIndex="2" text="$IAT/TuningPage/Starttxt" fontSize="18px" bold="true" margin="5px" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonInfo" top="515" left="128" width="175" height="60" zIndex="3" text="Info" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonSTOP" top="375" left="128" width="175" height="60" zIndex="4" text="$IAT/TuningPage/Stoptxt" textColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Label" id="Label19" top="302" left="0" width="422" height="60" zIndex="5" text="$IAT/TuningPage/Stoptxt" fontSize="18px" bold="true" margin="5px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label20" top="451" left="0" width="407" height="58" zIndex="6" text="$IAT/TuningPage/SystemInfotxt" fontSize="18px" bold="true" margin="5px" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonStart" top="235" left="128" width="175" height="60" zIndex="7" text="$IAT/TuningPage/Starttxt" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label21" top="848" left="15" zIndex="12" text="$IAT/TuningPage/Statustxt" fontSize="20px" bold="true" />
+    <Widget xsi:type="widgets.brease.ListBox" id="ListBox1" top="840" left="105" width="148" height="46" zIndex="13" dataProvider="[{'value':'0','text':'IDLE'},{'value':'1','text':'Tuning'},{'value':'3','text':'Manual'},{'value':'4','text':'Auto'},{'value':'5','text':'ERROR'},{'value':'6','text':'STOP'}]" selectedValue="0" enable="false" />
+  </Widgets>
 </Content>

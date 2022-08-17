@@ -34,5 +34,22 @@ TYPE
 		Time3 : TIME;
 		Time4 : TIME;
 		Time5 : TIME;
+	Alarm_struct : 	STRUCT 
+		Pending : UDINT := 0;
+		Active : UDINT := 0;
+		FanAlarm4 : BOOL;
+		FanAlarm3 : BOOL;
+		FanAlarm2 : BOOL;
+		FanAlarm1 : BOOL;
+		HeaterAlarm4 : BOOL;
+		HeaterAlarm3 : BOOL;
+		HeaterAlarm2 : BOOL;
+		HeaterAlarm1 : BOOL;
+		fourth_module : BOOL;
+		third_module : BOOL;
+		second_module : BOOL;
+		first_module : BOOL;
+		TempAlarmLimit : REAL := 50;
+		ActiveAlarms : STRING[512] := 'test';
 	END_STRUCT;
 END_TYPE

@@ -983,6 +983,43 @@
         ]
     },
     {
+        "id": "670e8ef8c119ce06",
+        "type": "mqtt in",
+        "z": "12421ff9dde586d7",
+        "name": "",
+        "topic": "ALARMS",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "f2aed52371d902c0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 1340,
+        "wires": [
+            [
+                "7e903531c3bf28a2"
+            ]
+        ]
+    },
+    {
+        "id": "7e903531c3bf28a2",
+        "type": "debug",
+        "z": "12421ff9dde586d7",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 1340,
+        "wires": []
+    },
+    {
         "id": "ed128785bb8ae9a5",
         "type": "aedes broker",
         "z": "352fcc860ddcd8e8",
@@ -998,7 +1035,7 @@
         "dburl": "",
         "usetls": false,
         "x": 150,
-        "y": 120,
+        "y": 40,
         "wires": [
             [],
             []

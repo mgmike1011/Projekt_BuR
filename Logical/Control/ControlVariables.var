@@ -39,6 +39,7 @@ END_VAR
 VAR
 	Automatic_work : BOOL := FALSE;
 	Manual_work : BOOL := FALSE;
+	TuneEnable : BOOL := FALSE;
 END_VAR
 (*Manual control*)
 VAR
@@ -50,6 +51,16 @@ END_VAR
 (*Automatic control*)
 VAR
 	AutoStep : AUTOMATIC_MODE_STATE := STEP_INIT;
+	TimeStep1 : TIME := T#5s; (*Min time of step 1*)
+	TimeStep2 : TIME := T#5s; (*Min time of step 2*)
+	TimeStep3 : TIME := T#5s; (*Min time of step 3*)
+	TimeStep4 : TIME := T#5s; (*Min time of step 4*)
+	TimeStep5 : TIME := T#5s; (*Min time of step 5*)
+	TimStep1 : TON;
+	TimStep2 : TON;
+	TimStep3 : TON;
+	TimStep4 : TON;
+	TimStep5 : TON;
 	CycleNumber : DINT := 0;
 END_VAR
 (*Simulation mode*)
@@ -70,8 +81,13 @@ END_VAR
 VAR RETAIN
 	PIDProportionaGainCOOL : ARRAY[0..ELEMENTS_NUMBER] OF REAL := [20.96,27.64,18.07,26.18];
 	PIDIntegrationTimeCOOL : ARRAY[0..ELEMENTS_NUMBER] OF REAL := [68.71,46.86,80.30,51.64];
-	PIDFilterTimeCOOL : ARRAY[0..ELEMENTS_NUMBER] OF REAL := [0.72,0.49,0.84,0.54];
 	PIDDerivativeTimeCOOL : ARRAY[0..ELEMENTS_NUMBER] OF REAL := [7.22,4.92,8.43,5.42];
+	PIDFilterTimeCOOL : ARRAY[0..ELEMENTS_NUMBER] OF REAL := [0.72,0.49,0.84,0.54];
+END_VAR
+(*Alarm*)
+VAR
+	Alarms : Alarm_struct;
+	MpAlarmXCore_0 : MpAlarmXCore;
 END_VAR
 (* ########## MQTT communication variables ########### *)
 (*PWM % Heater Zone 1  ->  TempController[0].HeatValue*)
