@@ -39,6 +39,12 @@
     <Group ID="FileDevice6" />
     <Parameter ID="FileDeviceName6" Value="RECIPE" />
     <Parameter ID="FileDevicePath6" Value="C:/BrRecipe" />
+    <Group ID="FtpUser1" />
+    <Parameter ID="FtpUsername1" Value="Admin" />
+    <Parameter ID="FtpUserPassword1" Value="5wGvT8auoKyFZyijp5IHEBz1PpSmCNNWGV/kzWv0+cU=" />
+    <Parameter ID="FtpUserSalt1" Value="OGipJzaF" />
+    <Parameter ID="FTPAccessRight1" Value="0" />
+    <Parameter ID="FTPdevice1" Value="ALL" />
     <Parameter ID="ActivateOpcUa" Value="1" />
     <Parameter ID="OpcUaInformationModels_PV_Version" Value="1" />
   </Module>

@@ -89,6 +89,10 @@ VAR
 	Alarms : Alarm_struct;
 	MpAlarmXCore_0 : MpAlarmXCore;
 END_VAR
+(*OEE*)
+VAR
+	OEE : OEE_Struct;
+END_VAR
 (* ########## MQTT communication variables ########### *)
 (*PWM % Heater Zone 1  ->  TempController[0].HeatValue*)
 (*PWM % Heater Zone 2  ->  TempController[1].HeatValue*)
