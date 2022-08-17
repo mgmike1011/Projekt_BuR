@@ -15,9 +15,17 @@
       </ACL>
     </ACLAliases>
     <EURangeViolationAliases />
-    <EURangesAliases />
+    <EURangesAliases>
+      <EURanges Id="1">
+        <EURange>
+          <Low ValueProvider="Const">10</Low>
+          <High ValueProvider="Const">100</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
     <EngineeringUnitAliases>
       <EngineeringUnit Id="1" UnitId="5457219" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="second [unit of time]" Symbol="s" />
+      <EngineeringUnit Id="2" UnitId="4408652" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="degree Celsius" Symbol="°C" />
     </EngineeringUnitAliases>
   </Aliases>
   <DefaultView AclId="2">
@@ -31,10 +39,10 @@
         <Variable Name="gHeater2" />
         <Variable Name="gHeater3" />
         <Variable Name="gHeater4" />
-        <Variable Name="gTemp1" />
-        <Variable Name="gTemp2" />
-        <Variable Name="gTemp3" />
-        <Variable Name="gTemp4" />
+        <Variable Name="gTemp1" EngineeringUnitId="2" />
+        <Variable Name="gTemp2" EngineeringUnitId="2" />
+        <Variable Name="gTemp3" EngineeringUnitId="2" />
+        <Variable Name="gTemp4" EngineeringUnitId="2" />
         <Variable Name="gTempInt1" />
         <Variable Name="gTempInt2" />
         <Variable Name="gTempInt3" />
@@ -69,10 +77,10 @@
         <Variable Name="PIDIntegrationTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
         <Variable Name="PIDProportionaGainCOOL" EnableArrayElements="True" />
         <Variable Name="PIDProportionaGainHEAT" EnableArrayElements="True" />
-        <Variable Name="SetTemp1" />
-        <Variable Name="SetTemp2" />
-        <Variable Name="SetTemp3" />
-        <Variable Name="SetTemp4" />
+        <Variable Name="SetTemp1" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp2" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp3" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp4" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SetTempCoolTuning1" />
         <Variable Name="SetTempCoolTuning2" />
         <Variable Name="SetTempCoolTuning3" />
@@ -100,7 +108,7 @@
         <Variable Name="TimStep3" />
         <Variable Name="TimStep4" />
         <Variable Name="TimStep5" />
-        <Variable Name="ZoneStatus" />
+        <Variable Name="ZoneStatus" EnableArrayElements="True" />
         <Variable Name="TuneEnable" />
       </GlobalVariables>
       <Task Name="Recipe">
@@ -129,6 +137,17 @@
         <Variable Name="MpReportCore_1">
           <Variable Name="Generate" />
         </Variable>
+      </Task>
+      <Task Name="VisuAdj">
+        <Variable Name="CurrentZone1Temp" EngineeringUnitId="2" />
+        <Variable Name="CurrentZone2Temp" EngineeringUnitId="2" />
+        <Variable Name="CurrentZone3Temp" EngineeringUnitId="2" />
+        <Variable Name="CurrentZone4Temp" EngineeringUnitId="2" />
+        <Variable Name="TimeStep1Int" EngineeringUnitId="1" />
+        <Variable Name="TimeStep2Int" EngineeringUnitId="1" />
+        <Variable Name="TimeStep3Int" EngineeringUnitId="1" />
+        <Variable Name="TimeStep4Int" EngineeringUnitId="1" />
+        <Variable Name="TimeStep5Int" EngineeringUnitId="1" />
       </Task>
     </Module>
   </DefaultView>
