@@ -10,5 +10,6 @@
     <File Private="true">LocalFunctions.fun</File>
     <File>JSON_PARSER.st</File>
     <File>UpdateStructs.st</File>
+    <File>JSON_PARSER_fun.st</File>
   </Files>
 </Program>
