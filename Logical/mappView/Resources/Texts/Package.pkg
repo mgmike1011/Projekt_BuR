@@ -11,5 +11,6 @@
     <Object Type="File">ProjectTitle.tmx</Object>
     <Object Type="File">LoginText.tmx</Object>
     <Object Type="File">AutomaticPageTexts.tmx</Object>
+    <Object Type="File">ManualPageTexts.tmx</Object>
   </Objects>
 </Package>
