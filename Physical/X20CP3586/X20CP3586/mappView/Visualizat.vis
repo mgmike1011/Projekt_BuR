@@ -17,6 +17,7 @@
     <BindingsSet refId="ALARM_binding" />
     <BindingsSet refId="LoginDialogC_binding" />
     <BindingsSet refId="Tuning_binding" />
+    <BindingsSet refId="RECEPT_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
@@ -24,6 +25,7 @@
     <EventBindingsSet refId="LoginDialogC_eventbinding" />
     <EventBindingsSet refId="OEE_eventbinding" />
     <EventBindingsSet refId="Tuning_eventbinding" />
+    <EventBindingsSet refId="RECEPT_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />

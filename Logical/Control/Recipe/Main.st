@@ -7,16 +7,7 @@ PROGRAM _INIT
 	MpRecipeRegPar_0.Enable := TRUE;
 	MpRecipeUI_0.MpLink := ADR(gRecipeCsv);
 	MpRecipeUI_0.Enable := TRUE;
-	ParametersMachine.Temp1 := 30;
-	ParametersMachine.Temp2 := 35;
-	ParametersMachine.Temp3 := 33;
-	ParametersMachine.Temp4 := 32;
-	ParametersMachine.Time1 := T#5s;
-	ParametersMachine.Time2 := T#6s;
-	ParametersMachine.Time3 := T#3s;
-	ParametersMachine.Time4 := T#1s;
-	ParametersMachine.Time5 := T#2s;
-	
+	RecipeUISetup.RecipeListSize := 8;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -26,6 +17,20 @@ PROGRAM _CYCLIC
 	MpRecipeRegPar_0.PVName := ADR('ParametersMachine');
 	MpRecipeUI_0.UIConnect := ADR(RecipeUIConnect);
 	MpRecipeUI_0.UISetup := RecipeUISetup;
+	//RecipeUISetup.RecipeListSize := RecipeUIConnect.Recipe.List.MaxSelection;
+	//set Temp and Time value
+	IF RecipeUIConnect.Recipe.Load THEN
+		SetTemp1 := ParametersMachine.Temp1;
+		SetTemp2 := ParametersMachine.Temp2;
+		SetTemp3 := ParametersMachine.Temp3;
+		SetTemp4 := ParametersMachine.Temp4;
+		TimeStep1 := ParametersMachine.Time1;
+		TimeStep2 := ParametersMachine.Time2;
+		TimeStep3 := ParametersMachine.Time3;
+		TimeStep4 := ParametersMachine.Time4;
+		TimeStep5 := ParametersMachine.Time5;
+	END_IF;
+	
 	MpRecipeCsv_0();
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();

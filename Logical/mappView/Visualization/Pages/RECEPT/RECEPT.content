@@ -1,4 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="RECEPT" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Widgets />
+<Content id="RECEPT" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.Table" id="TabRecipe" top="20" left="20" width="520" height="380" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TableItem" id="TabItemRecipe" zIndex="0" columnWidth="520" text="$IAT/RecipePage/SelectTab" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="BtnLoad" top="420" left="440" zIndex="1" text="$IAT/RecipePage/BtnLoad" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnDelete" top="420" left="300" zIndex="2" text="$IAT/RecipePage/BtnDelete" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnRecCreate" top="100" left="660" width="140" zIndex="3" text="$IAT/RecipePage/BtnToggle" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Temp1Recipe" top="180" left="990" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Temp2Recipe" top="240" left="990" zIndex="5" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Temp3Recipe" top="290" left="990" zIndex="6" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Temp4Recipe" top="350" left="990" zIndex="7" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time5Recipe" top="410" left="1130" zIndex="8" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time1Recipe" top="180" left="1130" zIndex="9" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time2Recipe" top="240" left="1130" zIndex="10" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time3Recipe" top="290" left="1130" zIndex="11" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time4Recipe" top="350" left="1130" zIndex="12" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInName" top="410" left="990" zIndex="13" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnSave" top="480" left="980" zIndex="14" text="$IAT/RecipePage/BtnSave" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnCreate" top="480" left="1140" zIndex="15" text="$IAT/RecipePage/BtnCreate" />
+  </Widgets>
 </Content>

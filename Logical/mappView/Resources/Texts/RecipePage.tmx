@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/RecipePage</prop>
+  </header>
+  <body>
+    <tu tuid="SelectTab">
+      <tuv xml:lang="de">
+        <seg>Programm wählen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wybór programu</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Select program</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BtnLoad">
+      <tuv xml:lang="de">
+        <seg>Belastung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wczytaj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Load</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BtnDelete">
+      <tuv xml:lang="de">
+        <seg>Löschen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Usuń</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Delete</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BtnToggle">
+      <tuv xml:lang="de">
+        <seg>Sparen/Schaffen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zapisz/Stwórz</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Save/Create</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TextInName">
+      <tuv xml:lang="de">
+        <seg>Name</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nazwa</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Name</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BtnCreate">
+      <tuv xml:lang="de">
+        <seg>Schaffen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Stwórz</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Create</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BtnSave">
+      <tuv xml:lang="de">
+        <seg>Sparen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zapisz</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Save</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

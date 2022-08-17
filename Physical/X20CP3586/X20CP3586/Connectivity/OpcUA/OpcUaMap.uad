@@ -102,11 +102,38 @@
         <Variable Name="TimStep5" />
         <Variable Name="ZoneStatus" />
         <Variable Name="TuneEnable" />
+        <Variable Name="ParametersMachine">
+          <Variable Name="Temp1" />
+          <Variable Name="Temp2" />
+          <Variable Name="Temp3" />
+          <Variable Name="Temp4" />
+          <Variable Name="Time1" />
+          <Variable Name="Time2" />
+          <Variable Name="Time3" />
+          <Variable Name="Time4" />
+          <Variable Name="Time5" />
+        </Variable>
       </GlobalVariables>
       <Task Name="Recipe">
-        <Variable Name="RecipeUIConnect" />
-        <Variable Name="RecipeUISetup" />
-        </Task>
+        <Variable Name="RecipeUIConnect">
+          <Variable Name="Recipe">
+            <Variable Name="Load" />
+            <Variable Name="Save" />
+            <Variable Name="Delete" />
+            <Variable Name="List">
+              <Variable Name="SelectedIndex" />
+              <Variable Name="MaxSelection" />
+              <Variable Name="StepUp" />
+              <Variable Name="StepDown" />
+              <Variable Name="Names" />
+            </Variable>
+          </Variable>
+          <Variable Name="New">
+            <Variable Name="FileName" />
+            <Variable Name="Create" />
+          </Variable>
+        </Variable>
+      </Task>
       <Task Name="OEE">
         <Variable Name="MpOEECore_1">
           <Variable Name="RejectCounter" />
