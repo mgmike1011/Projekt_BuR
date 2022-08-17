@@ -18,6 +18,7 @@
     <BindingsSet refId="LoginDialogC_binding" />
     <BindingsSet refId="Tuning_binding" />
     <BindingsSet refId="AUTOMATIC_binding" />
+    <BindingsSet refId="MANUAL_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
