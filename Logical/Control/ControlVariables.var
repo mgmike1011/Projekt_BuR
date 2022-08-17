@@ -113,3 +113,8 @@ END_VAR
 (*Status dzialania strefy 3 -> ZoneStatus[2] (typ: ZONE_WORKING_STATUS)*)
 (*Status dzialania strefy 4 -> ZoneStatus[3] (typ: ZONE_WORKING_STATUS)*)
 (*Ilosc wykonanych cykli w trybie automatycznym -> CycleNumber*)
+(*//////////////////////////////Machine parameters*)
+VAR
+	ParametersMachine : MACHINE_PARAMETERS;
+END_VAR
+(**)
