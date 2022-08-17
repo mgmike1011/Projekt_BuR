@@ -11,6 +11,7 @@
     <Page refId="AUDIT" />
     <Page refId="OEE" />
     <Page refId="FILEMNG" />
+    <Page refId="SERVICE" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -26,6 +27,7 @@
     <EventBindingsSet refId="LoginDialogC_eventbinding" />
     <EventBindingsSet refId="OEE_eventbinding" />
     <EventBindingsSet refId="Tuning_eventbinding" />
+    <EventBindingsSet refId="SERVICE_eventbinding" />
     <EventBindingsSet refId="START_PAGE_eventbinding" />
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
   </EventBindingsSets>
@@ -47,6 +49,7 @@
     <Content refId="FILEMNG" />
     <Content refId="LoginDialogC" />
     <Content refId="SystemInfoDialogContent" />
+    <Content refId="SERVICE" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>

@@ -1,10 +1,12 @@
 VAR
+	StateIdle : BOOL;
 	RejectCycle : BOOL;
 	RsetOEE : BOOL;
 	startOEE : BOOL;
 	IdealCycleTimeINT : DINT;
 	ICTm : DINT;
 	ICTs : DINT;
+	StatusString : STRING[80];
 	ICTms : DINT;
 	MpOEECore_1 : MpOeeCore;
 	IdealCycleTime_1 : MpOeeCoreParType;

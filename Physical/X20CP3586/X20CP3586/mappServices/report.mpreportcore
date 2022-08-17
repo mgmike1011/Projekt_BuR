@@ -14,6 +14,7 @@
       <Group ID="PageLayouts">
         <Group ID="[0]">
           <Property ID="Name" Value="Layout" />
+          <Property ID="PageFormat" Value="5" />
           <Property ID="Orientation" Value="2" />
         </Group>
       </Group>

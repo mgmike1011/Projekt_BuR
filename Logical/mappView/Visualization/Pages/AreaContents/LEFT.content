@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="LEFT" height="910" width="200" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="0" left="0" width="200" height="840" zIndex="0" childPositioning="relative">
+    <Widget xsi:type="widgets.brease.NavigationBar" id="NavigationBar1" top="0" left="0" width="200" height="900" zIndex="0" childPositioning="relative">
       <Widgets>
         <Widget xsi:type="widgets.brease.NavigationButton" id="MainPageButton" top="0" left="-3" width="175" height="60" zIndex="0" pageId="MainPage" text="$IAT/left/MainPageButton" margin="15px" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="AlarmPageButton" top="0" left="-3" width="175" height="60" zIndex="1" pageId="ALARM" text="$IAT/left/AlarmPageButton" padding="0px 10px" margin="15px" />
@@ -12,6 +12,7 @@
         <Widget xsi:type="widgets.brease.NavigationButton" id="AuditPageButton" top="0" left="-3" width="175" height="60" zIndex="6" pageId="AUDIT" text="$IAT/left/AuditPageButton" margin="15px" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="OeePageButton" top="0" left="-3" width="175" height="60" zIndex="7" pageId="OEE" text="$IAT/left/OeePageButton" margin="15px" />
         <Widget xsi:type="widgets.brease.NavigationButton" id="FilePageButton" top="0" left="-3" width="175" height="60" zIndex="8" pageId="FILEMNG" text="$IAT/left/FilePageButton" margin="15px" />
+        <Widget xsi:type="widgets.brease.NavigationButton" id="ServicePageButtom" top="0" left="-3" width="175" height="60" zIndex="9" pageId="SERVICE" text="Service" margin="15px" />
       </Widgets>
     </Widget>
   </Widgets>
