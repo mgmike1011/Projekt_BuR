@@ -66,5 +66,26 @@
         </Widget>
       </Widgets>
     </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="ControlGroupBox" top="630" left="0" width="1710" height="271" zIndex="2" childPositioning="relative" text="$IAT/ManualPage/Controltxt" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="0" left="0" width="415" height="220" zIndex="0" text="$IAT/AutomaticControlPage/CurrentMachineSteptxt" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.TextPicker" id="TextPicker2" top="1" left="-1" width="405" height="170" zIndex="0" dataProvider="[{'value':'0','text':'$IAT/AutomaticControlPage/StateIdletxt'},{'value':'1','text':'$IAT/TuningPage/Tuningtxt'},{'value':'2','text':'$IAT/AutomaticControlPage/StateManualWorktxt'},{'value':'3','text':'$IAT/AutomaticControlPage/StateAutoWorktxt'},{'value':'4','text':'$IAT/AutomaticControlPage/StateErrortxt'},{'value':'5','text':'$IAT/AutomaticControlPage/StateStoptxt'}]" fontSize="18px" bold="true" margin="5px" disabledMarkerColor="rgba(51, 136, 204, 1)" disabledItemTextColor="rgba(71, 71, 71, 1)" disabledItemActiveTextColor="rgba(255, 255, 255, 1)" disabledItemActiveBackColor="rgba(51, 136, 204, 1)" enable="false" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="0" left="0" width="840" height="220" zIndex="1" text="$IAT/ManualPage/ManualControltxt" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ToggleButton" id="ManualWorkToggleButton" top="46" left="13" width="300" height="60" zIndex="0" text="$IAT/ManualPage/ManualControltxt" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.Button" id="StartButton" top="46" left="391" width="175" height="60" zIndex="1" text="START" />
+            <Widget xsi:type="widgets.brease.Button" id="StopButton" top="46" left="643" width="175" height="60" zIndex="2" text="STOP" textColor="rgba(192, 0, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="Image1" top="119" left="454" width="50" height="50" zIndex="3" image="Media/SymbolLib/Symbols/Stop.svg" sizeMode="fill" margin="0px" imageColor="rgba(0, 128, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="Image2" top="119" left="706" width="50" height="50" zIndex="4" image="Media/SymbolLib/Symbols/Stop.svg" sizeMode="fill" imageColor="rgba(192, 0, 0, 1)" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="0" left="0" width="415" height="220" zIndex="2" text="s" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
+          <Widgets />
+        </Widget>
+      </Widgets>
+    </Widget>
   </Widgets>
 </Content>

@@ -137,5 +137,27 @@
         <seg>Heater PWM</seg>
       </tuv>
     </tu>
+    <tu tuid="Controltxt">
+      <tuv xml:lang="de">
+        <seg>Steuern</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sterowanie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Control</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManualControltxt">
+      <tuv xml:lang="de">
+        <seg>Manuelle kontrolle</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sterowanie ręczne</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual control</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

@@ -27,6 +27,7 @@
     <EventBindingsSet refId="OEE_eventbinding" />
     <EventBindingsSet refId="Tuning_eventbinding" />
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
+    <EventBindingsSet refId="MANUAL_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />

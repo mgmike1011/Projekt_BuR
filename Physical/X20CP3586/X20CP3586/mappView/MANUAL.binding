@@ -97,5 +97,21 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[1].HeatValue" attribute="node" />
 <Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput3" attribute="node" />
 </Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:STATUS" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="TextPicker2" attribute="selectedIndex" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Manual_work" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="ManualWorkToggleButton" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gSTOP" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="Image2" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gStart" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="Image1" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>

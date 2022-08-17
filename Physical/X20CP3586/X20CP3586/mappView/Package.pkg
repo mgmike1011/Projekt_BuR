@@ -16,5 +16,6 @@
     <Object Type="File">AUTOMATIC.binding</Object>
     <Object Type="File">AUTOMATIC.eventbinding</Object>
     <Object Type="File">MANUAL.binding</Object>
+    <Object Type="File">MANUAL.eventbinding</Object>
   </Objects>
 </Package>
