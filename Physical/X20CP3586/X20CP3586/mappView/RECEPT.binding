@@ -3,7 +3,6 @@
   <Bindings>
 <Binding mode="twoWay">
 <Source xsi:type="mapp" refId="gRecipeCsv" attribute="link" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Database1" attribute="mpLink" />
 </Binding>
 </Bindings>
 </BindingsSet>

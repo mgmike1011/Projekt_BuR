@@ -1,5 +1,4 @@
 VAR
-	MpAlarmXCore_0 : MpAlarmXCore;
 	MpAlarmXHistory_0 : MpAlarmXHistory;
 	mpAlarmXlist : MpAlarmXListUI;
 	mpAlarmXlistConnect : MpAlarmXListUIConnectType;

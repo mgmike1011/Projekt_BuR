@@ -15,16 +15,15 @@
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ALARM_binding" />
-    <BindingsSet refId="RECEPT_binding" />
-		<BindingsSet refId="LoginDialogC_binding" />
-		<BindingsSet refId="Tuning_binding" />
+    <BindingsSet refId="LoginDialogC_binding" />
+    <BindingsSet refId="Tuning_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
     <EventBindingsSet refId="TOP_eventbinding" />
     <EventBindingsSet refId="LoginDialogC_eventbinding" />
-		<EventBindingsSet refId="OEE_eventbinding" />
-		<EventBindingsSet refId="Tuning_eventbinding" />
+    <EventBindingsSet refId="OEE_eventbinding" />
+    <EventBindingsSet refId="Tuning_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />
@@ -47,8 +46,8 @@
   </Contents>
   <SnippetsSets />
   <VariablesSets>
-		<VariablesSet refId="svar_0" />
-	</VariablesSets>
+    <VariablesSet refId="svar_0" />
+  </VariablesSets>
   <ExpressionsSets />
   <StartTheme themeRefId="BuRThemeMobileGray" />
   <Themes>
