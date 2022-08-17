@@ -20,6 +20,7 @@
     <BindingsSet refId="Tuning_binding" />
     <BindingsSet refId="START_PAGE_binding" />
     <BindingsSet refId="AUTOMATIC_binding" />
+    <BindingsSet refId="SERVICE_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
@@ -55,7 +56,9 @@
   <VariablesSets>
     <VariablesSet refId="svar_0" />
   </VariablesSets>
-  <ExpressionsSets />
+  <ExpressionsSets>
+    <ExpressionsSet refId="expression_0" />
+  </ExpressionsSets>
   <StartTheme themeRefId="BuRThemeMobileGray" />
   <Themes>
     <Theme refId="BuRThemeMobileGray" />

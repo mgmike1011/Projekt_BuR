@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="SERVICE_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="GraphSelect1" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GraphSelect1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="GraphSelect2" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GraphSelect2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="GraphSelect3" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GraphSelect3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="GraphSelect4" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GraphSelect4" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ShowCurrent" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="ShowHeaterPWM" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ShowCurrent1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="ShowSetPoint" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ShowCurrent2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="ShowCurrent" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ShowCurrent3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp1" attribute="node" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ServiceGraph" attribute="graph[Current1].node" />
+</Binding>
+</Bindings>
+</BindingsSet>

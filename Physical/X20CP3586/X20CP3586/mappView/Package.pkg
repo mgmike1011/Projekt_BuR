@@ -18,5 +18,6 @@
     <Object Type="File">START_PAGE.eventbinding</Object>
     <Object Type="File">AUTOMATIC.binding</Object>
     <Object Type="File">AUTOMATIC.eventbinding</Object>
+    <Object Type="File">SERVICE.binding</Object>
   </Objects>
 </Package>
