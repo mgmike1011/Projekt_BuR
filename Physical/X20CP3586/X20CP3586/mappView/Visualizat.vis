@@ -20,6 +20,7 @@
     <BindingsSet refId="Tuning_binding" />
     <BindingsSet refId="START_PAGE_binding" />
     <BindingsSet refId="AUTOMATIC_binding" />
+    <BindingsSet refId="MANUAL_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
@@ -30,6 +31,7 @@
     <EventBindingsSet refId="SERVICE_eventbinding" />
     <EventBindingsSet refId="START_PAGE_eventbinding" />
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
+    <EventBindingsSet refId="MANUAL_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />

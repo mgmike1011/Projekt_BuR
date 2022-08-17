@@ -13,5 +13,6 @@
     <Object Type="File">ServicePage.tmx</Object>
     <Object Type="File">StartPageText.tmx</Object>
     <Object Type="File">AutomaticPageTexts.tmx</Object>
+    <Object Type="File">ManualPageTexts.tmx</Object>
   </Objects>
 </Package>

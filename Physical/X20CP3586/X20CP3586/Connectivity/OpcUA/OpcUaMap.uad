@@ -63,7 +63,9 @@
         <Variable Name="gOeeCore" />
         <Variable Name="gStart" />
         <Variable Name="gSTOP" />
-        <Variable Name="gTempController_1" />
+        <Variable Name="gTempController_1">
+          <Variable Name="Internal" EnableArrayElements="True" />
+        </Variable>
         <Variable Name="gTempController_2" />
         <Variable Name="gTempController_3" />
         <Variable Name="gTempController_4" />
@@ -94,7 +96,7 @@
         <Variable Name="SimulateZone3Enable" />
         <Variable Name="SimulateZone4Enable" />
         <Variable Name="STATUS" />
-        <Variable Name="TempController" />
+        <Variable Name="TempController" EnableArrayElements="True" />
         <Variable Name="TempControllerPar" />
         <Variable Name="TempGroup" />
         <Variable Name="TempGroupPar" />
@@ -114,7 +116,7 @@
       <Task Name="Recipe">
         <Variable Name="RecipeUIConnect" />
         <Variable Name="RecipeUISetup" />
-        </Task>
+      </Task>
       <Task Name="OEE">
         <Variable Name="MpOEECore_1">
           <Variable Name="RejectCounter" />
