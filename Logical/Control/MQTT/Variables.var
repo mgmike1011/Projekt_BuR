@@ -1,8 +1,5 @@
-VAR
-	run : BOOL;
-END_VAR
 VAR CONSTANT
-	NR_OF_TOPICS : INT := 5;
+	NR_OF_TOPICS : INT := 8;
 END_VAR
 VAR
 	IotMqttParameters : IotMqttClientParType;
@@ -13,9 +10,10 @@ VAR
 	TopicCounter : {REDUND_UNREPLICABLE} CTU;
 	doSend : BOOL := TRUE;
 	Parser : JSON_PARSER;
-	Test : Test_struct;
 	Temps : Temperatures;
 	SetPoint : SetPoints;
 	Zones : Zone_status;
 	Fans : Fans_struct;
+	Heaters : Heaters_struct;
+	MachineState : Machine_state_struct;
 END_VAR

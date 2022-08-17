@@ -1,8 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="FILEMNG" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Widgets>
-    <Widget xsi:type="widgets.brease.Button" id="OpenExplorerButton" top="420" left="180" width="120" zIndex="0" text="Open Explorer" />
-    <Widget xsi:type="widgets.brease.Button" id="SaveAsButton" top="420" left="340" zIndex="1" text="Save as" />
-    <Widget xsi:type="widgets.brease.TextPad" id="TextPad1" top="80" left="120" width="420" zIndex="2" />
-  </Widgets>
+  <Widgets />
 </Content>

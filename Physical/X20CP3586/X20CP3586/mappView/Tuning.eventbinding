@@ -43,7 +43,7 @@
           <Step order="1">
             <Action>
               <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gStart">
-                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+                <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
               </Target>
             </Action>
           </Step>
