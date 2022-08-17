@@ -121,6 +121,7 @@
         <Variable Name="startOEE" />
         <Variable Name="RejectCycle" />
         <Variable Name="StatusString" />
+        <Variable Name="StateIdle" />
       </Task>
       <Task Name="MpReport1">
         <Variable Name="MpReportCore_1">

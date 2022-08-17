@@ -53,6 +53,13 @@ PROGRAM	_CYCLIC
 		STATE_STOP:
 			StatusString := 'STATE_STOP';
 	END_CASE;
+	
+	IF STATUS = STATE_IDLE THEN
+		StateIdle := 1;
+	ELSE
+		StateIdle := 0;
+	END_IF;//nie jestem z tego dumny
+	
 			
 END_PROGRAM
 

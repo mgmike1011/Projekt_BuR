@@ -1,4 +1,5 @@
 VAR
+	StateIdle : BOOL;
 	RejectCycle : BOOL;
 	MpOEECore_1 : MpOeeCore;
 	IdealCycleTime_1 : MpOeeCoreParType;
