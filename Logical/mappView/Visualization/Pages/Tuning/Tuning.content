@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="Tuning" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Label" id="LabelTitle" top="15" left="0" width="1710" height="74" zIndex="0" text="$IAT/TuningPage/TuningPageTitletxt" textAlign="center" fontSize="25px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelTitle" top="0" left="0" width="1710" height="75" zIndex="0" text="$IAT/TuningPage/TuningPageTitletxt" textAlign="center" fontSize="25px" bold="true" margin="5px" />
     <Widget xsi:type="widgets.brease.GroupBox" id="Zone1GroupBox" top="180" left="14" width="300" height="280" zIndex="1" text="$IAT/TuningPage/Zone1txt" fontSize="18px">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="Label1" top="20" left="14" zIndex="0" text="$IAT/TuningPage/Kptxt" textAlign="center" fontSize="18px" bold="true" />

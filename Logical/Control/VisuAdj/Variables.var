@@ -1,0 +1,15 @@
+(*Current zone temperature*)
+VAR
+	CurrentZone1Temp : REAL;
+	CurrentZone2Temp : REAL;
+	CurrentZone3Temp : REAL;
+	CurrentZone4Temp : REAL;
+END_VAR
+(*Automatic mode timers*)
+VAR
+	TimeStep5Int : UINT;
+	TimeStep4Int : UINT;
+	TimeStep3Int : UINT;
+	TimeStep2Int : UINT;
+	TimeStep1Int : UINT;
+END_VAR

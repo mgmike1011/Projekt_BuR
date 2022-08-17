@@ -1,67 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <vdef:Visualization id="ProjectVizu" autoUpdate="true" xmlns:vdef="http://www.br-automation.com/iat2015/visualizationDefinition/v2">
-	<StartPage pageRefId="MainPage" />
-	<Pages>
-		<Page refId="MainPage" />
-		<Page refId="ALARM" />
-		<Page refId="AUTOMATIC" />
-		<Page refId="MANUAL" />
-		<Page refId="RECEPT" />
-		<Page refId="Tuning" />
-		<Page refId="AUDIT" />
-		<Page refId="OEE" />
-		<Page refId="FILEMNG" />
-	</Pages>
-	<Navigations />
-	<BindingsSets>
-		<BindingsSet refId="ALARM_binding" />
-		<BindingsSet refId="LoginDialogC_binding" />
-		<BindingsSet refId="Tuning_binding" />
-	</BindingsSets>
-	<EventBindingsSets>
-		<EventBindingsSet refId="ALARM_eventbinding" />
-		<EventBindingsSet refId="TOP_eventbinding" />
-		<EventBindingsSet refId="LoginDialogC_eventbinding" />
-		<EventBindingsSet refId="OEE_eventbinding" />
-		<EventBindingsSet refId="Tuning_eventbinding" />
-	</EventBindingsSets>
-	<Dialogs>
-		<Dialog refId="LoginDialogP" />
-		<Dialog refId="SystemInfoDialog" />
-	</Dialogs>
-	<Contents>
-		<Content refId="TOP" />
-		<Content refId="LEFT" />
-		<Content refId="START_PAGE" />
-		<Content refId="ALARM" />
-		<Content refId="AUTOMATIC" />
-		<Content refId="MANUAL" />
-		<Content refId="RECEPT" />
-		<Content refId="Tuning" />
-		<Content refId="AUDIT" />
-		<Content refId="OEE" />
-		<Content refId="FILEMNG" />
-		<Content refId="LoginDialogC" />
-		<Content refId="SystemInfoDialogContent" />
-	</Contents>
-	<SnippetsSets />
-	<VariablesSets>
-		<VariablesSet refId="svar_0" />
-	</VariablesSets>
-	<ExpressionsSets />
-	<StartTheme themeRefId="BuRThemeMobileGray" />
-	<Themes>
-		<Theme refId="BuRThemeMobileGray" />
-	</Themes>
-	<Configurations>
-		<Configuration key="activityCount" value="false" />
-		<Gestures>
-			<!--<SystemGesture1 touchPoints="2" />
+  <StartPage pageRefId="MainPage" />
+  <Pages>
+    <Page refId="MainPage" />
+    <Page refId="ALARM" />
+    <Page refId="AUTOMATIC" />
+    <Page refId="MANUAL" />
+    <Page refId="RECEPT" />
+    <Page refId="Tuning" />
+    <Page refId="AUDIT" />
+    <Page refId="OEE" />
+    <Page refId="FILEMNG" />
+  </Pages>
+  <Navigations />
+  <BindingsSets>
+    <BindingsSet refId="ALARM_binding" />
+    <BindingsSet refId="LoginDialogC_binding" />
+    <BindingsSet refId="Tuning_binding" />
+    <BindingsSet refId="AUTOMATIC_binding" />
+  </BindingsSets>
+  <EventBindingsSets>
+    <EventBindingsSet refId="ALARM_eventbinding" />
+    <EventBindingsSet refId="TOP_eventbinding" />
+    <EventBindingsSet refId="LoginDialogC_eventbinding" />
+    <EventBindingsSet refId="OEE_eventbinding" />
+    <EventBindingsSet refId="Tuning_eventbinding" />
+    <EventBindingsSet refId="AUTOMATIC_eventbinding" />
+  </EventBindingsSets>
+  <Dialogs>
+    <Dialog refId="LoginDialogP" />
+    <Dialog refId="SystemInfoDialog" />
+  </Dialogs>
+  <Contents>
+    <Content refId="TOP" />
+    <Content refId="LEFT" />
+    <Content refId="START_PAGE" />
+    <Content refId="ALARM" />
+    <Content refId="AUTOMATIC" />
+    <Content refId="MANUAL" />
+    <Content refId="RECEPT" />
+    <Content refId="Tuning" />
+    <Content refId="AUDIT" />
+    <Content refId="OEE" />
+    <Content refId="FILEMNG" />
+    <Content refId="LoginDialogC" />
+    <Content refId="SystemInfoDialogContent" />
+  </Contents>
+  <SnippetsSets />
+  <VariablesSets>
+    <VariablesSet refId="svar_0" />
+  </VariablesSets>
+  <ExpressionsSets />
+  <StartTheme themeRefId="BuRThemeMobileGray" />
+  <Themes>
+    <Theme refId="BuRThemeMobileGray" />
+  </Themes>
+  <Configurations>
+    <Configuration key="activityCount" value="false" />
+    <Gestures>
+      <!--<SystemGesture1 touchPoints="2" />
 			<SystemGesture2 touchPoints="2" />
 			<SystemGesture3 touchPoints="2" />-->
-		</Gestures>
-		<VirtualKeyboards>
-			<!--<InputProcessing onKeyDown="true" />-->
-		</VirtualKeyboards>
-	</Configurations>
+    </Gestures>
+    <VirtualKeyboards>
+      <!--<InputProcessing onKeyDown="true" />-->
+    </VirtualKeyboards>
+  </Configurations>
 </vdef:Visualization>
