@@ -1,0 +1,7 @@
+VAR
+	MpRecipeCsv_0 : MpRecipeCsv;
+	MpRecipeRegPar_0 : MpRecipeRegPar;
+	MpRecipeUI_0 : MpRecipeUI;
+	RecipeUIConnect : MpRecipeUIConnectType;
+	RecipeUISetup : MpRecipeUISetupType;
+END_VAR

@@ -11,5 +11,7 @@
     <Object Type="File">LoginText.tmx</Object>
     <Object Type="File">ProjectTitle.tmx</Object>
     <Object Type="File">ServicePage.tmx</Object>
+    <Object Type="File">StartPageText.tmx</Object>
+    <Object Type="File">AutomaticPageTexts.tmx</Object>
   </Objects>
 </Package>

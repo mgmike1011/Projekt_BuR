@@ -188,6 +188,7 @@ PROGRAM _CYCLIC
 			// Switch state conditions
 			IF NOT Automatic_work THEN
 				STATUS := STATE_IDLE;
+				AutoStep := STEP_INIT;
 			ELSIF gSTOP THEN
 				STATUS := STATE_STOP;
 			ELSIF Automatic_work AND (TuneEnable OR Manual_work) AND gStart THEN
@@ -198,6 +199,10 @@ PROGRAM _CYCLIC
 		STATE_STOP:
 			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
+			Automatic_work := FALSE;
+			TuneEnable := FALSE;
+			gStart := FALSE;
+			Manual_work := FALSE;
 			TempController[0].Enable := FALSE;
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := FALSE;
@@ -222,16 +227,21 @@ PROGRAM _CYCLIC
 			TempController[3].Simulate := FALSE;
 			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
+			Automatic_work := FALSE;
+			Manual_work := FALSE;
+			TuneEnable := FALSE;
+			gStart := FALSE;
 			// Switch state conditions
 			IF NOT gError AND NOT gStart AND NOT gSTOP AND NOT (Manual_work OR Automatic_work) AND NOT TuneEnable THEN
 				STATUS := STATE_IDLE;
 			END_IF;
 	END_CASE;
 	// Error switch
-	IF (TempController[0].Control AND NOT TempController[0].ControlActive) OR (TempController[1].Control AND NOT TempController[1].ControlActive) OR 
-		(TempController[2].Control AND NOT TempController[2].ControlActive) OR (TempController[3].Control AND NOT TempController[3].ControlActive) THEN
-		STATUS := STATE_ERROR;
-	END_IF;
+	//IF (TempController[0].Control AND NOT TempController[0].ControlActive) OR (TempController[1].Control AND NOT TempController[1].ControlActive) OR 
+	//	(TempController[2].Control AND NOT TempController[2].ControlActive) OR (TempController[3].Control AND NOT TempController[3].ControlActive) THEN
+	//	STATUS := STATE_ERROR;
+	//	gError := TRUE;
+	//END_IF;
 	// Update info about zone state
 	ZoneStateUpdate;
 	// Calling functionblocks
