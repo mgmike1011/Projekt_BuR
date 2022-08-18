@@ -79,10 +79,10 @@
         <Variable Name="PIDIntegrationTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
         <Variable Name="PIDProportionaGainCOOL" EnableArrayElements="True" />
         <Variable Name="PIDProportionaGainHEAT" EnableArrayElements="True" />
-        <Variable Name="SetTemp1" EURangesId="1" EngineeringUnitId="2" />
-        <Variable Name="SetTemp2" EURangesId="1" EngineeringUnitId="2" />
-        <Variable Name="SetTemp3" EURangesId="1" EngineeringUnitId="2" />
-        <Variable Name="SetTemp4" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp1" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp2" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp3" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp4" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SetTempCoolTuning1" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SetTempCoolTuning2" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SetTempCoolTuning3" EURangesId="1" EngineeringUnitId="2" />
@@ -96,7 +96,24 @@
         <Variable Name="SimulateZone3Enable" />
         <Variable Name="SimulateZone4Enable" />
         <Variable Name="STATUS" />
-        <Variable Name="TempController" EnableArrayElements="True" />
+        <Variable Name="TempController" EnableArrayElements="True">
+          <Variable Name="TempController[0]">
+            <Variable Name="HeatValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+            <Variable Name="CoolValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+          </Variable>
+          <Variable Name="TempController[1]">
+            <Variable Name="HeatValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+            <Variable Name="CoolValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+          </Variable>
+          <Variable Name="TempController[2]">
+            <Variable Name="HeatValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+            <Variable Name="CoolValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+          </Variable>
+          <Variable Name="TempController[3]">
+            <Variable Name="HeatValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+            <Variable Name="CoolValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+          </Variable>
+        </Variable>
         <Variable Name="TempControllerPar" />
         <Variable Name="TempGroup" />
         <Variable Name="TempGroupPar" />

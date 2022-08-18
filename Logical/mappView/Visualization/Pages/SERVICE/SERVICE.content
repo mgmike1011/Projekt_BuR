@@ -1,17 +1,117 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="SERVICE" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Content id="SERVICE" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
   <Widgets>
     <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="40" left="40" width="740" height="160" zIndex="0" text="$IAT/Service/sim" enable="false">
       <Widgets>
-        <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle1" top="22" left="19" width="162" zIndex="0" textAlign="right" />
-        <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle2" top="22" left="199" width="162" zIndex="1" />
-        <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle3" top="22" left="379" width="162" zIndex="2" />
-        <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle4" top="22" left="559" width="162" zIndex="3" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle1" top="22" left="19" width="162" zIndex="0" textAlign="right" tabIndex="1" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle2" top="22" left="199" width="162" zIndex="1" tabIndex="2" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle3" top="22" left="379" width="162" zIndex="2" tabIndex="3" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle4" top="22" left="559" width="162" zIndex="3" tabIndex="4" />
         <Widget xsi:type="widgets.brease.Label" id="Label1" top="82" left="50" width="101" zIndex="4" text="Zone 1" textAlign="center" fontSize="30px" bold="true" />
         <Widget xsi:type="widgets.brease.Label" id="Label2" top="82" left="229" width="101" zIndex="5" text="Zone 2" textAlign="center" fontSize="30px" bold="true" />
         <Widget xsi:type="widgets.brease.Label" id="Label3" top="82" left="409" width="101" zIndex="6" text="Zone 3" textAlign="center" fontSize="30px" bold="true" />
         <Widget xsi:type="widgets.brease.Label" id="Label4" top="82" left="589" width="101" zIndex="7" text="Zone 4" textAlign="center" fontSize="30px" bold="true" />
       </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.OnlineChartHDA" id="Zone1Graph" top="240" left="40" width="1640" height="520" zIndex="1" updateBufferTime="200">
+      <Properties>
+        <yAxis>
+          <Element id="Temp" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
+          <Element id="PWM" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" position="right" />
+        </yAxis>
+        <xAxis>
+          <Element id="xAxis1" timeSpan="300" />
+        </xAxis>
+        <graph>
+          <Element id="Current1" yAxisReference="Temp" lineColor="rgba(255, 133, 0, 1)" />
+          <Element id="SetPoint1" yAxisReference="Temp" lineColor="rgba(0, 0, 0, 1)" />
+          <Element id="Heater1" yAxisReference="PWM" lineColor="rgba(255, 0, 0, 1)" />
+          <Element id="Cooler1" yAxisReference="PWM" lineColor="rgba(0, 0, 255, 1)" />
+        </graph>
+        <cursor>
+          <Element id="cursor1" />
+        </cursor>
+      </Properties>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GraphSelect" top="40" left="919" width="741" height="160" zIndex="2" text="GraphSelect">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup1" top="1" left="-1" width="741" height="119" zIndex="0">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.RadioButton" id="GraphSelect1" top="40" left="20" zIndex="0" text="Zone1" value="true" textAlign="center" />
+            <Widget xsi:type="widgets.brease.RadioButton" id="GraphSelect2" top="38" left="202" zIndex="1" text="Zone2" textAlign="center" />
+            <Widget xsi:type="widgets.brease.RadioButton" id="GraphSelect3" top="39" left="380" zIndex="2" text="Zone3" textAlign="center" />
+            <Widget xsi:type="widgets.brease.RadioButton" id="GraphSelect4" top="39" left="560" width="162" zIndex="3" text="Zone4" textAlign="center" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="780" left="550" width="620" height="120" zIndex="3" text="GroupBox2">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.CheckBox" id="ShowCurrent4" top="21" left="458" width="122" zIndex="0" text="CheckBox1" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ShowCurrent3" top="20" left="317" width="122" zIndex="1" text="CheckBox1" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ShowCurrent2" top="20" left="178" width="122" zIndex="2" text="CheckBox1" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ShowCurrent1" top="20" left="38" width="122" zIndex="3" text="CheckBox1" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.OnlineChartHDA" id="Zone2Graph" top="240" left="40" width="1640" height="520" zIndex="4" updateBufferTime="200">
+      <Properties>
+        <yAxis>
+          <Element id="Temp" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
+          <Element id="PWM" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" position="right" />
+        </yAxis>
+        <xAxis>
+          <Element id="xAxis1" timeSpan="300" />
+        </xAxis>
+        <graph>
+          <Element id="Current2" yAxisReference="Temp" lineColor="rgba(255, 133, 0, 1)" />
+          <Element id="SetPoint2" yAxisReference="Temp" lineColor="rgba(0, 0, 0, 1)" />
+          <Element id="Heater2" yAxisReference="PWM" lineColor="rgba(255, 0, 0, 1)" />
+          <Element id="Cooler2" yAxisReference="PWM" lineColor="rgba(0, 0, 255, 1)" />
+        </graph>
+        <cursor>
+          <Element id="cursor1" />
+        </cursor>
+      </Properties>
+    </Widget>
+    <Widget xsi:type="widgets.brease.OnlineChartHDA" id="Zone3Graph" top="240" left="40" width="1640" height="520" zIndex="5" updateBufferTime="200">
+      <Properties>
+        <yAxis>
+          <Element id="Temp" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
+          <Element id="PWM" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" position="right" />
+        </yAxis>
+        <xAxis>
+          <Element id="xAxis1" timeSpan="300" />
+        </xAxis>
+        <graph>
+          <Element id="Current1" yAxisReference="Temp" lineColor="rgba(255, 133, 0, 1)" />
+          <Element id="SetPoint1" yAxisReference="Temp" lineColor="rgba(0, 0, 0, 1)" />
+          <Element id="Heater1" yAxisReference="PWM" lineColor="rgba(255, 0, 0, 1)" />
+          <Element id="Cooler1" yAxisReference="PWM" lineColor="rgba(0, 0, 255, 1)" />
+        </graph>
+        <cursor>
+          <Element id="cursor1" />
+        </cursor>
+      </Properties>
+    </Widget>
+    <Widget xsi:type="widgets.brease.OnlineChartHDA" id="Zone4Graph" top="240" left="40" width="1640" height="520" zIndex="6" updateBufferTime="200">
+      <Properties>
+        <yAxis>
+          <Element id="Temp" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
+          <Element id="PWM" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" position="right" />
+        </yAxis>
+        <xAxis>
+          <Element id="xAxis1" timeSpan="300" />
+        </xAxis>
+        <graph>
+          <Element id="Current1" yAxisReference="Temp" lineColor="rgba(255, 133, 0, 1)" />
+          <Element id="SetPoint1" yAxisReference="Temp" lineColor="rgba(0, 0, 0, 1)" />
+          <Element id="Heater1" yAxisReference="PWM" lineColor="rgba(255, 0, 0, 1)" />
+          <Element id="Cooler1" yAxisReference="PWM" lineColor="rgba(0, 0, 255, 1)" />
+        </graph>
+        <cursor>
+          <Element id="cursor1" />
+        </cursor>
+      </Properties>
     </Widget>
   </Widgets>
 </Content>

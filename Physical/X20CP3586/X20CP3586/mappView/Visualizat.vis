@@ -20,6 +20,7 @@
     <BindingsSet refId="Tuning_binding" />
     <BindingsSet refId="START_PAGE_binding" />
     <BindingsSet refId="AUTOMATIC_binding" />
+    <BindingsSet refId="SERVICE_binding" />
     <BindingsSet refId="MANUAL_binding" />
     <BindingsSet refId="ErrorDialogContent_binding" />
     <BindingsSet refId="TunningSetpointsDialogContent_binding" />
@@ -64,7 +65,9 @@
   <VariablesSets>
     <VariablesSet refId="svar_0" />
   </VariablesSets>
-  <ExpressionsSets />
+  <ExpressionsSets>
+    <ExpressionsSet refId="expression_0" />
+  </ExpressionsSets>
   <StartTheme themeRefId="BuRThemeMobileGray" />
   <Themes>
     <Theme refId="BuRThemeMobileGray" />
