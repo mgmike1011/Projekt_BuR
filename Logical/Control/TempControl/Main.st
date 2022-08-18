@@ -66,6 +66,7 @@ PROGRAM _CYCLIC
 		STATE_IDLE:
 			TempGroup.Control := FALSE;
 			TempGroup.Tune := FALSE;
+			AutoStep := STEP_INIT;
 			TempController[0].Enable := FALSE;
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := FALSE;

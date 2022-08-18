@@ -2,7 +2,7 @@
 <Content id="START_PAGE" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
   <Widgets>
     <Widget xsi:type="widgets.brease.Image" id="Image1" top="1610" left="690" zIndex="0" image="Media/BiR.png" />
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone1" top="120" left="5" width="420" height="780" zIndex="1" text="$IAT/START_PAGE/Zone1" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone1" top="105" left="5" width="420" height="780" zIndex="1" text="$IAT/START_PAGE/Zone1" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="STemperatureText1" top="497" left="0" width="254" height="29" zIndex="0" text="$IAT/START_PAGE/SetTemperature" textAlign="center" />
         <Widget xsi:type="widgets.brease.NumericOutput" id="SetTemperatureStartPageZone1" top="497" left="255" width="105" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
@@ -40,7 +40,7 @@
         </Widget>
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone2" top="120" left="435" width="420" height="780" zIndex="2" text="$IAT/START_PAGE/Zone2" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone2" top="105" left="435" width="420" height="780" zIndex="2" text="$IAT/START_PAGE/Zone2" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="STemperatureText2" top="497" left="0" width="254" height="29" zIndex="0" text="$IAT/START_PAGE/SetTemperature" textAlign="center" />
         <Widget xsi:type="widgets.brease.NumericOutput" id="SetTemperatureStartPageZone2" top="497" left="255" width="105" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
@@ -78,7 +78,7 @@
         </Widget>
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone3" top="120" left="865" width="420" height="780" zIndex="3" text="$IAT/START_PAGE/Zone3" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone3" top="105" left="865" width="420" height="780" zIndex="3" text="$IAT/START_PAGE/Zone3" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="STemperatureText3" top="497" left="0" width="254" height="29" zIndex="0" text="$IAT/START_PAGE/SetTemperature" textAlign="center" />
         <Widget xsi:type="widgets.brease.NumericOutput" id="SetTemperatureStartPageZone3" top="497" left="255" width="105" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
@@ -116,7 +116,7 @@
         </Widget>
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone4" top="120" left="1295" width="420" height="780" zIndex="4" text="$IAT/START_PAGE/Zone4" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone4" top="105" left="1295" width="420" height="780" zIndex="4" text="$IAT/START_PAGE/Zone4" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="STemperatureText4" top="497" left="0" width="254" height="29" zIndex="0" text="$IAT/START_PAGE/SetTemperature" textAlign="center" />
         <Widget xsi:type="widgets.brease.NumericOutput" id="SetTemperatureStartPageZone4" top="497" left="255" width="105" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
@@ -154,6 +154,6 @@
         </Widget>
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="TitalStartPage" top="0" left="0" width="1710" height="75" zIndex="5" text="$IAT/START_PAGE/StartPage" textAlign="center" fontSize="25px" bold="true" margin="5px" />
+    <Widget xsi:type="widgets.brease.Label" id="TitalStartPage" top="0" left="0" width="1750" height="80" zIndex="5" text="$IAT/START_PAGE/StartPage" textAlign="center" fontName="Arial" fontSize="35px" bold="true" margin="5px" />
   </Widgets>
 </Content>

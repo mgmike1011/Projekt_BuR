@@ -13,8 +13,8 @@
             <Widget xsi:type="widgets.brease.NumericOutput" id="CurrTempZone1NumericOutput" top="140" left="230" width="175" height="60" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" margin="5px" />
             <Widget xsi:type="widgets.brease.Label" id="Label9" top="140" left="0" width="225" height="60" zIndex="5" text="$IAT/AutomaticControlPage/CurrentTemptxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
             <Widget xsi:type="widgets.brease.ToggleButton" id="EnableZone1ToggleButton" top="205" left="50" width="300" height="60" zIndex="6" text="$IAT/ManualPage/EnableZone1txt" fontSize="18px" bold="true" margin="5px" />
-            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="280" left="230" width="175" height="60" zIndex="7" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
-            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput2" top="360" left="230" width="175" height="60" zIndex="8" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput1" top="285" left="230" width="175" height="60" zIndex="7" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput2" top="365" left="230" width="175" height="60" zIndex="8" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
             <Widget xsi:type="widgets.brease.Label" id="Label13" top="280" left="0" width="225" height="60" zIndex="9" text="$IAT/ManualPage/HeaterPWMtxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
             <Widget xsi:type="widgets.brease.Label" id="Label14" top="360" left="0" width="225" height="60" zIndex="10" text="$IAT/ManualPage/FanPWMtxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
           </Widgets>
@@ -30,8 +30,8 @@
             <Widget xsi:type="widgets.brease.ToggleButton" id="EnableZone2ToggleButton" top="205" left="50" width="300" height="60" zIndex="6" text="$IAT/ManualPage/EnableZone2txt" fontSize="18px" bold="true" margin="5px" />
             <Widget xsi:type="widgets.brease.Label" id="Label15" top="280" left="0" width="225" height="60" zIndex="7" text="$IAT/ManualPage/HeaterPWMtxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
             <Widget xsi:type="widgets.brease.Label" id="Label16" top="360" left="0" width="225" height="60" zIndex="8" text="$IAT/ManualPage/FanPWMtxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
-            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput3" top="280" left="230" width="175" height="60" zIndex="9" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
-            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput4" top="360" left="230" width="175" height="60" zIndex="10" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput3" top="285" left="230" width="175" height="60" zIndex="9" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput4" top="365" left="230" width="175" height="60" zIndex="10" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
           </Widgets>
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="Zone3GroupBox" top="0" left="0" width="415" height="480" zIndex="2" text="$IAT/ManualPage/Zone3txt" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
@@ -45,8 +45,8 @@
             <Widget xsi:type="widgets.brease.ToggleButton" id="EnableZone3ToggleButton" top="205" left="50" width="300" height="60" zIndex="6" text="$IAT/ManualPage/EnableZone3txt" fontSize="18px" bold="true" margin="5px" />
             <Widget xsi:type="widgets.brease.Label" id="Label17" top="280" left="0" width="225" height="60" zIndex="7" text="$IAT/ManualPage/HeaterPWMtxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
             <Widget xsi:type="widgets.brease.Label" id="Label18" top="360" left="0" width="225" height="60" zIndex="8" text="$IAT/ManualPage/FanPWMtxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
-            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput5" top="280" left="230" width="175" height="60" zIndex="9" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
-            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput6" top="360" left="230" width="175" height="60" zIndex="10" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput5" top="285" left="230" width="175" height="60" zIndex="9" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput6" top="365" left="230" width="175" height="60" zIndex="10" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
           </Widgets>
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="Zone4GroupBox" top="0" left="0" width="415" height="480" zIndex="3" text="$IAT/ManualPage/Zone4txt" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
@@ -60,8 +60,8 @@
             <Widget xsi:type="widgets.brease.ToggleButton" id="EnableZone4ToggleButton" top="205" left="50" width="300" height="60" zIndex="6" text="$IAT/ManualPage/EnableZone4txt" fontSize="18px" bold="true" margin="5px" />
             <Widget xsi:type="widgets.brease.Label" id="Label19" top="280" left="0" width="225" height="60" zIndex="7" text="$IAT/ManualPage/HeaterPWMtxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
             <Widget xsi:type="widgets.brease.Label" id="Label20" top="360" left="0" width="225" height="60" zIndex="8" text="$IAT/ManualPage/FanPWMtxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
-            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput7" top="280" left="230" width="175" height="60" zIndex="9" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
-            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput8" top="360" left="230" width="175" height="60" zIndex="10" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput7" top="285" left="230" width="175" height="60" zIndex="9" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="NumericOutput8" top="365" left="230" width="175" height="60" zIndex="10" unit="{'metric':'P1','imperial':'P1','imperial-us':'P1'}" unitAlign="right" textAlign="center" fontSize="18px" bold="true" />
           </Widgets>
         </Widget>
       </Widgets>
