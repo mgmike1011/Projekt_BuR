@@ -71,5 +71,16 @@
         <seg>Username</seg>
       </tuv>
     </tu>
+    <tu tuid="LoginDialog">
+      <tuv xml:lang="de">
+        <seg>Anmeldung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Logowanie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Login</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
