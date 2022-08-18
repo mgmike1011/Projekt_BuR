@@ -17,7 +17,7 @@
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="0" left="0" width="420" height="485" zIndex="3" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)">
           <Widgets>
-            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge1" top="64" left="-6" width="426" zIndex="0" maxValue="250" scaleArea1="50" scaleArea2="100" scaleArea3="150" scaleArea4="200" scaleArea5="250" />
+            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge1" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
             <Widget xsi:type="widgets.brease.Label" id="CTemperatureText1" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
             <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone1" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
@@ -26,7 +26,7 @@
                   <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
                 </yAxis>
                 <xAxis>
-                  <Element id="xAxis1" numberOfTicks="4" timeSpan="600" />
+                  <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />
                 </xAxis>
                 <graph>
                   <Element id="graph1" yAxisReference="yAxis1" />
@@ -55,7 +55,7 @@
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox6" top="0" left="0" width="420" height="485" zIndex="3" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)">
           <Widgets>
-            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge2" top="64" left="-6" width="426" zIndex="0" maxValue="250" scaleArea1="50" scaleArea2="100" scaleArea3="150" scaleArea4="200" scaleArea5="250" />
+            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge2" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
             <Widget xsi:type="widgets.brease.Label" id="CTemperatureText2" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
             <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone2" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart1" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
@@ -64,7 +64,7 @@
                   <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
                 </yAxis>
                 <xAxis>
-                  <Element id="xAxis1" numberOfTicks="4" timeSpan="600" />
+                  <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />
                 </xAxis>
                 <graph>
                   <Element id="graph1" yAxisReference="yAxis1" />
@@ -93,7 +93,7 @@
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox7" top="0" left="0" width="420" height="485" zIndex="3" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)">
           <Widgets>
-            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge3" top="64" left="-6" width="426" zIndex="0" maxValue="250" scaleArea1="50" scaleArea2="100" scaleArea3="150" scaleArea4="200" scaleArea5="250" />
+            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge3" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
             <Widget xsi:type="widgets.brease.Label" id="CTemperatureText3" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
             <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone3" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart2" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
@@ -102,7 +102,7 @@
                   <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" />
                 </yAxis>
                 <xAxis>
-                  <Element id="xAxis1" numberOfTicks="4" timeSpan="600" />
+                  <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />
                 </xAxis>
                 <graph>
                   <Element id="graph1" yAxisReference="yAxis1" />
@@ -131,7 +131,7 @@
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox8" top="0" left="0" width="420" height="485" zIndex="3" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)">
           <Widgets>
-            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge4" top="64" left="-6" width="426" zIndex="0" maxValue="250" scaleArea1="50" scaleArea2="100" scaleArea3="150" scaleArea4="200" scaleArea5="250" />
+            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge4" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
             <Widget xsi:type="widgets.brease.Label" id="CTemperatureText4" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
             <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone4" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart3" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
@@ -140,7 +140,7 @@
                   <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
                 </yAxis>
                 <xAxis>
-                  <Element id="xAxis1" numberOfTicks="4" timeSpan="600" />
+                  <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />
                 </xAxis>
                 <graph>
                   <Element id="graph1" yAxisReference="yAxis1" />
@@ -154,6 +154,6 @@
         </Widget>
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="TitalStartPage" top="20" left="40" width="519" height="70" zIndex="5" text="$IAT/START_PAGE/StartPage" textAlign="left" fontName="Times New Roman" fontSize="60px" bold="false" />
+    <Widget xsi:type="widgets.brease.Label" id="TitalStartPage" top="0" left="0" width="1710" height="75" zIndex="5" text="$IAT/START_PAGE/StartPage" textAlign="center" fontSize="25px" bold="true" margin="5px" />
   </Widgets>
 </Content>
