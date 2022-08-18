@@ -1,6 +1,6 @@
 
 ACTION Init: 
-	IotMqttParameters.ServerUri				:= '192.168.20.1';
+	IotMqttParameters.ServerUri				:= 'localhost';
 	IotMqttParameters.Port					:= 1883;
 	IotMqttParameters.ClientID				:= 'PLC';
 	
