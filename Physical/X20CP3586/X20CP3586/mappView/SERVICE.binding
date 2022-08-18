@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="SERVICE_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Bindings>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="GraphSelect1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GraphSelect1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="GraphSelect2" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GraphSelect2" attribute="value" />
+		</Binding>
+		
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="GraphSelect4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GraphSelect4" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ShowCurrent4" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowHeaterPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ShowCurrent3" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowSetPoint" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ShowCurrent2" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowCurrent" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ShowCurrent1" attribute="value" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp1" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[Current1].node" />
+		</Binding>
+
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[Cooler1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowHeaterPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[Heater1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowSetPoint" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[SetPoint1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowCurrent" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[Current1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[0].CoolValue" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[Cooler1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[0].HeatValue" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[Heater1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTemp1" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[SetPoint1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[1].CoolValue" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="graph[Cooler2].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[1].HeatValue" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="graph[Heater2].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTemp2" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="graph[SetPoint2].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp2" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="graph[Current2].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[3].CoolValue" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[Cooler1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[3].HeatValue" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[Heater1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTemp4" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[SetPoint1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp4" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[Current1].node" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[Cooler1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowHeaterPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[Heater1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowSetPoint" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[SetPoint1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowCurrent" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[Current1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="GraphSelect3" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="visible" />
+		</Binding>
+
+
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="GraphSelect1" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="graph[Cooler1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowHeaterPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="graph[Heater1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowSetPoint" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="graph[SetPoint1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowCurrent" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="graph[Current1].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[2].CoolValue" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="graph[Cooler1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[2].HeatValue" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="graph[Heater1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTemp3" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="graph[SetPoint1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp3" attribute="node" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="graph[Current1].node" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="GraphSelect4" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="visible" />
+		</Binding>
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="graph[Cooler2].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowHeaterPWM" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="graph[Heater2].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowSetPoint" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="graph[SetPoint2].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="ShowCurrent" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="graph[Current2].visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="GraphSelect2" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="visible" />
+		</Binding>
+		<Binding mode="twoWay">
+			<Source xsi:type="session" refId="GraphSelect3" attribute="value" />
+			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GraphSelect3" attribute="value" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ShowHeaterPWM" attribute="value" />
+			<Target xsi:type="expression" refId="ShowPWMaxis" attribute="inA" />
+		</Binding>	
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
+			<Target xsi:type="expression" refId="ShowPWMaxis" attribute="inB" />
+		</Binding>
+		
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ShowCurrent" attribute="value" />
+			<Target xsi:type="expression" refId="ShowTempAxis" attribute="inA" />
+		</Binding>	
+		<Binding mode="oneWay">
+			<Source xsi:type="session" refId="ShowSetPoint" attribute="value" />
+			<Target xsi:type="expression" refId="ShowTempAxis" attribute="inB" />
+		</Binding>
+		
+	<Binding mode="oneWay">
+<Source xsi:type="expression" refId="ShowPWMaxis" attribute="result" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="yAxis[PWM].visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="expression" refId="ShowTempAxis" attribute="result" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="yAxis[Temp].visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="expression" refId="ShowPWMaxis" attribute="result" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="yAxis[PWM].visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="expression" refId="ShowTempAxis" attribute="result" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="yAxis[Temp].visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="expression" refId="ShowPWMaxis" attribute="result" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="yAxis[PWM].visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="expression" refId="ShowTempAxis" attribute="result" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="yAxis[Temp].visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="expression" refId="ShowPWMaxis" attribute="result" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="yAxis[PWM].visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="expression" refId="ShowTempAxis" attribute="result" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="yAxis[Temp].visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone1Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="SimulationToggle1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone2Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="SimulationToggle2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone3Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="SimulationToggle3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone4Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="SimulationToggle4" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

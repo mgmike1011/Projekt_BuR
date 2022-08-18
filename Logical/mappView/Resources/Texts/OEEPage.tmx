@@ -124,15 +124,15 @@
         <seg>Start collecting data</seg>
       </tuv>
     </tu>
-    <tu tuid="IdealCycleTimeChange">
+    <tu tuid="Change">
       <tuv xml:lang="de">
-        <seg>Ändern Sie die ideale Zykluszeit</seg>
+        <seg>Rückgeld</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Zmień idealny czas cyklu przejścia</seg>
+        <seg>Zmień</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Change ideal cycle time</seg>
+        <seg>Change</seg>
       </tuv>
     </tu>
     <tu tuid="IdealCycleTime">
@@ -155,6 +155,50 @@
       </tuv>
       <tuv xml:lang="en">
         <seg>Assign time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="MachineStatus">
+      <tuv xml:lang="de">
+        <seg>Aktuell Maschinenstatus</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Aktualny status maszyny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current machine status</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Current">
+      <tuv xml:lang="de">
+        <seg>Aktuell</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Aktualny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NumberOfProducts">
+      <tuv xml:lang="de">
+        <seg>Anzahl der Produkte</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ilość wytworzonych produktów</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Number of products</seg>
+      </tuv>
+    </tu>
+    <tu tuid="OEEindex">
+      <tuv xml:lang="de">
+        <seg>OEE-Indikatoren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wskaźniki OEE</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>OEE indicators</seg>
       </tuv>
     </tu>
   </body>

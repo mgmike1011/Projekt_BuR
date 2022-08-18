@@ -27,7 +27,7 @@ PROGRAM _CYCLIC
 			IF mpAlarmXlistConnect.AlarmList.StateActive[i] THEN
 				stringBuffer := UDINT_TO_STRING(mpAlarmXlistConnect.AlarmList.Code[i]);
 				brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
-				stringBuffer := ' ';
+				stringBuffer := ';';
 				brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
 				stringBuffer := WSTRING_TO_STRING(mpAlarmXlistConnect.AlarmList.Message[i]);
 				brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));

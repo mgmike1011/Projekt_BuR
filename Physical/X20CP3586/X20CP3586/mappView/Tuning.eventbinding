@@ -43,7 +43,7 @@
           <Step order="1">
             <Action>
               <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gStart">
-                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+                <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
               </Target>
             </Action>
           </Step>
@@ -56,6 +56,16 @@
         <Action>
           <Target xsi:type="clientSystem.Action">
             <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="SystemInfoDialog" mode="modeless" headerText="$IAT/TuningPage/SystemInfotxt" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="Tuning.SettingSetpointsButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="Tuning" widgetRefId="SettingSetpointsButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="TunningSetpointsDialog" headerText="$IAT/TuningPage/SetpointsBtntxt" />
           </Target>
         </Action>
       </EventHandler>

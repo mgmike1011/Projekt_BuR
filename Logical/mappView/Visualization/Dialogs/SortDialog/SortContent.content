@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="SortContent" height="260" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.ButtonBar" id="ButtonBar1" top="0" left="0" width="600" height="260" zIndex="0">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadioButton" id="Sort1RadioButton" top="20" left="20" width="560" zIndex="0" text="$IAT/FILEMNG/Sort0" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Sort2RadioButton" top="60" left="20" width="560" zIndex="1" text="$IAT/FILEMNG/Sort1" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Sort3RadioButton" top="100" left="20" width="560" zIndex="2" text="$IAT/FILEMNG/Sort2" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Sort4RadioButton" top="140" left="20" width="560" zIndex="3" text="$IAT/FILEMNG/Sort3" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Sort5RadioButton" top="180" left="20" width="560" zIndex="4" text="$IAT/FILEMNG/Sort4" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Sort6RadioButton" top="220" left="20" width="560" zIndex="5" text="$IAT/FILEMNG/Sort5" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

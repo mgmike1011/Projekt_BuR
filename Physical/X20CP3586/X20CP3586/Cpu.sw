@@ -7,7 +7,9 @@
   <TaskClass Name="Cyclic#2">
     <Task Name="TempContro" Source="Control.TempControl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
-  <TaskClass Name="Cyclic#3" />
+  <TaskClass Name="Cyclic#3">
+    <Task Name="MQTT" Source="Control.MQTT.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+  </TaskClass>
   <TaskClass Name="Cyclic#4">
     <Task Name="Alarm" Source="Control.Alarm.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="Recipe" Source="Control.Recipe.prg" Memory="UserROM" Language="IEC" Debugging="true" />
@@ -15,8 +17,8 @@
     <Task Name="AuditTrail" Source="Control.AuditTrail.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="MpReport1" Source="Control.MpReport.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="DataMgmt" Source="Control.DataMgmt.prg" Memory="UserROM" Language="IEC" Debugging="true" />
+    <Task Name="VisuAdj" Source="Control.VisuAdj.prg" Memory="UserROM" Language="IEC" Debugging="true" />
     <Task Name="FileCtrl" Source="Control.FileCtrl.prg" Memory="UserROM" Language="IEC" Debugging="true" />
-    <Task Name="MQTT" Source="Control.MQTT.prg" Memory="UserROM" Language="IEC" Debugging="true" />
   </TaskClass>
   <TaskClass Name="Cyclic#5" />
   <TaskClass Name="Cyclic#6" />

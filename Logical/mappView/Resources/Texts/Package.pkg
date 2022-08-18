@@ -8,8 +8,15 @@
     <Object Type="File">TuningPageTexts.tmx</Object>
     <Object Type="File">SystemInfoDialogTexts.tmx</Object>
     <Object Type="File">OEEPage.tmx</Object>
-    <Object Type="File">ProjectTitle.tmx</Object>
     <Object Type="File">LoginText.tmx</Object>
     <Object Type="File">RecipePage.tmx</Object>
+    <Object Type="File">FileMngTexts.tmx</Object>
+    <Object Type="File">ProjectTitle.tmx</Object>
+    <Object Type="File">ServicePage.tmx</Object>
+    <Object Type="File">StartPageText.tmx</Object>
+    <Object Type="File">AutomaticPageTexts.tmx</Object>
+    <Object Type="File">ManualPageTexts.tmx</Object>
+    <Object Type="File">ErrorDialogTexts.tmx</Object>
+    <Object Type="File">TunningSetpointsDialogTexts.tmx</Object>
   </Objects>
 </Package>

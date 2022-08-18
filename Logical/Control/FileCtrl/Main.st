@@ -16,9 +16,51 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
-//	FOR i := StartValue TO StopValue BY Step DO
-//		MpFileMngConnect.File.List.Items[i].Name;
-//	END_FOR	
+	IF SortType[0] THEN
+		MpFileMngConnect.File.SortOrder := 0;
+	ELSIF SortType[1] THEN
+		MpFileMngConnect.File.SortOrder := 1;
+	ELSIF SortType[2] THEN
+		MpFileMngConnect.File.SortOrder := 2;
+	ELSIF SortType[3] THEN
+		MpFileMngConnect.File.SortOrder := 3;
+	ELSIF SortType[4] THEN
+		MpFileMngConnect.File.SortOrder := 4;
+	ELSIF SortType[5] THEN
+		MpFileMngConnect.File.SortOrder := 5;
+	END_IF
+	
+	FOR i := StartValue TO StopValue BY Step DO
+		Element[i] := MpFileMngConnect.File.List.Items[i].Name;
+		ElementSize[i] := MpFileMngConnect.File.List.Items[i].Size;
+		ElementDateTime[i] := MpFileMngConnect.File.List.Items[i].LastModified;
+		
+		IF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_NONE THEN	
+			ElementType[i] := '';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_FOLDER THEN	
+			ElementType[i] := 'Folder';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_FILE THEN	
+			ElementType[i] := 'File';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_TXT THEN	
+			ElementType[i] := 'txt';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_HTML THEN	
+			ElementType[i] := 'html';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_DOC THEN	
+			ElementType[i] := 'doc';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_XLS THEN	
+			ElementType[i] := 'xls';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_XML THEN	
+			ElementType[i] := 'xml';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_CSV THEN	
+			ElementType[i] := 'csv';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_JPG THEN	
+			ElementType[i] := 'jpg';
+		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_BMP THEN	
+			ElementType[i] := 'bmp';
+		END_IF
+		
+		ElementIsSelected[i] := MpFileMngConnect.File.List.Items[i].IsSelected;
+	END_FOR	
 	
 	MpFileManagerUI_0();
 	 

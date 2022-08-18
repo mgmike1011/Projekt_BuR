@@ -9,9 +9,11 @@ PROGRAM	_INIT
 	ICTm := 0;
 	ICTs := 0;
 	ICTms := 0;
+	StatusString := '';
 END_PROGRAM
 
 PROGRAM	_CYCLIC
+	Update_mqtt_struct;
 	MpOEECore_1.Update := FALSE;
 	MpOEECore_1.Downtime := NOT(STATUS = STATE_WORKING_AUTOMATIC) ;
 	MpOEECore_1.Reset := (RsetOEE);//resetowanie statystyk
@@ -37,6 +39,28 @@ PROGRAM	_CYCLIC
 	//	MpOEECore_1.Parameters := ADR(IdealCycleTime_1.IdealCycleTime);
 	//	OEEParChange :=	FALSE;
 	//END_IF;
+	
+	CASE STATUS OF
+		STATE_IDLE:
+			StatusString := 'STATE_IDLE';
+		STATE_TUNING:
+			StatusString := 'STATE_TUNING';
+		STATE_WORKING_MANUAL:
+			StatusString := 'STATE_WORKING_MANUAL';
+		STATE_WORKING_AUTOMATIC:
+			StatusString := 'STATE_WORKING_AUTOMATIC';
+		STATE_ERROR:
+			StatusString := 'STATE_ERROR';
+		STATE_STOP:
+			StatusString := 'STATE_STOP';
+	END_CASE;
+	
+	IF STATUS = STATE_IDLE THEN
+		StateIdle := 1;
+	ELSE
+		StateIdle := 0;
+	END_IF;//nie jestem z tego dumny
+	
 			
 END_PROGRAM
 

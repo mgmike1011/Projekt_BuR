@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/ManualPage</prop>
+  </header>
+  <body>
+    <tu tuid="ManualPageTitletxt">
+      <tuv xml:lang="de">
+        <seg>Manuelle Kontrolle</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sterowanie ręczne</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual mode control</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ZoneControltxt">
+      <tuv xml:lang="de">
+        <seg>Zoneneinstellungen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ustawienia stref</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone settings</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone1txt">
+      <tuv xml:lang="de">
+        <seg>Zone 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone2txt">
+      <tuv xml:lang="de">
+        <seg>Zone 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone3txt">
+      <tuv xml:lang="de">
+        <seg>Zone 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone4txt">
+      <tuv xml:lang="de">
+        <seg>Zone 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="EnableZone1txt">
+      <tuv xml:lang="de">
+        <seg>Zone 1 aktivieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Załączenie strefy 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Enable zone 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="EnableZone2txt">
+      <tuv xml:lang="de">
+        <seg>Zone 2 aktivieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Załączenie strefy 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Enable zone 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="EnableZone3txt">
+      <tuv xml:lang="de">
+        <seg>Zone 3 aktivieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Załączenie strefy 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Enable zone 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="EnableZone4txt">
+      <tuv xml:lang="de">
+        <seg>Zone 4 aktivieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Załączenie strefy 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Enable zone 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanPWMtxt">
+      <tuv xml:lang="de">
+        <seg>Ventilator PWM</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wentylator PWM</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Fan PWM</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterPWMtxt">
+      <tuv xml:lang="de">
+        <seg>Heizung PWM</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Grzałka PWM</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Heater PWM</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Controltxt">
+      <tuv xml:lang="de">
+        <seg>Steuern</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sterowanie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Control</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManualControltxt">
+      <tuv xml:lang="de">
+        <seg>Manuelle kontrolle</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sterowanie ręczne</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual control</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

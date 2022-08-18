@@ -53,4 +53,13 @@ TYPE
 		TempAlarmLimit : REAL := 50;
 		ActiveAlarms : STRING[512] := 'test';
 	END_STRUCT;
+	OEE_Struct : 	STRUCT 
+		IdealCycleTime : STRING[80];
+		OEE : REAL;
+		Quality : REAL;
+		Performance : REAL;
+		Availability : REAL;
+		RejectCounter : UDINT;
+		PieceCounter : UDINT;
+	END_STRUCT;
 END_TYPE
