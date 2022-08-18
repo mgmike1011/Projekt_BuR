@@ -34,6 +34,7 @@
       <Property ID="TargetFile[20]" Value="mappView.Resources.Texts.ManualPageTexts.tmx" />
       <Property ID="TargetFile[21]" Value="mappView.Resources.Texts.ErrorDialogTexts.tmx" />
       <Property ID="TargetFile[22]" Value="mappView.Resources.Texts.TunningSetpointsDialogTexts.tmx" />
+      <Property ID="TargetFile[23]" Value="mappView.Resources.Texts.FileMngTexts.tmx" />
     </Group>
   </Element>
 </Configuration>

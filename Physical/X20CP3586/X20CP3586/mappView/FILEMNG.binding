@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="FILEMNG_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[0]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type1TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[1]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type2TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[2]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type3TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[3]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type4TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[4]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type5TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[5]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type6TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[6]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type7TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[7]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type8TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[8]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type9TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:ElementType[9]" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Type10TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[0].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size1NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[3].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size4NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[9].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size10NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[8].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size9NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[7].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size8NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[6].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size7NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[5].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size6NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[4].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size5NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[2].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size3NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[1].Size" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size2NumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[0].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name1TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[9].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name10TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[8].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name9TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[7].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name8TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[6].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name7TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[5].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name6TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[4].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name5TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[3].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name4TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[2].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name3TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[1].Name" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Name2TextOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[0].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[9].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[8].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[7].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[6].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[5].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[4].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[3].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[2].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[1].LastModified" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="DateTimeOutput2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.PathInfo.FolderCount" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="FolderCountNumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.PathInfo.FileCount" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="FileCountNumericOutput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.NewName" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="NewNameTextInput" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.PathInfo.CurrentDir" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="CurrentDirTextOutput" attribute="value" />
+</Binding>
+
+
+
+
+
+
+
+
+
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:SingleSelect" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="SingleRadioButton" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.MultiSelect" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ManyRadioButton" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[0].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[1].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[2].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[3].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[4].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox5" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[5].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox6" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[6].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox7" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[7].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox8" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[8].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox9" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[9].IsSelected" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="ItemCheckBox10" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.Filter" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="SearchTextInput" attribute="value" />
+</Binding>
+</Bindings>
+</BindingsSet>

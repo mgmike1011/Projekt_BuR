@@ -18,6 +18,8 @@
     <BindingsSet refId="ALARM_binding" />
     <BindingsSet refId="LoginDialogC_binding" />
     <BindingsSet refId="Tuning_binding" />
+    <BindingsSet refId="FILEMNG_binding" />
+    <BindingsSet refId="SortContent_binding" />
     <BindingsSet refId="START_PAGE_binding" />
     <BindingsSet refId="AUTOMATIC_binding" />
     <BindingsSet refId="SERVICE_binding" />
@@ -31,6 +33,8 @@
     <EventBindingsSet refId="LoginDialogC_eventbinding" />
     <EventBindingsSet refId="OEE_eventbinding" />
     <EventBindingsSet refId="Tuning_eventbinding" />
+    <EventBindingsSet refId="FILEMNG_eventbinding" />
+    <EventBindingsSet refId="ConfirmDeleteContent_eventbinding" />
     <EventBindingsSet refId="SERVICE_eventbinding" />
     <EventBindingsSet refId="START_PAGE_eventbinding" />
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
@@ -40,6 +44,8 @@
   <Dialogs>
     <Dialog refId="LoginDialogP" />
     <Dialog refId="SystemInfoDialog" />
+    <Dialog refId="ConfirmDeleteDialog" />
+    <Dialog refId="SortDialog" />
     <Dialog refId="ErrorDialog" />
     <Dialog refId="TunningSetpointsDialog" />
   </Dialogs>
@@ -57,6 +63,8 @@
     <Content refId="FILEMNG" />
     <Content refId="LoginDialogC" />
     <Content refId="SystemInfoDialogContent" />
+    <Content refId="ConfirmDeleteContent" />
+    <Content refId="SortContent" />
     <Content refId="SERVICE" />
     <Content refId="ErrorDialogContent" />
     <Content refId="TunningSetpointsDialogContent" />

@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EventBindingSet id="FILEMNG_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+    <EventBinding id="FILEMNG.RefreshButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="RefreshButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.Refresh">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.NewFolderButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="NewFolderButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.CreateFolder">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.ChangeNameButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="ChangeNameButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.Rename">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.DeleteButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="DeleteButton" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.Delete">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ConfirmDeleteDialog" headerText="$IAT/FILEMNG/Warning" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.PasteButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="PasteButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.Paste">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.CutButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="CutButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.Cut">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.CopyButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="CopyButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.Copy">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.OpenFolderButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="OpenFolderButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.EnterFolder">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.FolderUpButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="FolderUpButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.FolderUp">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.SortButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="SortButton" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="SortDialog" headerText="$IAT/FILEMNG/Sort" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+  </Bindings>
+</EventBindingSet>
