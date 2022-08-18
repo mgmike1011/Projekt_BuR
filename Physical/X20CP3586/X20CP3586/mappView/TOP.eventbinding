@@ -6,7 +6,7 @@
       <EventHandler>
         <Action>
           <Target xsi:type="clientSystem.Action">
-            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="LoginDialogP" />
+            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="LoginDialogP" headerText="$IAT/LoginDialogC/LoginDialog" />
           </Target>
         </Action>
       </EventHandler>

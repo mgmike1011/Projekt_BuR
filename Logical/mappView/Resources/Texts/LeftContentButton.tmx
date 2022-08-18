@@ -107,5 +107,16 @@
         <seg>File</seg>
       </tuv>
     </tu>
+    <tu tuid="PdfPageButton">
+      <tuv xml:lang="de">
+        <seg>PDF</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>PDF</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>PDF</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

@@ -13,5 +13,6 @@
     <Object Type="Package">OEE</Object>
     <Object Type="Package">FILEMNG</Object>
     <Object Type="Package">SERVICE</Object>
+    <Object Type="Package">PDF</Object>
   </Objects>
 </Package>

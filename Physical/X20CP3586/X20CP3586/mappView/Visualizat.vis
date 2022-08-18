@@ -12,6 +12,7 @@
     <Page refId="OEE" />
     <Page refId="FILEMNG" />
     <Page refId="SERVICE" />
+    <Page refId="PdfP" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -68,6 +69,7 @@
     <Content refId="SERVICE" />
     <Content refId="ErrorDialogContent" />
     <Content refId="TunningSetpointsDialogContent" />
+    <Content refId="PdfC" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
