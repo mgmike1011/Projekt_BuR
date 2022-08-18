@@ -12,5 +12,9 @@
     <Object Type="File">OEE.eventbinding</Object>
     <Object Type="File">LoginDialogC.eventbinding</Object>
     <Object Type="File">LoginDialogC.binding</Object>
+    <Object Type="File">FILEMNG.binding</Object>
+    <Object Type="File">FILEMNG.eventbinding</Object>
+    <Object Type="File">ConfirmDeleteContent.eventbinding</Object>
+    <Object Type="File">SortContent.binding</Object>
   </Objects>
 </Package>

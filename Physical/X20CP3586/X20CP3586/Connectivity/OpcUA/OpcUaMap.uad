@@ -126,6 +126,55 @@
           <Variable Name="Generate" />
         </Variable>
       </Task>
+      <Task Name="FileCtrl">
+        <Variable Name="MpFileMngConnect">
+          <Variable Name="Status" />
+          <Variable Name="DeviceList">
+            <Variable Name="DeviceNames" />
+            <Variable Name="SelectedIndex" />
+          </Variable>
+          <Variable Name="File">
+            <Variable Name="List">
+              <Variable Name="Items" EnableArrayElements="True" />
+              <Variable Name="PageUp" />
+              <Variable Name="StepUp" />
+              <Variable Name="PageDown" />
+              <Variable Name="StepDown" />
+              <Variable Name="RangeStart" />
+              <Variable Name="RangeEnd" />
+            </Variable>
+            <Variable Name="Filter" />
+            <Variable Name="SortOrder" />
+            <Variable Name="Refresh" />
+            <Variable Name="PathInfo">
+              <Variable Name="CurrentDir" />
+              <Variable Name="FileCount" />
+              <Variable Name="FolderCount" />
+            </Variable>
+            <Variable Name="EnterFolder" />
+            <Variable Name="FolderUp" />
+            <Variable Name="MultiSelect" />
+            <Variable Name="Delete" />
+            <Variable Name="Copy" />
+            <Variable Name="Cut" />
+            <Variable Name="Paste" />
+            <Variable Name="NewName" />
+            <Variable Name="Rename" />
+            <Variable Name="CreateFolder" />
+          </Variable>
+          <Variable Name="MessageBox">
+            <Variable Name="LayerStatus" />
+            <Variable Name="Type" />
+            <Variable Name="ErrorNumber" />
+            <Variable Name="Confirm" />
+            <Variable Name="Cancel" />
+          </Variable>
+          <Variable Name="DefaultLayerStatus" />
+        </Variable>
+        <Variable Name="ElementType" EnableArrayElements="True" />
+        <Variable Name="SingleSelect" />
+        <Variable Name="SortType" EnableArrayElements="True" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

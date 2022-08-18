@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/FILEMNG</prop>
+  </header>
+  <body>
+    <tu tuid="ConfirmDelFolder">
+      <tuv xml:lang="de">
+        <seg>Möchten Sie diesen Ordner wirklich löschen?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czy na pewno chcesz usunąć ten folder?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Are you sure you want to delete this folder?</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ConfirmDelItem">
+      <tuv xml:lang="de">
+        <seg>Möchten Sie diese Datei wirklich löschen?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czy na pewno chcesz usunąć ten plik?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Are you sure you want to delete this file?</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Copy">
+      <tuv xml:lang="de">
+        <seg>Kopieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Kopiuj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Copy</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Cut">
+      <tuv xml:lang="de">
+        <seg>Ausgeschnitten</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wytnij</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cut out</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Delete">
+      <tuv xml:lang="de">
+        <seg>Löschen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Usuń</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Remove</seg>
+      </tuv>
+    </tu>
+    <tu tuid="EnterFolder">
+      <tuv xml:lang="de">
+        <seg>Ordner öffnen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Otwórz folder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Open folder</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FolderUp">
+      <tuv xml:lang="de">
+        <seg>Vorheriger Ordner</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Poprzedni folder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Previous folder</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NewFolder">
+      <tuv xml:lang="de">
+        <seg>Neuer Ordner</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nowy folder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>New folder</seg>
+      </tuv>
+    </tu>
+    <tu tuid="No">
+      <tuv xml:lang="de">
+        <seg>Nein</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>No</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Paste">
+      <tuv xml:lang="de">
+        <seg>Paste</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wklej</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Paste</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Refresh">
+      <tuv xml:lang="de">
+        <seg>Aktualisierung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Odśwież</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Refresh</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Rename">
+      <tuv xml:lang="de">
+        <seg>Umbenennen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zmień nazwę</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Rename</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Warning">
+      <tuv xml:lang="de">
+        <seg>Warnung!</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ostrzeżenie!</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Warning!</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bonjour tout le monde!</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Yes">
+      <tuv xml:lang="de">
+        <seg>Ja</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Tak</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Yes</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CurrentFolder">
+      <tuv xml:lang="de">
+        <seg>Aktueller Ordner</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obecny folder</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current folder</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NumOfFiles">
+      <tuv xml:lang="de">
+        <seg>Anzahl Dateien</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Liczba plików</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Number of files</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NumOfFolders">
+      <tuv xml:lang="de">
+        <seg>Anzahl Ordner</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Liczba folderów</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Number of folders</seg>
+      </tuv>
+    </tu>
+    <tu tuid="NewName">
+      <tuv xml:lang="de">
+        <seg>Neuer Name</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nowa nazwa</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>New name</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SelectAnItem">
+      <tuv xml:lang="de">
+        <seg>Wähle einen Artikel aus</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zaznacz element</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Select an item</seg>
+      </tuv>
+    </tu>
+    <tu tuid="OneItem">
+      <tuv xml:lang="de">
+        <seg>Eines</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeden</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>One</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManyItem">
+      <tuv xml:lang="de">
+        <seg>Viele</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wiele</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Many</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Search">
+      <tuv xml:lang="de">
+        <seg>Suche</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wyszukaj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Search</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Sort">
+      <tuv xml:lang="de">
+        <seg>Sortieren</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sortuj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sort</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Sort0">
+      <tuv xml:lang="de">
+        <seg>Sortiert in aufsteigender (alphabetischer) Reihenfolge</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sortuje rosnąco (alfabetycznie)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sorts in ascending (alphabetical) order</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Sort1">
+      <tuv xml:lang="de">
+        <seg>Sortiert in absteigender (alphabetischer) Reihenfolge</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sortuje malejąco (alfabetycznie)</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sorts in descending (alphabetical) order</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Sort2">
+      <tuv xml:lang="de">
+        <seg>Sortiert in aufsteigender Reihenfolge nach Dateigröße</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sortuje w porządku rosnącym według rozmiaru pliku</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sorts in ascending order by file size</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Sort3">
+      <tuv xml:lang="de">
+        <seg>Sortiert in absteigender Reihenfolge nach Dateigröße</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sortuje w porządku malejącym według rozmiaru pliku</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sorts in descending order by file size</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Sort4">
+      <tuv xml:lang="de">
+        <seg>Sortiert in aufsteigender Reihenfolge nach Datum der letzten Änderung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sortuje w porządku rosnącym według daty ostatniej modyfikacji</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sorts in ascending order by date last modified</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Sort5">
+      <tuv xml:lang="de">
+        <seg>Sortiert in absteigender Reihenfolge nach Datum der letzten Änderung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sortuje w porządku malejącym według daty ostatniej modyfikacji</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Sorts in descending order by date last modified</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
