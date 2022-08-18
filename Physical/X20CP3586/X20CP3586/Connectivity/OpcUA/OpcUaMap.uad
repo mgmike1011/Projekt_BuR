@@ -113,6 +113,7 @@
           <Variable Name="Time4" />
           <Variable Name="Time5" />
         </Variable>
+        <Variable Name="RecipeListName" />
       </GlobalVariables>
       <Task Name="Recipe">
         <Variable Name="RecipeUIConnect">
@@ -126,13 +127,18 @@
               <Variable Name="StepUp" />
               <Variable Name="StepDown" />
               <Variable Name="Names" />
+              <Variable Name="PageUp" />
+              <Variable Name="PageDown" />
             </Variable>
+            <Variable Name="Rename" />
+            <Variable Name="NewFileName" />
           </Variable>
           <Variable Name="New">
             <Variable Name="FileName" />
             <Variable Name="Create" />
           </Variable>
         </Variable>
+        <Variable Name="LoadChecked" />
       </Task>
       <Task Name="OEE">
         <Variable Name="MpOEECore_1">

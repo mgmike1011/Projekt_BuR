@@ -41,5 +41,46 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="RECEPT.BtnPageUp.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="RECEPT" widgetRefId="BtnPageUp" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:RecipeUIConnect.Recipe.List.PageUp">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="RECEPT.BtnPageDown.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="RECEPT" widgetRefId="BtnPageDown" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:RecipeUIConnect.Recipe.List.PageDown">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="RECEPT.TxtInRename.Click">
+      <Source xsi:type="widgets.brease.TextInput.Event" contentRefId="RECEPT" widgetRefId="TxtInRename" event="ValueChanged" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:RecipeUIConnect.Recipe.Rename">
+                <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="session.VariableAction" refId="RenameBtn">
+                <Method xsi:type="session.VariableAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>

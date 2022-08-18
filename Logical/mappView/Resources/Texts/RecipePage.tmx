@@ -85,5 +85,71 @@
         <seg>Save</seg>
       </tuv>
     </tu>
+    <tu tuid="BtnPageUp">
+      <tuv xml:lang="de">
+        <seg>Vorherige Seite</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Poprzednia strona</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Previous Page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BtnPageDown">
+      <tuv xml:lang="de">
+        <seg>Nächste Seite</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Następna strona</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Next Page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="BtnTogRename">
+      <tuv xml:lang="de">
+        <seg>Umbenennen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zmień nazwę</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Rename</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelTemp">
+      <tuv xml:lang="de">
+        <seg>Temperatur einstellen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ustaw temperaturę</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set temperature</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelTime">
+      <tuv xml:lang="de">
+        <seg>Zeit einstellen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ustaw czas</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelName">
+      <tuv xml:lang="de">
+        <seg>Name einsetzen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ustaw Nazwę</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set Name</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

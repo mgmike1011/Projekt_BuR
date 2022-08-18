@@ -5,10 +5,7 @@
 <Source xsi:type="opcUa" refId="::Recipe:RecipeUIConnect.Recipe.List.SelectedIndex" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TabRecipe" attribute="selectedRow" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::Recipe:RecipeUIConnect.Recipe.List.Names" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TabItemRecipe" attribute="stringValue" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="session" refId="CreateBtn" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp1Recipe" attribute="visible" />
@@ -100,6 +97,37 @@
 <Binding mode="twoWay">
 <Source xsi:type="session" refId="CreateBtn" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TextInName" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:RecipeListName" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TabItemRecipe" attribute="stringValue" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:RecipeUIConnect.Recipe.NewFileName" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TxtInRename" attribute="value" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="RenameBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TxtInRename" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="RenameBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TogBtnRename" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetName" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTime" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTemp" attribute="visible" />
 </Binding>
 </Bindings>
 </BindingsSet>
