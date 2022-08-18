@@ -205,9 +205,8 @@
           <Variable Name="DefaultLayerStatus" />
         </Variable>
         <Variable Name="ElementType" EnableArrayElements="True" />
-        <Variable Name="SingleSelect" />
         <Variable Name="SortType" EnableArrayElements="True" />
-        </Task>
+      </Task>
       <Task Name="VisuAdj">
         <Variable Name="CurrentZone1Temp" EngineeringUnitId="2" />
         <Variable Name="CurrentZone2Temp" EngineeringUnitId="2" />

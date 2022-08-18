@@ -6,11 +6,6 @@ VAR
 	StartValue : INT;
 	StopValue : INT;
 	Step : INT;
-	SingleSelect : BOOL;
-	Element : ARRAY[0..49] OF STRING[255];
-	ElementSize : ARRAY[0..49] OF UDINT;
-	ElementDateTime : ARRAY[0..49] OF DATE_AND_TIME;
 	ElementType : ARRAY[0..49] OF STRING[255];
-	ElementIsSelected : ARRAY[0..49] OF BOOL;
 	SortType : ARRAY[0..5] OF BOOL;
 END_VAR
