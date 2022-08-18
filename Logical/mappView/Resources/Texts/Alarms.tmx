@@ -357,5 +357,16 @@
         <seg>Failure of the fourth temperature sensor. Check the connection.</seg>
       </tuv>
     </tu>
+    <tu tuid="AlarmPagetxt">
+      <tuv xml:lang="de">
+        <seg>Alarm</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Alarmy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Alarms</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

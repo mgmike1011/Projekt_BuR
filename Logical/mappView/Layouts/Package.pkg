@@ -7,5 +7,7 @@
     <Object Type="File">loginLayout.layout</Object>
     <Object Type="File">ConfirmDeleteLayout.layout</Object>
     <Object Type="File">SortLayout.layout</Object>
+    <Object Type="File">ErrorDialogLayout.layout</Object>
+    <Object Type="File">TunningSetpointsDialogLayout.layout</Object>
   </Objects>
 </Package>

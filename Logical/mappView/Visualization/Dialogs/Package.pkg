@@ -7,5 +7,7 @@
     <Object Type="Package">SystemInfoDialog</Object>
     <Object Type="Package">ConfirmDeleteDialog</Object>
     <Object Type="Package">SortDialog</Object>
+    <Object Type="Package">ErrorDialog</Object>
+    <Object Type="Package">TunningSetpointsDialog</Object>
   </Objects>
 </Package>

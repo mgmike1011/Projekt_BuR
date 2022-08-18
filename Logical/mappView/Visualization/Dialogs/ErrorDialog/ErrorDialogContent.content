@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Content id="ErrorDialogContent" height="400" width="600" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Widgets>
+    <Widget xsi:type="widgets.brease.GroupBox" id="StatusGroupBox" top="0" left="0" width="590" height="245" zIndex="0" childPositioning="relative" text="$IAT/ErrorDialog/Statustxt" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="TunningToggleSwitch" top="0" left="0" width="575" zIndex="0" mouseDownText="$IAT/ErrorDialog/Tunningtxt" text="$IAT/ErrorDialog/Tunningtxt" margin="5px" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ManualModeToggleSwitch" top="0" left="0" width="575" zIndex="1" mouseDownText="$IAT/ErrorDialog/ManualModetxt" text="$IAT/ErrorDialog/ManualModetxt" margin="5px" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="AutomaticModeToggleSwitch" top="0" left="0" width="575" zIndex="2" mouseDownText="$IAT/ErrorDialog/AutoModetxt" text="$IAT/ErrorDialog/AutoModetxt" margin="5px" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="StartToggleSwitch" top="0" left="0" width="575" zIndex="3" mouseDownText="$IAT/ErrorDialog/Starttxt" text="$IAT/ErrorDialog/Starttxt" margin="5px" />
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="StopToggleSwitch" top="0" left="0" width="575" zIndex="4" mouseDownText="$IAT/ErrorDialog/Stoptxt" text="$IAT/ErrorDialog/Stoptxt" margin="5px" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="ActionErrorGroupBox" top="250" left="0" width="590" height="140" zIndex="1" childPositioning="relative" text="$IAT/ErrorDialog/Cleartxt" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.ToggleSwitch" id="ErrorToggleSwitch" top="0" left="0" width="575" zIndex="0" mouseDownText="$IAT/ErrorDialog/Errortxt" text="$IAT/ErrorDialog/Errortxt" margin="5px" />
+        <Widget xsi:type="widgets.brease.Button" id="RemoveErrorsButton" top="0" left="0" width="575" height="45" zIndex="1" text="$IAT/ErrorDialog/Cleartxt" textColor="rgba(128, 0, 0, 1)" fontSize="18px" margin="5px" />
+      </Widgets>
+    </Widget>
+  </Widgets>
+</Content>

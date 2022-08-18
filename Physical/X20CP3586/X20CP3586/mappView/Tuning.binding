@@ -139,9 +139,17 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:TuneEnable" attribute="value" />
 <Target xsi:type="brease" contentRefId="Tuning" widgetRefId="ToggleButtonTunning" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
+	<Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:STATUS" attribute="value" />
-<Target xsi:type="brease" contentRefId="Tuning" widgetRefId="ListBox1" attribute="selectedIndex" />
+<Target xsi:type="brease" contentRefId="Tuning" widgetRefId="TextPickerStatusMachine" attribute="selectedIndex" />
 </Binding>
-</Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gStart" attribute="value" />
+<Target xsi:type="brease" contentRefId="Tuning" widgetRefId="ImageStart" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gSTOP" attribute="value" />
+<Target xsi:type="brease" contentRefId="Tuning" widgetRefId="Image2" attribute="visible" />
+</Binding>
+	</Bindings>
 </BindingsSet>

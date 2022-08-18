@@ -1,6 +1,159 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="START_PAGE" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Content id="START_PAGE" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
   <Widgets>
     <Widget xsi:type="widgets.brease.Image" id="Image1" top="1610" left="690" zIndex="0" image="Media/BiR.png" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone1" top="105" left="5" width="420" height="780" zIndex="1" text="$IAT/START_PAGE/Zone1" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="STemperatureText1" top="497" left="0" width="254" height="29" zIndex="0" text="$IAT/START_PAGE/SetTemperature" textAlign="center" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="SetTemperatureStartPageZone1" top="497" left="255" width="105" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="543" left="0" width="420" height="200" zIndex="2" backColor="rgba(255, 245, 238, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ToggleButton" id="FanLed1" top="77" left="253" width="40" height="40" zIndex="0" value="true" backColor="rgba(255, 0, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" checkedBackColor="rgba(255, 0, 0, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+            <Widget xsi:type="widgets.brease.ToggleButton" id="HeaterLed1" top="132" left="253" width="40" height="40" zIndex="1" value="true" backColor="rgba(0, 192, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+            <Widget xsi:type="widgets.brease.Label" id="Fantext1" top="79" left="53" width="200" zIndex="2" text="$IAT/START_PAGE/FanInfo" textAlign="center" />
+            <Widget xsi:type="widgets.brease.Label" id="Heatertext1" top="139" left="53" width="200" zIndex="3" text="$IAT/START_PAGE/HaterInfo" textAlign="center" />
+            <Widget xsi:type="widgets.brease.Label" id="ComponentsText" top="19" left="0" width="420" height="28" zIndex="4" text="$IAT/START_PAGE/Components" textAlign="center" fontSize="20px" bold="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="0" left="0" width="420" height="485" zIndex="3" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge1" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
+            <Widget xsi:type="widgets.brease.Label" id="CTemperatureText1" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone1" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
+              <Properties>
+                <yAxis>
+                  <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
+                </yAxis>
+                <xAxis>
+                  <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />
+                </xAxis>
+                <graph>
+                  <Element id="graph1" yAxisReference="yAxis1" />
+                </graph>
+                <cursor>
+                  <Element id="cursor1" />
+                </cursor>
+              </Properties>
+            </Widget>
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone2" top="105" left="435" width="420" height="780" zIndex="2" text="$IAT/START_PAGE/Zone2" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="STemperatureText2" top="497" left="0" width="254" height="29" zIndex="0" text="$IAT/START_PAGE/SetTemperature" textAlign="center" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="SetTemperatureStartPageZone2" top="497" left="255" width="105" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="543" left="0" width="420" height="200" zIndex="2" backColor="rgba(255, 245, 238, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ToggleButton" id="FanLed2" top="72" left="253" width="40" height="40" zIndex="0" value="true" backColor="rgba(0, 192, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+            <Widget xsi:type="widgets.brease.ToggleButton" id="HeaterLed2" top="132" left="253" width="40" height="40" zIndex="1" value="true" backColor="rgba(0, 192, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+            <Widget xsi:type="widgets.brease.Label" id="Fantext2" top="79" left="53" width="200" zIndex="2" text="$IAT/START_PAGE/FanInfo" textAlign="center" />
+            <Widget xsi:type="widgets.brease.Label" id="ComponentsText1" top="19" left="0" width="420" height="28" zIndex="3" text="$IAT/START_PAGE/Components" textAlign="center" fontSize="20px" bold="true" />
+            <Widget xsi:type="widgets.brease.Label" id="Heatertext2" top="139" left="53" width="200" zIndex="4" text="$IAT/START_PAGE/HaterInfo" textAlign="center" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox6" top="0" left="0" width="420" height="485" zIndex="3" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge2" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
+            <Widget xsi:type="widgets.brease.Label" id="CTemperatureText2" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone2" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart1" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
+              <Properties>
+                <yAxis>
+                  <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
+                </yAxis>
+                <xAxis>
+                  <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />
+                </xAxis>
+                <graph>
+                  <Element id="graph1" yAxisReference="yAxis1" />
+                </graph>
+                <cursor>
+                  <Element id="cursor1" />
+                </cursor>
+              </Properties>
+            </Widget>
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone3" top="105" left="865" width="420" height="780" zIndex="3" text="$IAT/START_PAGE/Zone3" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="STemperatureText3" top="497" left="0" width="254" height="29" zIndex="0" text="$IAT/START_PAGE/SetTemperature" textAlign="center" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="SetTemperatureStartPageZone3" top="497" left="255" width="105" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="543" left="0" width="420" height="200" zIndex="2" backColor="rgba(255, 245, 238, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ToggleButton" id="FanLed3" top="77" left="251" width="40" height="40" zIndex="0" value="true" backColor="rgba(0, 192, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+            <Widget xsi:type="widgets.brease.ToggleButton" id="HeaterLed3" top="136" left="251" width="40" height="40" zIndex="1" value="true" backColor="rgba(0, 192, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+            <Widget xsi:type="widgets.brease.Label" id="Fantext3" top="79" left="53" width="200" zIndex="2" text="$IAT/START_PAGE/FanInfo" textAlign="center" />
+            <Widget xsi:type="widgets.brease.Label" id="Heatertext3" top="139" left="53" width="200" zIndex="3" text="$IAT/START_PAGE/HaterInfo" textAlign="center" />
+            <Widget xsi:type="widgets.brease.Label" id="ComponentsText2" top="19" left="0" width="420" height="28" zIndex="4" text="$IAT/START_PAGE/Components" textAlign="center" fontSize="20px" bold="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox7" top="0" left="0" width="420" height="485" zIndex="3" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge3" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
+            <Widget xsi:type="widgets.brease.Label" id="CTemperatureText3" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone3" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart2" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
+              <Properties>
+                <yAxis>
+                  <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" />
+                </yAxis>
+                <xAxis>
+                  <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />
+                </xAxis>
+                <graph>
+                  <Element id="graph1" yAxisReference="yAxis1" />
+                </graph>
+                <cursor>
+                  <Element id="cursor1" />
+                </cursor>
+              </Properties>
+            </Widget>
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone4" top="105" left="1295" width="420" height="780" zIndex="4" text="$IAT/START_PAGE/Zone4" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="STemperatureText4" top="497" left="0" width="254" height="29" zIndex="0" text="$IAT/START_PAGE/SetTemperature" textAlign="center" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="SetTemperatureStartPageZone4" top="497" left="255" width="105" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox5" top="543" left="0" width="420" height="200" zIndex="2" backColor="rgba(255, 245, 238, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.ToggleButton" id="FanLed4" top="72" left="253" width="40" height="40" zIndex="0" value="true" backColor="rgba(0, 192, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+            <Widget xsi:type="widgets.brease.ToggleButton" id="HeaterLed4" top="132" left="253" width="40" height="40" zIndex="1" value="true" backColor="rgba(0, 192, 0, 1)" disabledBackColor="rgba(255, 0, 0, 1)" checkedBackColor="rgba(0, 255, 0, 1)" disabledCheckedBackColor="rgba(0, 255, 0, 1)" enable="false" />
+            <Widget xsi:type="widgets.brease.Label" id="Fantext4" top="79" left="53" width="200" zIndex="2" text="$IAT/START_PAGE/FanInfo" textAlign="center" />
+            <Widget xsi:type="widgets.brease.Label" id="Heatertext4" top="139" left="53" width="200" zIndex="3" text="$IAT/START_PAGE/HaterInfo" textAlign="center" />
+            <Widget xsi:type="widgets.brease.Label" id="ComponentsText3" top="19" left="0" width="420" height="28" zIndex="4" text="$IAT/START_PAGE/Components" textAlign="center" fontSize="20px" bold="true" />
+          </Widgets>
+        </Widget>
+        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox8" top="0" left="0" width="420" height="485" zIndex="3" backColor="rgba(255, 255, 255, 0)" textColor="rgba(255, 255, 255, 1)">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge4" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
+            <Widget xsi:type="widgets.brease.Label" id="CTemperatureText4" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
+            <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone4" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart3" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
+              <Properties>
+                <yAxis>
+                  <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
+                </yAxis>
+                <xAxis>
+                  <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />
+                </xAxis>
+                <graph>
+                  <Element id="graph1" yAxisReference="yAxis1" />
+                </graph>
+                <cursor>
+                  <Element id="cursor1" />
+                </cursor>
+              </Properties>
+            </Widget>
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="TitalStartPage" top="0" left="0" width="1750" height="80" zIndex="5" text="$IAT/START_PAGE/StartPage" textAlign="center" fontName="Arial" fontSize="35px" bold="true" margin="5px" />
   </Widgets>
 </Content>

@@ -15,9 +15,17 @@
       </ACL>
     </ACLAliases>
     <EURangeViolationAliases />
-    <EURangesAliases />
+    <EURangesAliases>
+      <EURanges Id="1">
+        <EURange>
+          <Low ValueProvider="Const">10</Low>
+          <High ValueProvider="Const">100</High>
+        </EURange>
+      </EURanges>
+    </EURangesAliases>
     <EngineeringUnitAliases>
       <EngineeringUnit Id="1" UnitId="5457219" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="second [unit of time]" Symbol="s" />
+      <EngineeringUnit Id="2" UnitId="4408652" NameSpaceUri="http://www.opcfoundation.org/UA/units/un/cefact" Name="degree Celsius" Symbol="°C" />
     </EngineeringUnitAliases>
   </Aliases>
   <DefaultView AclId="2">
@@ -31,10 +39,10 @@
         <Variable Name="gHeater2" />
         <Variable Name="gHeater3" />
         <Variable Name="gHeater4" />
-        <Variable Name="gTemp1" />
-        <Variable Name="gTemp2" />
-        <Variable Name="gTemp3" />
-        <Variable Name="gTemp4" />
+        <Variable Name="gTemp1" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
+        <Variable Name="gTemp2" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
+        <Variable Name="gTemp3" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
+        <Variable Name="gTemp4" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EngineeringUnitId="2" />
         <Variable Name="gTempInt1" />
         <Variable Name="gTempInt2" />
         <Variable Name="gTempInt3" />
@@ -55,7 +63,9 @@
         <Variable Name="gOeeCore" />
         <Variable Name="gStart" />
         <Variable Name="gSTOP" />
-        <Variable Name="gTempController_1" />
+        <Variable Name="gTempController_1">
+          <Variable Name="Internal" EnableArrayElements="True" />
+        </Variable>
         <Variable Name="gTempController_2" />
         <Variable Name="gTempController_3" />
         <Variable Name="gTempController_4" />
@@ -69,24 +79,41 @@
         <Variable Name="PIDIntegrationTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
         <Variable Name="PIDProportionaGainCOOL" EnableArrayElements="True" />
         <Variable Name="PIDProportionaGainHEAT" EnableArrayElements="True" />
-        <Variable Name="SetTemp1" />
-        <Variable Name="SetTemp2" />
-        <Variable Name="SetTemp3" />
-        <Variable Name="SetTemp4" />
-        <Variable Name="SetTempCoolTuning1" />
-        <Variable Name="SetTempCoolTuning2" />
-        <Variable Name="SetTempCoolTuning3" />
-        <Variable Name="SetTempCoolTuning4" />
-        <Variable Name="SetTempHeatTuning1" />
-        <Variable Name="SetTempHeatTuning2" />
-        <Variable Name="SetTempHeatTuning3" />
-        <Variable Name="SetTempHeatTuning4" />
+        <Variable Name="SetTemp1" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp2" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp3" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTemp4" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning1" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning2" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning3" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning4" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning1" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning2" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning3" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning4" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SimulateZone1Enable" />
         <Variable Name="SimulateZone2Enable" />
         <Variable Name="SimulateZone3Enable" />
         <Variable Name="SimulateZone4Enable" />
         <Variable Name="STATUS" />
-        <Variable Name="TempController" />
+        <Variable Name="TempController" EnableArrayElements="True">
+          <Variable Name="TempController[0]">
+            <Variable Name="HeatValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+            <Variable Name="CoolValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+          </Variable>
+          <Variable Name="TempController[1]">
+            <Variable Name="HeatValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+            <Variable Name="CoolValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+          </Variable>
+          <Variable Name="TempController[2]">
+            <Variable Name="HeatValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+            <Variable Name="CoolValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+          </Variable>
+          <Variable Name="TempController[3]">
+            <Variable Name="HeatValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+            <Variable Name="CoolValue" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" />
+          </Variable>
+        </Variable>
         <Variable Name="TempControllerPar" />
         <Variable Name="TempGroup" />
         <Variable Name="TempGroupPar" />
@@ -100,9 +127,13 @@
         <Variable Name="TimStep3" />
         <Variable Name="TimStep4" />
         <Variable Name="TimStep5" />
-        <Variable Name="ZoneStatus" />
+        <Variable Name="ZoneStatus" EnableArrayElements="True" />
         <Variable Name="TuneEnable" />
       </GlobalVariables>
+      <Task Name="Recipe">
+        <Variable Name="RecipeUIConnect" />
+        <Variable Name="RecipeUISetup" />
+      </Task>
       <Task Name="OEE">
         <Variable Name="MpOEECore_1">
           <Variable Name="RejectCounter" />
@@ -120,6 +151,8 @@
         <Variable Name="ICTs" />
         <Variable Name="startOEE" />
         <Variable Name="RejectCycle" />
+        <Variable Name="StatusString" />
+        <Variable Name="StateIdle" />
       </Task>
       <Task Name="MpReport1">
         <Variable Name="MpReportCore_1">
@@ -174,6 +207,17 @@
         <Variable Name="ElementType" EnableArrayElements="True" />
         <Variable Name="SingleSelect" />
         <Variable Name="SortType" EnableArrayElements="True" />
+        </Task>
+      <Task Name="VisuAdj">
+        <Variable Name="CurrentZone1Temp" EngineeringUnitId="2" />
+        <Variable Name="CurrentZone2Temp" EngineeringUnitId="2" />
+        <Variable Name="CurrentZone3Temp" EngineeringUnitId="2" />
+        <Variable Name="CurrentZone4Temp" EngineeringUnitId="2" />
+        <Variable Name="TimeStep1Int" EngineeringUnitId="1" />
+        <Variable Name="TimeStep2Int" EngineeringUnitId="1" />
+        <Variable Name="TimeStep3Int" EngineeringUnitId="1" />
+        <Variable Name="TimeStep4Int" EngineeringUnitId="1" />
+        <Variable Name="TimeStep5Int" EngineeringUnitId="1" />
       </Task>
     </Module>
   </DefaultView>

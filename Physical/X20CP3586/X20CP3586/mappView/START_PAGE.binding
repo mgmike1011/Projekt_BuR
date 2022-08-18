@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="START_PAGE_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp1" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TemperatureStartPageZone1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp2" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TemperatureStartPageZone2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp3" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TemperatureStartPageZone3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp4" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TemperatureStartPageZone4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp1" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="LinearGauge1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp2" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="LinearGauge2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp3" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="LinearGauge3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp4" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="LinearGauge4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTemp3" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="SetTemperatureStartPageZone3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTemp2" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="SetTemperatureStartPageZone2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTemp1" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="SetTemperatureStartPageZone1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTemp4" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="SetTemperatureStartPageZone4" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp1" attribute="node" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TempChart" attribute="graph[graph1].node" />
+</Binding>
+
+
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp3" attribute="node" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TempChart2" attribute="graph[graph1].node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp4" attribute="node" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TempChart3" attribute="graph[graph1].node" />
+</Binding>
+
+
+
+
+
+
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHeater4" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="HeaterLed4" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gFan4" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="FanLed4" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHeater3" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="HeaterLed3" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gFan3" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="FanLed3" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHeater2" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="HeaterLed2" attribute="value" />
+</Binding>
+
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gHeater1" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="HeaterLed1" attribute="value" />
+</Binding>
+
+
+
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gFan1" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="FanLed1" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gFan2" attribute="value" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="FanLed2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp2" attribute="node" />
+<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TempChart1" attribute="graph[graph1].node" />
+</Binding>
+</Bindings>
+</BindingsSet>

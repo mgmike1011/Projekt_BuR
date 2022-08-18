@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/AutomaticControlPage</prop>
+  </header>
+  <body>
+    <tu tuid="AutoTitletxt">
+      <tuv xml:lang="de">
+        <seg>Steuerung im Automatikmodus</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Tryb sterowania automatycznego</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Automatic mode control</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ZoneStateIdletxt">
+      <tuv xml:lang="de">
+        <seg>Leerlauf</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Bezczynny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Idle</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ZoneStateHeatingtxt">
+      <tuv xml:lang="de">
+        <seg>Erwärmen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Grzanie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Heating</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ZoneStateCoolingtxt">
+      <tuv xml:lang="de">
+        <seg>Kühlung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Chłodzenie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cooling</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ZoneStatustxt">
+      <tuv xml:lang="de">
+        <seg>Zonenstatus</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Status strefy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone status</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SetTemptxt">
+      <tuv xml:lang="de">
+        <seg>Temperatur einstellen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Temperatura zadana</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set temperature</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CurrentTemptxt">
+      <tuv xml:lang="de">
+        <seg>Aktuell</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Aktualna</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current </seg>
+      </tuv>
+    </tu>
+    <tu tuid="Controltxt">
+      <tuv xml:lang="de">
+        <seg>Steuerung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sterowanie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Control</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Step5txt">
+      <tuv xml:lang="de">
+        <seg>Schritt 5</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Krok 5</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step 5</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Step4txt">
+      <tuv xml:lang="de">
+        <seg>Schritt 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Krok 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Step3txt">
+      <tuv xml:lang="de">
+        <seg>Schritt 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Krok 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Step2txt">
+      <tuv xml:lang="de">
+        <seg>Schritt 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Krok 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StepInittxt">
+      <tuv xml:lang="de">
+        <seg>Schritt initial</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Krok początkowy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step init</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Step1txt">
+      <tuv xml:lang="de">
+        <seg>Schritt 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Krok 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CurrentSteptxt">
+      <tuv xml:lang="de">
+        <seg>Aktuellen schritt</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Aktualny krok</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current step</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CurrentMachineSteptxt">
+      <tuv xml:lang="de">
+        <seg>Maschinenzustand</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Stan maszyny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Machine status</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StateTuningtxt">
+      <tuv xml:lang="de">
+        <seg>Stimmen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strojenie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tuning</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StateManualWorktxt">
+      <tuv xml:lang="de">
+        <seg>Handarbeit</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Praca manualna</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual work</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StateAutoWorktxt">
+      <tuv xml:lang="de">
+        <seg>
+
+Automatische Operation</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Praca automatyczna</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Automatic work</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StateErrortxt">
+      <tuv xml:lang="de">
+        <seg>ERROR</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>ERROR</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>ERROR</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StateStoptxt">
+      <tuv xml:lang="de">
+        <seg>STOP</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>STOP</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>STOP</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StateIdletxt">
+      <tuv xml:lang="de">
+        <seg>Idle</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Idle</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>IDLE</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TimerStep1">
+      <tuv xml:lang="de">
+        <seg>Timer 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Timer 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TimerStep2">
+      <tuv xml:lang="de">
+        <seg>Timer 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Timer 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TimerStep3">
+      <tuv xml:lang="de">
+        <seg>Timer 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Timer 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TimerStep4">
+      <tuv xml:lang="de">
+        <seg>Timer 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Timer 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="StimerStep5">
+      <tuv xml:lang="de">
+        <seg>Timer 5</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas 5</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Timer 5</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone1txt">
+      <tuv xml:lang="de">
+        <seg>Zone sim 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa sim 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone sim 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zoen2txt">
+      <tuv xml:lang="de">
+        <seg>Zone sim 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa sim 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone sim 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone3txt">
+      <tuv xml:lang="de">
+        <seg>Zone sim 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa sim 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone sim 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone4txt">
+      <tuv xml:lang="de">
+        <seg>Zone sim 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa sim 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone sim 4</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -11,6 +11,7 @@
     <Page refId="AUDIT" />
     <Page refId="OEE" />
     <Page refId="FILEMNG" />
+    <Page refId="SERVICE" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -19,6 +20,12 @@
     <BindingsSet refId="Tuning_binding" />
     <BindingsSet refId="FILEMNG_binding" />
     <BindingsSet refId="SortContent_binding" />
+    <BindingsSet refId="START_PAGE_binding" />
+    <BindingsSet refId="AUTOMATIC_binding" />
+    <BindingsSet refId="SERVICE_binding" />
+    <BindingsSet refId="MANUAL_binding" />
+    <BindingsSet refId="ErrorDialogContent_binding" />
+    <BindingsSet refId="TunningSetpointsDialogContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
@@ -28,12 +35,19 @@
     <EventBindingsSet refId="Tuning_eventbinding" />
     <EventBindingsSet refId="FILEMNG_eventbinding" />
     <EventBindingsSet refId="ConfirmDeleteContent_eventbinding" />
+    <EventBindingsSet refId="SERVICE_eventbinding" />
+    <EventBindingsSet refId="START_PAGE_eventbinding" />
+    <EventBindingsSet refId="AUTOMATIC_eventbinding" />
+    <EventBindingsSet refId="MANUAL_eventbinding" />
+    <EventBindingsSet refId="ErrorDialogContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />
     <Dialog refId="SystemInfoDialog" />
     <Dialog refId="ConfirmDeleteDialog" />
     <Dialog refId="SortDialog" />
+    <Dialog refId="ErrorDialog" />
+    <Dialog refId="TunningSetpointsDialog" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -51,12 +65,17 @@
     <Content refId="SystemInfoDialogContent" />
     <Content refId="ConfirmDeleteContent" />
     <Content refId="SortContent" />
+    <Content refId="SERVICE" />
+    <Content refId="ErrorDialogContent" />
+    <Content refId="TunningSetpointsDialogContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
     <VariablesSet refId="svar_0" />
   </VariablesSets>
-  <ExpressionsSets />
+  <ExpressionsSets>
+    <ExpressionsSet refId="expression_0" />
+  </ExpressionsSets>
   <StartTheme themeRefId="BuRThemeMobileGray" />
   <Themes>
     <Theme refId="BuRThemeMobileGray" />

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/TunningSetpointsDialog</prop>
+  </header>
+  <body>
+    <tu tuid="Zone1txt">
+      <tuv xml:lang="de">
+        <seg>Zone 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone2txt">
+      <tuv xml:lang="de">
+        <seg>Zone 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone3txt">
+      <tuv xml:lang="de">
+        <seg>Zone 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Zone4txt">
+      <tuv xml:lang="de">
+        <seg>Zone 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeatingSetpointstxt">
+      <tuv xml:lang="de">
+        <seg>Heizung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Grzanie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Heating</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CoolingSetpointstxt">
+      <tuv xml:lang="de">
+        <seg>Kühlung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Chłodzenie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Cooling</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Setpointstxt">
+      <tuv xml:lang="de">
+        <seg>Tuning-Einstellungen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nastawy strojenia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tuning setpoints</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

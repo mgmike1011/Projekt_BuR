@@ -35,4 +35,13 @@ TYPE
 		Zone3 : DINT;
 		Zone4 : DINT;
 	END_STRUCT;
+	Heaters_struct : 	STRUCT 
+		Heater1 : REAL := 0.0;
+		Heater2 : REAL := 0.0;
+		Heater3 : REAL := 0.0;
+		Heater4 : REAL := 0.0;
+	END_STRUCT;
+	Machine_state_struct : 	STRUCT 
+		Machine_state : DINT;
+	END_STRUCT;
 END_TYPE

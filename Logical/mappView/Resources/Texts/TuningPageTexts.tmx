@@ -207,5 +207,71 @@ Kühlregler</seg>
         <seg>Status</seg>
       </tuv>
     </tu>
+    <tu tuid="IDLEtxt">
+      <tuv xml:lang="de">
+        <seg>Leerlauf</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Bezczynny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Idle</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tunningtxt">
+      <tuv xml:lang="de">
+        <seg>Tuning</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strojenie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tunning</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Manualtxt">
+      <tuv xml:lang="de">
+        <seg>Handbuch</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Manualny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Autotxt">
+      <tuv xml:lang="de">
+        <seg>Automatisch</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Automatyczny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Auto</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Errortxt">
+      <tuv xml:lang="de">
+        <seg>ERROR</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>ERROR</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>ERROR</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SetpointsBtntxt">
+      <tuv xml:lang="de">
+        <seg>Einstellungen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ustawienia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Settings</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
