@@ -21,6 +21,7 @@
     <BindingsSet refId="START_PAGE_binding" />
     <BindingsSet refId="AUTOMATIC_binding" />
     <BindingsSet refId="MANUAL_binding" />
+    <BindingsSet refId="ErrorDialogContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
@@ -32,10 +33,12 @@
     <EventBindingsSet refId="START_PAGE_eventbinding" />
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
     <EventBindingsSet refId="MANUAL_eventbinding" />
+    <EventBindingsSet refId="ErrorDialogContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />
     <Dialog refId="SystemInfoDialog" />
+    <Dialog refId="ErrorDialog" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -52,6 +55,7 @@
     <Content refId="LoginDialogC" />
     <Content refId="SystemInfoDialogContent" />
     <Content refId="SERVICE" />
+    <Content refId="ErrorDialogContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
