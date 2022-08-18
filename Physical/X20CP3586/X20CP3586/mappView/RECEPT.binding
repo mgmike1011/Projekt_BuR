@@ -2,7 +2,132 @@
 <BindingsSet id="RECEPT_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
 <Binding mode="twoWay">
-<Source xsi:type="mapp" refId="gRecipeCsv" attribute="link" />
+<Source xsi:type="opcUa" refId="::Recipe:RecipeUIConnect.Recipe.List.SelectedIndex" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TabRecipe" attribute="selectedRow" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp1Recipe" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TogBtnRecCreate" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp2Recipe" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time1Recipe" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time2Recipe" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp3Recipe" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time3Recipe" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp4Recipe" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time4Recipe" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time5Recipe" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time4" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time4Recipe" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time3" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time3Recipe" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time2" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time2Recipe" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time1" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time1Recipe" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp4" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp4Recipe" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp3" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp3Recipe" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp2" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp2Recipe" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp1" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp1Recipe" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time5" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time5Recipe" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:RecipeUIConnect.New.FileName" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TextInName" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="BtnCreate" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="BtnSave" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TextInName" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:RecipeListName" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TabItemRecipe" attribute="stringValue" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::Recipe:RecipeUIConnect.Recipe.NewFileName" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TxtInRename" attribute="value" />
+</Binding>
+
+
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="RenameBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TxtInRename" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="RenameBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TogBtnRename" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetName" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTime" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTemp" attribute="visible" />
 </Binding>
 </Bindings>
 </BindingsSet>

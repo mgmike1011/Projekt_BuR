@@ -121,4 +121,8 @@ END_VAR
 VAR
 	ParametersMachine : MACHINE_PARAMETERS;
 END_VAR
+(*Recipe*)
+VAR
+	RecipeListName : ARRAY[0..9] OF STRING[255];
+END_VAR
 (**)

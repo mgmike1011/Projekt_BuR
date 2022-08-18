@@ -11,8 +11,9 @@
     <Object Type="File">Tuning.eventbinding</Object>
     <Object Type="File">OEE.eventbinding</Object>
     <Object Type="File">LoginDialogC.eventbinding</Object>
-    <Object Type="File">RECEPT.binding</Object>
     <Object Type="File">LoginDialogC.binding</Object>
+    <Object Type="File">RECEPT.binding</Object>
+    <Object Type="File">RECEPT.eventbinding</Object>
     <Object Type="File">FILEMNG.binding</Object>
     <Object Type="File">FILEMNG.eventbinding</Object>
     <Object Type="File">ConfirmDeleteContent.eventbinding</Object>

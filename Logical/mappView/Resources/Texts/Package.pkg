@@ -9,6 +9,7 @@
     <Object Type="File">SystemInfoDialogTexts.tmx</Object>
     <Object Type="File">OEEPage.tmx</Object>
     <Object Type="File">LoginText.tmx</Object>
+    <Object Type="File">RecipePage.tmx</Object>
     <Object Type="File">FileMngTexts.tmx</Object>
     <Object Type="File">ProjectTitle.tmx</Object>
     <Object Type="File">ServicePage.tmx</Object>

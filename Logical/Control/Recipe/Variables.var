@@ -4,4 +4,6 @@ VAR
 	MpRecipeUI_0 : MpRecipeUI;
 	RecipeUIConnect : MpRecipeUIConnectType;
 	RecipeUISetup : MpRecipeUISetupType;
+	i : INT;
+	LoadChecked : BOOL;
 END_VAR

@@ -28,6 +28,7 @@
       <Property ID="TargetFile[14]" Value="mappView.Resources.Texts.OEEPage.tmx" />
       <Property ID="TargetFile[15]" Value="mappView.Resources.Texts.ProjectTitle.tmx" />
       <Property ID="TargetFile[16]" Value="mappView.Resources.Texts.LoginText.tmx" />
+      <Property ID="TargetFile[17]" Value="mappView.Resources.Texts.RecipePage.tmx" />
       <Property ID="TargetFile[17]" Value="mappView.Resources.Texts.AutomaticPageTexts.tmx" />
       <Property ID="TargetFile[18]" Value="mappView.Resources.Texts.StartPageText.tmx" />
       <Property ID="TargetFile[19]" Value="mappView.Resources.Texts.ServicePage.tmx" />
