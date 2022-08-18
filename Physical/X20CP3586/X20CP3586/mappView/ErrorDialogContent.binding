@@ -21,5 +21,9 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gError" attribute="value" />
 <Target xsi:type="brease" contentRefId="ErrorDialogContent" widgetRefId="ErrorToggleSwitch" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:Automatic_work" attribute="value" />
+<Target xsi:type="brease" contentRefId="ErrorDialogContent" widgetRefId="AutomaticModeToggleSwitch" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>
