@@ -114,5 +114,21 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone1Enable" attribute="value" />
 <Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SimOffImage2" attribute="visible" />
 </Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SetTempZone1NumericInput" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SetTempZone2NumericInput" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SetTempZone3NumericInput" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SetTempZone4NumericInput" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>
