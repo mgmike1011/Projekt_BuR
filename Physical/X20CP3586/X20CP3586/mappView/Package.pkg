@@ -22,5 +22,6 @@
     <Object Type="File">MANUAL.eventbinding</Object>
     <Object Type="File">ErrorDialogContent.binding</Object>
     <Object Type="File">ErrorDialogContent.eventbinding</Object>
+    <Object Type="File">TunningSetpointsDialogContent.binding</Object>
   </Objects>
 </Package>

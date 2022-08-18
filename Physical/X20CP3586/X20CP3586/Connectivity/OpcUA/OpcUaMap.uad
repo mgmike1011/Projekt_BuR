@@ -83,14 +83,14 @@
         <Variable Name="SetTemp2" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SetTemp3" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SetTemp4" EURangesId="1" EngineeringUnitId="2" />
-        <Variable Name="SetTempCoolTuning1" />
-        <Variable Name="SetTempCoolTuning2" />
-        <Variable Name="SetTempCoolTuning3" />
-        <Variable Name="SetTempCoolTuning4" />
-        <Variable Name="SetTempHeatTuning1" />
-        <Variable Name="SetTempHeatTuning2" />
-        <Variable Name="SetTempHeatTuning3" />
-        <Variable Name="SetTempHeatTuning4" />
+        <Variable Name="SetTempCoolTuning1" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning2" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning3" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning4" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning1" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning2" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning3" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning4" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SimulateZone1Enable" />
         <Variable Name="SimulateZone2Enable" />
         <Variable Name="SimulateZone3Enable" />

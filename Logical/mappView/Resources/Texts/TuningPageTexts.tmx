@@ -262,5 +262,16 @@ Kühlregler</seg>
         <seg>ERROR</seg>
       </tuv>
     </tu>
+    <tu tuid="SetpointsBtntxt">
+      <tuv xml:lang="de">
+        <seg>Einstellungen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ustawienia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Settings</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
