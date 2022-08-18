@@ -538,7 +538,7 @@
         "height": "1",
         "name": "",
         "label": "Current temperature:",
-        "format": "{{msg.payload.Temp1}}°C",
+        "format": "{{msg.payload}}°C",
         "layout": "row-center",
         "className": "",
         "x": 600,
@@ -1028,7 +1028,7 @@
         "label": "%",
         "format": "{{msg.payload.Heater1}}",
         "min": 0,
-        "max": 10,
+        "max": "100",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -1055,7 +1055,7 @@
         "label": "%",
         "format": "{{msg.payload.Heater2}}",
         "min": 0,
-        "max": 10,
+        "max": "100",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -1082,7 +1082,7 @@
         "label": "%",
         "format": "{{msg.payload.Heater3}}",
         "min": 0,
-        "max": 10,
+        "max": "100",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -1109,7 +1109,7 @@
         "label": "%",
         "format": "{{msg.payload.Heater4}}",
         "min": 0,
-        "max": 10,
+        "max": "100",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -1199,7 +1199,8 @@
                 "f978e8e5a5c2d6f7",
                 "7d790468280e1065",
                 "702e07effcb2117e",
-                "fcd7e1d2afc039f7"
+                "fcd7e1d2afc039f7",
+                "c91fd7883db2a1f0"
             ]
         ]
     },
@@ -1279,7 +1280,6 @@
         "wires": [
             [
                 "e5df25fb1ec321e6",
-                "1c475a0cb2be10f0",
                 "95a36b1ad2bbaf5e",
                 "87523d2980dc9b70"
             ]
@@ -1312,11 +1312,12 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 1490,
+        "x": 1510,
         "y": 200,
         "wires": [
             [
-                "28863b4c3e7ba9e4"
+                "28863b4c3e7ba9e4",
+                "1c475a0cb2be10f0"
             ]
         ]
     },
@@ -1620,7 +1621,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1300,
+        "x": 1780,
         "y": 140,
         "wires": []
     },
@@ -1695,6 +1696,22 @@
                 "817f7de03646feac"
             ]
         ]
+    },
+    {
+        "id": "c91fd7883db2a1f0",
+        "type": "debug",
+        "z": "12421ff9dde586d7",
+        "name": "debug 2",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 1520,
+        "wires": []
     },
     {
         "id": "ed128785bb8ae9a5",
@@ -1774,7 +1791,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Dane\",\"Home_OEE\"],\"show\":[\"Home_Alarms\",\"Home_Alarm_info\"],\"focus\":true}}",
+        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Dane\",\"Home_OEE\"],\"show\":[\"Home_Active_alarms\",\"Home_Alarm_info\"],\"focus\":true}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",

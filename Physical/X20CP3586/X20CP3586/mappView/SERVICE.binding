@@ -14,7 +14,7 @@
 			<Source xsi:type="session" refId="GraphSelect4" attribute="value" />
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GraphSelect4" attribute="value" />
 		</Binding>
-		<Binding mode="oneWay">
+		<Binding mode="twoWay">
 			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="ShowCurrent4" attribute="value" />
 		</Binding>
@@ -35,7 +35,7 @@
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[Current1].node" />
 		</Binding>
 
-		<Binding mode="twoWay">
+		<Binding mode="oneWay">
 			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="graph[Cooler1].visible" />
 		</Binding>
@@ -95,7 +95,7 @@
 			<Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp4" attribute="node" />
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[Current1].node" />
 		</Binding>
-		<Binding mode="twoWay">
+		<Binding mode="oneWay">
 			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="graph[Cooler1].visible" />
 		</Binding>
@@ -121,7 +121,7 @@
 			<Source xsi:type="session" refId="GraphSelect1" attribute="value" />
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone1Graph" attribute="visible" />
 		</Binding>
-		<Binding mode="twoWay">
+		<Binding mode="oneWay">
 			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone3Graph" attribute="graph[Cooler1].visible" />
 		</Binding>
@@ -157,7 +157,7 @@
 			<Source xsi:type="session" refId="GraphSelect4" attribute="value" />
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="visible" />
 		</Binding>
-		<Binding mode="twoWay">
+		<Binding mode="oneWay">
 			<Source xsi:type="session" refId="ShowFanPWM" attribute="value" />
 			<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone2Graph" attribute="graph[Cooler2].visible" />
 		</Binding>
