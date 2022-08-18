@@ -46,5 +46,6 @@
         <Widget xsi:type="widgets.brease.Label" id="LabelOEE" top="23" left="679" width="200" height="60" zIndex="7" text="$IAT/OEEPage/OEE" textAlign="center" fontSize="24px" />
       </Widgets>
     </Widget>
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="0" left="0" width="1710" height="60" zIndex="7" text="OEE" textAlign="center" fontSize="25px" bold="true" margin="5px" />
   </Widgets>
 </Content>

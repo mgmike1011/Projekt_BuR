@@ -31,6 +31,9 @@
       <Property ID="TargetFile[17]" Value="mappView.Resources.Texts.AutomaticPageTexts.tmx" />
       <Property ID="TargetFile[18]" Value="mappView.Resources.Texts.StartPageText.tmx" />
       <Property ID="TargetFile[19]" Value="mappView.Resources.Texts.ServicePage.tmx" />
+      <Property ID="TargetFile[20]" Value="mappView.Resources.Texts.ManualPageTexts.tmx" />
+      <Property ID="TargetFile[21]" Value="mappView.Resources.Texts.ErrorDialogTexts.tmx" />
+      <Property ID="TargetFile[22]" Value="mappView.Resources.Texts.TunningSetpointsDialogTexts.tmx" />
     </Group>
   </Element>
 </Configuration>

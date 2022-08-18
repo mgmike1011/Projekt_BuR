@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/ErrorDialog</prop>
+  </header>
+  <body>
+    <tu tuid="Statustxt">
+      <tuv xml:lang="de">
+        <seg>
+
+Modusstatus</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Status trybów</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Mode status</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Cleartxt">
+      <tuv xml:lang="de">
+        <seg>Fehler beseitigen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Usuń błędy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Remove errors</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Tunningtxt">
+      <tuv xml:lang="de">
+        <seg>Tuning</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strojenie</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Tunning</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ManualModetxt">
+      <tuv xml:lang="de">
+        <seg>Manueller modus</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Tryb manualny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Manual mode</seg>
+      </tuv>
+    </tu>
+    <tu tuid="AutoModetxt">
+      <tuv xml:lang="de">
+        <seg>Automatischer modus</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Tryb automatyczny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Automatic mode</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Starttxt">
+      <tuv xml:lang="de">
+        <seg>START</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>START</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>START</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Stoptxt">
+      <tuv xml:lang="de">
+        <seg>STOP</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>STOP</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>STOP</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Errortxt">
+      <tuv xml:lang="de">
+        <seg>ERROR</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>ERROR</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>ERROR</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

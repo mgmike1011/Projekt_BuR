@@ -151,5 +151,5 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gSTOP" attribute="value" />
 <Target xsi:type="brease" contentRefId="Tuning" widgetRefId="Image2" attribute="visible" />
 </Binding>
-</Bindings>
+	</Bindings>
 </BindingsSet>

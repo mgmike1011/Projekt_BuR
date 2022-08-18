@@ -63,7 +63,9 @@
         <Variable Name="gOeeCore" />
         <Variable Name="gStart" />
         <Variable Name="gSTOP" />
-        <Variable Name="gTempController_1" />
+        <Variable Name="gTempController_1">
+          <Variable Name="Internal" EnableArrayElements="True" />
+        </Variable>
         <Variable Name="gTempController_2" />
         <Variable Name="gTempController_3" />
         <Variable Name="gTempController_4" />
@@ -81,14 +83,14 @@
         <Variable Name="SetTemp2" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SetTemp3" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SetTemp4" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
-        <Variable Name="SetTempCoolTuning1" />
-        <Variable Name="SetTempCoolTuning2" />
-        <Variable Name="SetTempCoolTuning3" />
-        <Variable Name="SetTempCoolTuning4" />
-        <Variable Name="SetTempHeatTuning1" />
-        <Variable Name="SetTempHeatTuning2" />
-        <Variable Name="SetTempHeatTuning3" />
-        <Variable Name="SetTempHeatTuning4" />
+        <Variable Name="SetTempCoolTuning1" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning2" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning3" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempCoolTuning4" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning1" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning2" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning3" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="SetTempHeatTuning4" EURangesId="1" EngineeringUnitId="2" />
         <Variable Name="SimulateZone1Enable" />
         <Variable Name="SimulateZone2Enable" />
         <Variable Name="SimulateZone3Enable" />
