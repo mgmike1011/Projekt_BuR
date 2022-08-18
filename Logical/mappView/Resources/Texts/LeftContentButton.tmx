@@ -118,5 +118,16 @@
         <seg>PDF</seg>
       </tuv>
     </tu>
+    <tu tuid="ServicePafeButton">
+      <tuv xml:lang="de">
+        <seg>Service</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Serwis</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Service</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
