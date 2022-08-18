@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BindingsSet id="TunningSetpointsDialogContent_binding" xmlns="http://www.br-automation.com/iat2015/binding/engineering/v2" xmlns:bt="http://www.br-automation.com/iat2015/bindingListTypes/engineering/v2" xmlns:be="http://www.br-automation.com/iat2015/bindingListEmbedded/engineering/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Bindings>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTempHeatTuning1" attribute="node" />
+<Target xsi:type="brease" contentRefId="TunningSetpointsDialogContent" widgetRefId="NumericInputHeatingTuningSetpoints" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTempCoolTuning1" attribute="node" />
+<Target xsi:type="brease" contentRefId="TunningSetpointsDialogContent" widgetRefId="NumericInputCoolingTuningSetpoints" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTempCoolTuning2" attribute="node" />
+<Target xsi:type="brease" contentRefId="TunningSetpointsDialogContent" widgetRefId="NumericInputCoolingTuningSetpoints1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTempHeatTuning2" attribute="node" />
+<Target xsi:type="brease" contentRefId="TunningSetpointsDialogContent" widgetRefId="NumericInputHeatingTuningSetpoints1" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTempHeatTuning3" attribute="node" />
+<Target xsi:type="brease" contentRefId="TunningSetpointsDialogContent" widgetRefId="NumericInputHeatingTuningSetpoints2" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTempCoolTuning3" attribute="node" />
+<Target xsi:type="brease" contentRefId="TunningSetpointsDialogContent" widgetRefId="NumericInputCoolingTuningSetpoints2" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTempHeatTuning4" attribute="node" />
+<Target xsi:type="brease" contentRefId="TunningSetpointsDialogContent" widgetRefId="NumericInputHeatingTuningSetpoints3" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SetTempCoolTuning4" attribute="node" />
+<Target xsi:type="brease" contentRefId="TunningSetpointsDialogContent" widgetRefId="NumericInputCoolingTuningSetpoints3" attribute="node" />
+</Binding>
+</Bindings>
+</BindingsSet>

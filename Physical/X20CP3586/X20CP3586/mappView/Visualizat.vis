@@ -22,6 +22,7 @@
     <BindingsSet refId="AUTOMATIC_binding" />
     <BindingsSet refId="MANUAL_binding" />
     <BindingsSet refId="ErrorDialogContent_binding" />
+    <BindingsSet refId="TunningSetpointsDialogContent_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
@@ -39,6 +40,7 @@
     <Dialog refId="LoginDialogP" />
     <Dialog refId="SystemInfoDialog" />
     <Dialog refId="ErrorDialog" />
+    <Dialog refId="TunningSetpointsDialog" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -56,6 +58,7 @@
     <Content refId="SystemInfoDialogContent" />
     <Content refId="SERVICE" />
     <Content refId="ErrorDialogContent" />
+    <Content refId="TunningSetpointsDialogContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
