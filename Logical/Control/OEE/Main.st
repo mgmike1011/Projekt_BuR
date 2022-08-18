@@ -7,6 +7,7 @@ PROGRAM	_INIT
 	
 	IdealCycleTimeINT := 0;
 	ICTm := 0;
+	ICTm_old;
 	ICTs := 0;
 	ICTms := 0;
 	StatusString := '';
@@ -14,8 +15,8 @@ END_PROGRAM
 
 PROGRAM	_CYCLIC
 	Update_mqtt_struct;
-	MpOEECore_1.Update := FALSE;
-	MpOEECore_1.Downtime := NOT(STATUS = STATE_WORKING_AUTOMATIC) ;
+//	MpOEECore_1.Update := FALSE;
+//	MpOEECore_1.Downtime := NOT(STATUS = STATE_WORKING_AUTOMATIC) ;
 	MpOEECore_1.Reset := (RsetOEE);//resetowanie statystyk
 	MpOEECore_1.PieceCounter := CycleNumber;
 	
@@ -31,6 +32,8 @@ PROGRAM	_CYCLIC
 	
 	IdealCycleTimeINT := ICTms + (ICTs*1000) + (ICTm*60000);
 	IdealCycleTime_1.IdealCycleTime := DINT_TO_TIME(IdealCycleTimeINT);
+	
+	BtnEnable := NOT(IdealCycleTimeINT = 0);
 	
 	//IF OEEParChange	THEN //AKTUALIZACJA JAK JAKIES DANE BYLY ZMIENIONE
 	//	MpOEECore_1.Update := TRUE;
@@ -55,13 +58,22 @@ PROGRAM	_CYCLIC
 			StatusString := 'STATE_STOP';
 	END_CASE;
 	
-	IF STATUS = STATE_IDLE THEN
-		StateIdle := 1;
-	ELSE
-		StateIdle := 0;
-	END_IF;//nie jestem z tego dumny
+	StateIdle := (STATUS = STATE_IDLE);
 	
-			
+	IF ICTm_old <> ICTm OR ICTs_old <> ICTs OR ICTms_old <> ICTms THEN
+		MpOEECore_1.Update := TRUE;
+		ICTm_old := ICTm;
+
+	END_IF
+	
+	IF MpOEECore_1.UpdateDone THEN
+		MpOEECore_1.Update := FALSE;
+	END_IF
+	
+	ICTm_old := ICTm;
+	ICTs_old := ICTs;
+	ICTms_old := ICTms;
+	
 END_PROGRAM
 
 PROGRAM	_EXIT

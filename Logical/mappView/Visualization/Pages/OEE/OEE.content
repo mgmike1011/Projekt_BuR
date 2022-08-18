@@ -1,51 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="OEE" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Button" id="BtnRsetStat" top="500" left="780" width="200" height="60" zIndex="0" text="$IAT/OEEPage/RsetStat" />
-    <Widget xsi:type="widgets.brease.Button" id="BtnRepGenerate" top="500" left="1480" width="200" height="60" zIndex="1" multiLine="true" text="$IAT/OEEPage/MpRepGenerate" wordWrap="true" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="BtnStartOEE" top="680" left="540" width="220" height="70" zIndex="2" text="$IAT/OEEPage/StartOEE" />
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="140" left="40" width="720" height="181" zIndex="3" text="$IAT/OEEPage/NumberOfProducts">
+    <Widget xsi:type="widgets.brease.Button" id="BtnRsetStat" top="720" left="940" width="175" height="60" zIndex="0" text="$IAT/OEEPage/RsetStat" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnRepGenerate" top="720" left="1140" width="175" height="60" zIndex="1" multiLine="true" text="$IAT/OEEPage/MpRepGenerate" wordWrap="true" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="BtnStartOEE" top="380" left="780" width="175" height="60" zIndex="2" text="$IAT/OEEPage/StartOEE" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="140" left="20" width="580" height="200" zIndex="3" text="$IAT/OEEPage/NumberOfProducts">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="LabelCycleNr" top="23" left="0" width="259" height="60" zIndex="0" text="$IAT/OEEPage/CycleNr" textAlign="right" />
         <Widget xsi:type="widgets.brease.Label" id="LabelBadCycleNr" top="62" left="-61" width="319" height="60" zIndex="1" text="$IAT/OEEPage/BadCycleNr" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputCycleNr" top="43" left="199" width="159" height="20" zIndex="2" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputBadCycleNr" top="83" left="199" width="159" height="20" zIndex="3" />
-        <Widget xsi:type="widgets.brease.Button" id="BtnDiscardCycle" top="43" left="539" width="159" height="60" zIndex="4" text="$IAT/OEEPage/DiscardCycle" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputCycleNr" top="42" left="219" width="159" height="20" zIndex="2" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputBadCycleNr" top="82" left="219" width="159" height="20" zIndex="3" />
+        <Widget xsi:type="widgets.brease.Button" id="BtnDiscardCycle" top="43" left="379" width="175" height="60" zIndex="4" text="$IAT/OEEPage/DiscardCycle" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="340" left="40" width="720" height="200" zIndex="4" text="$IAT/OEEPage/IdealCycleTime">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="140" left="620" width="717" height="200" zIndex="4" text="$IAT/OEEPage/IdealCycleTime">
       <Widgets>
-        <Widget xsi:type="widgets.brease.NumericOutput" id="NumOUTminICT" top="63" left="159" width="120" height="20" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="NumOUTsekICT" top="63" left="279" width="120" height="20" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="NumOUTmsICT" top="63" left="399" width="120" height="20" zIndex="2" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelIdealCycleTime" top="43" left="-61" width="220" height="60" zIndex="3" text="$IAT/OEEPage/Current" textAlign="right" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelIdealCycleTimeChange" top="83" left="-161" width="320" height="60" zIndex="4" text="$IAT/OEEPage/Change" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumINsekICT" top="103" left="279" width="120" height="20" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="59" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumINmsICT" top="103" left="399" width="120" height="20" zIndex="6" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="999" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumINminICT" top="103" left="159" width="120" height="20" zIndex="7" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="60" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelICTmin" top="23" left="179" width="100" zIndex="8" text="m" textAlign="right" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelICTsek" top="23" left="299" width="100" zIndex="9" text="s" textAlign="right" />
-        <Widget xsi:type="widgets.brease.Label" id="LabelICTms" top="23" left="419" width="100" zIndex="10" text="ms" textAlign="right" />
-        <Widget xsi:type="widgets.brease.Button" id="BtnAssignICT" top="63" left="539" width="160" height="60" zIndex="11" text="$IAT/OEEPage/assignTime" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumOUTminICT" top="62" left="139" width="120" height="20" zIndex="0" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumOUTsekICT" top="62" left="259" width="120" height="20" zIndex="1" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="NumOUTmsICT" top="62" left="379" width="120" height="20" zIndex="2" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelIdealCycleTime" top="42" left="-81" width="220" height="60" zIndex="3" text="$IAT/OEEPage/Current" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelIdealCycleTimeChange" top="82" left="-181" width="320" height="60" zIndex="4" text="$IAT/OEEPage/Change" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumINsekICT" top="102" left="259" width="120" height="20" zIndex="5" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="59" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumINmsICT" top="102" left="379" width="120" height="20" zIndex="6" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="999" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumINminICT" top="102" left="139" width="120" height="20" zIndex="7" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="60" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelICTmin" top="22" left="159" width="100" zIndex="8" text="m" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelICTsek" top="22" left="279" width="100" zIndex="9" text="s" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Label" id="LabelICTms" top="22" left="399" width="100" zIndex="10" text="ms" textAlign="right" />
+        <Widget xsi:type="widgets.brease.Button" id="BtnAssignICT" top="63" left="519" width="175" height="60" zIndex="11" text="$IAT/OEEPage/assignTime" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="560" left="40" width="720" height="100" zIndex="5" text="$IAT/OEEPage/MachineStatus">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="479" left="400" width="920" height="220" zIndex="5" text="$IAT/OEEPage/OEEindex" headerBackColor="rgba(189, 183, 107, 1)">
       <Widgets>
-        <Widget xsi:type="widgets.brease.TextOutput" id="OutMachineState" top="3" left="-2" width="722" height="60" zIndex="0" textAlign="center" />
-      </Widgets>
-    </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="260" left="780" width="900" height="220" zIndex="6" text="$IAT/OEEPage/OEEindex" headerBackColor="rgba(189, 183, 107, 1)">
-      <Widgets>
-        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputAvailability" top="103" left="59" width="120" height="31" zIndex="0" unitTextAlign="right" textAlign="center" fontSize="24px" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputQuality" top="103" left="499" width="120" height="31" zIndex="1" textAlign="center" fontSize="24px" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputOEE" top="103" left="719" width="120" height="31" zIndex="2" textAlign="center" fontSize="24px" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputPerformance" top="103" left="279" width="120" height="31" zIndex="3" textAlign="center" fontSize="24px" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputAvailability" top="103" left="59" width="120" height="31" zIndex="0" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" maxValue="1" unitTextAlign="right" textAlign="center" fontSize="24px" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputQuality" top="103" left="499" width="120" height="31" zIndex="1" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="center" fontSize="24px" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputOEE" top="103" left="719" width="120" height="31" zIndex="2" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="center" fontSize="24px" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="OutputPerformance" top="103" left="279" width="120" height="31" zIndex="3" format="{'metric':{'decimalPlaces':3,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':1,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':1,'minimumIntegerDigits':1}}" textAlign="center" fontSize="24px" />
         <Widget xsi:type="widgets.brease.Label" id="s" top="23" left="19" width="200" height="60" zIndex="4" text="$IAT/OEEPage/Availability" textAlign="center" fontSize="24px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelPerformance" top="23" left="239" width="200" height="60" zIndex="5" text="$IAT/OEEPage/Performance" textAlign="center" fontSize="24px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelQuality" top="23" left="459" width="200" height="60" zIndex="6" text="$IAT/OEEPage/Quality" textAlign="center" fontSize="24px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelOEE" top="23" left="679" width="200" height="60" zIndex="7" text="$IAT/OEEPage/OEE" textAlign="center" fontSize="24px" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="Label1" top="0" left="0" width="1710" height="60" zIndex="7" text="OEE" textAlign="center" fontSize="25px" bold="true" margin="5px" />
+    <Widget xsi:type="widgets.brease.Label" id="Label1" top="0" left="0" width="1710" height="60" zIndex="6" text="OEE" textAlign="center" fontSize="25px" bold="true" margin="5px" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="140" left="1360" width="340" height="200" zIndex="7" text="$IAT/OEEPage/MachineStatus">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TextOutput" id="OutMachineState" top="2" left="-1" width="341" height="158" zIndex="0" textAlign="center" />
+      </Widgets>
+    </Widget>
   </Widgets>
 </Content>

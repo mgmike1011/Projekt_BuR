@@ -244,7 +244,7 @@
         "type": "ui_group",
         "name": "Active alarms",
         "tab": "ed08ea8ae00afeef",
-        "order": 7,
+        "order": 6,
         "disp": true,
         "width": "20",
         "collapse": false,
@@ -253,7 +253,7 @@
     {
         "id": "851edce0ef4a6acf",
         "type": "ui_group",
-        "name": "Nawigacja",
+        "name": "Navigation",
         "tab": "ed08ea8ae00afeef",
         "order": 1,
         "disp": true,
@@ -264,7 +264,7 @@
     {
         "id": "2182112e81c0569e",
         "type": "ui_group",
-        "name": "Dane",
+        "name": "Data",
         "tab": "ed08ea8ae00afeef",
         "order": 8,
         "disp": true,
@@ -288,7 +288,7 @@
         "type": "ui_group",
         "name": "Alarm info",
         "tab": "ed08ea8ae00afeef",
-        "order": 6,
+        "order": 7,
         "disp": true,
         "width": "8",
         "collapse": false,
@@ -305,6 +305,16 @@
         "height": 1
     },
     {
+        "id": "8520cd7bb799d472",
+        "type": "ui_spacer",
+        "z": "12421ff9dde586d7",
+        "name": "spacer",
+        "group": "7ccd7f338ea382c4",
+        "order": 2,
+        "width": "20",
+        "height": "1"
+    },
+    {
         "id": "ba0e4bfb5dc84ba8",
         "type": "mqtt in",
         "z": "12421ff9dde586d7",
@@ -317,14 +327,14 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 230,
+        "x": 110,
         "y": 320,
         "wires": [
             [
-                "35be2aee50a84c1c",
-                "335abbb6457492ef",
-                "61238c0d5592c901",
-                "8fa13984f3c8a70f"
+                "b33e69dfbf05741a",
+                "6be35aea09602661",
+                "b53f6db97731933e",
+                "04c718d25ce543c6"
             ]
         ]
     },
@@ -432,7 +442,7 @@
         "gtype": "gage",
         "title": "Fan 1",
         "label": "%",
-        "format": "{{msg.payload.Fan1}}",
+        "format": "{{msg.payload}}",
         "min": 0,
         "max": "100",
         "colors": [
@@ -459,7 +469,7 @@
         "gtype": "gage",
         "title": "Fan 2",
         "label": "%",
-        "format": "{{msg.payload.Fan2}}",
+        "format": "{{msg.payload}}",
         "min": 0,
         "max": "100",
         "colors": [
@@ -486,7 +496,7 @@
         "gtype": "gage",
         "title": "Fan 3",
         "label": "%",
-        "format": "{{msg.payload.Fan3}}",
+        "format": "{{msg.payload}}",
         "min": 0,
         "max": "100",
         "colors": [
@@ -513,7 +523,7 @@
         "gtype": "gage",
         "title": "Fan 4",
         "label": "%",
-        "format": "{{msg.payload.Fan4}}",
+        "format": "{{msg.payload}}",
         "min": 0,
         "max": "100",
         "colors": [
@@ -807,7 +817,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
+        "x": 400,
         "y": 560,
         "wires": [
             [
@@ -1026,7 +1036,7 @@
         "gtype": "gage",
         "title": "Heater 1",
         "label": "%",
-        "format": "{{msg.payload.Heater1}}",
+        "format": "{{msg.payload}}",
         "min": 0,
         "max": 10,
         "colors": [
@@ -1053,7 +1063,7 @@
         "gtype": "gage",
         "title": "Heater 2",
         "label": "%",
-        "format": "{{msg.payload.Heater2}}",
+        "format": "{{msg.payload}}",
         "min": 0,
         "max": 10,
         "colors": [
@@ -1080,7 +1090,7 @@
         "gtype": "gage",
         "title": "Heater 3",
         "label": "%",
-        "format": "{{msg.payload.Heater3}}",
+        "format": "{{msg.payload}}",
         "min": 0,
         "max": 10,
         "colors": [
@@ -1107,7 +1117,7 @@
         "gtype": "gage",
         "title": "Heater 4",
         "label": "%",
-        "format": "{{msg.payload.Heater4}}",
+        "format": "{{msg.payload}}",
         "min": 0,
         "max": 10,
         "colors": [
@@ -1196,10 +1206,10 @@
         "y": 1380,
         "wires": [
             [
-                "f978e8e5a5c2d6f7",
-                "7d790468280e1065",
-                "702e07effcb2117e",
-                "fcd7e1d2afc039f7"
+                "103371635e563c44",
+                "bf7ca3f168c1db43",
+                "e792f49c31cd41d3",
+                "11973e702bdffc99"
             ]
         ]
     },
@@ -1230,7 +1240,7 @@
         "z": "12421ff9dde586d7",
         "group": "7ccd7f338ea382c4",
         "name": "",
-        "order": 0,
+        "order": 1,
         "width": "20",
         "height": "16",
         "columns": [
@@ -1257,7 +1267,7 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1810,
+        "x": 1650,
         "y": 200,
         "wires": []
     },
@@ -1613,7 +1623,7 @@
         "type": "debug",
         "z": "12421ff9dde586d7",
         "name": "debug 1",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -1697,6 +1707,158 @@
         ]
     },
     {
+        "id": "b33e69dfbf05741a",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 12",
+        "func": "var newMsg = { payload: msg.payload.length };\nvar liczba = 0;\nliczba = msg.payload.Fan1;\nnewMsg.payload = liczba.toFixed(0);\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 260,
+        "wires": [
+            [
+                "35be2aee50a84c1c"
+            ]
+        ]
+    },
+    {
+        "id": "b53f6db97731933e",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 13",
+        "func": "var newMsg = { payload: msg.payload.length };\nvar liczba = 0;\nliczba = msg.payload.Fan3;\nnewMsg.payload = liczba.toFixed(0);\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 340,
+        "wires": [
+            [
+                "61238c0d5592c901"
+            ]
+        ]
+    },
+    {
+        "id": "6be35aea09602661",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 14",
+        "func": "var newMsg = { payload: msg.payload.length };\nvar liczba = 0;\nliczba = msg.payload.Fan2;\nnewMsg.payload = liczba.toFixed(0);\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 300,
+        "wires": [
+            [
+                "335abbb6457492ef"
+            ]
+        ]
+    },
+    {
+        "id": "04c718d25ce543c6",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 15",
+        "func": "var newMsg = { payload: msg.payload.length };\nvar liczba = 0;\nliczba = msg.payload.Fan4;\nnewMsg.payload = liczba.toFixed(0);\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "8fa13984f3c8a70f"
+            ]
+        ]
+    },
+    {
+        "id": "103371635e563c44",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 16",
+        "func": "var newMsg = { payload: msg.payload.length };\nvar liczba = 0;\nliczba = msg.payload.Heater1;\nnewMsg.payload = liczba.toFixed(0);\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1320,
+        "wires": [
+            [
+                "f978e8e5a5c2d6f7"
+            ]
+        ]
+    },
+    {
+        "id": "bf7ca3f168c1db43",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 17",
+        "func": "var newMsg = { payload: msg.payload.length };\nvar liczba = 0;\nliczba = msg.payload.Heater2;\nnewMsg.payload = liczba.toFixed(0);\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1360,
+        "wires": [
+            [
+                "7d790468280e1065"
+            ]
+        ]
+    },
+    {
+        "id": "e792f49c31cd41d3",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 18",
+        "func": "var newMsg = { payload: msg.payload.length };\nvar liczba = 0;\nliczba = msg.payload.Heater3;\nnewMsg.payload = liczba.toFixed(0);\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1400,
+        "wires": [
+            [
+                "702e07effcb2117e"
+            ]
+        ]
+    },
+    {
+        "id": "11973e702bdffc99",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 19",
+        "func": "var newMsg = { payload: msg.payload.length };\nvar liczba = 0;\nliczba = msg.payload.Heater4;\nnewMsg.payload = liczba.toFixed(0);\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 1440,
+        "wires": [
+            [
+                "fcd7e1d2afc039f7"
+            ]
+        ]
+    },
+    {
         "id": "ed128785bb8ae9a5",
         "type": "aedes broker",
         "z": "352fcc860ddcd8e8",
@@ -1736,7 +1898,7 @@
         "z": "352fcc860ddcd8e8",
         "name": "",
         "group": "851edce0ef4a6acf",
-        "order": 7,
+        "order": 1,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1746,11 +1908,11 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Home_Active_alarms\",\"Home_Dane\",\"Home_OEE\",\"Home_Alarm_info\"],\"show\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\"],\"focus\":true}}",
+        "payload": "{\"group\":{\"hide\":[\"Home_Active_alarms\",\"Home_Data\",\"Home_OEE\",\"Home_Alarm_info\"],\"show\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\"],\"focus\":true}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
-        "x": 410,
+        "x": 390,
         "y": 260,
         "wires": [
             [
@@ -1764,7 +1926,7 @@
         "z": "352fcc860ddcd8e8",
         "name": "",
         "group": "851edce0ef4a6acf",
-        "order": 1,
+        "order": 3,
         "width": 0,
         "height": 0,
         "passthru": false,
@@ -1774,7 +1936,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Dane\",\"Home_OEE\"],\"show\":[\"Home_Alarms\",\"Home_Alarm_info\"],\"focus\":true}}",
+        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Data\",\"Home_OEE\"],\"show\":[\"Home_Active_alarms\",\"Home_Alarm_info\"],\"focus\":true}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -1802,7 +1964,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Active_alarms\",\"Home_Alarm_info\"],\"show\":[\"Home_Dane\",\"Home_OEE\"],\"focus\":true}}",
+        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Active_alarms\",\"Home_Alarm_info\"],\"show\":[\"Home_Data\",\"Home_OEE\"],\"focus\":true}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -1811,6 +1973,47 @@
         "wires": [
             [
                 "8e7cb7b23464dc75"
+            ]
+        ]
+    },
+    {
+        "id": "bbe09a43b8f3aa2f",
+        "type": "debug",
+        "z": "352fcc860ddcd8e8",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 640,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "3565c303b3db324b",
+        "type": "inject",
+        "z": "352fcc860ddcd8e8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.01",
+        "topic": "",
+        "payload": "{\"group\":{\"hide\":[\"Home_Active_alarms\",\"Home_Data\",\"Home_OEE\",\"Home_Alarm_info\"],\"show\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\"],\"focus\":true}}",
+        "payloadType": "json",
+        "x": 410,
+        "y": 220,
+        "wires": [
+            [
+                "bbe09a43b8f3aa2f"
             ]
         ]
     }
