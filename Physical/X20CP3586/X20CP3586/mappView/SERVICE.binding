@@ -232,5 +232,21 @@
 <Source xsi:type="expression" refId="ShowTempAxis" attribute="result" />
 <Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="Zone4Graph" attribute="yAxis[Temp].visible" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone1Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="SimulationToggle1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone2Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="SimulationToggle2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone3Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="SimulationToggle3" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone4Enable" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="SimulationToggle4" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

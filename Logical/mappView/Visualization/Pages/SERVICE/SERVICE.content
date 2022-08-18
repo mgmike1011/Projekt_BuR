@@ -113,5 +113,6 @@
         </cursor>
       </Properties>
     </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="Button1" top="820" left="1400" zIndex="7" text="Button1" />
   </Widgets>
 </Content>
