@@ -16,6 +16,14 @@
         "env": []
     },
     {
+        "id": "18fee4d17594d314",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
         "id": "ef4821db8ede55e8",
         "type": "ui_base",
         "theme": {
@@ -234,11 +242,11 @@
     {
         "id": "7ccd7f338ea382c4",
         "type": "ui_group",
-        "name": "Alarms",
+        "name": "Active alarms",
         "tab": "ed08ea8ae00afeef",
-        "order": 6,
+        "order": 7,
         "disp": true,
-        "width": "28",
+        "width": "20",
         "collapse": false,
         "className": ""
     },
@@ -258,7 +266,7 @@
         "type": "ui_group",
         "name": "Dane",
         "tab": "ed08ea8ae00afeef",
-        "order": 7,
+        "order": 8,
         "disp": true,
         "width": "14",
         "collapse": false,
@@ -269,29 +277,32 @@
         "type": "ui_group",
         "name": "OEE",
         "tab": "ed08ea8ae00afeef",
-        "order": 8,
+        "order": 9,
         "disp": true,
         "width": "14",
         "collapse": false,
         "className": ""
     },
     {
-        "id": "521bf26a383c3c71",
+        "id": "12824100afa61730",
         "type": "ui_group",
-        "name": "Group 9",
+        "name": "Alarm info",
         "tab": "ed08ea8ae00afeef",
-        "order": 9,
+        "order": 6,
         "disp": true,
-        "width": 6
+        "width": "8",
+        "collapse": false,
+        "className": ""
     },
     {
-        "id": "3c5ec4da1dcdac54",
-        "type": "ui_group",
-        "name": "Group 10",
-        "tab": "ed08ea8ae00afeef",
-        "order": 10,
-        "disp": true,
-        "width": 6
+        "id": "b9de0e044f07b599",
+        "type": "ui_spacer",
+        "z": "12421ff9dde586d7",
+        "name": "spacer",
+        "group": "12824100afa61730",
+        "order": 9,
+        "width": 1,
+        "height": 1
     },
     {
         "id": "ba0e4bfb5dc84ba8",
@@ -1220,7 +1231,7 @@
         "group": "7ccd7f338ea382c4",
         "name": "",
         "order": 0,
-        "width": "28",
+        "width": "20",
         "height": "16",
         "columns": [
             {
@@ -1263,12 +1274,14 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1260,
-        "y": 200,
+        "x": 1080,
+        "y": 280,
         "wires": [
             [
                 "e5df25fb1ec321e6",
-                "1c475a0cb2be10f0"
+                "1c475a0cb2be10f0",
+                "95a36b1ad2bbaf5e",
+                "87523d2980dc9b70"
             ]
         ]
     },
@@ -1283,7 +1296,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1440,
+        "x": 1300,
         "y": 200,
         "wires": [
             [
@@ -1299,7 +1312,7 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 1630,
+        "x": 1490,
         "y": 200,
         "wires": [
             [
@@ -1607,9 +1620,81 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1480,
+        "x": 1300,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "ba7684576e4024da",
+        "type": "ui_text",
+        "z": "12421ff9dde586d7",
+        "group": "12824100afa61730",
+        "order": 3,
+        "width": "8",
+        "height": "1",
+        "name": "",
+        "label": "Pending alarms:",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1520,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "817f7de03646feac",
+        "type": "ui_text",
+        "z": "12421ff9dde586d7",
+        "group": "12824100afa61730",
+        "order": 1,
+        "width": "8",
+        "height": "1",
+        "name": "",
+        "label": "Active alarms: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 1520,
         "y": 300,
         "wires": []
+    },
+    {
+        "id": "95a36b1ad2bbaf5e",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 10",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nnewMsg.payload = msg.payload.Pending;\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 260,
+        "wires": [
+            [
+                "ba7684576e4024da"
+            ]
+        ]
+    },
+    {
+        "id": "87523d2980dc9b70",
+        "type": "function",
+        "z": "12421ff9dde586d7",
+        "name": "function 11",
+        "func": "var newMsg = { payload: msg.payload.length };\n\nnewMsg.payload = msg.payload.Active;\n\nreturn newMsg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 300,
+        "wires": [
+            [
+                "817f7de03646feac"
+            ]
+        ]
     },
     {
         "id": "ed128785bb8ae9a5",
@@ -1661,7 +1746,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Home_Alarms\",\"Home_Dane\",\"Home_OEE\"],\"show\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\"],\"focus\":true}}",
+        "payload": "{\"group\":{\"hide\":[\"Home_Active_alarms\",\"Home_Dane\",\"Home_OEE\",\"Home_Alarm_info\"],\"show\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\"],\"focus\":true}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -1689,7 +1774,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Dane\",\"Home_OEE\"],\"show\":[\"Home_Alarms\"],\"focus\":true}}",
+        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Dane\",\"Home_OEE\"],\"show\":[\"Home_Alarms\",\"Home_Alarm_info\"],\"focus\":true}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
@@ -1717,7 +1802,7 @@
         "bgcolor": "",
         "className": "",
         "icon": "",
-        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Alarms\"],\"show\":[\"Home_Dane\",\"Home_OEE\"],\"focus\":true}}",
+        "payload": "{\"group\":{\"hide\":[\"Home_ZONE_1\",\"Home_ZONE_2\",\"Home_ZONE_3\",\"Home_ZONE_4\",\"Home_Active_alarms\",\"Home_Alarm_info\"],\"show\":[\"Home_Dane\",\"Home_OEE\"],\"focus\":true}}",
         "payloadType": "json",
         "topic": "topic",
         "topicType": "msg",
