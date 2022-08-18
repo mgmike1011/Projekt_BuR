@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ExpressionsSet id="expression_0" xmlns="http://www.br-automation.com/iat2015/expression/engineering/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Expressions>
-		
-	</Expressions>
+		<Expression id="ShowPWMaxis" xsi:type="content" contentRefId="SERVICE" type="OR" />
+		<Expression id="ShowTempAxis" xsi:type="content" contentRefId="SERVICE" type="OR" />
+	</Expressions>	
 </ExpressionsSet>
