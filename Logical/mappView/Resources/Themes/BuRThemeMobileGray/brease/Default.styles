@@ -464,8 +464,8 @@
 	<!--table and table item-->
 	
 	<Style id="default" xsi:type="widgets.brease.Table" 
-		headerBackColor="#3388CC" 
-		backColor="#FFFFFF" 
+		headerBackColor="#ffcc99" 
+		backColor="#fff5ee" 
 		headerFontSize="16px" 
 		fontSize="16px" 
 		headerTextColor="#FFFFFF" 
@@ -474,7 +474,6 @@
 		borderWidth="1px" 
 		borderColor="#DDDDDD" 
 		cellPadding="5px"/>
-	
 			
 	<!--version 1.1 widgets-->
 	
