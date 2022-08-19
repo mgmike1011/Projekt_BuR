@@ -3,6 +3,7 @@ PROGRAM _INIT
 	
 	MpFileManagerUI_0.MpLink := ADR(gFileManagerUI);
 	MpFileManagerUI_0.Enable := TRUE;
+	MpFileMngSetup.FileListSize := 50;
 	MpFileManagerUI_0.UISetup := MpFileMngSetup;
 	MpFileManagerUI_0.UIConnect := ADR(MpFileMngConnect);
 	MpFileMngConnect.DeviceList.DeviceNames[0] := 'DISK';
@@ -10,6 +11,7 @@ PROGRAM _INIT
 	StartValue := 0;
 	StopValue := 49;
 	Step := 1;
+	SortType[0] := TRUE;
 	
 END_PROGRAM
 
@@ -27,14 +29,10 @@ PROGRAM _CYCLIC
 	ELSIF SortType[4] THEN
 		MpFileMngConnect.File.SortOrder := 4;
 	ELSIF SortType[5] THEN
-		MpFileMngConnect.File.SortOrder := 5;
+		MpFileMngConnect.File.SortOrder := 5;	
 	END_IF
 	
 	FOR i := StartValue TO StopValue BY Step DO
-		Element[i] := MpFileMngConnect.File.List.Items[i].Name;
-		ElementSize[i] := MpFileMngConnect.File.List.Items[i].Size;
-		ElementDateTime[i] := MpFileMngConnect.File.List.Items[i].LastModified;
-		
 		IF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_NONE THEN	
 			ElementType[i] := '';
 		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_FOLDER THEN	
@@ -58,8 +56,6 @@ PROGRAM _CYCLIC
 		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_BMP THEN	
 			ElementType[i] := 'bmp';
 		END_IF
-		
-		ElementIsSelected[i] := MpFileMngConnect.File.List.Items[i].IsSelected;
 	END_FOR	
 	
 	MpFileManagerUI_0();

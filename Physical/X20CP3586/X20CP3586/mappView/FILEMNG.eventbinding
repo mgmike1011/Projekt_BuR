@@ -112,5 +112,215 @@
         </Action>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="FILEMNG.Card1RadioButton.Click">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="FILEMNG" widgetRefId="Card1RadioButton" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item1-10GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item11-20GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item21-30GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item31-40GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item41-50GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.Card2RadioButton.Click">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="FILEMNG" widgetRefId="Card2RadioButton" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item11-20GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item1-10GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item21-30GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item31-40GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item41-50GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.Card3RadioButton.Click">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="FILEMNG" widgetRefId="Card3RadioButton" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item21-30GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item1-10GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item11-20GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item31-40GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item41-50GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.Card4RadioButton.Click">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="FILEMNG" widgetRefId="Card4RadioButton" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item31-40GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item1-10GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item11-20GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item21-30GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item41-50GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.Card5RadioButton.Click">
+      <Source xsi:type="widgets.brease.RadioButton.Event" contentRefId="FILEMNG" widgetRefId="Card5RadioButton" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item41-50GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item1-10GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item11-20GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item21-30GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.GroupBox.Action" contentRefId="FILEMNG" widgetRefId="Item31-40GroupBox">
+                <Method xsi:type="widgets.brease.GroupBox.Action.SetVisible" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>

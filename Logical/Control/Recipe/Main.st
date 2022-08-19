@@ -29,6 +29,7 @@ PROGRAM _CYCLIC
 	MpRecipeUI_0.UISetup := RecipeUISetup;
 	//RecipeUISetup.RecipeListSize := RecipeUIConnect.Recipe.List.MaxSelection;
 	//set Temp and Time value
+
 	
 	IF RecipeUIConnect.Recipe.List.PageUp THEN
 		RecipeUIConnect.Recipe.List.SelectedIndex := 0;

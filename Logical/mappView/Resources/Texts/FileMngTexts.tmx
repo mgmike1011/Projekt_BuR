@@ -327,5 +327,16 @@
         <seg>Sorts in descending order by date last modified</seg>
       </tuv>
     </tu>
+    <tu tuid="Card">
+      <tuv xml:lang="de">
+        <seg>Karte</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Karta</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Card</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

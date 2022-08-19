@@ -75,11 +75,11 @@
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="0" left="0" width="840" height="220" zIndex="1" text="$IAT/ManualPage/ManualControltxt" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
           <Widgets>
-            <Widget xsi:type="widgets.brease.ToggleButton" id="ManualWorkToggleButton" top="46" left="13" width="300" height="60" zIndex="0" text="$IAT/ManualPage/ManualControltxt" fontSize="18px" bold="true" />
-            <Widget xsi:type="widgets.brease.Button" id="StartButton" top="46" left="391" width="175" height="60" zIndex="1" text="START" />
-            <Widget xsi:type="widgets.brease.Button" id="StopButton" top="46" left="643" width="175" height="60" zIndex="2" text="STOP" textColor="rgba(192, 0, 0, 1)" />
-            <Widget xsi:type="widgets.brease.Image" id="Image1" top="119" left="454" width="50" height="50" zIndex="3" image="Media/SymbolLib/Symbols/Stop.svg" sizeMode="fill" margin="0px" imageColor="rgba(0, 128, 0, 1)" />
-            <Widget xsi:type="widgets.brease.Image" id="Image2" top="119" left="706" width="50" height="50" zIndex="4" image="Media/SymbolLib/Symbols/Stop.svg" sizeMode="fill" imageColor="rgba(192, 0, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Button" id="StartButton" top="46" left="73" width="175" height="60" zIndex="0" text="START" />
+            <Widget xsi:type="widgets.brease.Button" id="StopButton" top="46" left="335" width="175" height="60" zIndex="1" text="STOP" textColor="rgba(192, 0, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="Image1" top="119" left="136" width="50" height="50" zIndex="2" image="Media/SymbolLib/Symbols/Stop.svg" sizeMode="fill" margin="0px" imageColor="rgba(0, 128, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="Image2" top="119" left="398" width="50" height="50" zIndex="3" image="Media/SymbolLib/Symbols/Stop.svg" sizeMode="fill" imageColor="rgba(192, 0, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Button" id="Button1" top="46" left="597" width="175" height="60" zIndex="4" text="IDLE" />
           </Widgets>
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="InfoGroupBox" top="0" left="0" width="415" height="220" zIndex="2" text="Info" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
