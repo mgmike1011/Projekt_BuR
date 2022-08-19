@@ -39,6 +39,8 @@
     <Group ID="FileDevice6" />
     <Parameter ID="FileDeviceName6" Value="RECIPE" />
     <Parameter ID="FileDevicePath6" Value="C:/BrRecipe" />
+    <Parameter ID="TimeZone" Value="160" />
+    <Parameter ID="ActivateDaylightSavingTime" Value="1" />
     <Group ID="FtpUser1" />
     <Parameter ID="FtpUsername1" Value="Admin" />
     <Parameter ID="FtpUserPassword1" Value="5wGvT8auoKyFZyijp5IHEBz1PpSmCNNWGV/kzWv0+cU=" />

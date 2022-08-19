@@ -41,6 +41,51 @@ PROGRAM _CYCLIC
 	TimeStep3Int := TIME_TO_UINT(TimeStep3)/1000;
 	TimeStep4Int := TIME_TO_UINT(TimeStep4)/1000;
 	TimeStep5Int := TIME_TO_UINT(TimeStep5)/1000;
+	// Machine State
+	CASE STATUS OF
+		STATE_IDLE:
+			isIDLE_ := TRUE;
+			isManual := FALSE;
+			isAutomatic := FALSE;
+			isTuning := FALSE;
+			isSTOP := FALSE;
+			isERROR := FALSE;
+		STATE_TUNING:
+			isIDLE_ := FALSE;
+			isManual := FALSE;
+			isAutomatic := FALSE;
+			isTuning := TRUE;
+			isSTOP := FALSE;
+			isERROR := FALSE;
+		STATE_WORKING_MANUAL:
+			isIDLE_ := FALSE;
+			isManual := TRUE;
+			isAutomatic := FALSE;
+			isTuning := FALSE;
+			isSTOP := FALSE;
+			isERROR := FALSE;
+		STATE_WORKING_AUTOMATIC:
+			isIDLE_ := FALSE;
+			isManual := FALSE;
+			isAutomatic := TRUE;
+			isTuning := FALSE;
+			isSTOP := FALSE;
+			isERROR := FALSE;
+		STATE_ERROR:
+			isIDLE_ := FALSE;
+			isManual := FALSE;
+			isAutomatic := FALSE;
+			isTuning := FALSE;
+			isSTOP := FALSE;
+			isERROR := TRUE;
+		STATE_STOP:
+			isIDLE_ := FALSE;
+			isManual := FALSE;
+			isAutomatic := FALSE;
+			isTuning := FALSE;
+			isSTOP := TRUE;
+			isERROR := FALSE;
+	END_CASE;
 END_PROGRAM
 
 PROGRAM _EXIT

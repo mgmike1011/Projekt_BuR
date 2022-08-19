@@ -20,10 +20,10 @@ ACTION UpdateStructs:
 	Zones.Zone3 := ZoneStatus[2];
 	Zones.Zone4 := ZoneStatus[3];
 	
-	Heaters.Heater1:= TempController[0].HeatValue;
-	Heaters.Heater1:= TempController[1].HeatValue;
-	Heaters.Heater1:= TempController[2].HeatValue;
-	Heaters.Heater1:= TempController[3].HeatValue;
+	Heaters.Heater1 := TempController[0].HeatValue;
+	Heaters.Heater2 := TempController[1].HeatValue;
+	Heaters.Heater3 := TempController[2].HeatValue;
+	Heaters.Heater4 := TempController[3].HeatValue;
 	
 	MachineState.Machine_state := STATUS;
 END_ACTION

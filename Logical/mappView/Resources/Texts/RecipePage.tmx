@@ -2,131 +2,153 @@
 <tmx version="1.4">
   <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
     <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
-    <prop type="x-BR-TS:Namespace">IAT/left</prop>
+    <prop type="x-BR-TS:Namespace">IAT/RecipePage</prop>
   </header>
   <body>
-    <tu tuid="MainPageButton">
+    <tu tuid="SelectTab">
       <tuv xml:lang="de">
-        <seg>Hauptseite</seg>
+        <seg>Programm wählen</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Stron Główna </seg>
+        <seg>Wybór programu</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Main Page</seg>
+        <seg>Select program</seg>
       </tuv>
       <tuv xml:lang="fr">
         <seg>Bonjour tout le monde!</seg>
       </tuv>
     </tu>
-    <tu tuid="AlarmPageButton">
+    <tu tuid="BtnLoad">
       <tuv xml:lang="de">
-        <seg>Alarm</seg>
+        <seg>Belastung</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Alarmy</seg>
+        <seg>Wczytaj</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Alarms</seg>
+        <seg>Load</seg>
       </tuv>
     </tu>
-    <tu tuid="AutomaticPageButt">
+    <tu tuid="BtnDelete">
       <tuv xml:lang="de">
-        <seg>Automatisch</seg>
+        <seg>Löschen</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Automatyczny</seg>
+        <seg>Usuń</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Automatic</seg>
+        <seg>Delete</seg>
       </tuv>
     </tu>
-    <tu tuid="ManualPageButton">
+    <tu tuid="BtnToggle">
       <tuv xml:lang="de">
-        <seg>Handbuch</seg>
+        <seg>Sparen/Schaffen</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Ręczny</seg>
+        <seg>Zapisz/Stwórz</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Manual</seg>
+        <seg>Save/Create</seg>
       </tuv>
     </tu>
-    <tu tuid="RecptPageButton">
+    <tu tuid="TextInName">
       <tuv xml:lang="de">
-        <seg>Rezepturen</seg>
+        <seg>Name</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Receptury</seg>
+        <seg>Nazwa</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Recipes </seg>
+        <seg>Name</seg>
       </tuv>
     </tu>
-    <tu tuid="TuningPageButton">
+    <tu tuid="BtnCreate">
       <tuv xml:lang="de">
-        <seg>Abstimmung</seg>
+        <seg>Schaffen</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Strojenie</seg>
+        <seg>Stwórz</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Tuning</seg>
+        <seg>Create</seg>
       </tuv>
     </tu>
-    <tu tuid="AuditPageButton">
+    <tu tuid="BtnSave">
       <tuv xml:lang="de">
-        <seg>Prüfung</seg>
+        <seg>Sparen</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Audyt</seg>
+        <seg>Zapisz</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Audit</seg>
+        <seg>Save</seg>
       </tuv>
     </tu>
-    <tu tuid="OeePageButton">
+    <tu tuid="BtnPageUp">
       <tuv xml:lang="de">
-        <seg>OEE </seg>
+        <seg>Vorherige Seite</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>OEE </seg>
+        <seg>Poprzednia strona</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>OEE </seg>
+        <seg>Previous Page</seg>
       </tuv>
     </tu>
-    <tu tuid="FilePageButton">
+    <tu tuid="BtnPageDown">
       <tuv xml:lang="de">
-        <seg>Datei</seg>
+        <seg>Nächste Seite</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Pliki</seg>
+        <seg>Następna strona</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>File</seg>
+        <seg>Next Page</seg>
       </tuv>
     </tu>
-    <tu tuid="PdfPageButton">
+    <tu tuid="BtnTogRename">
       <tuv xml:lang="de">
-        <seg>PDF</seg>
+        <seg>Umbenennen</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>PDF</seg>
+        <seg>Zmień nazwę</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>PDF</seg>
+        <seg>Rename</seg>
       </tuv>
     </tu>
-    <tu tuid="ServicePafeButton">
+    <tu tuid="LabelTemp">
       <tuv xml:lang="de">
-        <seg>Service</seg>
+        <seg>Temperatur einstellen</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Serwis</seg>
+        <seg>Ustaw temperaturę</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Service</seg>
+        <seg>Set temperature</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelTime">
+      <tuv xml:lang="de">
+        <seg>Zeit einstellen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ustaw czas</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelName">
+      <tuv xml:lang="de">
+        <seg>Name einsetzen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ustaw Nazwę</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set Name</seg>
       </tuv>
     </tu>
   </body>

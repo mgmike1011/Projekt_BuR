@@ -129,8 +129,43 @@
         <Variable Name="TimStep5" />
         <Variable Name="ZoneStatus" EnableArrayElements="True" />
         <Variable Name="TuneEnable" />
+        <Variable Name="ParametersMachine">
+          <Variable Name="Temp1" />
+          <Variable Name="Temp2" />
+          <Variable Name="Temp3" />
+          <Variable Name="Temp4" />
+          <Variable Name="Time1" />
+          <Variable Name="Time2" />
+          <Variable Name="Time3" />
+          <Variable Name="Time4" />
+          <Variable Name="Time5" />
+        </Variable>
+        <Variable Name="RecipeListName" />
       </GlobalVariables>
       <Task Name="Recipe">
+        <Variable Name="RecipeUIConnect">
+          <Variable Name="Recipe">
+            <Variable Name="Load" />
+            <Variable Name="Save" />
+            <Variable Name="Delete" />
+            <Variable Name="List">
+              <Variable Name="SelectedIndex" />
+              <Variable Name="MaxSelection" />
+              <Variable Name="StepUp" />
+              <Variable Name="StepDown" />
+              <Variable Name="Names" />
+              <Variable Name="PageUp" />
+              <Variable Name="PageDown" />
+            </Variable>
+            <Variable Name="Rename" />
+            <Variable Name="NewFileName" />
+          </Variable>
+          <Variable Name="New">
+            <Variable Name="FileName" />
+            <Variable Name="Create" />
+          </Variable>
+        </Variable>
+        <Variable Name="LoadChecked" />
         <Variable Name="RecipeUIConnect" />
         <Variable Name="RecipeUISetup" />
       </Task>
@@ -206,7 +241,6 @@
           <Variable Name="DefaultLayerStatus" />
         </Variable>
         <Variable Name="ElementType" EnableArrayElements="True" />
-        <Variable Name="SingleSelect" />
         <Variable Name="SortType" EnableArrayElements="True" />
       </Task>
       <Task Name="VisuAdj">
@@ -219,6 +253,12 @@
         <Variable Name="TimeStep3Int" EngineeringUnitId="1" />
         <Variable Name="TimeStep4Int" EngineeringUnitId="1" />
         <Variable Name="TimeStep5Int" EngineeringUnitId="1" />
+        <Variable Name="isAutomatic" />
+        <Variable Name="isERROR" />
+        <Variable Name="isIDLE_" />
+        <Variable Name="isManual" />
+        <Variable Name="isSTOP" />
+        <Variable Name="isTuning" />
       </Task>
     </Module>
   </DefaultView>

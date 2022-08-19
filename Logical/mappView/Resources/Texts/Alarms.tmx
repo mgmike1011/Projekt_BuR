@@ -46,7 +46,7 @@
         <seg>Wysoka temperatura</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>High Temperature 4</seg>
+        <seg>High Temperature</seg>
       </tuv>
     </tu>
     <tu tuid="HT1Message">

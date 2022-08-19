@@ -12,12 +12,16 @@
     <Page refId="OEE" />
     <Page refId="FILEMNG" />
     <Page refId="SERVICE" />
+    <Page refId="PdfP" />
   </Pages>
   <Navigations />
   <BindingsSets>
     <BindingsSet refId="ALARM_binding" />
     <BindingsSet refId="LoginDialogC_binding" />
     <BindingsSet refId="Tuning_binding" />
+    <BindingsSet refId="RECEPT_binding" />
+    <BindingsSet refId="FILEMNG_binding" />
+    <BindingsSet refId="SortContent_binding" />
     <BindingsSet refId="START_PAGE_binding" />
     <BindingsSet refId="AUTOMATIC_binding" />
     <BindingsSet refId="SERVICE_binding" />
@@ -33,6 +37,9 @@
     <EventBindingsSet refId="LoginDialogC_eventbinding" />
     <EventBindingsSet refId="OEE_eventbinding" />
     <EventBindingsSet refId="Tuning_eventbinding" />
+    <EventBindingsSet refId="RECEPT_eventbinding" />
+    <EventBindingsSet refId="FILEMNG_eventbinding" />
+    <EventBindingsSet refId="ConfirmDeleteContent_eventbinding" />
     <EventBindingsSet refId="SERVICE_eventbinding" />
     <EventBindingsSet refId="START_PAGE_eventbinding" />
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
@@ -68,6 +75,7 @@
     <Content refId="TunningSetpointsDialogContent" />
     <Content refId="ConfirmDeleteContent" />
     <Content refId="SortContent" />
+    <Content refId="PdfC" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>

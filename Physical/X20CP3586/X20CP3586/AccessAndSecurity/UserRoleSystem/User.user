@@ -11,14 +11,14 @@
     <Property ID="UserID" Value="2" />
     <Property ID="Password" Value="pWithdZR0DYvzb9pm8okZUsi0SECnXPCbsGoA8e1pRnaUfWvFOU=" />
     <Group ID="Roles">
-      <Property ID="Role[1]" Value="Operator" />
+      <Property ID="Role[1]" Value="Operators" />
     </Group>
   </Element>
   <Element ID="Administrator" Type="User">
     <Property ID="UserID" Value="3" />
-    <Property ID="Password" Value="eWgPhGa0ln3imvQi2Ho3zdLAmYnr+Fahqj5wNxyV3oofYb0rvu8=" />
+    <Property ID="Password" Value="eO0sXQ8fu8AQCp1uMjSiYDOMs1cCmLxilG6L5YF0vIkFl5j+wCQ=" />
     <Group ID="Roles">
-      <Property ID="Role[1]" Value="Administrator" />
+      <Property ID="Role[1]" Value="Administrators" />
     </Group>
   </Element>
   <Element ID="a" Type="User">

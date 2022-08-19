@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ddef:Dialog xmlns:ddef="http://www.br-automation.com/iat2015/dialogDefinition/v2" id="ConfirmDeleteDialog" layoutRefId="ConfirmDeleteLayout" textAlign="left" headerBackColor="rgba(255, 204, 153, 1)" textColor="rgba(0, 0, 0, 1)" shadow="1px 1px 14px rgba(255, 204, 153, 1)">
+<ddef:Dialog xmlns:ddef="http://www.br-automation.com/iat2015/dialogDefinition/v2" id="ConfirmDeleteDialog" layoutRefId="ConfirmDeleteLayout" textAlign="left" headerBackColor="rgba(253, 153, 0, 1)" textColor="rgba(0, 0, 0, 1)" shadow="1px 1px 14px rgba(64, 64, 64, 1)">
   <Assignments>
     <Assignment type="Content" baseContentRefId="ConfirmDeleteContent" areaRefId="area1" />
   </Assignments>

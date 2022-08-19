@@ -1289,7 +1289,6 @@
         "wires": [
             [
                 "e5df25fb1ec321e6",
-                "1c475a0cb2be10f0",
                 "95a36b1ad2bbaf5e",
                 "87523d2980dc9b70"
             ]
@@ -1322,11 +1321,12 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 1490,
+        "x": 1510,
         "y": 200,
         "wires": [
             [
-                "28863b4c3e7ba9e4"
+                "28863b4c3e7ba9e4",
+                "1c475a0cb2be10f0"
             ]
         ]
     },
@@ -1562,7 +1562,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1300,
+        "x": 1780,
         "y": 140,
         "wires": []
     },
