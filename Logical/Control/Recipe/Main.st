@@ -46,8 +46,6 @@ PROGRAM _CYCLIC
 //	IF RecipeUIConnect.New.Create THEN 
 //		RecipeUIConnect.New.FileName := '';
 //	END_IF;
-	
-	
 	MpRecipeCsv_0();
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();
@@ -64,6 +62,17 @@ PROGRAM _CYCLIC
 		TimeStep5 := ParametersMachine.Time5;
 		LoadChecked := FALSE;
 	END_IF;
+	
+	IF RenameChecked THEN
+		RecipeUIConnect.Recipe.NewFileName := '';
+		RenameChecked := FALSE;
+	END_IF;
+	
+	IF SetNameChecked THEN
+		RecipeUIConnect.New.FileName := '';
+		SetNameChecked := FALSE;
+	END_IF;
+	
 END_PROGRAM
 
 PROGRAM _EXIT
