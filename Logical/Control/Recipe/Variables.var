@@ -6,4 +6,6 @@ VAR
 	RecipeUISetup : MpRecipeUISetupType;
 	i : INT;
 	LoadChecked : BOOL;
+	RenameChecked : BOOL;
+	SetNameChecked : BOOL;
 END_VAR
