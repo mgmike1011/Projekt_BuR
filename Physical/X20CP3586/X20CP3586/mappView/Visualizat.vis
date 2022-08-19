@@ -28,9 +28,7 @@
     <BindingsSet refId="MANUAL_binding" />
     <BindingsSet refId="ErrorDialogContent_binding" />
     <BindingsSet refId="TunningSetpointsDialogContent_binding" />
-    <BindingsSet refId="FILEMNG_binding" />
-    <BindingsSet refId="SortContent_binding" />
-  </BindingsSets>
+	</BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
     <EventBindingsSet refId="TOP_eventbinding" />
@@ -45,9 +43,7 @@
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
     <EventBindingsSet refId="MANUAL_eventbinding" />
     <EventBindingsSet refId="ErrorDialogContent_eventbinding" />
-    <EventBindingsSet refId="ConfirmDeleteContent_eventbinding" />
-    <EventBindingsSet refId="FILEMNG_eventbinding" />
-  </EventBindingsSets>
+	</EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />
     <Dialog refId="SystemInfoDialog" />
