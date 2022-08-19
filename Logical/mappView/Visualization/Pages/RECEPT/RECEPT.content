@@ -36,6 +36,6 @@
     <Widget xsi:type="widgets.brease.Label" id="LabelSetName6" top="550" left="1260" width="140" height="75" zIndex="28" text="$IAT/RecipePage/LblTimeStep2" fontSize="22px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="LabelSetName7" top="610" left="1260" width="140" height="75" zIndex="29" text="$IAT/RecipePage/LblTimeStep3" fontSize="22px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="LabelSetName8" top="670" left="1260" width="140" height="75" zIndex="30" text="$IAT/RecipePage/LblTimeStep4" fontSize="22px" bold="true" />
-    <Widget xsi:type="widgets.brease.Label" id="LabelSetName9" top="730" left="1260" width="130" height="75" zIndex="31" text="$IAT/RecipePage/LblTimeStep5" fontSize="22px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelSetName9" top="730" left="1260" width="150" height="75" zIndex="31" text="$IAT/RecipePage/LblTimeStep5" fontSize="22px" bold="true" />
   </Widgets>
 </Content>
