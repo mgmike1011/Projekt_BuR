@@ -221,10 +221,10 @@
 	<!--group box-->
 	
 	<Style id="default" xsi:type="widgets.brease.GroupBox" 
-		headerBackColor="#3388CC" 
-		backColor="#FFFFFF" 
+		headerBackColor="#ffcc99" 
+		backColor="#fff5ee" 
 		fontSize="16px" 
-		textColor="#FFFFFF" 
+		textColor="#000000" 
 		cornerRadius="4px" 
 		borderWidth="1px" 
 		borderColor="#DDDDDD" />
