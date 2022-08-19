@@ -7,7 +7,7 @@
         <Group ID="[0]">
           <Property ID="Name" Value="allday" />
           <Group ID="TotalTime">
-            <Property ID="End" Value="82800000" />
+            <Property ID="End" Value="86340000" />
           </Group>
         </Group>
       </Group>

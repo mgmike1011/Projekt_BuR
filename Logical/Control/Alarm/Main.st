@@ -22,22 +22,44 @@ PROGRAM _CYCLIC
 	Alarms.Pending := MpAlarmXCore_0.PendingAlarms;
 	Alarms.Active :=  MpAlarmXCore_0.ActiveAlarms;
 	Alarms.ActiveAlarms := '';
-	IF NOT(Alarms.Active=0) THEN
-		FOR i:=0 TO 49 BY 1 DO
-			IF mpAlarmXlistConnect.AlarmList.StateActive[i] THEN
-				stringBuffer := UDINT_TO_STRING(mpAlarmXlistConnect.AlarmList.Code[i]);
+	FOR i:=0 TO 49 BY 1 DO
+		IF NOT (mpAlarmXlistConnect.AlarmList.Code[i]=0) THEN
+			stringBuffer := UDINT_TO_STRING(mpAlarmXlistConnect.AlarmList.Code[i]);
+			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
+			
+			stringBuffer := ';';
+			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
+			
+			stringBuffer := WSTRING_TO_STRING(mpAlarmXlistConnect.AlarmList.Message[i]);
+			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
+			
+			stringBuffer := ';';
+			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
+			
+			stringBuffer := (mpAlarmXlistConnect.AlarmList.Timestamp[i]);
+			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
+			
+			stringBuffer := ';';
+			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
+			
+			stringBuffer := BOOL_TO_STRING(mpAlarmXlistConnect.AlarmList.StateAcknowledged[i]);
+			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
+			
+			stringBuffer := ';';
+			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
+			
+			stringBuffer := BOOL_TO_STRING(mpAlarmXlistConnect.AlarmList.StateActive[i]);
+			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
+			
+			
+			
+			
+			IF NOT (i = Alarms.Active) THEN
+				stringBuffer :=',';
 				brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
-				stringBuffer := ';';
-				brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
-				stringBuffer := WSTRING_TO_STRING(mpAlarmXlistConnect.AlarmList.Message[i]);
-				brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
-				IF NOT (i = Alarms.Active) THEN
-					stringBuffer :=',';
-					brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
-				END_IF
 			END_IF
-		END_FOR
-	END_IF
+		END_IF
+	END_FOR
 END_PROGRAM
 
 PROGRAM _EXIT

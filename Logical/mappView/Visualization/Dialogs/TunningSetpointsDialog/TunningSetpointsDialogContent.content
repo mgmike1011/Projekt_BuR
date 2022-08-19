@@ -3,8 +3,8 @@
   <Widgets>
     <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone1" top="0" left="0" width="290" height="190" zIndex="0" text="$IAT/TunningSetpointsDialog/Zone1txt" margin="5px 5px 5px 5px">
       <Widgets>
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputHeatingTuningSetpoints" top="55" left="175" zIndex="0" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputCoolingTuningSetpoints" top="110" left="175" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputHeatingTuningSetpoints" top="55" left="175" zIndex="0" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputCoolingTuningSetpoints" top="110" left="175" zIndex="1" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
         <Widget xsi:type="widgets.brease.Label" id="LabelHeating" top="50" left="0" width="120" zIndex="2" text="$IAT/TunningSetpointsDialog/HeatingSetpointstxt" textAlign="center" margin="5px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelTitle" top="0" left="0" width="275" zIndex="3" text="$IAT/TunningSetpointsDialog/Setpointstxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelCooling" top="105" left="0" width="120" zIndex="4" text="$IAT/TunningSetpointsDialog/CoolingSetpointstxt" textAlign="center" margin="5px" />
@@ -15,8 +15,8 @@
         <Widget xsi:type="widgets.brease.Label" id="LabelTitle1" top="0" left="0" width="275" zIndex="0" text="$IAT/TunningSetpointsDialog/Setpointstxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelHeating1" top="50" left="0" width="120" zIndex="1" text="$IAT/TunningSetpointsDialog/HeatingSetpointstxt" textAlign="center" margin="5px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelCooling1" top="105" left="0" width="120" zIndex="2" text="$IAT/TunningSetpointsDialog/CoolingSetpointstxt" textAlign="center" margin="5px" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputHeatingTuningSetpoints1" top="55" left="175" zIndex="3" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputCoolingTuningSetpoints1" top="110" left="175" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputHeatingTuningSetpoints1" top="55" left="175" zIndex="3" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputCoolingTuningSetpoints1" top="110" left="175" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone3" top="200" left="0" width="290" height="190" zIndex="2" text="$IAT/TunningSetpointsDialog/Zone3txt" margin="5px 5px 5px 5px">
@@ -24,8 +24,8 @@
         <Widget xsi:type="widgets.brease.Label" id="LabelTitle2" top="0" left="0" width="275" zIndex="0" text="$IAT/TunningSetpointsDialog/Setpointstxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelHeating2" top="50" left="0" width="120" zIndex="1" text="$IAT/TunningSetpointsDialog/HeatingSetpointstxt" textAlign="center" margin="5px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelCooling2" top="105" left="0" width="120" zIndex="2" text="$IAT/TunningSetpointsDialog/CoolingSetpointstxt" textAlign="center" margin="5px" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputHeatingTuningSetpoints2" top="55" left="175" zIndex="3" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputCoolingTuningSetpoints2" top="110" left="175" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputHeatingTuningSetpoints2" top="55" left="175" zIndex="3" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputCoolingTuningSetpoints2" top="110" left="175" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.GroupBox" id="GroupBoxZone4" top="200" left="300" width="290" height="190" zIndex="3" text="$IAT/TunningSetpointsDialog/Zone4txt" margin="5px 5px 5px 5px">
@@ -33,8 +33,8 @@
         <Widget xsi:type="widgets.brease.Label" id="LabelTitle3" top="0" left="0" width="275" zIndex="0" text="$IAT/TunningSetpointsDialog/Setpointstxt" textAlign="center" fontSize="18px" bold="true" margin="5px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelHeating3" top="50" left="0" width="120" zIndex="1" text="$IAT/TunningSetpointsDialog/HeatingSetpointstxt" textAlign="center" margin="5px" />
         <Widget xsi:type="widgets.brease.Label" id="LabelCooling3" top="105" left="0" width="120" zIndex="2" text="$IAT/TunningSetpointsDialog/CoolingSetpointstxt" textAlign="center" margin="5px" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputHeatingTuningSetpoints3" top="55" left="175" zIndex="3" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
-        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputCoolingTuningSetpoints3" top="110" left="175" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputHeatingTuningSetpoints3" top="55" left="175" zIndex="3" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+        <Widget xsi:type="widgets.brease.NumericInput" id="NumericInputCoolingTuningSetpoints3" top="110" left="175" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
       </Widgets>
     </Widget>
   </Widgets>

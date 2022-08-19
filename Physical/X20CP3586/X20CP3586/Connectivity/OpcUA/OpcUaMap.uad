@@ -190,6 +190,7 @@
         <Variable Name="RejectCycle" />
         <Variable Name="StatusString" />
         <Variable Name="StateIdle" />
+        <Variable Name="BtnEnable" />
       </Task>
       <Task Name="MpReport1">
         <Variable Name="MpReportCore_1">
@@ -243,6 +244,8 @@
         </Variable>
         <Variable Name="ElementType" EnableArrayElements="True" />
         <Variable Name="SortType" EnableArrayElements="True" />
+        <Variable Name="Folder" EnableArrayElements="True" />
+        <Variable Name="Item" />
       </Task>
       <Task Name="VisuAdj">
         <Variable Name="CurrentZone1Temp" EngineeringUnitId="2" />

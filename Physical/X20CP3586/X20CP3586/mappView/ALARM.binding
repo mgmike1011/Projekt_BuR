@@ -73,5 +73,17 @@
 <Source xsi:type="opcUa" refId="::OEE:StateIdle" attribute="value" />
 <Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="GroupBox1" attribute="enable" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:BtnEnable" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="BtnStartOEE" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:BtnEnable" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="BtnRepGenerate" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:BtnEnable" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="BtnRsetStat" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>

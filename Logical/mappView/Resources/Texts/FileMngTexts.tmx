@@ -175,24 +175,24 @@
     </tu>
     <tu tuid="NumOfFiles">
       <tuv xml:lang="de">
-        <seg>Anzahl Dateien</seg>
+        <seg>Datei(en)</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Liczba plików</seg>
+        <seg>Plik(i)</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Number of files</seg>
+        <seg>File(s)</seg>
       </tuv>
     </tu>
     <tu tuid="NumOfFolders">
       <tuv xml:lang="de">
-        <seg>Anzahl Ordner</seg>
+        <seg>Ordner</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Liczba folderów</seg>
+        <seg>Folder(y)</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Number of folders</seg>
+        <seg>Folder(s)</seg>
       </tuv>
     </tu>
     <tu tuid="NewName">
@@ -327,15 +327,81 @@
         <seg>Sorts in descending order by date last modified</seg>
       </tuv>
     </tu>
-    <tu tuid="Card">
+    <tu tuid="Page">
       <tuv xml:lang="de">
-        <seg>Karte</seg>
+        <seg>Seite</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Karta</seg>
+        <seg>Strona</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Card</seg>
+        <seg>Page</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Name">
+      <tuv xml:lang="de">
+        <seg>Name</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nazwa</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Name</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Size">
+      <tuv xml:lang="de">
+        <seg>Größe</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Rozmiar</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Size</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Type">
+      <tuv xml:lang="de">
+        <seg>Typ</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Typ</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Type</seg>
+      </tuv>
+    </tu>
+    <tu tuid="DateModyfi">
+      <tuv xml:lang="de">
+        <seg>Änderungsdatum</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Data modyfikacji</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Modification date</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Index">
+      <tuv xml:lang="de">
+        <seg>Index</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Indeks</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Index</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Choice">
+      <tuv xml:lang="de">
+        <seg>Auswahl</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wybór</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Choice</seg>
       </tuv>
     </tu>
   </body>
