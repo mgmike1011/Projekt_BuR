@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="RECEPT" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Table" id="TabRecipe" top="400" left="260" width="520" height="330" zIndex="0">
+    <Widget xsi:type="widgets.brease.Table" id="TabRecipe" top="400" left="260" width="520" height="330" zIndex="0" headerTextColor="rgba(0, 0, 0, 1)">
       <Widgets>
-        <Widget xsi:type="widgets.brease.TableItem" id="TabItemRecipe" zIndex="0" columnWidth="520" text="$IAT/RecipePage/SelectTab" />
+        <Widget xsi:type="widgets.brease.TableItem" id="TabItemRecipe" zIndex="0" columnWidth="520" text="$IAT/RecipePage/SelectTab" headerTextColor="rgba(0, 0, 0, 1)" textColorOdd="rgba(0, 0, 0, 1)" textColorEven="rgba(0, 0, 0, 1)" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Button" id="BtnLoad" top="120" left="260" width="220" height="40" zIndex="1" text="$IAT/RecipePage/BtnLoad" />
