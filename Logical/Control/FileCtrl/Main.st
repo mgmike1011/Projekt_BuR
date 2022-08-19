@@ -56,6 +56,14 @@ PROGRAM _CYCLIC
 		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_BMP THEN	
 			ElementType[i] := 'bmp';
 		END_IF
+		
+		IF MpFileMngConnect.File.List.Items[i].IsSelected AND MpFileMngConnect.File.List.Items[i].IsFolder AND MpFileMngConnect.File.Delete THEN
+			Folder := TRUE;
+			Item := FALSE;
+		ELSIF MpFileMngConnect.File.List.Items[i].IsSelected AND NOT MpFileMngConnect.File.List.Items[i].IsFolder AND MpFileMngConnect.File.Delete THEN
+			Folder := FALSE;
+			Item := TRUE;
+		END_IF
 	END_FOR	
 	
 	MpFileManagerUI_0();

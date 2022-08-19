@@ -28,7 +28,8 @@
     <BindingsSet refId="MANUAL_binding" />
     <BindingsSet refId="ErrorDialogContent_binding" />
     <BindingsSet refId="TunningSetpointsDialogContent_binding" />
-	</BindingsSets>
+    <BindingsSet refId="ConfirmDeleteContent_binding" />
+  </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
     <EventBindingsSet refId="TOP_eventbinding" />

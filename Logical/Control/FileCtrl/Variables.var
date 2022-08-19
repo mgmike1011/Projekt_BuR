@@ -8,4 +8,6 @@ VAR
 	Step : INT;
 	ElementType : ARRAY[0..49] OF STRING[255];
 	SortType : ARRAY[0..5] OF BOOL;
+	Folder : BOOL;
+	Item : BOOL;
 END_VAR
