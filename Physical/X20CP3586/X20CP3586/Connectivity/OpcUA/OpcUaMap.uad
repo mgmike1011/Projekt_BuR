@@ -188,6 +188,7 @@
         <Variable Name="RejectCycle" />
         <Variable Name="StatusString" />
         <Variable Name="StateIdle" />
+        <Variable Name="BtnEnable" />
       </Task>
       <Task Name="MpReport1">
         <Variable Name="MpReportCore_1">
