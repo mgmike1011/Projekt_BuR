@@ -17,6 +17,7 @@ PROGRAM _INIT
 	ParametersMachine.Time3 := T#5s;
 	ParametersMachine.Time4 := T#5s;
 	ParametersMachine.Time5 := T#5s;
+	LoadChecked;
 END_PROGRAM
 
 PROGRAM _CYCLIC
@@ -28,18 +29,6 @@ PROGRAM _CYCLIC
 	MpRecipeUI_0.UISetup := RecipeUISetup;
 	//RecipeUISetup.RecipeListSize := RecipeUIConnect.Recipe.List.MaxSelection;
 	//set Temp and Time value
-	IF LoadChecked THEN
-		SetTemp1 := ParametersMachine.Temp1;
-		SetTemp2 := ParametersMachine.Temp2;
-		SetTemp3 := ParametersMachine.Temp3;
-		SetTemp4 := ParametersMachine.Temp4;
-		TimeStep1 := ParametersMachine.Time1;
-		TimeStep2 := ParametersMachine.Time2;
-		TimeStep3 := ParametersMachine.Time3;
-		TimeStep4 := ParametersMachine.Time4;
-		TimeStep5 := ParametersMachine.Time5;
-		LoadChecked := FALSE;
-	END_IF;
 	
 	IF RecipeUIConnect.Recipe.List.PageUp THEN
 		RecipeUIConnect.Recipe.List.SelectedIndex := 0;
@@ -61,6 +50,18 @@ PROGRAM _CYCLIC
 	MpRecipeCsv_0();
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();
+	
+	IF STATUS = STATE_IDLE OR STATUS = STATE_STOP THEN
+		SetTemp1 := ParametersMachine.Temp1;
+		SetTemp2 := ParametersMachine.Temp2;
+		SetTemp3 := ParametersMachine.Temp3;
+		SetTemp4 := ParametersMachine.Temp4;
+		TimeStep1 := ParametersMachine.Time1;
+		TimeStep2 := ParametersMachine.Time2;
+		TimeStep3 := ParametersMachine.Time3;
+		TimeStep4 := ParametersMachine.Time4;
+		TimeStep5 := ParametersMachine.Time5;
+	END_IF;
 END_PROGRAM
 
 PROGRAM _EXIT

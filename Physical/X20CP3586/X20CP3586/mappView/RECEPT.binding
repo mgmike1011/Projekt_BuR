@@ -6,46 +6,19 @@
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TabRecipe" attribute="selectedRow" />
 </Binding>
 
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp1Recipe" attribute="visible" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="session" refId="CreateBtn" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TogBtnRecCreate" attribute="value" />
 </Binding>
-<Binding mode="oneWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp2Recipe" attribute="visible" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time1Recipe" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time2Recipe" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp3Recipe" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time3Recipe" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp4Recipe" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time4Recipe" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time5Recipe" attribute="visible" />
-</Binding>
+
+
+
+
+
+
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time4" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time4Recipe" attribute="value" />
@@ -94,10 +67,7 @@
 <Source xsi:type="session" refId="CreateBtn" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="BtnSave" attribute="visible" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TextInName" attribute="visible" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:RecipeListName" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TabItemRecipe" attribute="stringValue" />
@@ -117,17 +87,60 @@
 <Source xsi:type="session" refId="RenameBtn" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TogBtnRename" attribute="value" />
 </Binding>
+
+
+
 <Binding mode="twoWay">
 <Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetName" attribute="visible" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTime" attribute="visible" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TextInName" attribute="enable" />
 </Binding>
 <Binding mode="twoWay">
 <Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTemp" attribute="visible" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetName" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTime" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time1Recipe" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTemp" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp1Recipe" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp2Recipe" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp3Recipe" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp4Recipe" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time2Recipe" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time3Recipe" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time4Recipe" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="session" refId="CreateBtn" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time5Recipe" attribute="enable" />
 </Binding>
 </Bindings>
 </BindingsSet>
