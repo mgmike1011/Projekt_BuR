@@ -4,22 +4,11 @@
     <EventBinding id="RECEPT.BtnLoad.Click">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="RECEPT" widgetRefId="BtnLoad" event="Click" />
       <EventHandler>
-        <Sequence>
-          <Step order="0">
-            <Action>
-              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:RecipeUIConnect.Recipe.Load">
-                <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
-              </Target>
-            </Action>
-          </Step>
-          <Step order="1">
-            <Action>
-              <Target xsi:type="opcUa.NodeAction" refId="::Recipe:LoadChecked">
-                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
-              </Target>
-            </Action>
-          </Step>
-        </Sequence>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:LoadChecked">
+            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
       </EventHandler>
     </EventBinding>
     <EventBinding id="RECEPT.BtnDelete.Click">
@@ -91,6 +80,16 @@
             </Action>
           </Step>
         </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="RECEPT.TabItemRecipe.Click">
+      <Source xsi:type="widgets.brease.TableItem.Event" contentRefId="RECEPT" widgetRefId="TabItemRecipe" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:RecipeUIConnect.Recipe.Load">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
       </EventHandler>
     </EventBinding>
   </Bindings>

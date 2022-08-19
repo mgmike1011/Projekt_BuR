@@ -52,7 +52,7 @@ PROGRAM _CYCLIC
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();
 	
-	IF STATUS = STATE_IDLE OR STATUS = STATE_STOP THEN
+	IF LoadChecked THEN
 		SetTemp1 := ParametersMachine.Temp1;
 		SetTemp2 := ParametersMachine.Temp2;
 		SetTemp3 := ParametersMachine.Temp3;
@@ -62,6 +62,7 @@ PROGRAM _CYCLIC
 		TimeStep3 := ParametersMachine.Time3;
 		TimeStep4 := ParametersMachine.Time4;
 		TimeStep5 := ParametersMachine.Time5;
+		LoadChecked := FALSE;
 	END_IF;
 END_PROGRAM
 
