@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9"?>
+<Package xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="Package">BrRecipe</Object>
+    <Object Type="Package">BRFileManager</Object>
+    <Object Type="Package">OEEReport</Object>
+    <Object Type="Package">BRmappData</Object>
+    <Object Type="Package">OEE</Object>
+    <Object Type="Package">BRAudit</Object>
+  </Objects>
+</Package>
