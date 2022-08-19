@@ -135,11 +135,7 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:PIDFilterTimeCOOL[3]" attribute="node" />
 <Target xsi:type="brease" contentRefId="Tuning" widgetRefId="NumericOutputTfCool4" attribute="node" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:TuneEnable" attribute="value" />
-<Target xsi:type="brease" contentRefId="Tuning" widgetRefId="ToggleButtonTunning" attribute="value" />
-</Binding>
-	<Binding mode="oneWay">
+<Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:STATUS" attribute="value" />
 <Target xsi:type="brease" contentRefId="Tuning" widgetRefId="TextPickerStatusMachine" attribute="selectedIndex" />
 </Binding>
@@ -151,5 +147,9 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gSTOP" attribute="value" />
 <Target xsi:type="brease" contentRefId="Tuning" widgetRefId="Image2" attribute="visible" />
 </Binding>
-	</Bindings>
+	<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
+<Target xsi:type="brease" contentRefId="Tuning" widgetRefId="ButtonStart" attribute="enable" />
+</Binding>
+</Bindings>
 </BindingsSet>

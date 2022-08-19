@@ -15,7 +15,14 @@
           <Step order="1">
             <Action>
               <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gStart">
-                <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:Automatic_work">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
               </Target>
             </Action>
           </Step>
@@ -36,7 +43,7 @@
           <Step order="1">
             <Action>
               <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gStart">
-                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+                <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
               </Target>
             </Action>
           </Step>
@@ -116,6 +123,55 @@
             <Method xsi:type="widgets.brease.Image.Action.SetVisible" value="false" />
           </Target>
         </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="AUTOMATIC.Button1.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="AUTOMATIC" widgetRefId="Button1" event="Click" />
+      <EventHandler>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:Automatic_work">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:Manual_work">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:TuneEnable">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gStart">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gSTOP">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="5">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:gError">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="false" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
       </EventHandler>
     </EventBinding>
   </Bindings>
