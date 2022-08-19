@@ -102,14 +102,14 @@
     <Widget xsi:type="widgets.brease.Label" id="LabelHeatController1" top="465" left="13" width="286" height="75" zIndex="10" text="$IAT/TuningPage/CoolControllertxt" fontSize="22px" bold="true" />
     <Widget xsi:type="widgets.brease.GroupBox" id="TunningGroupBox" top="180" left="1275" width="435" height="640" zIndex="11" text="$IAT/TuningPage/Tuningtxt" fontSize="18px" bold="true">
       <Widgets>
-        <Widget xsi:type="widgets.brease.ToggleButton" id="ToggleButtonTunning" top="134" left="123" width="175" height="60" zIndex="0" text="$IAT/TuningPage/Tunningbtntxt" fontSize="18px" margin="5px" />
-        <Widget xsi:type="widgets.brease.Button" id="ButtonInfo" top="515" left="128" width="175" height="60" zIndex="1" text="Info" fontSize="18px" />
-        <Widget xsi:type="widgets.brease.Button" id="ButtonSTOP" top="375" left="128" width="175" height="60" zIndex="2" text="$IAT/TuningPage/Stoptxt" textColor="rgba(255, 0, 0, 1)" fontSize="18px" />
-        <Widget xsi:type="widgets.brease.Label" id="Label20" top="451" left="0" width="407" height="58" zIndex="3" text="$IAT/TuningPage/SystemInfotxt" fontSize="18px" bold="true" margin="5px" />
-        <Widget xsi:type="widgets.brease.Button" id="ButtonStart" top="257" left="128" width="175" height="60" zIndex="4" text="$IAT/TuningPage/Starttxt" fontSize="18px" />
-        <Widget xsi:type="widgets.brease.Image" id="ImageStart" top="256" left="344" width="61" height="61" zIndex="5" image="Media/SymbolLib/Media/Stop.svg" imageColor="rgba(34, 139, 34, 1)" visible="false" />
-        <Widget xsi:type="widgets.brease.Image" id="Image2" top="375" left="344" width="61" height="61" zIndex="6" image="Media/SymbolLib/Media/Stop.svg" imageColor="rgba(255, 0, 0, 1)" />
-        <Widget xsi:type="widgets.brease.Button" id="SettingSetpointsButton" top="16" left="123" width="175" height="60" zIndex="7" text="$IAT/TuningPage/SetpointsBtntxt" fontSize="18px" margin="5px" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonInfo" top="515" left="128" width="175" height="60" zIndex="0" text="Info" fontSize="18px" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonSTOP" top="251" left="128" width="175" height="60" zIndex="1" text="$IAT/TuningPage/Stoptxt" textColor="rgba(255, 0, 0, 1)" fontSize="18px" />
+        <Widget xsi:type="widgets.brease.Label" id="Label20" top="451" left="0" width="407" height="58" zIndex="2" text="$IAT/TuningPage/SystemInfotxt" fontSize="18px" bold="true" margin="5px" />
+        <Widget xsi:type="widgets.brease.Button" id="ButtonStart" top="136" left="128" width="175" height="60" zIndex="3" text="$IAT/TuningPage/Starttxt" fontSize="18px" />
+        <Widget xsi:type="widgets.brease.Image" id="ImageStart" top="136" left="344" width="61" height="61" zIndex="4" image="Media/SymbolLib/Media/Stop.svg" imageColor="rgba(34, 139, 34, 1)" visible="false" />
+        <Widget xsi:type="widgets.brease.Image" id="Image2" top="251" left="344" width="61" height="61" zIndex="5" image="Media/SymbolLib/Media/Stop.svg" imageColor="rgba(255, 0, 0, 1)" />
+        <Widget xsi:type="widgets.brease.Button" id="SettingSetpointsButton" top="16" left="123" width="175" height="60" zIndex="6" text="$IAT/TuningPage/SetpointsBtntxt" fontSize="18px" margin="5px" />
+        <Widget xsi:type="widgets.brease.Button" id="Button1" top="366" left="129" width="175" height="60" zIndex="7" text="IDLE" />
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Label" id="Label21" top="854" left="15" zIndex="12" text="$IAT/TuningPage/Statustxt" fontSize="20px" bold="true" />

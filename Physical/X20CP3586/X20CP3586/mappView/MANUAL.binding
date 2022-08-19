@@ -101,11 +101,7 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:STATUS" attribute="value" />
 <Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="TextPicker2" attribute="selectedIndex" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:Manual_work" attribute="value" />
-<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="ManualWorkToggleButton" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
+		<Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gSTOP" attribute="value" />
 <Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="Image2" attribute="visible" />
 </Binding>
@@ -128,6 +124,10 @@
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone2Enable" attribute="value" />
 <Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="SimOffImage4" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="StartButton" attribute="enable" />
 </Binding>
 </Bindings>
 </BindingsSet>

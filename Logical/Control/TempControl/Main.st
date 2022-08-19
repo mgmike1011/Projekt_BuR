@@ -110,7 +110,9 @@ PROGRAM _CYCLIC
 					STATUS := STATE_STOP;
 				END_IF;
 			END_IF;
-			
+			IF NOT TuneEnable THEN
+	  			STATUS := STATE_IDLE;
+			END_IF;
 		STATE_WORKING_MANUAL:
 			TempGroup.Control := TRUE;
 			// Switch state conditions

@@ -53,10 +53,6 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gStart" attribute="value" />
 <Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="Image1" attribute="visible" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:Automatic_work" attribute="value" />
-<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="AutoEnableToggleButton" attribute="value" />
-</Binding>
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::VisuAdj:CurrentZone4Temp" attribute="node" />
 <Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="CurrTempZone4NumericOutput" attribute="node" />
@@ -129,6 +125,10 @@
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
 <Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SetTempZone4NumericInput" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="StartButton" attribute="enable" />
 </Binding>
 </Bindings>
 </BindingsSet>
