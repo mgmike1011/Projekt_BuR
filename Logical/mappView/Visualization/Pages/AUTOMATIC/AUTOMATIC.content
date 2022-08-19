@@ -56,11 +56,11 @@
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="0" left="0" width="415" height="389" zIndex="2" text="$IAT/AutomaticControlPage/Controltxt" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
           <Widgets>
-            <Widget xsi:type="widgets.brease.Button" id="StartButton" top="148" left="119" width="175" height="60" zIndex="0" text="START" fontSize="18px" bold="true" />
-            <Widget xsi:type="widgets.brease.Button" id="StopButton" top="260" left="119" width="175" height="60" zIndex="1" text="STOP" textColor="rgba(255, 0, 0, 1)" fontSize="18px" bold="true" />
+            <Widget xsi:type="widgets.brease.Button" id="StartButton" top="148" left="119" width="175" height="60" zIndex="0" text="START" disabledBackColor="rgba(192, 192, 192, 1)" mouseDownTextColor="rgba(255, 140, 0, 1)" fontSize="18px" bold="true" mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
+            <Widget xsi:type="widgets.brease.Button" id="StopButton" top="260" left="119" width="175" height="60" zIndex="1" text="STOP" textColor="rgba(255, 0, 0, 1)" mouseDownTextColor="rgba(255, 140, 0, 1)" fontSize="18px" bold="true" mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
             <Widget xsi:type="widgets.brease.Image" id="Image1" top="147" left="336" width="53" height="63" zIndex="2" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(0, 128, 0, 1)" />
             <Widget xsi:type="widgets.brease.Image" id="Image2" top="259" left="336" width="53" height="63" zIndex="3" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(192, 0, 0, 1)" />
-            <Widget xsi:type="widgets.brease.Button" id="Button1" top="36" left="119" width="175" height="60" zIndex="4" text="IDLE" fontSize="18px" />
+            <Widget xsi:type="widgets.brease.Button" id="Button1" top="36" left="119" width="175" height="60" zIndex="4" text="IDLE" mouseDownTextColor="rgba(255, 140, 0, 1)" fontSize="18px" mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
           </Widgets>
         </Widget>
         <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="0" left="0" width="415" height="389" zIndex="3" text="Info" fontSize="18px" bold="true" margin="5px 5px 5px 5px">
