@@ -16,7 +16,7 @@ END_PROGRAM
 PROGRAM	_CYCLIC
 	Update_mqtt_struct;
 //	MpOEECore_1.Update := FALSE;
-//	MpOEECore_1.Downtime := NOT(STATUS = STATE_WORKING_AUTOMATIC) ;
+	MpOEECore_1.Downtime := NOT(STATUS = STATE_WORKING_AUTOMATIC) ;
 	MpOEECore_1.Reset := (RsetOEE);//resetowanie statystyk
 	MpOEECore_1.PieceCounter := CycleNumber;
 	
@@ -74,6 +74,9 @@ PROGRAM	_CYCLIC
 	ICTs_old := ICTs;
 	ICTms_old := ICTms;
 	
+	AllCycles := MpOEECore_1.PieceCounter + MpOEECore_1.RejectCounter;
+				 
+
 END_PROGRAM
 
 PROGRAM	_EXIT

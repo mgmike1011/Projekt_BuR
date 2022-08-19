@@ -14,4 +14,5 @@ VAR
 	StatusString : STRING[80];
 	MpOEECore_1 : MpOeeCore;
 	IdealCycleTime_1 : MpOeeCoreParType;
+	AllCycles : UDINT;
 END_VAR

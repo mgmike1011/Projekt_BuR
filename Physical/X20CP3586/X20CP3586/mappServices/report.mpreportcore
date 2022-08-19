@@ -59,15 +59,19 @@
           <Group ID="[0]">
             <Selector ID="[0]" Value="TextId">
               <Property ID="Source" Value="Availability" />
+              <Property ID="Width" Value="15" />
             </Selector>
             <Selector ID="[1]" Value="TextId">
               <Property ID="Source" Value="Performance" />
+              <Property ID="Width" Value="15" />
             </Selector>
             <Selector ID="[2]" Value="TextId">
               <Property ID="Source" Value="Quality" />
+              <Property ID="Width" Value="15" />
             </Selector>
             <Selector ID="[3]" Value="TextId">
               <Property ID="Source" Value="OEE" />
+              <Property ID="Width" Value="15" />
             </Selector>
           </Group>
           <Group ID="[1]">
@@ -75,21 +79,188 @@
               <Selector ID="Value">
                 <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Availability" />
               </Selector>
+              <Property ID="Width" Value="15" />
             </Selector>
             <Selector ID="[1]" Value="ValueId">
               <Selector ID="Value">
                 <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Performance" />
               </Selector>
+              <Property ID="Width" Value="15" />
             </Selector>
             <Selector ID="[2]" Value="ValueId">
               <Selector ID="Value">
                 <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Quality" />
               </Selector>
+              <Property ID="Width" Value="15" />
             </Selector>
             <Selector ID="[3]" Value="ValueId">
               <Selector ID="Value">
                 <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.OEE" />
               </Selector>
+              <Property ID="Width" Value="15" />
+            </Selector>
+          </Group>
+        </Selector>
+        <Selector ID="[1]">
+          <Property ID="Name" Value="OEE ingredient" />
+          <Property ID="TableStyle" Value="Default" />
+          <Property ID="TextStyle" Value="Default" />
+          <Group ID="[0]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Name" />
+              <Property ID="Width" Value="30" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[1]" Value="TextId">
+              <Property ID="Source" Value="Value" />
+              <Property ID="Width" Value="45" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+          </Group>
+          <Group ID="[1]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Actual production time" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Info.ShiftStatistics.Uptime.Hours" />
+              </Selector>
+              <Property ID="Width" Value="6" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[2]" Value="TextId">
+              <Property ID="Source" Value="hours" />
+              <Property ID="Width" Value="9" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[3]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Info.ShiftStatistics.Uptime.Minutes" />
+              </Selector>
+              <Property ID="Width" Value="6" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[4]" Value="TextId">
+              <Property ID="Source" Value="minutes" />
+              <Property ID="Width" Value="9" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[5]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Info.ShiftStatistics.Uptime.Seconds" />
+              </Selector>
+              <Property ID="Width" Value="6" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[6]" Value="TextId">
+              <Property ID="Source" Value="seconds" />
+              <Property ID="Width" Value="9" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+          </Group>
+          <Group ID="[2]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Planned busy time" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Info.ShiftStatistics.TotalTime.Hours" />
+              </Selector>
+              <Property ID="Width" Value="6" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[2]" Value="TextId">
+              <Property ID="Source" Value="hours" />
+              <Property ID="Width" Value="9" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[3]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Info.ShiftStatistics.TotalTime.Minutes" />
+              </Selector>
+              <Property ID="Width" Value="6" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[4]" Value="TextId">
+              <Property ID="Source" Value="minutes" />
+              <Property ID="Width" Value="9" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[5]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Info.ShiftStatistics.TotalTime.Seconds" />
+              </Selector>
+              <Property ID="Width" Value="6" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[6]" Value="TextId">
+              <Property ID="Source" Value="seconds" />
+              <Property ID="Width" Value="9" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+          </Group>
+          <Group ID="[3]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Ideal cycle time" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:IdealCycleTime_1.IdealCycleTime" />
+              </Selector>
+              <Property ID="Width" Value="30" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[2]" Value="TextId">
+              <Property ID="Source" Value="mm:ss:ms" />
+              <Property ID="Width" Value="15" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+          </Group>
+          <Group ID="[4]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Actual single cycle time" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Info.ShiftStatistics.AverageCycleTime" />
+              </Selector>
+              <Property ID="Width" Value="30" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+            <Selector ID="[2]" Value="TextId">
+              <Property ID="Source" Value="mm:ss:ms" />
+              <Property ID="Width" Value="15" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+          </Group>
+          <Group ID="[5]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Number of good cycles" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.PieceCounter" />
+              </Selector>
+              <Property ID="Width" Value="45" />
+              <Property ID="HorizontalAlign" Value="1" />
+            </Selector>
+          </Group>
+          <Group ID="[6]">
+            <Selector ID="[0]" Value="TextId">
+              <Property ID="Source" Value="Number of all cycles" />
+              <Property ID="Width" Value="30" />
+            </Selector>
+            <Selector ID="[1]" Value="ValueId">
+              <Selector ID="Value">
+                <Property ID="ProcessVariable" Value="::OEE:AllCycles" />
+              </Selector>
+              <Property ID="Width" Value="45" />
+              <Property ID="HorizontalAlign" Value="1" />
             </Selector>
           </Group>
         </Selector>
@@ -104,19 +275,19 @@
           <Selector ID="[1]" Value="DateTime" />
         </Group>
         <Group ID="[1]">
+          <Property ID="Name" Value="ContentOEETab" />
+          <Selector ID="[0]" Value="Table">
+            <Property ID="Table" Value="OEE ingredient" />
+          </Selector>
+        </Group>
+        <Group ID="[2]">
           <Property ID="Name" Value="ContentLine" />
           <Selector ID="[0]" Value="Line">
             <Property ID="LineStyle" Value="Default" />
           </Selector>
         </Group>
-        <Group ID="[2]">
-          <Property ID="Name" Value="ContentProductionTable" />
-          <Selector ID="[0]" Value="Table">
-            <Property ID="Table" Value="OEE Table" />
-          </Selector>
-        </Group>
         <Group ID="[3]">
-          <Property ID="Name" Value="ContentOEETab" />
+          <Property ID="Name" Value="ContentProductionTable" />
           <Selector ID="[0]" Value="Table">
             <Property ID="Table" Value="OEE Table" />
           </Selector>
@@ -133,6 +304,16 @@
             </Group>
           </Group>
           <Group ID="[1]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="ContentOEETab" />
+            </Group>
+          </Group>
+          <Group ID="[2]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="ContentLine" />
+            </Group>
+          </Group>
+          <Group ID="[3]">
             <Group ID="[0]">
               <Property ID="Content" Value="ContentProductionTable" />
             </Group>
