@@ -44,14 +44,14 @@
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
     <EventBindingsSet refId="MANUAL_eventbinding" />
     <EventBindingsSet refId="ErrorDialogContent_eventbinding" />
-  </EventBindingsSets>
+	</EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />
     <Dialog refId="SystemInfoDialog" />
-    <Dialog refId="ConfirmDeleteDialog" />
-    <Dialog refId="SortDialog" />
     <Dialog refId="ErrorDialog" />
     <Dialog refId="TunningSetpointsDialog" />
+    <Dialog refId="ConfirmDeleteDialog" />
+    <Dialog refId="SortDialog" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -67,11 +67,11 @@
     <Content refId="FILEMNG" />
     <Content refId="LoginDialogC" />
     <Content refId="SystemInfoDialogContent" />
-    <Content refId="ConfirmDeleteContent" />
-    <Content refId="SortContent" />
     <Content refId="SERVICE" />
     <Content refId="ErrorDialogContent" />
     <Content refId="TunningSetpointsDialogContent" />
+    <Content refId="ConfirmDeleteContent" />
+    <Content refId="SortContent" />
     <Content refId="PdfC" />
   </Contents>
   <SnippetsSets />

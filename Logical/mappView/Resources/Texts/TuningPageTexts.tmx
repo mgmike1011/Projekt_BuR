@@ -187,13 +187,13 @@ Kühlregler</seg>
     </tu>
     <tu tuid="SystemInfotxt">
       <tuv xml:lang="de">
-        <seg>Systeminformationen</seg>
+        <seg>Ergebnisse der Objektidentifikation</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Informacje o systemie</seg>
+        <seg>Wyniki identyfikacji obiektów</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>System info</seg>
+        <seg>Object identification results</seg>
       </tuv>
     </tu>
     <tu tuid="Statustxt">

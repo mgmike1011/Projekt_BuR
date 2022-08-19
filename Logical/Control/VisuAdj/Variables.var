@@ -13,3 +13,12 @@ VAR
 	TimeStep2Int : UINT;
 	TimeStep1Int : UINT;
 END_VAR
+(*MachineState*)
+VAR
+	isIDLE_ : BOOL;
+	isManual : BOOL;
+	isTuning : BOOL;
+	isERROR : BOOL;
+	isSTOP : BOOL;
+	isAutomatic : BOOL;
+END_VAR

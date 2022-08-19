@@ -188,6 +188,7 @@
         <Variable Name="RejectCycle" />
         <Variable Name="StatusString" />
         <Variable Name="StateIdle" />
+        <Variable Name="BtnEnable" />
       </Task>
       <Task Name="MpReport1">
         <Variable Name="MpReportCore_1">
@@ -254,6 +255,12 @@
         <Variable Name="TimeStep3Int" EngineeringUnitId="1" />
         <Variable Name="TimeStep4Int" EngineeringUnitId="1" />
         <Variable Name="TimeStep5Int" EngineeringUnitId="1" />
+        <Variable Name="isAutomatic" />
+        <Variable Name="isERROR" />
+        <Variable Name="isIDLE_" />
+        <Variable Name="isManual" />
+        <Variable Name="isSTOP" />
+        <Variable Name="isTuning" />
       </Task>
     </Module>
   </DefaultView>
