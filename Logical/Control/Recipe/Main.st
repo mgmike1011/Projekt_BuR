@@ -30,25 +30,26 @@ PROGRAM _CYCLIC
 	//RecipeUISetup.RecipeListSize := RecipeUIConnect.Recipe.List.MaxSelection;
 	//set Temp and Time value
 
-	
-	IF RecipeUIConnect.Recipe.List.PageUp THEN
-		RecipeUIConnect.Recipe.List.SelectedIndex := 0;
-	END_IF;
-	
-	IF RecipeUIConnect.Recipe.List.PageDown THEN
-		RecipeUIConnect.Recipe.List.SelectedIndex := 9;
-	END_IF;
-	
 	FOR i := 0 TO 9 BY 1 DO
 		RecipeListName[i] := RecipeUIConnect.Recipe.List.Names[i];
 	END_FOR;
 	
-//	IF RecipeUIConnect.New.Create THEN 
-//		RecipeUIConnect.New.FileName := '';
-//	END_IF;
+	//	IF RecipeUIConnect.New.Create THEN 
+	//		RecipeUIConnect.New.FileName := '';
+	//	END_IF;
 	MpRecipeCsv_0();
 	MpRecipeRegPar_0();
 	MpRecipeUI_0();
+	// naprawic przewijanie i zrobic potwierdzenia delete/save
+	IF RecipeUIConnect.Recipe.List.PageUp THEN
+		RecipeUIConnect.Recipe.List.SelectedIndex := 0;
+		RecipeUIConnect.Recipe.Load := TRUE;
+	END_IF;
+	
+	IF RecipeUIConnect.Recipe.List.PageDown THEN
+		RecipeUIConnect.Recipe.List.SelectedIndex := 9;
+		RecipeUIConnect.Recipe.Load := TRUE;
+	END_IF;
 	
 	IF LoadChecked THEN
 		SetTemp1 := ParametersMachine.Temp1;

@@ -9,5 +9,6 @@
     <Object Type="Package">SortDialog</Object>
     <Object Type="Package">ErrorDialog</Object>
     <Object Type="Package">TunningSetpointsDialog</Object>
+    <Object Type="Package">RecipeDelConfirm</Object>
   </Objects>
 </Package>
