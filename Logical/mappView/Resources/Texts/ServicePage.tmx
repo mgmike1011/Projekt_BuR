@@ -19,48 +19,116 @@
         <seg>Bonjour tout le monde!</seg>
       </tuv>
     </tu>
-    <tu tuid="simZone1">
+    <tu tuid="Zone1">
       <tuv xml:lang="de">
-        <seg>Zone 1 simulieren</seg>
+        <seg>Zone 1</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Symulacja strefy 1</seg>
+        <seg>Strefa 1</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Simulate zone 1</seg>
+        <seg>Zone1</seg>
       </tuv>
     </tu>
-    <tu tuid="simZone2">
+    <tu tuid="Zone2">
       <tuv xml:lang="de">
-        <seg>Zone 2 simulieren</seg>
+        <seg>Zone 2</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Symulacja strefy 2</seg>
+        <seg>Strefa 2</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Simulate zone 2</seg>
+        <seg>Zone2</seg>
       </tuv>
     </tu>
-    <tu tuid="simZone3">
+    <tu tuid="Zone3">
       <tuv xml:lang="de">
-        <seg>Zone 3 simulieren</seg>
+        <seg>Zone 3</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Symulacja strefy 3</seg>
+        <seg>Strefa 3</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Simulate zone 3</seg>
+        <seg>Zone3</seg>
       </tuv>
     </tu>
-    <tu tuid="simZone4">
+    <tu tuid="Zone4">
       <tuv xml:lang="de">
-        <seg>Zone 4 simulieren</seg>
+        <seg>Zone 4</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Symulacja strefy 4</seg>
+        <seg>Strefa 4</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Simulate zone 4</seg>
+        <seg>Zone4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="CurrentTemptxt">
+      <tuv xml:lang="de">
+        <seg>Aktuell</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Aktualna</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Current </seg>
+      </tuv>
+    </tu>
+    <tu tuid="SetTemptxt">
+      <tuv xml:lang="de">
+        <seg>Temperatur einstellen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Temperatura zadana</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Set temperature</seg>
+      </tuv>
+    </tu>
+    <tu tuid="FanPWMtxt">
+      <tuv xml:lang="de">
+        <seg>Ventilator PWM</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wentylator PWM</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Fan PWM</seg>
+      </tuv>
+    </tu>
+    <tu tuid="HeaterPWMtxt">
+      <tuv xml:lang="de">
+        <seg>Heizung PWM</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Grzałka PWM</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Heater PWM</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SelectGraph">
+      <tuv xml:lang="de">
+        <seg>
+Wählen Sie Diagramm</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wybierz wykres</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Select Graph</seg>
+      </tuv>
+    </tu>
+    <tu tuid="SelectWaveFortm">
+      <tuv xml:lang="de">
+        <seg>Sichtbare Wellenformen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Widoczne przebiegi</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Visible waveforms
+</seg>
       </tuv>
     </tu>
   </body>
