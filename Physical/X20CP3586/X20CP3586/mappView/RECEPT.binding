@@ -150,13 +150,7 @@
 <Source xsi:type="session" refId="CreateBtn" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetName" attribute="visible" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTemp" attribute="visible" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="session" refId="CreateBtn" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="LabelSetTime" attribute="visible" />
-</Binding>
+
+
 </Bindings>
 </BindingsSet>

@@ -12,7 +12,7 @@ PROGRAM _INIT
 	TempControllerPar[2].Tuning.SetPointCool := SetTempCoolTuning3;
 	TempControllerPar[3].Tuning.SetPointHeat := SetTempHeatTuning4;
 	TempControllerPar[3].Tuning.SetPointCool := SetTempCoolTuning4;
-		// Tuning mode - tuning heating and cooling controllers
+	// Tuning mode - tuning heating and cooling controllers
 	TempControllerPar[0].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
 	TempControllerPar[1].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
 	TempControllerPar[2].Tuning.Mode := mpTEMP_TUNING_MODE_HEAT_COOL;
@@ -30,6 +30,11 @@ PROGRAM _INIT
 		TempControllerPar[iCnt].PID.Cool.FilterTime := PIDFilterTimeCOOL[iCnt];
 		TempControllerPar[iCnt].PID.Cool.DerivativeTime := PIDDerivativeTimeCOOL[iCnt];
 	END_FOR;
+	// Integrator preloading
+//	TempControllerPar[0].PID.IntegratorPreloading := 0;
+//	TempControllerPar[1].PID.IntegratorPreloading := 0;
+//	TempControllerPar[2].PID.IntegratorPreloading := 0;
+//	TempControllerPar[3].PID.IntegratorPreloading := 0;
 	// Temperature Controller 
 	TempController[0].MpLink := ADR(gTempController_1);
 	TempController[0].Parameters := ADR(TempControllerPar[0]);
@@ -104,6 +109,7 @@ PROGRAM _CYCLIC
 				TuningAction; // Getting the data
 				TuneEnable := FALSE; // Tune off
 				STATUS := STATE_IDLE;
+				gStart := FALSE;
 			ELSE
 				TempGroup.Tune := TRUE;
 				IF gSTOP THEN
@@ -111,8 +117,10 @@ PROGRAM _CYCLIC
 				END_IF;
 			END_IF;
 			IF NOT TuneEnable THEN
-	  			STATUS := STATE_IDLE;
+				STATUS := STATE_IDLE;
+				gStart := FALSE;
 			END_IF;
+			
 		STATE_WORKING_MANUAL:
 			TempGroup.Control := TRUE;
 			// Switch state conditions

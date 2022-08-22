@@ -40,6 +40,13 @@
           </Target>
         </Action>
       </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:SetNameChecked">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
     </EventBinding>
     <EventBinding id="RECEPT.BtnPageUp.Click">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="RECEPT" widgetRefId="BtnPageUp" event="Click" />
@@ -88,6 +95,50 @@
         <Action>
           <Target xsi:type="opcUa.NodeAction" refId="::Recipe:RecipeUIConnect.Recipe.Load">
             <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="RECEPT.TogBtnRename.Click">
+      <Source xsi:type="widgets.brease.ToggleButton.Event" contentRefId="RECEPT" widgetRefId="TogBtnRename" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::Recipe:RenameChecked">
+            <Method xsi:type="opcUa.NodeAction.ToggleValueBool" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_10">
+      <Source xsi:type="session.Event" refId="CreateBtn" event="ValueChanged" />
+      <EventHandler condition="newValue = TRUE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="RECEPT" widgetRefId="LabelSetTemp">
+            <Method xsi:type="widgets.brease.Label.Action.SetText" text="$IAT/RecipePage/LabelTemp" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = TRUE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="RECEPT" widgetRefId="LabelSetTime">
+            <Method xsi:type="widgets.brease.Label.Action.SetText" text="$IAT/RecipePage/LabelTime" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_11">
+      <Source xsi:type="session.Event" refId="CreateBtn" event="ValueChanged" />
+      <EventHandler condition="newValue = FALSE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="RECEPT" widgetRefId="LabelSetTemp">
+            <Method xsi:type="widgets.brease.Label.Action.SetText" text="$IAT/RecipePage/LabelTemp2" />
+          </Target>
+        </Action>
+      </EventHandler>
+      <EventHandler condition="newValue = FALSE">
+        <Action>
+          <Target xsi:type="widgets.brease.Label.Action" contentRefId="RECEPT" widgetRefId="LabelSetTime">
+            <Method xsi:type="widgets.brease.Label.Action.SetText" text="$IAT/RecipePage/LabelTime_1" />
           </Target>
         </Action>
       </EventHandler>

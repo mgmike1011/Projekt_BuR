@@ -168,6 +168,8 @@
         <Variable Name="LoadChecked" />
         <Variable Name="RecipeUIConnect" />
         <Variable Name="RecipeUISetup" />
+        <Variable Name="RenameChecked" />
+        <Variable Name="SetNameChecked" />
       </Task>
       <Task Name="OEE">
         <Variable Name="MpOEECore_1">
