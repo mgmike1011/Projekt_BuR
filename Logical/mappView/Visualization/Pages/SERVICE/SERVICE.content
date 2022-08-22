@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="SERVICE" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2">
   <Widgets>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="40" left="40" width="740" height="160" zIndex="0" text="$IAT/Service/sim" enable="false">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="40" left="40" width="740" height="160" zIndex="0" text="$IAT/Service/sim" enable="false" permissionOperate="['Administrators']">
       <Widgets>
         <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle1" top="22" left="19" width="162" zIndex="0" backColor="rgba(255, 255, 255, 1)" disabledBackColor="rgba(192, 192, 192, 1)" mouseDownBackColor="rgba(255, 136, 0, 1)" textAlign="right" foreColor="rgba(224, 224, 224, 1)" disabledForeColor="rgba(224, 224, 224, 1)" tabIndex="1" />
         <Widget xsi:type="widgets.brease.ToggleSwitch" id="SimulationToggle2" top="22" left="199" width="162" zIndex="1" backColor="rgba(255, 255, 255, 1)" disabledBackColor="rgba(192, 192, 192, 1)" mouseDownBackColor="rgba(255, 136, 0, 1)" foreColor="rgba(224, 224, 224, 1)" disabledForeColor="rgba(224, 224, 224, 1)" tabIndex="2" />
