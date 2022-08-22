@@ -35,6 +35,17 @@ PROGRAM _INIT
 //	TempControllerPar[1].PID.IntegratorPreloading := 0;
 //	TempControllerPar[2].PID.IntegratorPreloading := 0;
 //	TempControllerPar[3].PID.IntegratorPreloading := 0;
+	// Hysteresis
+	TempControllerPar[0].Hysteresis.Band.CoolToHeat := 75;
+	TempControllerPar[0].Hysteresis.Band.HeatToCool := 75;
+	TempControllerPar[1].Hysteresis.Band.CoolToHeat := 75;
+	TempControllerPar[1].Hysteresis.Band.HeatToCool := 75;
+	TempControllerPar[2].Hysteresis.Band.CoolToHeat := 75;
+	TempControllerPar[2].Hysteresis.Band.HeatToCool := 75;
+	TempControllerPar[3].Hysteresis.Band.CoolToHeat := 75;
+	TempControllerPar[3].Hysteresis.Band.HeatToCool := 75;
+	
+	
 	// Temperature Controller 
 	TempController[0].MpLink := ADR(gTempController_1);
 	TempController[0].Parameters := ADR(TempControllerPar[0]);
