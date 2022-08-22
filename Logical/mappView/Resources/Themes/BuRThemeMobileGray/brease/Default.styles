@@ -74,10 +74,10 @@
 		borderWidth="0px" 
 		mouseDownBorderWidth="0px" 
 		backColor="#F6F6F6" 
-		mouseDownBackColor="#EDEDED" 
+		mouseDownBackColor="#ffcc99" 
 		checkedBackColor="#EDEDED" 
-		shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" 
-		mouseDownShadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
+		shadow="1px 1px 8px rgba(58, 58, 58, 0.75)" 
+		mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
 	
 	<!--toggle switch-->
 	
@@ -85,15 +85,15 @@
 		fontSize="20px" 
 		bold="true" 
 		textColor="#000000" 
-		mouseDownTextColor="#FFFFFF" 
+		mouseDownTextColor="#000000" 
 		cornerRadius="4px" 
 		foreColor="#FFFFFF" 
 		borderWidth="0px 0px 0px 0px"
 		mouseDownBorderWidth="0px 0px 0px 0px" 
 		backColor="#EDEDED" 
-		mouseDownBackColor="#3388CC" 
-		shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" 
-		mouseDownShadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
+		mouseDownBackColor="#ffcc99" 
+		shadow="1px 1px 8px rgba(58, 58, 58, 0.75)" 
+		mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
 		
 	<!--push button-->
 	
