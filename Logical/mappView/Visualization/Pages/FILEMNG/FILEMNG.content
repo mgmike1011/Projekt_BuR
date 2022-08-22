@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="FILEMNG" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Button" id="CopyButton" top="480" left="100" width="160" zIndex="0" text="$IAT/FILEMNG/Copy" />
-    <Widget xsi:type="widgets.brease.Button" id="CutButton" top="420" left="100" width="160" zIndex="1" text="$IAT/FILEMNG/Cut" />
-    <Widget xsi:type="widgets.brease.Button" id="PasteButton" top="540" left="100" width="160" zIndex="2" text="$IAT/FILEMNG/Paste" />
-    <Widget xsi:type="widgets.brease.Button" id="DeleteButton" top="600" left="100" width="160" zIndex="3" text="$IAT/FILEMNG/Delete" />
-    <Widget xsi:type="widgets.brease.Button" id="ChangeNameButton" top="720" left="100" width="160" zIndex="4" text="$IAT/FILEMNG/Rename" />
-    <Widget xsi:type="widgets.brease.Button" id="NewFolderButton" top="160" left="100" width="160" zIndex="5" text="$IAT/FILEMNG/NewFolder" />
-    <Widget xsi:type="widgets.brease.TextInput" id="NewNameTextInput" top="820" left="100" width="220" zIndex="6" shadow="1px 1px 8px rgba(255, 204, 153, 1)" />
-    <Widget xsi:type="widgets.brease.Button" id="OpenFolderButton" top="100" left="100" width="160" zIndex="7" text="$IAT/FILEMNG/EnterFolder" />
-    <Widget xsi:type="widgets.brease.Button" id="FolderUpButton" top="40" left="100" width="160" zIndex="8" text="$IAT/FILEMNG/FolderUp" />
+    <Widget xsi:type="widgets.brease.Button" id="CopyButton" top="480" left="100" width="160" zIndex="0" text="$IAT/FILEMNG/Copy" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="CutButton" top="420" left="100" width="160" zIndex="1" text="$IAT/FILEMNG/Cut" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="PasteButton" top="540" left="100" width="160" zIndex="2" text="$IAT/FILEMNG/Paste" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="DeleteButton" top="600" left="100" width="160" zIndex="3" text="$IAT/FILEMNG/Delete" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="ChangeNameButton" top="720" left="100" width="160" zIndex="4" text="$IAT/FILEMNG/Rename" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="NewFolderButton" top="160" left="100" width="160" zIndex="5" text="$IAT/FILEMNG/NewFolder" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.TextInput" id="NewNameTextInput" top="820" left="100" width="220" zIndex="6" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="OpenFolderButton" top="100" left="100" width="160" zIndex="7" text="$IAT/FILEMNG/EnterFolder" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="FolderUpButton" top="40" left="100" width="160" zIndex="8" text="$IAT/FILEMNG/FolderUp" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
     <Widget xsi:type="widgets.brease.TextOutput" id="CurrentDirTextOutput" top="40" left="540" width="120" zIndex="9" />
     <Widget xsi:type="widgets.brease.Label" id="FileCountLabel" top="820" left="380" width="60" zIndex="10" text="$IAT/FILEMNG/NumOfFiles" textAlign="right" style="Caption" />
     <Widget xsi:type="widgets.brease.Label" id="FolderCountLabel" top="820" left="560" zIndex="11" text="$IAT/FILEMNG/NumOfFolders" textAlign="right" style="Caption" />
@@ -92,12 +92,12 @@
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Label" id="MarkItemLabel" top="240" left="120" width="200" zIndex="16" text="$IAT/FILEMNG/SelectAnItem" style="Caption" />
-    <Widget xsi:type="widgets.brease.Button" id="RefreshButton" top="40" left="1000" width="160" zIndex="17" text="$IAT/FILEMNG/Refresh" />
+    <Widget xsi:type="widgets.brease.Button" id="RefreshButton" top="40" left="1000" width="160" zIndex="17" text="$IAT/FILEMNG/Refresh" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="FileCountNumericOutput" top="820" left="460" width="60" zIndex="18" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
     <Widget xsi:type="widgets.brease.NumericOutput" id="FolderCountNumericOutput" top="820" left="660" width="60" zIndex="19" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
-    <Widget xsi:type="widgets.brease.TextInput" id="SearchTextInput" top="40" left="1460" width="220" zIndex="20" shadow="1px 1px 8px rgba(255, 204, 153, 1)" />
+    <Widget xsi:type="widgets.brease.TextInput" id="SearchTextInput" top="40" left="1460" width="220" zIndex="20" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
     <Widget xsi:type="widgets.brease.Label" id="SearchLabel" top="40" left="1380" zIndex="21" text="$IAT/FILEMNG/Search" style="Caption" />
-    <Widget xsi:type="widgets.brease.Button" id="SortButton" top="40" left="1180" width="160" zIndex="22" text="$IAT/FILEMNG/Sort" />
+    <Widget xsi:type="widgets.brease.Button" id="SortButton" top="40" left="1180" width="160" zIndex="22" text="$IAT/FILEMNG/Sort" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
     <Widget xsi:type="widgets.brease.Label" id="ChooseCardLabel" top="820" left="1200" width="60" zIndex="23" text="$IAT/FILEMNG/Page" style="Caption" />
     <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup2" top="800" left="1260" width="420" height="60" zIndex="24">
       <Widgets>
