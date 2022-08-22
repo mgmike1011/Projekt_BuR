@@ -8,9 +8,9 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	//
-	// Cyclic code - variables adjustment to visualization
+	// Cyclic code - variables adjustment to visualization.
 	//
-	// Current temperature
+	// Current temperature - switch between real values and simulation.
 	//Zone 1
 	IF SimulateZone1Enable THEN
 		CurrentZone1Temp := TempController[0].Info.Simulation.ActualTemperature;
@@ -35,13 +35,13 @@ PROGRAM _CYCLIC
 	ELSE
 		CurrentZone4Temp := gTemp4;
 	END_IF;
-	// Step time 
+	// Step time  - timer for each step visualization
 	TimeStep1Int := TIME_TO_UINT(TimeStep1)/1000;
 	TimeStep2Int := TIME_TO_UINT(TimeStep2)/1000;
 	TimeStep3Int := TIME_TO_UINT(TimeStep3)/1000;
 	TimeStep4Int := TIME_TO_UINT(TimeStep4)/1000;
 	TimeStep5Int := TIME_TO_UINT(TimeStep5)/1000;
-	// Machine State
+	// Machine working state
 	CASE STATUS OF
 		STATE_IDLE:
 			isIDLE_ := TRUE;
@@ -89,7 +89,9 @@ PROGRAM _CYCLIC
 END_PROGRAM
 
 PROGRAM _EXIT
-	(* Insert code here *)
+	//
+	// Exit code
+	//
 	 
 END_PROGRAM
 
