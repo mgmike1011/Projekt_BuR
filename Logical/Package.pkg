@@ -8,5 +8,6 @@
     <Object Type="Program" Language="IEC">TempScaling</Object>
     <Object Type="Package">mappView</Object>
     <Object Type="Package">Control</Object>
+    <Object Type="Package">USER</Object>
   </Objects>
 </Package>
