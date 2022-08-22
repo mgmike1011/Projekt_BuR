@@ -27,9 +27,10 @@ PROGRAM _CYCLIC
 	IF LOGOUT AND (NOT (User_name = 'Anonymous')) THEN
 		String_bufer :='Loged out';
 		TypeVar :=STRING_TO_WSTRING('LOGOUT');
+		MessageVar:=STRING_TO_WSTRING(String_bufer);
 		CustomEventStatus := MpAuditCustomEvent(gAuditTrail,TypeVar ,MessageVar , CommentVar);
-		LOGOUT :=FALSE;
 	END_IF
+	LOGOUT :=FALSE;
 	MpAuditTrail_0();
 	 
 END_PROGRAM
