@@ -151,5 +151,126 @@
         <seg>Set Name</seg>
       </tuv>
     </tu>
+    <tu tuid="LabelZone1">
+      <tuv xml:lang="de">
+        <seg>Zone 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelZone2">
+      <tuv xml:lang="de">
+        <seg>Zone 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelZone3">
+      <tuv xml:lang="de">
+        <seg>Zone 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelZone4">
+      <tuv xml:lang="de">
+        <seg>Zone 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Strefa 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Zone 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LblTimeStep1">
+      <tuv xml:lang="de">
+        <seg>Schrittzeit 1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas kroku 1</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step time 1</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LblTimeStep2">
+      <tuv xml:lang="de">
+        <seg>Schrittzeit 2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas kroku 2</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step time 2</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LblTimeStep3">
+      <tuv xml:lang="de">
+        <seg>Schrittzeit 3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas kroku 3</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step time 3</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LblTimeStep4">
+      <tuv xml:lang="de">
+        <seg>Schrittzeit 4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas kroku 4</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step time 4</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LblTimeStep5">
+      <tuv xml:lang="de">
+        <seg>Schrittzeit 5</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas kroku 5</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Step time 5</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelTemp2">
+      <tuv xml:lang="de">
+        <seg>Temperatur</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Temperatua</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Temperature</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LabelTime_1">
+      <tuv xml:lang="de">
+        <seg>Zeit</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Time</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

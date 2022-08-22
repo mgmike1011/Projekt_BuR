@@ -1,44 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="FILEMNG" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
-    <Widget xsi:type="widgets.brease.Button" id="CopyButton" top="840" left="740" width="140" zIndex="0" text="$IAT/FILEMNG/Copy" />
-    <Widget xsi:type="widgets.brease.Button" id="CutButton" top="840" left="900" width="140" zIndex="1" text="$IAT/FILEMNG/Cut" />
-    <Widget xsi:type="widgets.brease.Button" id="PasteButton" top="840" left="1060" width="140" zIndex="2" text="$IAT/FILEMNG/Paste" />
-    <Widget xsi:type="widgets.brease.Button" id="DeleteButton" top="840" left="1220" width="140" zIndex="3" text="$IAT/FILEMNG/Delete" />
-    <Widget xsi:type="widgets.brease.Button" id="ChangeNameButton" top="840" left="1380" width="140" zIndex="4" text="$IAT/FILEMNG/Rename" />
-    <Widget xsi:type="widgets.brease.Button" id="NewFolderButton" top="840" left="1540" width="140" zIndex="5" text="$IAT/FILEMNG/NewFolder" />
-    <Widget xsi:type="widgets.brease.TextInput" id="NewNameTextInput" top="840" left="500" width="220" zIndex="6" shadow="1px 1px 8px rgba(255, 204, 153, 1)" />
-    <Widget xsi:type="widgets.brease.Button" id="OpenFolderButton" top="20" left="360" width="160" zIndex="7" text="$IAT/FILEMNG/EnterFolder" />
-    <Widget xsi:type="widgets.brease.Button" id="FolderUpButton" top="20" left="180" width="160" zIndex="8" text="$IAT/FILEMNG/FolderUp" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="CurrentDirTextOutput" top="60" left="20" zIndex="9" />
-    <Widget xsi:type="widgets.brease.Label" id="FileCountLabel" top="840" left="120" width="60" zIndex="10" text="$IAT/FILEMNG/NumOfFiles" textAlign="right" style="Caption" />
-    <Widget xsi:type="widgets.brease.Label" id="FolderCountLabel" top="840" left="300" zIndex="11" text="$IAT/FILEMNG/NumOfFolders" textAlign="right" style="Caption" />
-    <Widget xsi:type="widgets.brease.Label" id="CurrentDirLabel" top="20" left="20" width="160" zIndex="12" text="$IAT/FILEMNG/CurrentFolder" style="Caption" />
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item1-10GroupBox" top="80" left="380" width="1300" height="660" zIndex="13">
+    <Widget xsi:type="widgets.brease.Button" id="CopyButton" top="480" left="100" width="160" zIndex="0" text="$IAT/FILEMNG/Copy" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="CutButton" top="420" left="100" width="160" zIndex="1" text="$IAT/FILEMNG/Cut" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="PasteButton" top="540" left="100" width="160" zIndex="2" text="$IAT/FILEMNG/Paste" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="DeleteButton" top="600" left="100" width="160" zIndex="3" text="$IAT/FILEMNG/Delete" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="ChangeNameButton" top="720" left="100" width="160" zIndex="4" text="$IAT/FILEMNG/Rename" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="NewFolderButton" top="160" left="100" width="160" zIndex="5" text="$IAT/FILEMNG/NewFolder" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.TextInput" id="NewNameTextInput" top="820" left="100" width="220" zIndex="6" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="OpenFolderButton" top="100" left="100" width="160" zIndex="7" text="$IAT/FILEMNG/EnterFolder" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="FolderUpButton" top="40" left="100" width="160" zIndex="8" text="$IAT/FILEMNG/FolderUp" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.TextOutput" id="CurrentDirTextOutput" top="40" left="540" width="120" zIndex="9" />
+    <Widget xsi:type="widgets.brease.Label" id="FileCountLabel" top="820" left="380" width="60" zIndex="10" text="$IAT/FILEMNG/NumOfFiles" textAlign="right" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="FolderCountLabel" top="820" left="560" zIndex="11" text="$IAT/FILEMNG/NumOfFolders" textAlign="right" style="Caption" />
+    <Widget xsi:type="widgets.brease.Label" id="CurrentDirLabel" top="40" left="380" width="140" zIndex="12" text="$IAT/FILEMNG/CurrentFolder" style="Caption" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item1-10GroupBox" top="120" left="380" width="1300" height="660" zIndex="13" cornerRadius="15px">
       <Widgets>
         <Widget xsi:type="widgets.brease.TextOutput" id="Name1TextOutput" top="58" left="159" width="461" zIndex="0" />
         <Widget xsi:type="widgets.brease.TextOutput" id="Name2TextOutput" top="118" left="159" width="461" zIndex="1" />
         <Widget xsi:type="widgets.brease.TextOutput" id="Name3TextOutput" top="178" left="159" width="461" zIndex="2" />
         <Widget xsi:type="widgets.brease.TextOutput" id="Name4TextOutput" top="238" left="159" width="461" zIndex="3" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name5TextOutput" top="298" left="159" width="461" zIndex="4" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name5TextOutput" top="299" left="159" width="461" zIndex="4" />
         <Widget xsi:type="widgets.brease.TextOutput" id="Name6TextOutput" top="358" left="159" width="461" zIndex="5" />
         <Widget xsi:type="widgets.brease.TextOutput" id="Name7TextOutput" top="418" left="159" width="461" zIndex="6" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name8TextOutput" top="478" left="159" width="461" zIndex="7" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name8TextOutput" top="479" left="159" width="461" zIndex="7" />
         <Widget xsi:type="widgets.brease.TextOutput" id="Name9TextOutput" top="538" left="159" width="461" zIndex="8" />
         <Widget xsi:type="widgets.brease.TextOutput" id="Name10TextOutput" top="598" left="159" width="461" zIndex="9" />
-        <Widget xsi:type="widgets.brease.Label" id="Item1Label" top="58" left="20" width="41" zIndex="10" text="1." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item2Label" top="118" left="20" width="41" zIndex="11" text="2." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item3Label" top="178" left="20" width="41" zIndex="12" text="3." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item4Label" top="238" left="20" width="41" zIndex="13" text="4." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item5Label" top="298" left="20" width="41" zIndex="14" text="5." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item6Label" top="358" left="20" width="41" zIndex="15" text="6." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item7Label" top="418" left="20" width="41" zIndex="16" text="7." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item8Label" top="478" left="20" width="41" zIndex="17" text="8." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item9Label" top="538" left="20" width="41" zIndex="18" text="9." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item10Label" top="598" left="20" width="41" zIndex="19" text="10." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item1Label" top="58" left="18" width="41" zIndex="10" text="1." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item2Label" top="118" left="18" width="41" zIndex="11" text="2." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item3Label" top="178" left="18" width="41" zIndex="12" text="3." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item4Label" top="238" left="18" width="41" zIndex="13" text="4." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item5Label" top="298" left="18" width="41" zIndex="14" text="5." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item6Label" top="358" left="18" width="41" zIndex="15" text="6." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item7Label" top="418" left="18" width="41" zIndex="16" text="7." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item8Label" top="478" left="18" width="41" zIndex="17" text="8." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item9Label" top="538" left="18" width="41" zIndex="18" text="9." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item10Label" top="598" left="18" width="41" zIndex="19" text="10." style="Caption" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox1" top="58" left="99" width="40" zIndex="20" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox2" top="118" left="99" width="40" zIndex="21" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox3" top="178" left="99" width="40" zIndex="22" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox3" top="179" left="99" width="40" zIndex="22" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox4" top="238" left="99" width="40" zIndex="23" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox5" top="298" left="99" width="40" zIndex="24" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox6" top="358" left="99" width="40" zIndex="25" />
@@ -46,16 +46,16 @@
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox8" top="478" left="99" width="40" zIndex="27" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox9" top="538" left="99" width="40" zIndex="28" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox10" top="598" left="99" width="40" zIndex="29" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size1NumericOutput" top="56" left="1157" width="103" zIndex="30" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" unitTextAlign="left" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size2NumericOutput" top="116" left="1158" width="103" zIndex="31" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size3NumericOutput" top="176" left="1158" width="103" zIndex="32" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size4NumericOutput" top="236" left="1158" width="103" zIndex="33" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size5NumericOutput" top="296" left="1158" width="103" zIndex="34" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size6NumericOutput" top="356" left="1158" width="103" zIndex="35" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size7NumericOutput" top="416" left="1158" width="103" zIndex="36" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size8NumericOutput" top="476" left="1158" width="103" zIndex="37" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size9NumericOutput" top="536" left="1158" width="103" zIndex="38" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size10NumericOutput" top="596" left="1158" width="103" zIndex="39" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size1NumericOutput" top="58" left="1158" width="103" zIndex="30" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" unitTextAlign="left" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size2NumericOutput" top="118" left="1158" width="103" zIndex="31" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size3NumericOutput" top="178" left="1158" width="103" zIndex="32" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size4NumericOutput" top="238" left="1158" width="103" zIndex="33" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size5NumericOutput" top="298" left="1158" width="103" zIndex="34" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size6NumericOutput" top="358" left="1158" width="103" zIndex="35" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size7NumericOutput" top="418" left="1158" width="103" zIndex="36" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size8NumericOutput" top="478" left="1158" width="103" zIndex="37" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size9NumericOutput" top="538" left="1158" width="103" zIndex="38" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size10NumericOutput" top="598" left="1158" width="103" zIndex="39" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
         <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput1" top="59" left="639" width="361" zIndex="40" />
         <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput2" top="119" left="639" width="361" zIndex="41" />
         <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput3" top="179" left="639" width="361" zIndex="42" />
@@ -66,213 +66,49 @@
         <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput8" top="479" left="639" width="361" zIndex="47" />
         <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput9" top="539" left="639" width="361" zIndex="48" />
         <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput10" top="599" left="639" width="361" zIndex="49" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type1TextOutput" top="59" left="1020" width="120" zIndex="50" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type2TextOutput" top="119" left="1020" width="120" zIndex="51" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type3TextOutput" top="179" left="1020" width="120" zIndex="52" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type4TextOutput" top="239" left="1020" width="119" zIndex="53" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type5TextOutput" top="299" left="1020" width="119" zIndex="54" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type6TextOutput" top="359" left="1020" width="119" zIndex="55" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type7TextOutput" top="419" left="1020" width="119" zIndex="56" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type8TextOutput" top="479" left="1020" width="119" zIndex="57" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type9TextOutput" top="539" left="1020" width="119" zIndex="58" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type10TextOutput" top="599" left="1020" width="119" zIndex="59" />
-        <Widget xsi:type="widgets.brease.Label" id="Label1" top="-1" left="-2" width="82" height="41" zIndex="60" text="$IAT/FILEMNG/Index" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type1TextOutput" top="59" left="1018" width="120" zIndex="50" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type2TextOutput" top="119" left="1018" width="120" zIndex="51" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type3TextOutput" top="179" left="1018" width="120" zIndex="52" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type4TextOutput" top="239" left="1018" width="119" zIndex="53" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type5TextOutput" top="299" left="1018" width="119" zIndex="54" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type6TextOutput" top="359" left="1018" width="119" zIndex="55" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type7TextOutput" top="419" left="1018" width="119" zIndex="56" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type8TextOutput" top="479" left="1018" width="119" zIndex="57" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type9TextOutput" top="539" left="1018" width="119" zIndex="58" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type10TextOutput" top="599" left="1018" width="119" zIndex="59" />
+        <Widget xsi:type="widgets.brease.Label" id="Label1" top="-1" left="-2" width="81" height="41" zIndex="60" text="$IAT/FILEMNG/Index" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" textAlign="left" style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Label2" top="-2" left="79" width="81" height="41" zIndex="61" text="$IAT/FILEMNG/Choice" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Label3" top="-2" left="159" width="481" height="42" zIndex="62" text="$IAT/FILEMNG/Name" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label3" top="-2" left="159" width="481" height="41" zIndex="62" text="$IAT/FILEMNG/Name" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Label4" top="-1" left="639" width="381" height="41" zIndex="63" text="$IAT/FILEMNG/DateModyfi" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Label5" top="-1" left="1019" width="141" height="41" zIndex="64" text="$IAT/FILEMNG/Type" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Label6" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="NewNameLabel" top="800" left="500" width="120" zIndex="14" text="$IAT/FILEMNG/NewName" style="Caption" />
-    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup1" top="200" left="0" width="140" height="100" zIndex="15">
+    <Widget xsi:type="widgets.brease.Label" id="NewNameLabel" top="780" left="100" width="120" zIndex="14" text="$IAT/FILEMNG/NewName" style="Caption" />
+    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup1" top="280" left="100" width="140" height="100" zIndex="15">
       <Widgets>
         <Widget xsi:type="widgets.brease.RadioButton" id="SingleRadioButton" top="20" left="20" width="80" zIndex="0" boxSize="20" text="$IAT/FILEMNG/OneItem" value="true" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" style="Caption" />
         <Widget xsi:type="widgets.brease.RadioButton" id="ManyRadioButton" top="60" left="20" width="80" zIndex="1" boxSize="20" text="$IAT/FILEMNG/ManyItem" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" style="Caption" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="MarkItemLabel" top="180" left="20" width="200" zIndex="16" text="$IAT/FILEMNG/SelectAnItem" style="Caption" />
-    <Widget xsi:type="widgets.brease.Button" id="RefreshButton" top="20" left="1540" width="140" zIndex="17" text="$IAT/FILEMNG/Refresh" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="FileCountNumericOutput" top="840" left="200" width="60" zIndex="18" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="FolderCountNumericOutput" top="840" left="400" width="60" zIndex="19" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
-    <Widget xsi:type="widgets.brease.TextInput" id="SearchTextInput" top="20" left="1160" width="220" zIndex="20" shadow="1px 1px 8px rgba(255, 204, 153, 1)" />
-    <Widget xsi:type="widgets.brease.Label" id="SearchLabel" top="20" left="1080" zIndex="21" text="$IAT/FILEMNG/Search" style="Caption" />
-    <Widget xsi:type="widgets.brease.Button" id="SortButton" top="20" left="1420" zIndex="22" text="$IAT/FILEMNG/Sort" />
-    <Widget xsi:type="widgets.brease.Label" id="ChooseCardLabel" top="780" left="1180" width="60" zIndex="23" text="$IAT/FILEMNG/Page" style="Caption" />
-    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup2" top="760" left="1260" width="420" height="60" zIndex="24">
+    <Widget xsi:type="widgets.brease.Label" id="MarkItemLabel" top="240" left="120" width="200" zIndex="16" text="$IAT/FILEMNG/SelectAnItem" style="Caption" />
+    <Widget xsi:type="widgets.brease.Button" id="RefreshButton" top="40" left="1000" width="160" zIndex="17" text="$IAT/FILEMNG/Refresh" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="FileCountNumericOutput" top="820" left="460" width="60" zIndex="18" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
+    <Widget xsi:type="widgets.brease.NumericOutput" id="FolderCountNumericOutput" top="820" left="660" width="60" zIndex="19" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
+    <Widget xsi:type="widgets.brease.TextInput" id="SearchTextInput" top="40" left="1460" width="220" zIndex="20" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="SearchLabel" top="40" left="1380" zIndex="21" text="$IAT/FILEMNG/Search" style="Caption" />
+    <Widget xsi:type="widgets.brease.Button" id="SortButton" top="40" left="1180" width="160" zIndex="22" text="$IAT/FILEMNG/Sort" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Label" id="ChooseCardLabel" top="820" left="1200" width="60" zIndex="23" text="$IAT/FILEMNG/Page" style="Caption" />
+    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup2" top="800" left="1260" width="420" height="60" zIndex="24">
       <Widgets>
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card1RadioButton" top="20" left="20" width="60" zIndex="0" boxSize="20" text="1" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card2RadioButton" top="20" left="100" width="60" zIndex="1" boxSize="20" text="2" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card3RadioButton" top="20" left="180" width="60" zIndex="2" boxSize="20" text="3" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card4RadioButton" top="20" left="260" width="60" zIndex="3" boxSize="20" text="4" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card5RadioButton" top="20" left="340" width="60" zIndex="4" boxSize="20" text="5" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Card1RadioButton" top="20" left="40" width="60" zIndex="0" boxSize="20" text="1" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Card2RadioButton" top="20" left="120" width="60" zIndex="1" boxSize="20" text="2" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Card3RadioButton" top="20" left="200" width="60" zIndex="2" boxSize="20" text="3" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Card4RadioButton" top="20" left="280" width="60" zIndex="3" boxSize="20" text="4" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.RadioButton" id="Card5RadioButton" top="20" left="360" width="60" zIndex="4" boxSize="20" text="5" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item11-20GroupBox" top="540" left="160" width="100" height="160" zIndex="25" visible="false">
-      <Widgets>
-        <Widget xsi:type="widgets.brease.Label" id="Item11Label" top="58" left="18" width="42" zIndex="0" text="11." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item12Label" top="119" left="18" width="42" zIndex="1" text="12." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item13Label" top="179" left="18" width="42" zIndex="2" text="13." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item14Label" top="239" left="18" width="42" zIndex="3" text="14." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item15Label" top="299" left="18" width="42" zIndex="4" text="15." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item16Label" top="359" left="18" width="42" zIndex="5" text="16." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item17Label" top="419" left="18" width="42" zIndex="6" text="17." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item18Label" top="479" left="18" width="42" zIndex="7" text="18." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item19Label" top="539" left="18" width="42" zIndex="8" text="19." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item20Label" top="599" left="18" width="42" zIndex="9" text="20." style="Caption" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox11" top="58" left="99" width="40" zIndex="10" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox12" top="118" left="100" width="40" zIndex="11" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox13" top="178" left="100" width="40" zIndex="12" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox14" top="238" left="100" width="40" zIndex="13" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox15" top="298" left="100" width="40" zIndex="14" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox16" top="358" left="100" width="40" zIndex="15" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox17" top="418" left="100" width="40" zIndex="16" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox18" top="478" left="100" width="40" zIndex="17" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox19" top="538" left="100" width="40" zIndex="18" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox20" top="598" left="100" width="40" zIndex="19" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name11TextOutput" top="58" left="159" width="301" zIndex="20" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name12TextOutput" top="120" left="160" width="301" zIndex="21" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name13TextOutput" top="180" left="160" width="301" zIndex="22" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name14TextOutput" top="240" left="160" width="301" zIndex="23" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name15TextOutput" top="300" left="160" width="301" zIndex="24" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name16TextOutput" top="360" left="160" width="301" zIndex="25" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name17TextOutput" top="420" left="160" width="301" zIndex="26" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name18TextOutput" top="480" left="160" width="301" zIndex="27" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name19TextOutput" top="540" left="160" width="301" zIndex="28" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name20TextOutput" top="600" left="160" width="301" zIndex="29" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size11NumericOutput" top="59" left="480" width="160" zIndex="30" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size12NumericOutput" top="119" left="480" width="160" zIndex="31" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size13NumericOutput" top="179" left="480" width="160" zIndex="32" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size14NumericOutput" top="238" left="478" width="160" zIndex="33" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size15NumericOutput" top="299" left="480" width="160" zIndex="34" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size16NumericOutput" top="359" left="480" width="160" zIndex="35" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size17NumericOutput" top="419" left="480" width="160" zIndex="36" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size18NumericOutput" top="479" left="480" width="160" zIndex="37" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size19NumericOutput" top="539" left="480" width="160" zIndex="38" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size20NumericOutput" top="599" left="478" width="160" zIndex="39" textAlign="left" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput11" top="58" left="659" width="381" zIndex="40" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput12" top="120" left="659" width="381" zIndex="41" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput13" top="180" left="659" width="381" zIndex="42" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput14" top="240" left="659" width="381" zIndex="43" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput15" top="300" left="659" width="381" zIndex="44" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput16" top="360" left="659" width="381" zIndex="45" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput17" top="420" left="659" width="381" zIndex="46" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput18" top="480" left="659" width="381" zIndex="47" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput19" top="540" left="659" width="381" zIndex="48" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput20" top="600" left="659" width="381" zIndex="49" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type11TextOutput" top="58" left="1059" width="221" zIndex="50" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type12TextOutput" top="120" left="1060" width="221" zIndex="51" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type13TextOutput" top="180" left="1060" width="221" zIndex="52" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type14TextOutput" top="240" left="1060" width="221" zIndex="53" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type15TextOutput" top="300" left="1060" width="221" zIndex="54" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type16TextOutput" top="360" left="1060" width="221" zIndex="55" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type17TextOutput" top="420" left="1060" width="221" zIndex="56" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type18TextOutput" top="480" left="1060" width="221" zIndex="57" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type19TextOutput" top="540" left="1060" width="221" zIndex="58" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type20TextOutput" top="600" left="1060" width="221" zIndex="59" />
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox13" top="0" left="0" width="82" height="44" zIndex="60" text="$IAT/FILEMNG/Index">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox14" top="0" left="80" width="82" height="43" zIndex="61" text="$IAT/FILEMNG/Choice">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox15" top="0" left="160" width="322" height="43" zIndex="62" text="$IAT/FILEMNG/Name">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox16" top="0" left="480" width="182" height="43" zIndex="63" text="$IAT/FILEMNG/Size">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox17" top="0" left="660" width="402" height="44" zIndex="65" text="$IAT/FILEMNG/DateModyfi">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox18" top="0" left="1062" width="239" height="45" zIndex="64" text="$IAT/FILEMNG/Type">
-          <Widgets />
-        </Widget>
-      </Widgets>
-    </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item41-50GroupBox" top="620" left="40" width="80" height="120" zIndex="26" visible="false">
-      <Widgets>
-        <Widget xsi:type="widgets.brease.Label" id="Item41Label" top="59" left="19" width="42" zIndex="0" text="41." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item42Label" top="118" left="19" width="42" zIndex="1" text="42." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item43Label" top="178" left="19" width="42" zIndex="2" text="43." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item44Label" top="238" left="19" width="42" zIndex="3" text="44." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item45Label" top="298" left="19" width="42" zIndex="4" text="45." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item46Label" top="358" left="19" width="42" zIndex="5" text="46." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item47Label" top="418" left="19" width="42" zIndex="6" text="47." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item48Label" top="478" left="19" width="42" zIndex="7" text="48." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item49Label" top="540" left="19" width="42" zIndex="8" text="49." style="Caption" />
-        <Widget xsi:type="widgets.brease.Label" id="Item50Label" top="598" left="19" width="42" zIndex="9" text="50." textAlign="left" style="Caption" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox41" top="59" left="98" width="40" zIndex="10" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox42" top="119" left="98" width="40" zIndex="11" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox43" top="179" left="98" width="40" zIndex="12" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox44" top="239" left="98" width="40" zIndex="13" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox45" top="299" left="98" width="40" zIndex="14" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox46" top="359" left="98" width="40" zIndex="15" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox47" top="419" left="98" width="40" zIndex="16" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox48" top="479" left="98" width="40" zIndex="17" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox49" top="539" left="98" width="40" zIndex="18" />
-        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox50" top="599" left="98" width="40" zIndex="19" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name41TextOutput" top="59" left="159" width="301" zIndex="20" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name42TextOutput" top="119" left="159" width="301" zIndex="21" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name43TextOutput" top="179" left="159" width="301" zIndex="22" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name44TextOutput" top="239" left="159" width="301" zIndex="23" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name45TextOutput" top="299" left="159" width="301" zIndex="24" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name46TextOutput" top="359" left="159" width="301" zIndex="25" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name47TextOutput" top="419" left="159" width="301" zIndex="26" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name48TextOutput" top="479" left="159" width="301" zIndex="27" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name49TextOutput" top="539" left="159" width="301" zIndex="28" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name50TextOutput" top="599" left="159" width="301" zIndex="29" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size41NumericOutput" top="58" left="480" width="160" zIndex="30" textAlign="left" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput41" top="58" left="659" width="381" zIndex="31" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type41TextOutput" top="59" left="1059" width="221" zIndex="32" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size42NumericOutput" top="118" left="478" width="160" zIndex="33" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size43NumericOutput" top="178" left="478" width="160" zIndex="34" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size44NumericOutput" top="238" left="478" width="160" zIndex="35" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size45NumericOutput" top="298" left="478" width="160" zIndex="36" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size46NumericOutput" top="358" left="478" width="160" zIndex="37" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size47NumericOutput" top="418" left="478" width="160" zIndex="38" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size48NumericOutput" top="478" left="478" width="160" zIndex="39" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size49NumericOutput" top="538" left="478" width="160" zIndex="40" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size50NumericOutput" top="598" left="478" width="160" zIndex="41" textAlign="left" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput42" top="118" left="659" width="384" zIndex="42" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput43" top="178" left="659" width="384" zIndex="43" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput44" top="238" left="659" width="384" zIndex="44" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput45" top="298" left="659" width="384" zIndex="45" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput46" top="358" left="659" width="384" zIndex="46" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput47" top="418" left="659" width="384" zIndex="47" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput48" top="478" left="659" width="384" zIndex="48" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput49" top="538" left="659" width="384" zIndex="49" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput50" top="598" left="659" width="384" zIndex="50" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type42TextOutput" top="119" left="1058" width="221" zIndex="51" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type43TextOutput" top="179" left="1058" width="221" zIndex="52" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type44TextOutput" top="239" left="1058" width="221" zIndex="53" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type45TextOutput" top="299" left="1058" width="221" zIndex="54" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type46TextOutput" top="359" left="1058" width="221" zIndex="55" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type47TextOutput" top="419" left="1058" width="221" zIndex="56" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type48TextOutput" top="479" left="1058" width="221" zIndex="57" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type49TextOutput" top="539" left="1058" width="221" zIndex="58" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type50TextOutput" top="599" left="1058" width="221" zIndex="59" />
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox1" top="-2" left="-2" width="82" height="44" zIndex="60" text="$IAT/FILEMNG/Index">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="-2" left="78" width="82" height="43" zIndex="61" text="$IAT/FILEMNG/Choice">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox3" top="-2" left="158" width="322" height="43" zIndex="62" text="$IAT/FILEMNG/Name">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox4" top="-2" left="478" width="182" height="43" zIndex="63" text="$IAT/FILEMNG/Size">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox6" top="-2" left="1060" width="239" height="45" zIndex="64" text="$IAT/FILEMNG/Type">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox5" top="-2" left="658" width="402" height="44" zIndex="65" text="$IAT/FILEMNG/DateModyfi">
-          <Widgets />
-        </Widget>
-      </Widgets>
-    </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item31-40GroupBox" top="240" left="140" width="81" height="100" zIndex="27" visible="false">
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item31-40GroupBox" top="120" left="380" width="1300" height="660" zIndex="25" cornerRadius="15px" visible="false">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="Item31Label" top="58" left="18" width="42" zIndex="0" text="31." style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Item32Label" top="118" left="18" width="42" zIndex="1" text="32." style="Caption" />
@@ -294,64 +130,125 @@
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox38" top="478" left="100" width="40" zIndex="17" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox39" top="538" left="100" width="40" zIndex="18" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox40" top="598" left="100" width="40" zIndex="19" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name31TextOutput" top="58" left="159" width="301" zIndex="20" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name32TextOutput" top="118" left="159" width="301" zIndex="21" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name33TextOutput" top="178" left="159" width="301" zIndex="22" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name34TextOutput" top="238" left="159" width="301" zIndex="23" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name35TextOutput" top="298" left="159" width="301" zIndex="24" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name36TextOutput" top="358" left="159" width="301" zIndex="25" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name37TextOutput" top="418" left="159" width="301" zIndex="26" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name38TextOutput" top="478" left="159" width="301" zIndex="27" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name39TextOutput" top="538" left="159" width="301" zIndex="28" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name40TextOutput" top="598" left="159" width="301" zIndex="29" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size31NumericOutput" top="58" left="478" width="163" zIndex="30" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size32NumericOutput" top="118" left="478" width="163" zIndex="31" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size33NumericOutput" top="178" left="478" width="163" zIndex="32" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size34NumericOutput" top="238" left="478" width="163" zIndex="33" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size35NumericOutput" top="298" left="478" width="163" zIndex="34" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size36NumericOutput" top="358" left="478" width="163" zIndex="35" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size37NumericOutput" top="418" left="478" width="163" zIndex="36" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size38NumericOutput" top="478" left="478" width="163" zIndex="37" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size39NumericOutput" top="538" left="478" width="163" zIndex="38" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size40NumericOutput" top="598" left="478" width="163" zIndex="39" textAlign="left" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput31" top="58" left="659" width="381" zIndex="40" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput32" top="118" left="659" width="381" zIndex="41" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput33" top="178" left="659" width="381" zIndex="42" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput34" top="238" left="659" width="381" zIndex="43" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput35" top="298" left="659" width="381" zIndex="44" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput36" top="358" left="659" width="381" zIndex="45" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput37" top="418" left="659" width="381" zIndex="46" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput38" top="478" left="659" width="381" zIndex="47" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput39" top="538" left="659" width="381" zIndex="48" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput40" top="598" left="659" width="381" zIndex="49" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type31TextOutput" top="58" left="1059" width="221" zIndex="50" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type32TextOutput" top="118" left="1060" width="221" zIndex="51" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type33TextOutput" top="178" left="1060" width="221" zIndex="52" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type34TextOutput" top="238" left="1060" width="221" zIndex="53" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type35TextOutput" top="298" left="1060" width="221" zIndex="54" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type36TextOutput" top="358" left="1060" width="221" zIndex="55" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type37TextOutput" top="418" left="1060" width="221" zIndex="56" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type38TextOutput" top="478" left="1060" width="221" zIndex="57" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type39TextOutput" top="538" left="1060" width="221" zIndex="58" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type40TextOutput" top="598" left="1060" width="221" zIndex="59" />
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox25" top="-2" left="-2" width="82" height="44" zIndex="60" text="$IAT/FILEMNG/Index">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox27" top="0" left="160" width="322" height="43" zIndex="61" text="$IAT/FILEMNG/Name">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox28" top="0" left="480" width="182" height="43" zIndex="62" text="$IAT/FILEMNG/Size">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox29" top="0" left="660" width="402" height="44" zIndex="64" text="$IAT/FILEMNG/DateModyfi">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox30" top="0" left="1062" width="239" height="45" zIndex="63" text="$IAT/FILEMNG/Type">
-          <Widgets />
-        </Widget>
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name31TextOutput" top="58" left="159" width="461" zIndex="20" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name32TextOutput" top="118" left="159" width="461" zIndex="21" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name33TextOutput" top="178" left="159" width="461" zIndex="22" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name34TextOutput" top="238" left="159" width="461" zIndex="23" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name35TextOutput" top="298" left="159" width="461" zIndex="24" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name36TextOutput" top="358" left="159" width="461" zIndex="25" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name37TextOutput" top="418" left="159" width="461" zIndex="26" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name38TextOutput" top="478" left="159" width="461" zIndex="27" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name39TextOutput" top="538" left="159" width="461" zIndex="28" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name40TextOutput" top="598" left="159" width="461" zIndex="29" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size31NumericOutput" top="60" left="1159" width="101" zIndex="30" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size32NumericOutput" top="120" left="1159" width="101" zIndex="31" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size33NumericOutput" top="180" left="1159" width="101" zIndex="32" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size34NumericOutput" top="240" left="1159" width="101" zIndex="33" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size35NumericOutput" top="300" left="1159" width="101" zIndex="34" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size36NumericOutput" top="360" left="1159" width="101" zIndex="35" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size37NumericOutput" top="420" left="1159" width="101" zIndex="36" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size38NumericOutput" top="480" left="1159" width="101" zIndex="37" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size39NumericOutput" top="540" left="1159" width="101" zIndex="38" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size40NumericOutput" top="598" left="1158" width="103" zIndex="39" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput31" top="60" left="639" width="361" zIndex="40" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput32" top="120" left="639" width="361" zIndex="41" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput33" top="180" left="639" width="361" zIndex="42" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput34" top="240" left="639" width="361" zIndex="43" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput35" top="300" left="639" width="361" zIndex="44" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput36" top="360" left="639" width="361" zIndex="45" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput37" top="420" left="639" width="361" zIndex="46" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput38" top="480" left="639" width="361" zIndex="47" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput39" top="540" left="639" width="361" zIndex="48" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput40" top="598" left="639" width="361" zIndex="49" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type31TextOutput" top="60" left="1019" width="121" zIndex="50" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type32TextOutput" top="120" left="1020" width="121" zIndex="51" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type33TextOutput" top="180" left="1020" width="121" zIndex="52" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type34TextOutput" top="240" left="1020" width="121" zIndex="53" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type35TextOutput" top="300" left="1020" width="121" zIndex="54" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type36TextOutput" top="360" left="1020" width="121" zIndex="55" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type37TextOutput" top="420" left="1020" width="121" zIndex="56" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type38TextOutput" top="480" left="1020" width="121" zIndex="57" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type39TextOutput" top="540" left="1020" width="121" zIndex="58" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type40TextOutput" top="598" left="1018" width="122" zIndex="59" />
+        <Widget xsi:type="widgets.brease.Label" id="Label13" top="-1" left="-2" width="81" height="41" zIndex="60" text="$IAT/FILEMNG/Index" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label14" top="-2" left="79" width="81" height="41" zIndex="61" text="$IAT/FILEMNG/Choice" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label15" top="-2" left="159" width="481" height="41" zIndex="62" text="$IAT/FILEMNG/Name" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label16" top="-1" left="639" width="381" height="41" zIndex="63" text="$IAT/FILEMNG/DateModyfi" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label17" top="-1" left="1019" width="141" height="41" zIndex="64" text="$IAT/FILEMNG/Type" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label18" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item21-30GroupBox" top="360" left="40" width="80" height="160" zIndex="28" visible="false">
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item41-50GroupBox" top="120" left="380" width="1300" height="660" zIndex="26" cornerRadius="15px" visible="false">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Item41Label" top="59" left="19" width="42" zIndex="0" text="41." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item42Label" top="118" left="19" width="42" zIndex="1" text="42." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item43Label" top="178" left="19" width="42" zIndex="2" text="43." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item44Label" top="238" left="19" width="42" zIndex="3" text="44." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item45Label" top="298" left="19" width="42" zIndex="4" text="45." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item46Label" top="358" left="19" width="42" zIndex="5" text="46." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item47Label" top="418" left="19" width="42" zIndex="6" text="47." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item48Label" top="478" left="19" width="42" zIndex="7" text="48." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item49Label" top="540" left="19" width="42" zIndex="8" text="49." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item50Label" top="598" left="19" width="42" zIndex="9" text="50." textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox41" top="59" left="98" width="40" zIndex="10" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox42" top="119" left="98" width="40" zIndex="11" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox43" top="179" left="98" width="40" zIndex="12" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox44" top="239" left="98" width="40" zIndex="13" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox45" top="299" left="98" width="40" zIndex="14" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox46" top="359" left="98" width="40" zIndex="15" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox47" top="419" left="98" width="40" zIndex="16" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox48" top="479" left="98" width="40" zIndex="17" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox49" top="539" left="98" width="40" zIndex="18" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox50" top="599" left="98" width="40" zIndex="19" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name41TextOutput" top="59" left="159" width="461" zIndex="20" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name42TextOutput" top="119" left="159" width="461" zIndex="21" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name43TextOutput" top="179" left="159" width="461" zIndex="22" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name44TextOutput" top="239" left="159" width="461" zIndex="23" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name45TextOutput" top="299" left="159" width="461" zIndex="24" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name46TextOutput" top="359" left="159" width="461" zIndex="25" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name47TextOutput" top="419" left="159" width="461" zIndex="26" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name48TextOutput" top="479" left="159" width="461" zIndex="27" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name49TextOutput" top="539" left="159" width="461" zIndex="28" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name50TextOutput" top="599" left="159" width="461" zIndex="29" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size41NumericOutput" top="58" left="1158" zIndex="30" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput41" top="58" left="639" width="361" zIndex="31" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type41TextOutput" top="59" left="1019" width="121" zIndex="32" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size42NumericOutput" top="118" left="1156" zIndex="33" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size43NumericOutput" top="178" left="1156" zIndex="34" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size44NumericOutput" top="238" left="1156" zIndex="35" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size45NumericOutput" top="298" left="1156" zIndex="36" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size46NumericOutput" top="358" left="1156" zIndex="37" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size47NumericOutput" top="418" left="1156" zIndex="38" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size48NumericOutput" top="478" left="1156" zIndex="39" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size49NumericOutput" top="538" left="1156" zIndex="40" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size50NumericOutput" top="598" left="1156" zIndex="41" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput42" top="118" left="639" width="364" zIndex="42" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput43" top="178" left="639" width="364" zIndex="43" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput44" top="238" left="639" width="364" zIndex="44" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput45" top="298" left="639" width="364" zIndex="45" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput46" top="358" left="639" width="364" zIndex="46" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput47" top="418" left="639" width="364" zIndex="47" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput48" top="478" left="639" width="364" zIndex="48" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput49" top="538" left="639" width="364" zIndex="49" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput50" top="598" left="639" width="364" zIndex="50" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type42TextOutput" top="119" left="1018" width="121" zIndex="51" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type43TextOutput" top="179" left="1018" width="121" zIndex="52" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type44TextOutput" top="239" left="1018" width="121" zIndex="53" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type45TextOutput" top="299" left="1018" width="121" zIndex="54" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type46TextOutput" top="359" left="1018" width="121" zIndex="55" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type47TextOutput" top="419" left="1018" width="121" zIndex="56" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type48TextOutput" top="479" left="1018" width="121" zIndex="57" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type49TextOutput" top="539" left="1018" width="121" zIndex="58" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type50TextOutput" top="599" left="1018" width="121" zIndex="59" />
+        <Widget xsi:type="widgets.brease.Label" id="Label25" top="-1" left="-2" width="81" height="41" zIndex="60" text="$IAT/FILEMNG/Index" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label26" top="-2" left="79" width="81" height="41" zIndex="61" text="$IAT/FILEMNG/Choice" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label27" top="-2" left="159" width="481" height="41" zIndex="62" text="$IAT/FILEMNG/Name" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label28" top="-1" left="639" width="381" height="41" zIndex="63" text="$IAT/FILEMNG/DateModyfi" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label29" top="-1" left="1019" width="141" height="41" zIndex="64" text="$IAT/FILEMNG/Type" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label30" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item21-30GroupBox" top="120" left="380" width="1300" height="660" zIndex="27" cornerRadius="15px" visible="false">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="Item21Label" top="59" left="18" width="42" zIndex="0" text="21." style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Item22Label" top="119" left="18" width="42" zIndex="1" text="22." style="Caption" />
@@ -373,64 +270,122 @@
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox28" top="478" left="99" width="40" zIndex="17" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox29" top="538" left="99" width="40" zIndex="18" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox30" top="598" left="99" width="40" zIndex="19" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name21TextOutput" top="58" left="158" width="301" zIndex="20" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name22TextOutput" top="119" left="158" width="301" zIndex="21" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name23TextOutput" top="179" left="158" width="301" zIndex="22" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name24TextOutput" top="239" left="158" width="301" zIndex="23" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name25TextOutput" top="299" left="158" width="301" zIndex="24" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name26TextOutput" top="358" left="160" width="301" zIndex="25" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name27TextOutput" top="419" left="158" width="301" zIndex="26" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name28TextOutput" top="479" left="158" width="301" zIndex="27" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name29TextOutput" top="539" left="158" width="301" zIndex="28" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Name30TextOutput" top="599" left="158" width="301" zIndex="29" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size21NumericOutput" top="59" left="478" width="163" zIndex="30" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size22NumericOutput" top="119" left="478" width="163" zIndex="31" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size23NumericOutput" top="179" left="478" width="163" zIndex="32" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size24NumericOutput" top="239" left="478" width="163" zIndex="33" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size25NumericOutput" top="299" left="478" width="163" zIndex="34" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size26NumericOutput" top="359" left="478" width="163" zIndex="35" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size27NumericOutput" top="419" left="478" width="163" zIndex="36" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size28NumericOutput" top="479" left="478" width="163" zIndex="37" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size29NumericOutput" top="539" left="478" width="163" zIndex="38" textAlign="left" />
-        <Widget xsi:type="widgets.brease.NumericOutput" id="Size30NumericOutput" top="599" left="478" width="163" zIndex="39" textAlign="left" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput21" top="58" left="658" width="383" zIndex="40" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput22" top="118" left="658" width="383" zIndex="41" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput23" top="178" left="658" width="383" zIndex="42" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput24" top="238" left="658" width="383" zIndex="43" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput25" top="298" left="658" width="383" zIndex="44" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput26" top="358" left="658" width="383" zIndex="45" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput27" top="418" left="658" width="383" zIndex="46" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput28" top="479" left="658" width="383" zIndex="47" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput29" top="539" left="658" width="383" zIndex="48" />
-        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput30" top="599" left="658" width="383" zIndex="49" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type21TextOutput" top="58" left="1058" width="222" zIndex="50" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type22TextOutput" top="118" left="1058" width="222" zIndex="51" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type23TextOutput" top="178" left="1058" width="222" zIndex="52" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type24TextOutput" top="238" left="1058" width="222" zIndex="53" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type25TextOutput" top="298" left="1058" width="222" zIndex="54" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type26TextOutput" top="358" left="1058" width="222" zIndex="55" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type27TextOutput" top="418" left="1058" width="222" zIndex="56" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type28TextOutput" top="478" left="1058" width="222" zIndex="57" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type29TextOutput" top="539" left="1060" width="222" zIndex="58" />
-        <Widget xsi:type="widgets.brease.TextOutput" id="Type30TextOutput" top="599" left="1060" width="222" zIndex="59" />
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox19" top="0" left="0" width="82" height="44" zIndex="60" text="$IAT/FILEMNG/Index">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox20" top="0" left="80" width="82" height="43" zIndex="61" text="$IAT/FILEMNG/Choice">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox21" top="0" left="160" width="322" height="43" zIndex="62" text="$IAT/FILEMNG/Name">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox22" top="0" left="480" width="182" height="43" zIndex="63" text="$IAT/FILEMNG/Size">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox23" top="0" left="660" width="402" height="44" zIndex="65" text="$IAT/FILEMNG/DateModyfi">
-          <Widgets />
-        </Widget>
-        <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox24" top="0" left="1062" width="239" height="45" zIndex="64" text="$IAT/FILEMNG/Type">
-          <Widgets />
-        </Widget>
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name21TextOutput" top="58" left="158" width="462" zIndex="20" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name22TextOutput" top="119" left="158" width="462" zIndex="21" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name23TextOutput" top="179" left="158" width="462" zIndex="22" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name24TextOutput" top="239" left="158" width="462" zIndex="23" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name25TextOutput" top="299" left="158" width="462" zIndex="24" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name26TextOutput" top="358" left="160" width="462" zIndex="25" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name27TextOutput" top="419" left="158" width="462" zIndex="26" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name28TextOutput" top="479" left="158" width="462" zIndex="27" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name29TextOutput" top="539" left="158" width="462" zIndex="28" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name30TextOutput" top="599" left="158" width="462" zIndex="29" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size21NumericOutput" top="60" left="1158" width="103" zIndex="30" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size22NumericOutput" top="120" left="1158" width="103" zIndex="31" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size23NumericOutput" top="180" left="1158" width="103" zIndex="32" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size24NumericOutput" top="240" left="1158" width="103" zIndex="33" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size25NumericOutput" top="300" left="1158" width="103" zIndex="34" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size26NumericOutput" top="360" left="1158" width="103" zIndex="35" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size27NumericOutput" top="420" left="1158" width="103" zIndex="36" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size28NumericOutput" top="480" left="1158" width="103" zIndex="37" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size29NumericOutput" top="540" left="1158" width="103" zIndex="38" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size30NumericOutput" top="600" left="1158" width="103" zIndex="39" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput21" top="60" left="638" width="363" zIndex="40" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput22" top="120" left="638" width="363" zIndex="41" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput23" top="180" left="638" width="363" zIndex="42" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput24" top="240" left="638" width="363" zIndex="43" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput25" top="300" left="638" width="363" zIndex="44" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput26" top="360" left="638" width="363" zIndex="45" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput27" top="420" left="638" width="363" zIndex="46" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput28" top="481" left="638" width="363" zIndex="47" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput29" top="541" left="638" width="363" zIndex="48" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput30" top="601" left="638" width="363" zIndex="49" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type21TextOutput" top="60" left="1018" width="122" zIndex="50" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type22TextOutput" top="120" left="1018" width="122" zIndex="51" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type23TextOutput" top="180" left="1018" width="122" zIndex="52" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type24TextOutput" top="240" left="1018" width="122" zIndex="53" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type25TextOutput" top="300" left="1018" width="122" zIndex="54" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type26TextOutput" top="360" left="1018" width="122" zIndex="55" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type27TextOutput" top="420" left="1018" width="122" zIndex="56" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type28TextOutput" top="480" left="1018" width="122" zIndex="57" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type29TextOutput" top="541" left="1021" width="119" zIndex="58" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type30TextOutput" top="601" left="1021" width="119" zIndex="59" />
+        <Widget xsi:type="widgets.brease.Label" id="Label19" top="-1" left="-2" width="81" height="41" zIndex="60" text="$IAT/FILEMNG/Index" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label20" top="-2" left="79" width="81" height="41" zIndex="61" text="$IAT/FILEMNG/Choice" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label21" top="-2" left="159" width="481" height="41" zIndex="62" text="$IAT/FILEMNG/Name" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label22" top="-1" left="639" width="381" height="41" zIndex="63" text="$IAT/FILEMNG/DateModyfi" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label23" top="-1" left="1019" width="141" height="41" zIndex="64" text="$IAT/FILEMNG/Type" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label24" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item11-20GroupBox" top="120" left="380" width="1300" height="660" zIndex="28" cornerRadius="15px" visible="false">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="Item11Label" top="59" left="19" width="41" zIndex="0" text="11." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item12Label" top="119" left="19" width="41" zIndex="1" text="12." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item13Label" top="179" left="19" width="41" zIndex="2" text="13." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item14Label" top="239" left="19" width="41" zIndex="3" text="14." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item15Label" top="299" left="19" width="41" zIndex="4" text="15." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item16Label" top="359" left="19" width="41" zIndex="5" text="16." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item17Label" top="419" left="19" width="41" zIndex="6" text="17." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item18Label" top="479" left="19" width="41" zIndex="7" text="18." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item19Label" top="539" left="19" width="41" zIndex="8" text="19." style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Item20Label" top="599" left="19" width="41" zIndex="9" text="20." style="Caption" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox11" top="59" left="98" width="40" zIndex="10" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox12" top="119" left="98" width="40" zIndex="11" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox13" top="179" left="98" width="40" zIndex="12" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox14" top="239" left="98" width="40" zIndex="13" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox15" top="299" left="98" width="40" zIndex="14" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox16" top="359" left="98" width="40" zIndex="15" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox17" top="419" left="98" width="40" zIndex="16" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox18" top="479" left="98" width="40" zIndex="17" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox19" top="539" left="99" width="40" zIndex="18" />
+        <Widget xsi:type="widgets.brease.CheckBox" id="ItemCheckBox20" top="599" left="98" width="40" zIndex="19" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name11TextOutput" top="59" left="158" width="461" zIndex="20" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name12TextOutput" top="118" left="158" width="461" zIndex="21" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name13TextOutput" top="178" left="158" width="461" zIndex="22" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name14TextOutput" top="238" left="158" width="461" zIndex="23" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name15TextOutput" top="298" left="158" width="461" zIndex="24" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name16TextOutput" top="358" left="158" width="461" zIndex="25" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name17TextOutput" top="418" left="158" width="461" zIndex="26" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name18TextOutput" top="478" left="158" width="461" zIndex="27" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name19TextOutput" top="538" left="158" width="461" zIndex="28" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Name20TextOutput" top="598" left="158" width="301" zIndex="29" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size11NumericOutput" top="59" left="1158" width="101" zIndex="30" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size12NumericOutput" top="119" left="1158" width="101" zIndex="31" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size13NumericOutput" top="179" left="1158" width="101" zIndex="32" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size14NumericOutput" top="239" left="1158" width="101" zIndex="33" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size15NumericOutput" top="299" left="1158" width="101" zIndex="34" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size16NumericOutput" top="359" left="1158" width="101" zIndex="35" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size17NumericOutput" top="419" left="1158" width="101" zIndex="36" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size18NumericOutput" top="479" left="1158" width="101" zIndex="37" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size19NumericOutput" top="539" left="1158" width="101" zIndex="38" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="Size20NumericOutput" top="599" left="1158" width="103" zIndex="39" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" unit="{'metric':'M72','imperial':'M72','imperial-us':'M72'}" unitAlign="right" textAlign="right" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput11" top="59" left="638" width="361" zIndex="40" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput12" top="119" left="638" width="361" zIndex="41" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput13" top="179" left="638" width="361" zIndex="42" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput14" top="239" left="638" width="361" zIndex="43" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput15" top="299" left="638" width="361" zIndex="44" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput16" top="359" left="638" width="361" zIndex="45" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput17" top="419" left="638" width="361" zIndex="46" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput18" top="479" left="639" width="361" zIndex="47" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput19" top="539" left="639" width="361" zIndex="48" />
+        <Widget xsi:type="widgets.brease.DateTimeOutput" id="DateTimeOutput20" top="599" left="638" width="381" zIndex="49" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type11TextOutput" top="59" left="1019" width="122" zIndex="50" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type12TextOutput" top="119" left="1019" width="121" zIndex="51" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type13TextOutput" top="179" left="1019" width="121" zIndex="52" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type14TextOutput" top="239" left="1019" width="121" zIndex="53" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type15TextOutput" top="299" left="1019" width="121" zIndex="54" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type16TextOutput" top="359" left="1019" width="121" zIndex="55" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type17TextOutput" top="419" left="1019" width="121" zIndex="56" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type18TextOutput" top="479" left="1019" width="121" zIndex="57" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type19TextOutput" top="539" left="1019" width="121" zIndex="58" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="Type20TextOutput" top="599" left="1019" width="120" zIndex="59" />
+        <Widget xsi:type="widgets.brease.Label" id="Label7" top="-1" left="-2" width="81" height="41" zIndex="60" text="$IAT/FILEMNG/Index" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" textAlign="left" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label8" top="-2" left="79" width="81" height="41" zIndex="61" text="$IAT/FILEMNG/Choice" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label9" top="-2" left="159" width="481" height="41" zIndex="62" text="$IAT/FILEMNG/Name" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label10" top="-1" left="639" width="381" height="41" zIndex="63" text="$IAT/FILEMNG/DateModyfi" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label11" top="-1" left="1019" width="141" height="41" zIndex="64" text="$IAT/FILEMNG/Type" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="Label12" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
       </Widgets>
     </Widget>
   </Widgets>

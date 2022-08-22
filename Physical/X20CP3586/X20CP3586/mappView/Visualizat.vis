@@ -12,7 +12,6 @@
     <Page refId="OEE" />
     <Page refId="FILEMNG" />
     <Page refId="SERVICE" />
-    <Page refId="PdfP" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -44,7 +43,7 @@
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
     <EventBindingsSet refId="MANUAL_eventbinding" />
     <EventBindingsSet refId="ErrorDialogContent_eventbinding" />
-	</EventBindingsSets>
+  </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />
     <Dialog refId="SystemInfoDialog" />
@@ -52,6 +51,7 @@
     <Dialog refId="TunningSetpointsDialog" />
     <Dialog refId="ConfirmDeleteDialog" />
     <Dialog refId="SortDialog" />
+    <Dialog refId="PDF" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -72,7 +72,8 @@
     <Content refId="TunningSetpointsDialogContent" />
     <Content refId="ConfirmDeleteContent" />
     <Content refId="SortContent" />
-    <Content refId="PdfC" />
+    
+    <Content refId="PDF" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
