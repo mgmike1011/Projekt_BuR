@@ -51,7 +51,6 @@
     <Dialog refId="TunningSetpointsDialog" />
     <Dialog refId="ConfirmDeleteDialog" />
     <Dialog refId="SortDialog" />
-    <Dialog refId="PDF" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -72,8 +71,6 @@
     <Content refId="TunningSetpointsDialogContent" />
     <Content refId="ConfirmDeleteContent" />
     <Content refId="SortContent" />
-    <Content refId="PdfC" />
-    <Content refId="PDF" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>

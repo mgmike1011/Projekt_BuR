@@ -24,22 +24,6 @@
         "env": []
     },
     {
-        "id": "37832e64f1a72775",
-        "type": "tab",
-        "label": "Flow 4",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "93a718d834785ce5",
-        "type": "tab",
-        "label": "Flow 5",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
         "id": "ef4821db8ede55e8",
         "type": "ui_base",
         "theme": {
@@ -1263,8 +1247,8 @@
             {
                 "field": "Nr",
                 "title": "Nr",
-                "width": "5%",
-                "align": "center",
+                "width": "10%",
+                "align": "left",
                 "formatter": "plaintext",
                 "formatterParams": {
                     "target": "_blank"
@@ -1273,39 +1257,9 @@
             {
                 "field": "Content",
                 "title": "Content",
-                "width": "65%",
+                "width": "90%",
                 "align": "left",
                 "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "godzina",
-                "title": "Time",
-                "width": "10%",
-                "align": "center",
-                "formatter": "plaintext",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "acknowlage",
-                "title": "Acknowlage",
-                "width": "12%",
-                "align": "center",
-                "formatter": "tickCross",
-                "formatterParams": {
-                    "target": "_blank"
-                }
-            },
-            {
-                "field": "active",
-                "title": "Active",
-                "width": "8%",
-                "align": "center",
-                "formatter": "tickCross",
                 "formatterParams": {
                     "target": "_blank"
                 }
@@ -1330,8 +1284,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1020,
-        "y": 260,
+        "x": 1080,
+        "y": 280,
         "wires": [
             [
                 "e5df25fb1ec321e6",
@@ -1345,7 +1299,7 @@
         "type": "function",
         "z": "12421ff9dde586d7",
         "name": "function 1",
-        "func": "var strin=\"\";\n\n\nstrin = msg.payload.ActiveAlarms;\nvar alarms = strin.split(',');\nvar liczbaAlarmow = alarms.length - 1;\nvar nrAlarmu = [];\nvar trescAlarmu = [];\nvar data = [];\nvar godzina = [];\nvar ack = [];\nvar active = [];\n\nfor (var i = 0; i < liczbaAlarmow; i++) {\nvar datagodzina = [];\nvar alarmJeden = \"\";\nalarmJeden = alarms[i].split(\";\");\nnrAlarmu[i] = alarmJeden[0];\ntrescAlarmu[i] = alarmJeden[1];\ndata[i] = alarmJeden[2];\ndatagodzina = data[i].split(\" \");\ndata[i] = datagodzina[0];\ngodzina[i] = datagodzina[1];\ngodzina[i] = godzina[i].slice(0, -4);\nack[i] = alarmJeden[3];\nif(ack[i]==\"TRUE\"){ack[i]=1}else{ack[i]=0};\nactive[i] = alarmJeden[4];\nif (active[i] == \"TRUE\") { active[i] = 1 } else { active[i] = 0 };\n}\n\nvar newMsg = { payload: msg.payload.length };\nnewMsg.payload = \"[\";\n\nfor (var i = 0; i < liczbaAlarmow; i++) {\n    if (i != liczbaAlarmow-1)\n    {\n        newMsg.payload = newMsg.payload + \"{\\\"Nr\\\":\\\"\" + nrAlarmu[i] + \"\\\",\\\"Content\\\":\\\"\" + trescAlarmu[i] + \"\\\",\\\"godzina\\\":\\\"\" + godzina[i] + \"\\\",\\\"acknowlage\\\":\\\"\" + ack[i] + \"\\\",\\\"active\\\":\\\"\" + active[i]+\"\\\"},\"; \n    }\n    else\n    {\n        newMsg.payload = newMsg.payload + \"{\\\"Nr\\\":\\\"\" + nrAlarmu[i] + \"\\\",\\\"Content\\\":\\\"\" + trescAlarmu[i] + \"\\\",\\\"godzina\\\":\\\"\" + godzina[i] + \"\\\",\\\"acknowlage\\\":\\\"\" + ack[i] + \"\\\",\\\"active\\\":\\\"\" + active[i]+\"\\\"}\";\n    }\n}\n\nnewMsg.payload = newMsg.payload + \"]\";\nreturn newMsg;",
+        "func": "var strin=\"\";\n\n\nstrin = msg.payload.ActiveAlarms;\nvar alarms = strin.split(',');\nvar liczbaAlarmow = alarms.length - 1;\nvar nrAlarmu = [];\nvar trescAlarmu = [];\n\nfor (var i = 0; i < liczbaAlarmow; i++) {\nvar alarmJeden = \"\";\nalarmJeden = alarms[i].split(\";\");\nnrAlarmu[i] = alarmJeden[0];\ntrescAlarmu[i] = alarmJeden[1];\n}\n\nvar newMsg = { payload: msg.payload.length };\nnewMsg.payload = \"[\";\n\nfor (var i = 0; i < liczbaAlarmow; i++) {\n    if (i != liczbaAlarmow-1)\n    {\n        newMsg.payload = newMsg.payload + \"{\\\"Nr\\\":\\\"\"+nrAlarmu[i] + \"\\\",\"+\"\\\"Content\\\":\\\"\" + trescAlarmu[i] + \"\\\"},\"; \n    }\n    else\n    {\n        newMsg.payload = newMsg.payload + \"{\\\"Nr\\\":\\\"\" + nrAlarmu[i] + \"\\\",\" + \"\\\"Content\\\":\\\"\" + trescAlarmu[i] + \"\\\"}\";\n    }\n}\n\nnewMsg.payload = newMsg.payload + \"]\";\nreturn newMsg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1355,8 +1309,7 @@
         "y": 200,
         "wires": [
             [
-                "93304f9a808a7fd7",
-                "47523c07fe0205bb"
+                "93304f9a808a7fd7"
             ]
         ]
     },
@@ -1368,11 +1321,12 @@
         "property": "payload",
         "action": "obj",
         "pretty": false,
-        "x": 1490,
+        "x": 1510,
         "y": 200,
         "wires": [
             [
-                "28863b4c3e7ba9e4"
+                "28863b4c3e7ba9e4",
+                "1c475a0cb2be10f0"
             ]
         ]
     },
@@ -1594,6 +1548,22 @@
         "className": "",
         "x": 1520,
         "y": 640,
+        "wires": []
+    },
+    {
+        "id": "1c475a0cb2be10f0",
+        "type": "debug",
+        "z": "12421ff9dde586d7",
+        "name": "debug 1",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1780,
+        "y": 140,
         "wires": []
     },
     {
@@ -2133,22 +2103,6 @@
         "wires": []
     },
     {
-        "id": "47523c07fe0205bb",
-        "type": "debug",
-        "z": "12421ff9dde586d7",
-        "name": "debug 3",
-        "active": false,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1640,
-        "y": 40,
-        "wires": []
-    },
-    {
         "id": "ed128785bb8ae9a5",
         "type": "aedes broker",
         "z": "352fcc860ddcd8e8",
@@ -2303,7 +2257,7 @@
         "y": 220,
         "wires": [
             [
-                "8e7cb7b23464dc75"
+                "bbe09a43b8f3aa2f"
             ]
         ]
     }
