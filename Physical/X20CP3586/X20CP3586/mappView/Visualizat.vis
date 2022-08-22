@@ -72,7 +72,7 @@
     <Content refId="TunningSetpointsDialogContent" />
     <Content refId="ConfirmDeleteContent" />
     <Content refId="SortContent" />
-    <Content refId="PdfC" />
+    
     <Content refId="PDF" />
   </Contents>
   <SnippetsSets />
