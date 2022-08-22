@@ -246,6 +246,7 @@
         <Variable Name="SortType" EnableArrayElements="True" />
         <Variable Name="Folder" EnableArrayElements="True" />
         <Variable Name="Item" />
+        <Variable Name="Path" />
       </Task>
       <Task Name="VisuAdj">
         <Variable Name="CurrentZone1Temp" EngineeringUnitId="2" />

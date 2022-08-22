@@ -1,4 +1,7 @@
 VAR
+	slesz : STRING[255];
+	FileName : STRING[255];
+	Path : STRING[255];
 	MpFileManagerUI_0 : MpFileManagerUI;
 	MpFileMngConnect : MpFileManagerUIConnectType;
 	MpFileMngSetup : MpFileManagerUISetupType;

@@ -12,7 +12,7 @@ PROGRAM _INIT
 	StopValue := 49;
 	Step := 1;
 	SortType[0] := TRUE;
-	
+
 END_PROGRAM
 
 
@@ -67,7 +67,10 @@ PROGRAM _CYCLIC
 	END_FOR	
 	
 	MpFileManagerUI_0();
-	 
+	
+	
+		PathFinder;
+	
 END_PROGRAM
 
 

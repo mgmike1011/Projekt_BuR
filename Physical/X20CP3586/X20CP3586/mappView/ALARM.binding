@@ -85,5 +85,9 @@
 <Source xsi:type="opcUa" refId="::OEE:BtnEnable" attribute="value" />
 <Target xsi:type="brease" contentRefId="OEE" widgetRefId="BtnRsetStat" attribute="enable" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:Path" attribute="value" />
+<Target xsi:type="brease" contentRefId="PDF" widgetRefId="PDFViewer1" attribute="src" />
+</Binding>
 </Bindings>
 </BindingsSet>
