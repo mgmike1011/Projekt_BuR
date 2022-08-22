@@ -247,12 +247,6 @@ PROGRAM _CYCLIC
 				STATUS := STATE_IDLE;
 			END_IF;
 	END_CASE;
-	// Error switch
-	//IF (TempController[0].Control AND NOT TempController[0].ControlActive) OR (TempController[1].Control AND NOT TempController[1].ControlActive) OR 
-	//	(TempController[2].Control AND NOT TempController[2].ControlActive) OR (TempController[3].Control AND NOT TempController[3].ControlActive) THEN
-	//	STATUS := STATE_ERROR;
-	//	gError := TRUE;
-	//END_IF;
 	// Update info about zone state
 	ZoneStateUpdate;
 	// Calling functionblocks
