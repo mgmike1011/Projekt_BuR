@@ -125,4 +125,10 @@ END_VAR
 VAR
 	RecipeListName : ARRAY[0..9] OF STRING[255];
 END_VAR
+(*Audit*)
+VAR
+	MpAuditTrail_0 : MpAuditTrail;
+	TriggerEvent : BOOL;
+	MessageVar : WSTRING[100] := "Hello World";
+END_VAR
 (**)
