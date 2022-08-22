@@ -264,6 +264,11 @@
         <Variable Name="isSTOP" />
         <Variable Name="isTuning" />
       </Task>
+      <Task Name="AuditTrail">
+        <Variable Name="User_name" />
+        <Variable Name="LOGIN" />
+        <Variable Name="LOGOUT" />
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>

@@ -2,4 +2,8 @@ VAR
 	CommentVar : WSTRING[100];
 	CustomEventStatus : DINT;
 	TypeVar : WSTRING[100];
+	LOGIN : BOOL;
+	User_name : STRING[80];
+	String_bufer : STRING[80];
+	LOGOUT : BOOL;
 END_VAR

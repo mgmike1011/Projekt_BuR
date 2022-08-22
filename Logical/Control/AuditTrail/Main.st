@@ -10,11 +10,26 @@ END_PROGRAM
 
 
 PROGRAM _CYCLIC
-	
+	String_bufer :='';
 	IF TriggerEvent THEN
 		CustomEventStatus := MpAuditCustomEvent(gAuditTrail, TypeVar, MessageVar, CommentVar);
+		TriggerEvent:=FALSE;
 	END_IF
 	
+	IF LOGIN THEN
+		String_bufer :='Loged in as: ';
+		brsstrcat(ADR(String_bufer),ADR(User_name));
+		MessageVar:=STRING_TO_WSTRING(String_bufer);
+		TypeVar :=STRING_TO_WSTRING('LOGIN');
+		CustomEventStatus := MpAuditCustomEvent(gAuditTrail,TypeVar ,MessageVar , CommentVar);
+		LOGIN :=FALSE;
+	END_IF
+	IF LOGOUT AND (NOT (User_name = 'Anonymous')) THEN
+		String_bufer :='Loged out';
+		TypeVar :=STRING_TO_WSTRING('LOGOUT');
+		CustomEventStatus := MpAuditCustomEvent(gAuditTrail,TypeVar ,MessageVar , CommentVar);
+		LOGOUT :=FALSE;
+	END_IF
 	MpAuditTrail_0();
 	 
 END_PROGRAM
