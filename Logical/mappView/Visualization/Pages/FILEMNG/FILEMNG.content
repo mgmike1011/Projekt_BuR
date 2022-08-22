@@ -7,14 +7,9 @@
     <Widget xsi:type="widgets.brease.Button" id="DeleteButton" top="600" left="100" width="160" zIndex="3" text="$IAT/FILEMNG/Delete" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
     <Widget xsi:type="widgets.brease.Button" id="ChangeNameButton" top="720" left="100" width="160" zIndex="4" text="$IAT/FILEMNG/Rename" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
     <Widget xsi:type="widgets.brease.Button" id="NewFolderButton" top="160" left="100" width="160" zIndex="5" text="$IAT/FILEMNG/NewFolder" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
-    <Widget xsi:type="widgets.brease.TextInput" id="NewNameTextInput" top="820" left="100" width="220" zIndex="6" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
-    <Widget xsi:type="widgets.brease.Button" id="OpenFolderButton" top="100" left="100" width="160" zIndex="7" text="$IAT/FILEMNG/EnterFolder" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
-    <Widget xsi:type="widgets.brease.Button" id="FolderUpButton" top="40" left="100" width="160" zIndex="8" text="$IAT/FILEMNG/FolderUp" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
-    <Widget xsi:type="widgets.brease.TextOutput" id="CurrentDirTextOutput" top="40" left="540" width="120" zIndex="9" />
-    <Widget xsi:type="widgets.brease.Label" id="FileCountLabel" top="820" left="380" width="60" zIndex="10" text="$IAT/FILEMNG/NumOfFiles" textAlign="right" style="Caption" />
-    <Widget xsi:type="widgets.brease.Label" id="FolderCountLabel" top="820" left="560" zIndex="11" text="$IAT/FILEMNG/NumOfFolders" textAlign="right" style="Caption" />
-    <Widget xsi:type="widgets.brease.Label" id="CurrentDirLabel" top="40" left="380" width="140" zIndex="12" text="$IAT/FILEMNG/CurrentFolder" style="Caption" />
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item1-10GroupBox" top="120" left="380" width="1300" height="660" zIndex="13" cornerRadius="15px">
+    <Widget xsi:type="widgets.brease.Button" id="OpenFolderButton" top="100" left="100" width="160" zIndex="6" text="$IAT/FILEMNG/EnterFolder" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="FolderUpButton" top="40" left="100" width="160" zIndex="7" text="$IAT/FILEMNG/FolderUp" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item1-10GroupBox" top="120" left="380" width="1300" height="660" zIndex="8" cornerRadius="15px">
       <Widgets>
         <Widget xsi:type="widgets.brease.TextOutput" id="Name1TextOutput" top="58" left="159" width="461" zIndex="0" />
         <Widget xsi:type="widgets.brease.TextOutput" id="Name2TextOutput" top="118" left="159" width="461" zIndex="1" />
@@ -84,31 +79,9 @@
         <Widget xsi:type="widgets.brease.Label" id="Label6" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="NewNameLabel" top="780" left="100" width="120" zIndex="14" text="$IAT/FILEMNG/NewName" style="Caption" />
-    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup1" top="280" left="100" width="140" height="100" zIndex="15">
-      <Widgets>
-        <Widget xsi:type="widgets.brease.RadioButton" id="SingleRadioButton" top="20" left="20" width="80" zIndex="0" boxSize="20" text="$IAT/FILEMNG/OneItem" value="true" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" style="Caption" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="ManyRadioButton" top="60" left="20" width="80" zIndex="1" boxSize="20" text="$IAT/FILEMNG/ManyItem" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" style="Caption" />
-      </Widgets>
-    </Widget>
-    <Widget xsi:type="widgets.brease.Label" id="MarkItemLabel" top="240" left="120" width="200" zIndex="16" text="$IAT/FILEMNG/SelectAnItem" style="Caption" />
-    <Widget xsi:type="widgets.brease.Button" id="RefreshButton" top="40" left="1000" width="160" zIndex="17" text="$IAT/FILEMNG/Refresh" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="FileCountNumericOutput" top="820" left="460" width="60" zIndex="18" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
-    <Widget xsi:type="widgets.brease.NumericOutput" id="FolderCountNumericOutput" top="820" left="660" width="60" zIndex="19" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
-    <Widget xsi:type="widgets.brease.TextInput" id="SearchTextInput" top="40" left="1460" width="220" zIndex="20" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
-    <Widget xsi:type="widgets.brease.Label" id="SearchLabel" top="40" left="1380" zIndex="21" text="$IAT/FILEMNG/Search" style="Caption" />
-    <Widget xsi:type="widgets.brease.Button" id="SortButton" top="40" left="1180" width="160" zIndex="22" text="$IAT/FILEMNG/Sort" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
-    <Widget xsi:type="widgets.brease.Label" id="ChooseCardLabel" top="820" left="1200" width="60" zIndex="23" text="$IAT/FILEMNG/Page" style="Caption" />
-    <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup2" top="800" left="1260" width="420" height="60" zIndex="24">
-      <Widgets>
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card1RadioButton" top="20" left="40" width="60" zIndex="0" boxSize="20" text="1" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card2RadioButton" top="20" left="120" width="60" zIndex="1" boxSize="20" text="2" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card3RadioButton" top="20" left="200" width="60" zIndex="2" boxSize="20" text="3" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card4RadioButton" top="20" left="280" width="60" zIndex="3" boxSize="20" text="4" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
-        <Widget xsi:type="widgets.brease.RadioButton" id="Card5RadioButton" top="20" left="360" width="60" zIndex="4" boxSize="20" text="5" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
-      </Widgets>
-    </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item31-40GroupBox" top="120" left="380" width="1300" height="660" zIndex="25" cornerRadius="15px" visible="false">
+    <Widget xsi:type="widgets.brease.Button" id="RefreshButton" top="40" left="1000" width="160" zIndex="9" text="$IAT/FILEMNG/Refresh" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="SortButton" top="40" left="1180" width="160" zIndex="10" text="$IAT/FILEMNG/Sort" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item31-40GroupBox" top="120" left="380" width="1300" height="660" zIndex="11" cornerRadius="15px" visible="false">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="Item31Label" top="58" left="18" width="42" zIndex="0" text="31." style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Item32Label" top="118" left="18" width="42" zIndex="1" text="32." style="Caption" />
@@ -178,7 +151,7 @@
         <Widget xsi:type="widgets.brease.Label" id="Label18" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item41-50GroupBox" top="120" left="380" width="1300" height="660" zIndex="26" cornerRadius="15px" visible="false">
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item41-50GroupBox" top="120" left="380" width="1300" height="660" zIndex="12" cornerRadius="15px" visible="false">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="Item41Label" top="59" left="19" width="42" zIndex="0" text="41." style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Item42Label" top="118" left="19" width="42" zIndex="1" text="42." style="Caption" />
@@ -248,7 +221,7 @@
         <Widget xsi:type="widgets.brease.Label" id="Label30" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item21-30GroupBox" top="120" left="380" width="1300" height="660" zIndex="27" cornerRadius="15px" visible="false">
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item21-30GroupBox" top="120" left="380" width="1300" height="660" zIndex="13" cornerRadius="15px" visible="false">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="Item21Label" top="59" left="18" width="42" zIndex="0" text="21." style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Item22Label" top="119" left="18" width="42" zIndex="1" text="22." style="Caption" />
@@ -318,7 +291,7 @@
         <Widget xsi:type="widgets.brease.Label" id="Label24" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="Item11-20GroupBox" top="120" left="380" width="1300" height="660" zIndex="28" cornerRadius="15px" visible="false">
+    <Widget xsi:type="widgets.brease.GroupBox" id="Item11-20GroupBox" top="120" left="380" width="1300" height="660" zIndex="14" cornerRadius="15px" visible="false">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="Item11Label" top="59" left="19" width="41" zIndex="0" text="11." style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Item12Label" top="119" left="19" width="41" zIndex="1" text="12." style="Caption" />
@@ -386,6 +359,56 @@
         <Widget xsi:type="widgets.brease.Label" id="Label10" top="-1" left="639" width="381" height="41" zIndex="63" text="$IAT/FILEMNG/DateModyfi" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Label11" top="-1" left="1019" width="141" height="41" zIndex="64" text="$IAT/FILEMNG/Type" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
         <Widget xsi:type="widgets.brease.Label" id="Label12" top="-1" left="1159" width="141" height="41" zIndex="65" text="$IAT/FILEMNG/Size" borderWidth="2px" cornerRadius="15px" backColor="rgba(255, 204, 153, 1)" borderColor="rgba(255, 255, 255, 1)" textColor="rgba(0, 0, 0, 1)" style="Caption" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="SelectAnItemGroupBox" top="240" left="80" height="140" zIndex="15" text="$IAT/FILEMNG/SelectAnItem" cornerRadius="15px">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup1" top="3" left="-1" width="141" height="100" zIndex="0">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.RadioButton" id="SingleRadioButton" top="20" left="20" width="80" zIndex="0" boxSize="20" text="$IAT/FILEMNG/OneItem" value="true" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" style="Caption" />
+            <Widget xsi:type="widgets.brease.RadioButton" id="ManyRadioButton" top="60" left="20" width="80" zIndex="1" boxSize="20" text="$IAT/FILEMNG/ManyItem" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" style="Caption" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="CurrentFolderGroupBox" top="20" left="380" width="580" height="70" zIndex="16" borderWidth="2px" cornerRadius="20px" borderColor="rgba(255, 204, 153, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="CurrentDirLabel" top="19" left="-1" width="140" zIndex="0" text="$IAT/FILEMNG/CurrentFolder" style="Caption" />
+        <Widget xsi:type="widgets.brease.TextOutput" id="CurrentDirTextOutput" top="19" left="139" width="421" zIndex="1" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="FileFolderGroupBox" top="800" left="380" width="240" height="70" zIndex="17" borderWidth="2px" cornerRadius="20px" borderColor="rgba(255, 204, 153, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="FileCountLabel" top="18" left="0" width="78" zIndex="0" text="$IAT/FILEMNG/NumOfFiles" textAlign="right" style="Caption" />
+        <Widget xsi:type="widgets.brease.Label" id="FolderCountLabel" top="18" left="118" width="82" zIndex="1" text="$IAT/FILEMNG/NumOfFolders" textAlign="right" style="Caption" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="FolderCountNumericOutput" top="18" left="178" width="62" zIndex="2" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
+        <Widget xsi:type="widgets.brease.NumericOutput" id="FileCountNumericOutput" top="18" left="58" width="60" zIndex="3" format="{'metric':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial':{'decimalPlaces':0,'minimumIntegerDigits':1},'imperial-us':{'decimalPlaces':0,'minimumIntegerDigits':1}}" textAlign="left" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="PagesGroupBox" top="800" left="1260" width="420" height="70" zIndex="18" borderWidth="2px" cornerRadius="20px" borderColor="rgba(255, 204, 153, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="ChooseCardLabel" top="18" left="0" width="62" zIndex="0" text="$IAT/FILEMNG/Page" style="Caption" />
+        <Widget xsi:type="widgets.brease.RadioButtonGroup" id="RadioButtonGroup2" top="-2" left="65" width="360" height="60" zIndex="1">
+          <Widgets>
+            <Widget xsi:type="widgets.brease.RadioButton" id="Card1RadioButton" top="20" left="0" width="60" zIndex="0" boxSize="20" text="1" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+            <Widget xsi:type="widgets.brease.RadioButton" id="Card2RadioButton" top="20" left="70" width="60" zIndex="1" boxSize="20" text="2" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+            <Widget xsi:type="widgets.brease.RadioButton" id="Card3RadioButton" top="20" left="140" width="60" zIndex="2" boxSize="20" text="3" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+            <Widget xsi:type="widgets.brease.RadioButton" id="Card4RadioButton" top="20" left="210" width="60" zIndex="3" boxSize="20" text="4" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+            <Widget xsi:type="widgets.brease.RadioButton" id="Card5RadioButton" top="20" left="280" width="60" zIndex="4" boxSize="20" text="5" borderWidth="2px" borderColor="rgba(255, 204, 153, 1)" mouseDownBorderColor="rgba(255, 204, 153, 1)" textAlign="left" style="Caption" />
+          </Widgets>
+        </Widget>
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="NewNameGroupBox" top="780" left="80" width="260" height="90" zIndex="19" borderWidth="2px" cornerRadius="20px" borderColor="rgba(255, 204, 153, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.TextInput" id="NewNameTextInput" top="38" left="18" width="220" zIndex="0" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+        <Widget xsi:type="widgets.brease.Label" id="NewNameLabel" top="4" left="18" width="120" height="28" zIndex="1" text="$IAT/FILEMNG/NewName" style="Caption" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.GroupBox" id="SearchGroupBox" top="20" left="1360" width="320" height="70" zIndex="20" borderWidth="2px" cornerRadius="20px" borderColor="rgba(255, 204, 153, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.Label" id="SearchLabel" top="18" left="-2" zIndex="0" text="$IAT/FILEMNG/Search" style="Caption" />
+        <Widget xsi:type="widgets.brease.TextInput" id="SearchTextInput" top="18" left="78" width="220" zIndex="1" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
       </Widgets>
     </Widget>
   </Widgets>

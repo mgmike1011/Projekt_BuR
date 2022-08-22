@@ -9,8 +9,16 @@
 <Source xsi:type="opcUa" refId="::FileCtrl:Folder" attribute="value" />
 <Target xsi:type="brease" contentRefId="ConfirmDeleteContent" widgetRefId="ConfirmDeleteFolderLabel" attribute="visible" />
 </Binding>
+
+
+
+
 <Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::FileCtrl:Item" attribute="value" />
+<Source xsi:type="opcUa" refId="::FileCtrl:Items" attribute="value" />
+<Target xsi:type="brease" contentRefId="ConfirmDeleteContent" widgetRefId="ConfirmDeleteFolderLabel3" attribute="visible" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:File" attribute="value" />
 <Target xsi:type="brease" contentRefId="ConfirmDeleteContent" widgetRefId="ConfirmDeleteItemLabel" attribute="visible" />
 </Binding>
 </Bindings>
