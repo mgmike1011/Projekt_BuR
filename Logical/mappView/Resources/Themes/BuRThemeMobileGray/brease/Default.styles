@@ -241,7 +241,7 @@
 		activeTextColor="#555555" 
 		bold="true" 
 		activeBorderColor="transparent" 
-		shadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
+		shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
 	
 	<!--numeric output-->
 	
@@ -264,7 +264,7 @@
 		activeTextColor="#555555" 
 		bold="true" 
 		activeBorderColor="transparent" 
-		shadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" 
+		shadow="1px 1px 8px rgba(64, 64, 64, 1)" 
 		textAlign="left" />
 	
 	<!--text output-->
@@ -289,7 +289,7 @@
 		activeTextColor="#555555" 
 		bold="true" 
 		activeBorderColor="transparent" 
-		shadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" 
+		shadow="1px 1px 8px rgba(64, 64, 64, 1)" 
 		textAlign="left" />
 	
 	<!--dropdown box-->
