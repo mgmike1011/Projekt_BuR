@@ -31,19 +31,19 @@ PROGRAM _INIT
 		TempControllerPar[iCnt].PID.Cool.DerivativeTime := PIDDerivativeTimeCOOL[iCnt];
 	END_FOR;
 	// Integrator preloading
-//	TempControllerPar[0].PID.IntegratorPreloading := 0;
-//	TempControllerPar[1].PID.IntegratorPreloading := 0;
-//	TempControllerPar[2].PID.IntegratorPreloading := 0;
-//	TempControllerPar[3].PID.IntegratorPreloading := 0;
+	TempControllerPar[0].PID.IntegratorPreloading := -0.2;
+	TempControllerPar[1].PID.IntegratorPreloading := -0.2;
+	TempControllerPar[2].PID.IntegratorPreloading := -0.2;
+	TempControllerPar[3].PID.IntegratorPreloading := -0.2;
 	// Hysteresis
-	TempControllerPar[0].Hysteresis.Band.CoolToHeat := 75;
-	TempControllerPar[0].Hysteresis.Band.HeatToCool := 75;
-	TempControllerPar[1].Hysteresis.Band.CoolToHeat := 75;
-	TempControllerPar[1].Hysteresis.Band.HeatToCool := 75;
-	TempControllerPar[2].Hysteresis.Band.CoolToHeat := 75;
-	TempControllerPar[2].Hysteresis.Band.HeatToCool := 75;
-	TempControllerPar[3].Hysteresis.Band.CoolToHeat := 75;
-	TempControllerPar[3].Hysteresis.Band.HeatToCool := 75;
+	TempControllerPar[0].Hysteresis.Band.CoolToHeat := 5;
+	TempControllerPar[0].Hysteresis.Band.HeatToCool := 5;
+	TempControllerPar[1].Hysteresis.Band.CoolToHeat := 5;
+	TempControllerPar[1].Hysteresis.Band.HeatToCool := 5;
+	TempControllerPar[2].Hysteresis.Band.CoolToHeat := 5;
+	TempControllerPar[2].Hysteresis.Band.HeatToCool := 5;
+	TempControllerPar[3].Hysteresis.Band.CoolToHeat := 5;
+	TempControllerPar[3].Hysteresis.Band.HeatToCool := 5;
 	
 	
 	// Temperature Controller 
