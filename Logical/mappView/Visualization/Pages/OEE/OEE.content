@@ -47,6 +47,5 @@
         <Widget xsi:type="widgets.brease.TextOutput" id="OutMachineState" top="2" left="-1" width="341" height="158" zIndex="0" textAlign="center" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Button" id="Button1" top="440" left="1340" width="360" height="280" zIndex="8" text="do usuniecia, otwiera okno pdf" backColor="rgba(255, 0, 0, 1)" />
   </Widgets>
 </Content>
