@@ -4,7 +4,7 @@
   <Element ID="gReport" Type="mpreportcore">
     <Group ID="MpReport">
       <Group ID="Settings">
-        <Property ID="ResourceDeviceName" Value="OEERaport" />
+        <Property ID="ResourceDeviceName" Value="PDF" />
         <Group ID="LanguageDependent">
           <Group ID="[0]">
             <Property ID="Language" Value="en" />

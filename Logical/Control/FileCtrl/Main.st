@@ -12,7 +12,8 @@ PROGRAM _INIT
 	StopValue := 49;
 	Step := 1;
 	SortType[0] := TRUE;
-
+	OpenPDF := 0;
+	
 END_PROGRAM
 
 
@@ -68,8 +69,10 @@ PROGRAM _CYCLIC
 	
 	MpFileManagerUI_0();
 	
-	
+	IF OpenPDF THEN
 		PathFinder;
+		OpenPDF := 0;
+	END_IF;
 	
 END_PROGRAM
 
