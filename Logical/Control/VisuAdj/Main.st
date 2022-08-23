@@ -102,6 +102,12 @@ PROGRAM _CYCLIC
 			isSTOP := TRUE;
 			isERROR := FALSE;
 	END_CASE;
+	// Set temperature button in manual mode
+	IF STATUS = STATE_IDLE OR STATUS = STATE_WORKING_MANUAL THEN
+		isIDLEorManual := TRUE;
+	ELSE
+		isIDLEorManual := FALSE;
+	END_IF;
 END_PROGRAM
 
 PROGRAM _EXIT

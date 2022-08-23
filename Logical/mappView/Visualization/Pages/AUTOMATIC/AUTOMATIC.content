@@ -88,6 +88,11 @@
             <Widget xsi:type="widgets.brease.Image" id="SimOffImage6" top="274" left="316" width="31" height="29" zIndex="20" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(0, 128, 0, 1)" />
             <Widget xsi:type="widgets.brease.Image" id="SimOffImageZone4" top="311" left="271" width="31" height="29" zIndex="21" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(192, 0, 0, 1)" />
             <Widget xsi:type="widgets.brease.Image" id="SimOffImage8" top="311" left="316" width="31" height="29" zIndex="22" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(0, 128, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="SimOffImage3" top="7" left="183" width="31" height="29" zIndex="23" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(0, 128, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="SimOffImage5" top="45" left="183" width="31" height="29" zIndex="24" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(0, 128, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="SimOffImage7" top="82" left="183" width="31" height="29" zIndex="25" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(0, 128, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="SimOffImage9" top="120" left="183" width="31" height="29" zIndex="26" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(0, 128, 0, 1)" />
+            <Widget xsi:type="widgets.brease.Image" id="SimOffImage10" top="157" left="183" width="31" height="29" zIndex="27" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(0, 128, 0, 1)" />
           </Widgets>
         </Widget>
       </Widgets>

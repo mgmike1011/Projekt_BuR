@@ -36,3 +36,7 @@ VAR
 	CoolPWMZone3 : REAL;
 	CoolPWMZone4 : REAL;
 END_VAR
+(*Manual SetTemp Input*)
+VAR
+	isIDLEorManual : BOOL;
+END_VAR

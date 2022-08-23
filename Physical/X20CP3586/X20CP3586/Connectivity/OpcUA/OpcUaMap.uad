@@ -122,11 +122,21 @@
         <Variable Name="TimeStep3" />
         <Variable Name="TimeStep4" />
         <Variable Name="TimeStep5" />
-        <Variable Name="TimStep1" />
-        <Variable Name="TimStep2" />
-        <Variable Name="TimStep3" />
-        <Variable Name="TimStep4" />
-        <Variable Name="TimStep5" />
+        <Variable Name="TimStep1">
+          <Variable Name="IN" />
+        </Variable>
+        <Variable Name="TimStep2">
+          <Variable Name="IN" />
+        </Variable>
+        <Variable Name="TimStep3">
+          <Variable Name="IN" />
+        </Variable>
+        <Variable Name="TimStep4">
+          <Variable Name="IN" />
+        </Variable>
+        <Variable Name="TimStep5">
+          <Variable Name="IN" />
+        </Variable>
         <Variable Name="ZoneStatus" EnableArrayElements="True" />
         <Variable Name="TuneEnable" />
         <Variable Name="ParametersMachine">
@@ -290,6 +300,7 @@
         <Variable Name="HeatPWMZone2" />
         <Variable Name="HeatPWMZone3" />
         <Variable Name="HeatPWMZone4" />
+        <Variable Name="isIDLEorManual" />
       </Task>
     </Module>
   </DefaultView>
