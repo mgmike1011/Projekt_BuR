@@ -1588,7 +1588,7 @@
         "width": "0",
         "height": "0",
         "name": "",
-        "label": "Status maszyny:",
+        "label": "Machine state:",
         "format": "{{msg.payload}}",
         "layout": "row-center",
         "className": "",

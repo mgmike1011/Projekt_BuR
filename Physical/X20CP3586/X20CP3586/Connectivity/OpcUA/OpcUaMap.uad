@@ -178,6 +178,21 @@
           <Variable Name="Performance" />
           <Variable Name="Quality" />
           <Variable Name="OEE" />
+          <Variable Name="Info">
+            <Variable Name="ShiftStatistics">
+              <Variable Name="Uptime">
+                <Variable Name="Hours" />
+                <Variable Name="Minutes" />
+                <Variable Name="Seconds" />
+              </Variable>
+              <Variable Name="TotalTime">
+                <Variable Name="Hours" />
+                <Variable Name="Minutes" />
+                <Variable Name="Seconds" />
+              </Variable>
+              <Variable Name="AverageCycleTime" />
+            </Variable>
+          </Variable>
         </Variable>
         <Variable Name="RsetOEE" />
         <Variable Name="IdealCycleTime_1">
@@ -191,6 +206,7 @@
         <Variable Name="StatusString" />
         <Variable Name="StateIdle" />
         <Variable Name="BtnEnable" />
+        <Variable Name="avSCTwithoutTrash" />
       </Task>
       <Task Name="MpReport1">
         <Variable Name="MpReportCore_1">
@@ -245,6 +261,8 @@
         <Variable Name="ElementType" EnableArrayElements="True" />
         <Variable Name="SortType" EnableArrayElements="True" />
         <Variable Name="Folder" EnableArrayElements="True" />
+        <Variable Name="Item" />
+        <Variable Name="Path" />
         <Variable Name="SingleSelect" />
         <Variable Name="Items" />
         <Variable Name="File" />
