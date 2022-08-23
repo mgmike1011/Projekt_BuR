@@ -77,7 +77,7 @@
         <seg>Temperatur einstellen</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Ustawiona Temperatura </seg>
+        <seg>Temperatura zadana</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>Set Temperature</seg>
