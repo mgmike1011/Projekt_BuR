@@ -44,8 +44,6 @@ PROGRAM _INIT
 	TempControllerPar[2].Hysteresis.Band.HeatToCool := 5;
 	TempControllerPar[3].Hysteresis.Band.CoolToHeat := 5;
 	TempControllerPar[3].Hysteresis.Band.HeatToCool := 5;
-	
-	
 	// Temperature Controller 
 	TempController[0].MpLink := ADR(gTempController_1);
 	TempController[0].Parameters := ADR(TempControllerPar[0]);
