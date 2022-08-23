@@ -5,9 +5,29 @@
     <prop type="x-BR-TS:Namespace">Audit/Custom</prop>
   </header>
   <body>
-    <tu tuid="TODO">
+    <tu tuid="LOGOUT">
+      <tuv xml:lang="de">
+        <seg>abgemeldet von {&amp;msg} </seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>
+wylogowano z {&amp;msg} 
+
+</seg>
+      </tuv>
       <tuv xml:lang="en">
-        <seg>Add Custom event texts here</seg>
+        <seg>logged out from {&amp;msg} </seg>
+      </tuv>
+    </tu>
+    <tu tuid="LOGIN">
+      <tuv xml:lang="de">
+        <seg>Eingeloggt als {&amp;msg}</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>zalogowano jako {&amp;msg}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>logged in as {&amp;msg}</seg>
       </tuv>
     </tu>
   </body>

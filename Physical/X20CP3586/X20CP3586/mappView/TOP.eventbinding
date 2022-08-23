@@ -13,7 +13,7 @@
     </EventBinding>
     <EventBinding id="TOP.logout.Click">
       <Source xsi:type="widgets.brease.Image.Event" contentRefId="TOP" widgetRefId="logout" event="Click" />
-      <Operand datatype="ANY_STRING" name="Get_user">
+      <Operand datatype="ANY_STRING" name="Get_user2">
         <ReadTarget xsi:type="session.VariableAction.Read" refId="::SYSTEM:clientInfo.userId">
           <Method xsi:type="session.VariableAction.GetValue" />
         </ReadTarget>
@@ -22,15 +22,15 @@
         <Sequence>
           <Step order="0">
             <Action>
-              <Target xsi:type="opcUa.NodeAction" refId="::AuditTrail:LOGOUT">
-                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              <Target xsi:type="opcUa.NodeAction" refId="::AuditTrail:User_name">
+                <Method xsi:type="opcUa.NodeAction.SetValueString" value="=Get_user2" />
               </Target>
             </Action>
           </Step>
           <Step order="1">
             <Action>
-              <Target xsi:type="opcUa.NodeAction" refId="::AuditTrail:User_name">
-                <Method xsi:type="opcUa.NodeAction.SetValueString" value="=Get_User" />
+              <Target xsi:type="opcUa.NodeAction" refId="::AuditTrail:LOGOUT">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
               </Target>
             </Action>
           </Step>

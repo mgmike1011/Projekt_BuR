@@ -7,24 +7,24 @@
   <body>
     <tu tuid="Root">
       <tuv xml:lang="de">
-        <seg>{&amp;evtime[TIME=%u%R]} {&amp;op} {=$MpAudit/SysF/Event/{&amp;ev}}</seg>
+        <seg>{&amp;evtime[TIME=%u%R]} {&amp;op} {=$Audit/SysF/Event/{&amp;ev}}</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>{&amp;evtime[TIME=%u%R]} {&amp;op} {=$MpAudit/SysF/Event/{&amp;ev}}</seg>
+        <seg>{&amp;evtime[TIME=%u%R]} {&amp;op} {=$Audit/SysF/Event/{&amp;ev}}</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>{&amp;evtime[TIME=%u%R]} {&amp;op} {=$MpAudit/SysF/Event/{&amp;ev}}</seg>
+        <seg>{&amp;evtime[TIME=%u%R]} {&amp;op} {=$Audit/SysF/Event/{&amp;ev}}</seg>
       </tuv>
     </tu>
     <tu tuid="Root_disp">
       <tuv xml:lang="de">
-        <seg>{=$MpAudit/SysF/Event/{&amp;ev}}</seg>
+        <seg>{=$Audit/SysF/Event/{&amp;ev}}</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>{=$MpAudit/SysF/Event/{&amp;ev}}</seg>
+        <seg>{=$Audit/SysF/Event/{&amp;ev}}</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>{=$MpAudit/SysF/Event/{&amp;ev}}</seg>
+        <seg>{=$Audit/SysF/Event/{&amp;ev}}</seg>
       </tuv>
     </tu>
     <tu tuid="2">
@@ -53,10 +53,14 @@
     </tu>
     <tu tuid="18">
       <tuv xml:lang="de">
-        <seg>{=$MpAudit/Custom/{&amp;typ}}</seg>
+        <seg>{=$Audit/Custom/{&amp;typ}}</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>
+{=$Audit/Custom/{&amp;typ}}</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>{=$MpAudit/Custom/{&amp;typ}}</seg>
+        <seg>{=$Audit/Custom/{&amp;typ}}</seg>
       </tuv>
     </tu>
     <tu tuid="19">
