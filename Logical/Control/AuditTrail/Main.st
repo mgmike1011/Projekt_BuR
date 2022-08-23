@@ -5,11 +5,12 @@ PROGRAM _INIT
 	MpAuditTrail_0.Enable := TRUE;
 	MpAuditTrail_0.DeviceName := ADR('AUDIT');
 	MpAuditTrail_0();
-	
+	export_timer.PT := EXPORT_PERIOD;
 END_PROGRAM
 
 
 PROGRAM _CYCLIC
+	export_timer.IN := NOT(export_timer.Q);
 	String_bufer :='';
 	IF TriggerEvent THEN
 		CustomEventStatus := MpAuditCustomEvent(gAuditTrail, TypeVar, MessageVar, CommentVar);
@@ -49,15 +50,13 @@ PROGRAM _CYCLIC
 		MessageVar:=STRING_TO_WSTRING(String_bufer);
 		CustomEventStatus := MpAuditCustomEvent(gAuditTrail,TypeVar ,MessageVar , CommentVar);
 	END_IF
-	
-	
-	
-	
-	
-	
+//	IF export_timer.Q THEN
+//		
+//	END_IF
 	LOGOUT :=FALSE;
 	prev_machine_state :=STATUS;
 	MpAuditTrail_0();
+	export_timer();
 END_PROGRAM
 
 

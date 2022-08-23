@@ -30,5 +30,6 @@
     <Object Type="File">ErrorDialogContent.eventbinding</Object>
     <Object Type="File">TunningSetpointsDialogContent.binding</Object>
     <Object Type="File">ConfirmDeleteContent.binding</Object>
+    <Object Type="File">AUDIT.binding</Object>
   </Objects>
 </Package>

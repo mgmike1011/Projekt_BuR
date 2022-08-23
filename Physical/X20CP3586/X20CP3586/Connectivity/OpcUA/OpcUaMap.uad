@@ -141,6 +141,7 @@
           <Variable Name="Time5" />
         </Variable>
         <Variable Name="RecipeListName" />
+        <Variable Name="MpAuditTrail_0" />
       </GlobalVariables>
       <Task Name="Recipe">
         <Variable Name="RecipeUIConnect">

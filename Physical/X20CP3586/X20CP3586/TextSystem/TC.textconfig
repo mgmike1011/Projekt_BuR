@@ -36,6 +36,10 @@
       <Property ID="TargetFile[22]" Value="mappView.Resources.Texts.TunningSetpointsDialogTexts.tmx" />
       <Property ID="TargetFile[23]" Value="mappView.Resources.Texts.FileMngTexts.tmx" />
       <Property ID="TargetFile[24]" Value="mappView.Resources.Texts.AutomaticPageTexts.tmx" />
+      <Property ID="TargetFile[25]" Value="mappView.Resources.Texts.AuditTexts.TxtCustom.tmx" />
+      <Property ID="TargetFile[26]" Value="mappView.Resources.Texts.AuditTexts.TxtEventF.tmx" />
+      <Property ID="TargetFile[27]" Value="mappView.Resources.Texts.AuditTexts.TxtUserF.tmx" />
+      <Property ID="TargetFile[28]" Value="mappView.Resources.Texts.AuditTexts.TxtRecipeF.tmx" />
     </Group>
   </Element>
 </Configuration>
