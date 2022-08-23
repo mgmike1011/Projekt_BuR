@@ -80,15 +80,5 @@
         </Action>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="OEE.Button1.Click">
-      <Source xsi:type="widgets.brease.Button.Event" contentRefId="OEE" widgetRefId="Button1" event="Click" />
-      <EventHandler>
-        <Action>
-          <Target xsi:type="clientSystem.Action">
-            <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="PDF" />
-          </Target>
-        </Action>
-      </EventHandler>
-    </EventBinding>
-  </Bindings>
+	</Bindings>
 </EventBindingSet>
