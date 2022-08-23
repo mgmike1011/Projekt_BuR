@@ -757,9 +757,9 @@
 	/>	
 	
 	<Style id="default" xsi:type="widgets.brease.AuditList" 
-		headerBackColor="#3388CC" 
-		headerTextColor="#FFFFFF" 
-		backColorSelectedRow="#ff9900"
+		headerBackColor="#ffcc99" 
+		headerTextColor="#000000" 
+		backColorSelectedRow="#ff8800"
 	/>
 	
 	<!--version 5.4 widgets-->
