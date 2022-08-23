@@ -1,24 +1,24 @@
 (*Current zone temperature*)
 VAR
-	CurrentZone1Temp : REAL;
-	CurrentZone2Temp : REAL;
-	CurrentZone3Temp : REAL;
-	CurrentZone4Temp : REAL;
+	CurrentZone1Temp : REAL; (*Current temperature of zone 1 - real or simulated values.*)
+	CurrentZone2Temp : REAL; (*Current temperature of zone 2 - real or simulated values.*)
+	CurrentZone3Temp : REAL; (*Current temperature of zone 3 - real or simulated values.*)
+	CurrentZone4Temp : REAL; (*Current temperature of zone 4 - real or simulated values.*)
 END_VAR
 (*Automatic mode timers*)
 VAR
-	TimeStep5Int : UINT;
-	TimeStep4Int : UINT;
-	TimeStep3Int : UINT;
-	TimeStep2Int : UINT;
-	TimeStep1Int : UINT;
+	TimeStep5Int : UINT; (*Time of step 5 in automatic mode in seconds.*)
+	TimeStep4Int : UINT; (*Time of step 4 in automatic mode in seconds.*)
+	TimeStep3Int : UINT; (*Time of step 3 in automatic mode in seconds.*)
+	TimeStep2Int : UINT; (*Time of step 2 in automatic mode in seconds.*)
+	TimeStep1Int : UINT; (*Time of step 1 in automatic mode in seconds.*)
 END_VAR
 (*MachineState*)
 VAR
-	isIDLE_ : BOOL;
-	isManual : BOOL;
-	isTuning : BOOL;
-	isERROR : BOOL;
-	isSTOP : BOOL;
-	isAutomatic : BOOL;
+	isIDLE_ : BOOL; (*Is machine state IDLE.*)
+	isManual : BOOL; (*Is machine state manual.*)
+	isTuning : BOOL; (*Is machine state tuning.*)
+	isERROR : BOOL; (*Is machine state error.*)
+	isSTOP : BOOL; (*Is machine state stop.*)
+	isAutomatic : BOOL; (*Is machine state automatic.*)
 END_VAR

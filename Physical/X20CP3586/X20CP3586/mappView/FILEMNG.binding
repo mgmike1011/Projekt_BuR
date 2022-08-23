@@ -1038,5 +1038,9 @@
 <Source xsi:type="opcUa" refId="::FileCtrl:MpFileMngConnect.File.List.Items[40].Size" attribute="value" />
 <Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="Size41NumericOutput" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:SingleSelect" attribute="value" />
+<Target xsi:type="brease" contentRefId="FILEMNG" widgetRefId="SingleRadioButton" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>

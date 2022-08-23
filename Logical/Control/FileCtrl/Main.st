@@ -19,6 +19,10 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	
+	IF NOT MpFileMngConnect.File.MultiSelect THEN
+		SingleSelect := TRUE;
+	END_IF
+	
 	IF SortType[0] THEN
 		MpFileMngConnect.File.SortOrder := 0;
 	ELSIF SortType[1] THEN
@@ -32,6 +36,18 @@ PROGRAM _CYCLIC
 	ELSIF SortType[5] THEN
 		MpFileMngConnect.File.SortOrder := 5;	
 	END_IF
+	
+	IF EDGEPOS(MpFileMngConnect.File.MultiSelect) THEN
+		FOR i := StartValue TO StopValue BY Step DO
+			MpFileMngConnect.File.List.Items[i].IsSelected := FALSE;
+		END_FOR
+	END_IF
+	
+//	IF EDGEPOS(MpFileMngConnect.File.Filter = '') THEN
+//		MpFileMngConnect.File.Refresh := FALSE;
+//	ELSE
+//		MpFileMngConnect.File.Refresh := TRUE;
+//	END_IF
 	
 	FOR i := StartValue TO StopValue BY Step DO
 		IF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_NONE THEN	
@@ -56,15 +72,33 @@ PROGRAM _CYCLIC
 			ElementType[i] := 'jpg';
 		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_BMP THEN	
 			ElementType[i] := 'bmp';
+//		ELSIF MpFileMngConnect.File.List.Items[i].ItemType = mpFILE_ITEM_TYPE_USER1 THEN	
+//			ElementType[i] := 'pdf';
 		END_IF
 		
-		IF MpFileMngConnect.File.List.Items[i].IsSelected AND MpFileMngConnect.File.List.Items[i].IsFolder AND MpFileMngConnect.File.Delete THEN
+		IF MpFileMngConnect.File.List.Items[i].IsSelected AND MpFileMngConnect.File.List.Items[i].IsFolder AND NOT MpFileMngConnect.File.MultiSelect AND MpFileMngConnect.File.Delete THEN
 			Folder := TRUE;
-			Item := FALSE;
-		ELSIF MpFileMngConnect.File.List.Items[i].IsSelected AND NOT MpFileMngConnect.File.List.Items[i].IsFolder AND MpFileMngConnect.File.Delete THEN
+			File := FALSE;
+			Items := FALSE;
+		ELSIF MpFileMngConnect.File.List.Items[i].IsSelected AND NOT MpFileMngConnect.File.List.Items[i].IsFolder AND NOT MpFileMngConnect.File.MultiSelect AND MpFileMngConnect.File.Delete THEN
 			Folder := FALSE;
-			Item := TRUE;
+			File := TRUE;
+			Items := FALSE;
+		ELSIF MpFileMngConnect.File.List.Items[i].IsSelected AND MpFileMngConnect.File.MultiSelect AND MpFileMngConnect.File.Delete THEN
+			Folder := FALSE;
+			File := FALSE;
+			Items := TRUE;
 		END_IF
+		
+//		IF MpFileMngConnect.MessageBox.Confirm THEN
+//			Folder := FALSE;
+//			File := FALSE;
+//			Items := FALSE;
+//		ELSIF MpFileMngConnect.MessageBox.Cancel THEN
+//			Folder := FALSE;
+//			File := FALSE;
+//			Items := FALSE;
+//		END_IF
 	END_FOR	
 	
 	MpFileManagerUI_0();

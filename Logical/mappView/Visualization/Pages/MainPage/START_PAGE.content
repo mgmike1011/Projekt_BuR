@@ -99,7 +99,7 @@
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart2" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
               <Properties>
                 <yAxis>
-                  <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" />
+                  <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
                 </yAxis>
                 <xAxis>
                   <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />
@@ -155,5 +155,7 @@
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Label" id="TitalStartPage" top="0" left="0" width="1750" height="80" zIndex="5" text="$IAT/START_PAGE/StartPage" textAlign="center" fontName="Arial" fontSize="35px" bold="true" margin="5px" />
+    <Widget xsi:type="widgets.brease.Button" id="StopButton" top="20" left="1440" width="175" height="60" zIndex="6" text="STOP" disabledBackColor="rgba(192, 192, 192, 1)" textColor="rgba(192, 0, 0, 1)" mouseDownTextColor="rgba(255, 140, 0, 1)" mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
+    <Widget xsi:type="widgets.brease.Image" id="Image2" top="20" left="1640" width="53" height="63" zIndex="7" image="Media/SymbolLib/Symbols/Stop.svg" imageColor="rgba(192, 0, 0, 1)" />
   </Widgets>
 </Content>
