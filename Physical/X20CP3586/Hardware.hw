@@ -31,7 +31,7 @@
     <Parameter ID="FileDevicePath3" Value="C:/PDF" />
     <Group ID="FileDevice4" />
     <Parameter ID="FileDeviceName4" Value="DISK" />
-    <Parameter ID="FileDevicePath4" Value="C:/BRFileManager" />
+    <Parameter ID="FileDevicePath4" Value="C:/" />
     <Group ID="FileDevice5" />
     <Parameter ID="FileDeviceName5" Value="RECIPE" />
     <Parameter ID="FileDevicePath5" Value="C:/BrRecipe" />

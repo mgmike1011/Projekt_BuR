@@ -130,10 +130,10 @@
         <Variable Name="ZoneStatus" EnableArrayElements="True" />
         <Variable Name="TuneEnable" />
         <Variable Name="ParametersMachine">
-        <Variable Name="Temp1" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
-        <Variable Name="Temp2" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
-        <Variable Name="Temp3" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
-        <Variable Name="Temp4" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+          <Variable Name="Temp1" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+          <Variable Name="Temp2" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+          <Variable Name="Temp3" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+          <Variable Name="Temp4" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
           <Variable Name="Time1" />
           <Variable Name="Time2" />
           <Variable Name="Time3" />
@@ -261,11 +261,13 @@
         <Variable Name="ElementType" EnableArrayElements="True" />
         <Variable Name="SortType" EnableArrayElements="True" />
         <Variable Name="Folder" EnableArrayElements="True" />
-        <Variable Name="Item" />
         <Variable Name="Path" />
         <Variable Name="SingleSelect" />
         <Variable Name="Items" />
         <Variable Name="File" />
+        <Variable Name="FileName" />
+        <Variable Name="OpenDialogPDF" />
+        <Variable Name="OpenPDF" />
       </Task>
       <Task Name="VisuAdj">
         <Variable Name="CurrentZone1Temp" EngineeringUnitId="2" />
