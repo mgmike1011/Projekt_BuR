@@ -51,9 +51,6 @@ PROGRAM _CYCLIC
 			stringBuffer := BOOL_TO_STRING(mpAlarmXlistConnect.AlarmList.StateActive[i]);
 			brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));
 			
-			
-			
-			
 			IF NOT (i = Alarms.Active) THEN
 				stringBuffer :=',';
 				brsstrcat(ADR(Alarms.ActiveAlarms),ADR(stringBuffer));

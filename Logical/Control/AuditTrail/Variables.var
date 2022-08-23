@@ -5,5 +5,6 @@ VAR
 	LOGIN : BOOL;
 	User_name : STRING[80];
 	String_bufer : STRING[80];
+	prev_machine_state : DINT;
 	LOGOUT : BOOL;
 END_VAR
