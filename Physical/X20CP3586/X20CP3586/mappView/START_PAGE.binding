@@ -46,42 +46,18 @@
 
 
 
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHeater4" attribute="value" />
-<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="HeaterLed4" attribute="value" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gFan4" attribute="value" />
-<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="FanLed4" attribute="value" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHeater3" attribute="value" />
-<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="HeaterLed3" attribute="value" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gFan3" attribute="value" />
-<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="FanLed3" attribute="value" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHeater2" attribute="value" />
-<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="HeaterLed2" attribute="value" />
-</Binding>
-
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gHeater1" attribute="value" />
-<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="HeaterLed1" attribute="value" />
-</Binding>
 
 
 
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gFan1" attribute="value" />
-<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="FanLed1" attribute="value" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:gFan2" attribute="value" />
-<Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="FanLed2" attribute="value" />
-</Binding>
+
+
+
+
+
+
+
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp2" attribute="node" />
 <Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TempChart1" attribute="graph[graph1].node" />
@@ -122,5 +98,6 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:gTemp4" attribute="node" />
 <Target xsi:type="brease" contentRefId="START_PAGE" widgetRefId="TemperatureStartPageZone4" attribute="node" />
 </Binding>
+
 </Bindings>
 </BindingsSet>

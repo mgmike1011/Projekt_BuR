@@ -29,5 +29,253 @@
         </Sequence>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="EventBinding_12">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ZoneStatus[0]" event="ValueChanged" />
+      <Operand datatype="ANY_INT" name="Strefa1">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::AsGlobalPV:ZoneStatus[0]">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Strefa1 = 0 ">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed1">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed1">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Strefa1 = 1">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed1">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="1" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed1">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Strefa1 = 2">
+        <Sequence>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed1">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed1">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="1" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_13">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ZoneStatus[1]" event="ValueChanged" />
+      <Operand datatype="ANY_INT" name="Strefa2">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::AsGlobalPV:ZoneStatus[1]">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Strefa2 = 0 ">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed2">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed2">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Strefa2 = 1">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed2">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="1" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed2">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Strefa2 = 2">
+        <Sequence>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed2">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed2">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="1" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_14">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ZoneStatus[2]" event="ValueChanged" />
+      <Operand datatype="ANY_INT" name="Strefa3">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::AsGlobalPV:ZoneStatus[2]">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Strefa3 = 0">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed3">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed3">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Strefa3 = 1">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed3">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="1" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed3">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Strefa3 = 2">
+        <Sequence>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed3">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed3">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="1" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="EventBinding_15">
+      <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:ZoneStatus[3]" event="ValueChanged" />
+      <Operand datatype="ANY_INT" name="Strefa4">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::AsGlobalPV:ZoneStatus[3]">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="Strefa4 = 0 ">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed4">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed4">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Strefa4 = 1">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed4">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="1" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed4">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="Strefa4 = 2">
+        <Sequence>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="HeaterLed4">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="0" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.ToggleButton.Action" contentRefId="START_PAGE" widgetRefId="FanLed4">
+                <Method xsi:type="widgets.brease.ToggleButton.Action.SetValue" value="1" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+    </EventBinding>
   </Bindings>
 </EventBindingSet>
