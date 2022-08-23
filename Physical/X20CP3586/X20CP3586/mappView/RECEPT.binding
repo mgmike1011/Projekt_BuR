@@ -35,22 +35,10 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time1" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time1Recipe" attribute="value" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp4" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp4Recipe" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp3" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp3Recipe" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp2" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp2Recipe" attribute="value" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp1" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp1Recipe" attribute="value" />
-</Binding>
+
+
+
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time5" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time5Recipe" attribute="value" />
@@ -152,5 +140,21 @@
 </Binding>
 
 
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp1" attribute="node" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp1Recipe" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp2" attribute="node" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp2Recipe" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp3" attribute="node" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp3Recipe" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp4" attribute="node" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp4Recipe" attribute="node" />
+</Binding>
 </Bindings>
 </BindingsSet>

@@ -99,7 +99,7 @@
             <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart2" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
               <Properties>
                 <yAxis>
-                  <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'CEL','imperial-us':'CEL'}" />
+                  <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
                 </yAxis>
                 <xAxis>
                   <Element id="xAxis1" numberOfTicks="4" timeSpan="300" />

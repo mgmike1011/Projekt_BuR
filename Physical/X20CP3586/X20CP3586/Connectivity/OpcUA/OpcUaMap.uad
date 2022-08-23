@@ -130,10 +130,10 @@
         <Variable Name="ZoneStatus" EnableArrayElements="True" />
         <Variable Name="TuneEnable" />
         <Variable Name="ParametersMachine">
-          <Variable Name="Temp1" />
-          <Variable Name="Temp2" />
-          <Variable Name="Temp3" />
-          <Variable Name="Temp4" />
+        <Variable Name="Temp1" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="Temp2" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="Temp3" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+        <Variable Name="Temp4" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
           <Variable Name="Time1" />
           <Variable Name="Time2" />
           <Variable Name="Time3" />
