@@ -15,4 +15,6 @@ VAR
 	MpOEECore_1 : MpOeeCore;
 	IdealCycleTime_1 : MpOeeCoreParType;
 	AllCycles : UDINT;
+	avSCTwithTrash : STRING[80];
+	avSCTwithoutTrash : STRING[80];
 END_VAR

@@ -11,6 +11,7 @@ PROGRAM	_INIT
 	ICTs := 0;
 	ICTms := 0;
 	StatusString := '';
+
 END_PROGRAM
 
 PROGRAM	_CYCLIC
@@ -19,6 +20,9 @@ PROGRAM	_CYCLIC
 	MpOEECore_1.Downtime := NOT(STATUS = STATE_WORKING_AUTOMATIC) ;
 	MpOEECore_1.Reset := (RsetOEE);//resetowanie statystyk
 	MpOEECore_1.PieceCounter := CycleNumber;
+	
+	avSCTwithoutTrash := '';
+	avSCTwithTrash := '';
 	
 	IF startOEE THEN
 		MpOEECore_1();
@@ -75,7 +79,9 @@ PROGRAM	_CYCLIC
 	ICTms_old := ICTms;
 	
 	AllCycles := MpOEECore_1.PieceCounter + MpOEECore_1.RejectCounter;
-				 
+	
+	avSCTwithTrash := TIME_TO_STRING(MpOEECore_1.Info.ShiftStatistics.AverageCycleTime);
+	brsmemcpy(ADR(avSCTwithoutTrash),ADR(avSCTwithTrash)+2,brsstrlen(ADR(avSCTwithTrash))-2);
 
 END_PROGRAM
 
