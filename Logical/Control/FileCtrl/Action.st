@@ -18,10 +18,10 @@ ACTION PathFinder:
 //		END_IF;
 //	brsstrcat(ADR(Path),ADR(FileName));
 	
-	FileCopy_PDF.pDestDev := ADR(BRVisu);
-	FileCopy_PDF.pSrcDev := ADR(PDF);
-	FileCopy_PDF.pSrc := ADR(FileName):
-	FileCopy_PDF.pDest := ADR(FileName):
+	FileCopy_PDF.pDestDev := ADR('BRVisu');
+	FileCopy_PDF.pSrcDev := ADR('PDF');
+	FileCopy_PDF.pSrc := ADR(FileName);
+	FileCopy_PDF.pDest := ADR(FileName);
 	FileCopy_PDF.option := fiOVERWRITE;
 		FileCopy_PDF.enable := FALSE;
 		FileCopy_PDF.option := 0;

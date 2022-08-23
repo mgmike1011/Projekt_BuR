@@ -130,5 +130,25 @@
 <Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
 <Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="StartButton" attribute="enable" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:TimStep5.IN" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SimOffImage10" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:TimStep4.IN" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SimOffImage9" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:TimStep3.IN" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SimOffImage7" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:TimStep2.IN" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SimOffImage5" attribute="visible" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:TimStep1.IN" attribute="value" />
+<Target xsi:type="brease" contentRefId="AUTOMATIC" widgetRefId="SimOffImage3" attribute="visible" />
+</Binding>
 </Bindings>
 </BindingsSet>

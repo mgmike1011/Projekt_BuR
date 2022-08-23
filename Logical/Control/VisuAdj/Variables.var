@@ -22,3 +22,21 @@ VAR
 	isSTOP : BOOL; (*Is machine state stop.*)
 	isAutomatic : BOOL; (*Is machine state automatic.*)
 END_VAR
+(*Heat Value PWM*)
+VAR
+	HeatPWMZone1 : REAL;
+	HeatPWMZone2 : REAL;
+	HeatPWMZone3 : REAL;
+	HeatPWMZone4 : REAL;
+END_VAR
+(*Cool Value PWM*)
+VAR
+	CoolPWMZone1 : REAL;
+	CoolPWMZone2 : REAL;
+	CoolPWMZone3 : REAL;
+	CoolPWMZone4 : REAL;
+END_VAR
+(*Manual SetTemp Input*)
+VAR
+	isIDLEorManual : BOOL;
+END_VAR

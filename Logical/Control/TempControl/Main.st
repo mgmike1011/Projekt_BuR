@@ -205,6 +205,10 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		STATE_WORKING_AUTOMATIC:
+			EnableZone1 := TRUE;
+			EnableZone2 := TRUE;
+			EnableZone3 := TRUE;
+			EnableZone4 := TRUE;
 			TempGroup.Control := TRUE;
 			AutomaticMode;
 			// Switch state conditions
