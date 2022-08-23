@@ -29,17 +29,17 @@ PROGRAM _CYCLIC
 		TypeVar :=STRING_TO_WSTRING('STATE_CHANGED');
 		CASE STATUS OF
 			STATE_IDLE:
-				String_bufer :='Machine entered state IDLE';
+				String_bufer :='IAT/AutomaticControlPage/StateIdletxt';
 			STATE_TUNING:
-				String_bufer :='Machine entered state TUNING';
+				String_bufer :='IAT/AutomaticControlPage/StateTuningtxt';
 			STATE_WORKING_MANUAL:
-				String_bufer :='Machine entered state WORKING MANUAL';
+				String_bufer :='IAT/AutomaticControlPage/StateManualWorktxt';
 			STATE_WORKING_AUTOMATIC:
-				String_bufer :='Machine entered state WORKIN AUTOMATIC';
+				String_bufer :='IAT/AutomaticControlPage/StateAutoWorktxt';
 			STATE_ERROR:
-				String_bufer :='Machine entered state ERROR';
+				String_bufer :='IAT/AutomaticControlPage/StateErrortxt';
 			STATE_STOP:
-			String_bufer :='Machine entered state STOP';
+			String_bufer :='IAT/AutomaticControlPage/StateStoptxt';
 		END_CASE
 		MessageVar:=STRING_TO_WSTRING(String_bufer);
 		CustomEventStatus := MpAuditCustomEvent(gAuditTrail,TypeVar ,MessageVar , CommentVar);

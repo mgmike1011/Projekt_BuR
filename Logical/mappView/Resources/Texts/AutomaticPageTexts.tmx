@@ -240,10 +240,10 @@ Automatische Operation</seg>
     </tu>
     <tu tuid="StateIdletxt">
       <tuv xml:lang="de">
-        <seg>Idle</seg>
+        <seg>IDLE</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Idle</seg>
+        <seg>IDLE</seg>
       </tuv>
       <tuv xml:lang="en">
         <seg>IDLE</seg>

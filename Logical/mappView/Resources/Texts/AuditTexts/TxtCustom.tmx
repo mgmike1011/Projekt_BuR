@@ -30,5 +30,17 @@ wylogowano z {&amp;msg}
         <seg>logged in as {&amp;msg}</seg>
       </tuv>
     </tu>
+    <tu tuid="STATE_CHANGED">
+      <tuv xml:lang="de">
+        <seg>Maschine ist in den Zustand eingetreten {=${&amp;msg}}</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Maszyna weszła w stan {=${&amp;msg}}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>
+Machine entered state  {=${&amp;msg}}</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>
