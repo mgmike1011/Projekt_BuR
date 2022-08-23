@@ -275,6 +275,7 @@
         <Variable Name="SingleSelect" />
         <Variable Name="Items" />
         <Variable Name="File" />
+        <Variable Name="DeactivatedBoxes" />
       </Task>
       <Task Name="VisuAdj">
         <Variable Name="CurrentZone1Temp" EngineeringUnitId="2" />

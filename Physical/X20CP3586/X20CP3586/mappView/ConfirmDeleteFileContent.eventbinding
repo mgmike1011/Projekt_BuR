@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<EventBindingSet id="ConfirmDeleteContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<EventBindingSet id="ConfirmDeleteFileContent_eventbinding" xmlns="http://www.br-automation.com/iat2014/eventbinding/v2" xmlns:types="http://www.br-automation.com/iat2015/widgetTypes/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Bindings>
-    <EventBinding id="ConfirmDeleteContent.ConfirmButton.Click">
-      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ConfirmDeleteContent" widgetRefId="ConfirmButton" event="Click" />
+    <EventBinding id="ConfirmDeleteFileContent.ConfirmButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ConfirmDeleteFileContent" widgetRefId="ConfirmButton" event="Click" />
       <EventHandler>
         <Sequence>
           <Step order="0">
@@ -15,15 +15,15 @@
           <Step order="1">
             <Action>
               <Target xsi:type="clientSystem.Action">
-                <Method xsi:type="clientSystem.Action.CloseDialog" dialogId="ConfirmDeleteDialog" />
+                <Method xsi:type="clientSystem.Action.CloseDialog" dialogId="ConfirmDeleteFileDialog" />
               </Target>
             </Action>
           </Step>
         </Sequence>
       </EventHandler>
     </EventBinding>
-    <EventBinding id="ConfirmDeleteContent.CancelButton.Click">
-      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ConfirmDeleteContent" widgetRefId="CancelButton" event="Click" />
+    <EventBinding id="ConfirmDeleteFileContent.CancelButton.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="ConfirmDeleteFileContent" widgetRefId="CancelButton" event="Click" />
       <EventHandler>
         <Sequence>
           <Step order="0">
@@ -36,7 +36,7 @@
           <Step order="1">
             <Action>
               <Target xsi:type="clientSystem.Action">
-                <Method xsi:type="clientSystem.Action.CloseDialog" dialogId="ConfirmDeleteDialog" />
+                <Method xsi:type="clientSystem.Action.CloseDialog" dialogId="ConfirmDeleteFileDialog" />
               </Target>
             </Action>
           </Step>
