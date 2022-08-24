@@ -19,6 +19,13 @@
               </Target>
             </Action>
           </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::OEE:MpOEECore_1.RejectCounter">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
         </Sequence>
       </EventHandler>
     </EventBinding>

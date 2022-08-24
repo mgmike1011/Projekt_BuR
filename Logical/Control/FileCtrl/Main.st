@@ -24,6 +24,10 @@ PROGRAM _INIT
 	OpenDialogPDFchange := 0;
 	closeDelete := 0;
 	
+	
+//	del1 := 0;
+//	del2 := 0;
+//	del3 := 0;
 END_PROGRAM
 
 
@@ -130,14 +134,18 @@ PROGRAM _CYCLIC
 		
 		FOR i:=0 TO 50 BY 1 DO
 			IF MpFileMngConnect.File.List.Items[i].IsSelected = TRUE THEN
-				FileName := MpFileMngConnect.File.List.Items[i].Name;
 				
+				FileName := MpFileMngConnect.File.List.Items[i].Name;
+				//del1 := 1;////////////////////////////////////////////////////
 				IF ElementType[i] = 'pdf' THEN 
 					PDFtrue := TRUE;
+					//del2 := 1;///////////////////////////////////////////////
 				ELSE
 					PDFtrue := FALSE;
 					OpenPDF := FALSE;
-				END_IF
+				END_IF;
+				
+				EXIT;
 				
 			END_IF;
 		END_FOR;

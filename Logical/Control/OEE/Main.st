@@ -15,6 +15,7 @@ PROGRAM	_INIT
 END_PROGRAM
 
 PROGRAM	_CYCLIC
+	avSCTwithoutTrash := '';
 	Update_mqtt_struct;
 //	MpOEECore_1.Update := FALSE;
 	MpOEECore_1.Downtime := NOT(STATUS = STATE_WORKING_AUTOMATIC) ;

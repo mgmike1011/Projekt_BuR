@@ -14,8 +14,6 @@
       <Group ID="PageLayouts">
         <Group ID="[0]">
           <Property ID="Name" Value="Layout" />
-          <Property ID="PageFormat" Value="5" />
-          <Property ID="Orientation" Value="2" />
         </Group>
       </Group>
       <Group ID="Styles">
@@ -265,6 +263,48 @@
           </Group>
         </Selector>
       </Group>
+      <Group ID="Charts">
+        <Selector ID="[0]" Value="BarChart">
+          <Property ID="Name" Value="BarchartOEE" />
+          <Property ID="ChartStyle" Value="BarChartStyle" />
+          <Property ID="TextStyle" Value="Default" />
+          <Property ID="ShowLegend" Value="2" />
+          <Group ID="YAxis">
+            <Property ID="Label" Value="" />
+            <Selector ID="ItemMaxValue">
+              <Property ID="Value" Value="1" />
+            </Selector>
+          </Group>
+          <Group ID="[0]">
+            <Selector ID="Value">
+              <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Availability" />
+            </Selector>
+            <Property ID="ItemColor" Value="FFFF00" />
+            <Property ID="LegendText" Value="Availability" />
+          </Group>
+          <Group ID="[1]">
+            <Selector ID="Value">
+              <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Performance" />
+            </Selector>
+            <Property ID="ItemColor" Value="00FF00" />
+            <Property ID="LegendText" Value="Performance" />
+          </Group>
+          <Group ID="[2]">
+            <Selector ID="Value">
+              <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.Quality" />
+            </Selector>
+            <Property ID="ItemColor" Value="800080" />
+            <Property ID="LegendText" Value="Quality" />
+          </Group>
+          <Group ID="[3]">
+            <Selector ID="Value">
+              <Property ID="ProcessVariable" Value="::OEE:MpOEECore_1.OEE" />
+            </Selector>
+            <Property ID="ItemColor" Value="FF0000" />
+            <Property ID="LegendText" Value="OEE" />
+          </Group>
+        </Selector>
+      </Group>
       <Group ID="Contents">
         <Group ID="[0]">
           <Property ID="Name" Value="ContentHeader" />
@@ -292,6 +332,12 @@
             <Property ID="Table" Value="OEE Table" />
           </Selector>
         </Group>
+        <Group ID="[4]">
+          <Property ID="Name" Value="ContentChart" />
+          <Selector ID="[0]" Value="Chart">
+            <Property ID="Chart" Value="BarchartOEE" />
+          </Selector>
+        </Group>
       </Group>
       <Group ID="Reports">
         <Group ID="[0]">
@@ -309,13 +355,32 @@
             </Group>
           </Group>
           <Group ID="[2]">
+            <Group ID="Heading">
+              <Property ID="HorizontalAlign" Value="1" />
+            </Group>
             <Group ID="[0]">
               <Property ID="Content" Value="ContentLine" />
             </Group>
           </Group>
           <Group ID="[3]">
+            <Group ID="Heading">
+              <Property ID="HorizontalAlign" Value="1" />
+            </Group>
             <Group ID="[0]">
               <Property ID="Content" Value="ContentProductionTable" />
+            </Group>
+          </Group>
+          <Group ID="[4]">
+            <Group ID="[0]">
+              <Property ID="Content" Value="ContentLine" />
+            </Group>
+          </Group>
+          <Group ID="[5]">
+            <Group ID="Heading">
+              <Property ID="HorizontalAlign" Value="1" />
+            </Group>
+            <Group ID="[0]">
+              <Property ID="Content" Value="ContentChart" />
             </Group>
           </Group>
         </Group>
