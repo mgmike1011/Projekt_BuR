@@ -465,6 +465,13 @@
               </Target>
             </Action>
           </Step>
+          <Step order="9">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="SortButton">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="false" />
+              </Target>
+            </Action>
+          </Step>
         </Sequence>
       </EventHandler>
     </EventBinding>
@@ -535,6 +542,13 @@
               </Target>
             </Action>
           </Step>
+          <Step order="9">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="SortButton">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
         </Sequence>
       </EventHandler>
     </EventBinding>
@@ -551,6 +565,88 @@
             <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ConfirmOverwriteDialog" headerText="$IAT/FILEMNG/Warning" />
           </Target>
         </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="ItemsEnabledEvent">
+      <Source xsi:type="opcUa.Event" refId="::FileCtrl:ItemsEnabled" event="ValueChanged" />
+      <Operand datatype="BOOL" name="ItemsEnabledEvent">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::FileCtrl:ItemsEnabled">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="ItemsEnabledEvent = TRUE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="ChangeNameButton">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="BtnOpenPDF">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="FolderUpButton">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="3">
+            <Action>
+              <Target xsi:type="widgets.brease.TextInput.Action" contentRefId="FILEMNG" widgetRefId="SearchTextInput">
+                <Method xsi:type="widgets.brease.TextInput.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="4">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="NewFolderButton">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="5">
+            <Action>
+              <Target xsi:type="widgets.brease.TextInput.Action" contentRefId="FILEMNG" widgetRefId="NewNameTextInput">
+                <Method xsi:type="widgets.brease.TextInput.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="6">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="RefreshButton">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="7">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="OpenFolderButton">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="8">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="ChangeNameButton">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="9">
+            <Action>
+              <Target xsi:type="widgets.brease.Button.Action" contentRefId="FILEMNG" widgetRefId="SortButton">
+                <Method xsi:type="widgets.brease.Button.Action.SetEnable" value="true" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
       </EventHandler>
     </EventBinding>
   </Bindings>

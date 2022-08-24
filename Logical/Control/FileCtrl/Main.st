@@ -41,6 +41,16 @@ PROGRAM _CYCLIC
 		OpenConOveDia := FALSE;
 	END_IF
 	
+	// Locking and unlocking the buttons
+	IF MpFileMngConnect.File.MultiSelect THEN
+		ItemsEnabled := FALSE;
+	END_IF
+	IF EDGEPOS(MpFileMngConnect.File.Delete) OR EDGEPOS(MpFileMngConnect.File.Paste) OR EDGEPOS(MpFileMngConnect.MessageBox.Confirm) OR EDGEPOS(MpFileMngConnect.MessageBox.Cancel) THEN
+		MpFileMngConnect.File.MultiSelect := FALSE;
+		SingleSelect := TRUE;
+		ItemsEnabled := TRUE;
+	END_IF
+	
 	// Sorting
 	IF SortType[0] THEN
 		MpFileMngConnect.File.SortOrder := 0;
@@ -192,8 +202,6 @@ PROGRAM _EXIT
 	FileCopy_PDF();
 	FileDelete_PDF.enable := FALSE;
 	FileDelete_PDF();
-	
-	//OpenDialogPDF := 0;
 	
 END_PROGRAM
 
