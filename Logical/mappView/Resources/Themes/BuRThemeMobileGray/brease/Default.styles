@@ -8,14 +8,14 @@
 		fontSize="16px" 
 		bold="true" 
 		textColor="#000000" 
-		mouseDownTextColor="#000000" 
+		mouseDownTextColor="#ff8c00" 
 		cornerRadius="5px" 
 		borderWidth="0px" 
 		mouseDownBorderWidth="0px" 
 		backColor="#F6F6F6" 
 		mouseDownBackColor="#EDEDED" 
 		shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" 
-		mouseDownShadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
+		mouseDownShadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" />
 	
 	<!--momentary push button-->
 	
@@ -69,13 +69,13 @@
 		fontSize="16px" 
 		bold="true" 
 		textColor="#000000" 
-		mouseDownTextColor="#000000" 
+		mouseDownTextColor="#fe8c00" 
 		cornerRadius="5px"
 		borderWidth="0px" 
 		mouseDownBorderWidth="0px" 
 		backColor="#F6F6F6" 
-		mouseDownBackColor="#ffcc99" 
-		checkedBackColor="#EDEDED" 
+		mouseDownBackColor="#EDEDED" 
+		checkedBackColor="#fecc99" 
 		shadow="1px 1px 8px rgba(58, 58, 58, 0.75)" 
 		mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
 	
@@ -134,8 +134,8 @@
 		textColor="#000000" 
 		backColor="#F6F6F6"
 		mouseDownBackColor="#F6F6F6" 
-		disabledBackColor="#F8F8F8" 
-		disabledTextColor="#BEBEBE" 
+		disabledBackColor="#c0c0c0" 
+		disabledTextColor="#989898" 
 		mouseDownBorderColor="#DDDDDD" 
 		bold="false" />		
 		
@@ -400,7 +400,7 @@
 		textColor="#000000" 
 		backColor="transparent" 
 		mouseDownBackColor="transparent" 
-		disabledBackColor="#F8F8F8" 
+		disabledBackColor="#c0c0c0" 
 		disabledTextColor="#BEBEBE" 
 		mouseDownBorderColor="#DDDDDD" 
 		bold="false" />		
