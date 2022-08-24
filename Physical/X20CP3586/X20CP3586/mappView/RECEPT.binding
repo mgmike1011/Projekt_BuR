@@ -156,5 +156,9 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Temp4" attribute="node" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Temp4Recipe" attribute="node" />
 </Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLEorManual" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="BtnLoad" attribute="enable" />
+</Binding>
 </Bindings>
 </BindingsSet>

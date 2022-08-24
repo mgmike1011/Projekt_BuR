@@ -140,5 +140,16 @@
         <seg>Previous</seg>
       </tuv>
     </tu>
+    <tu tuid="AlarmHistory">
+      <tuv xml:lang="de">
+        <seg>History</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Historia</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>History</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

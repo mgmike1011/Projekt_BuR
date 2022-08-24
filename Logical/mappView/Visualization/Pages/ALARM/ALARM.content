@@ -24,5 +24,6 @@
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Label" id="Label1" top="0" left="0" width="1710" height="60" zIndex="4" text="$IAT/Alarms/AlarmPagetxt" textAlign="center" fontSize="25px" bold="true" margin="5px" />
+    <Widget xsi:type="widgets.brease.Label" id="LabelHistory" top="480" left="80" width="160" zIndex="5" text="$IAT/AlarmPage/AlarmHistory" fontSize="24px" bold="true" />
   </Widgets>
 </Content>

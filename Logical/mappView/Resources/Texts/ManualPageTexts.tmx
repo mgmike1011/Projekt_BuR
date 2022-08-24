@@ -73,46 +73,46 @@
     </tu>
     <tu tuid="EnableZone1txt">
       <tuv xml:lang="de">
-        <seg>Zone 1 aktivieren</seg>
+        <seg>Zone 1 deaktivieren</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Załączenie strefy 1</seg>
+        <seg>Wyłączenie strefy 1</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Enable zone 1</seg>
+        <seg>Disable zone 1</seg>
       </tuv>
     </tu>
     <tu tuid="EnableZone2txt">
       <tuv xml:lang="de">
-        <seg>Zone 2 aktivieren</seg>
+        <seg>Zone 2 deaktivieren</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Załączenie strefy 2</seg>
+        <seg>Wyłączenie strefy 2</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Enable zone 2</seg>
+        <seg>Disable zone 2</seg>
       </tuv>
     </tu>
     <tu tuid="EnableZone3txt">
       <tuv xml:lang="de">
-        <seg>Zone 3 aktivieren</seg>
+        <seg>Zone 3 deaktivieren</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Załączenie strefy 3</seg>
+        <seg>Wyłączenie strefy 3</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Enable zone 3</seg>
+        <seg>Disable zone 3</seg>
       </tuv>
     </tu>
     <tu tuid="EnableZone4txt">
       <tuv xml:lang="de">
-        <seg>Zone 4 aktivieren</seg>
+        <seg>Zone 4 deaktivieren</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Załączenie strefy 4</seg>
+        <seg>Wyłączenie strefy 4</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Enable zone 4</seg>
+        <seg>Disable zone 4</seg>
       </tuv>
     </tu>
     <tu tuid="FanPWMtxt">
