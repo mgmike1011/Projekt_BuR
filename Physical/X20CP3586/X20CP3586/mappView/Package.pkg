@@ -28,7 +28,6 @@
     <Object Type="File">ErrorDialogContent.binding</Object>
     <Object Type="File">ErrorDialogContent.eventbinding</Object>
     <Object Type="File">TunningSetpointsDialogContent.binding</Object>
-    <Object Type="File">ConfirmDeleteContent.binding</Object>
     <Object Type="File">PDF.eventbinding</Object>
     <Object Type="File">ConfirmDeleteFolderContent.eventbinding</Object>
     <Object Type="File">ConfirmDeleteFileContent.eventbinding</Object>
