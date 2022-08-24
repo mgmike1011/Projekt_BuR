@@ -131,5 +131,16 @@ Wählen Sie Diagramm</seg>
 </seg>
       </tuv>
     </tu>
+    <tu tuid="RecordBtntxt">
+      <tuv xml:lang="de">
+        <seg>Daten aufzeichnen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zapisz dane</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Record data</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

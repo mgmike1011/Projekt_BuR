@@ -45,7 +45,7 @@
         </Widget>
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="780" left="495" width="731" height="120" zIndex="3" text="$IAT/Service/SelectWaveFortm">
+    <Widget xsi:type="widgets.brease.GroupBox" id="GroupBox2" top="780" left="495" width="731" height="120" zIndex="3" text="$IAT/Service/SelectWaveFortm" fontSize="18px">
       <Widgets>
         <Widget xsi:type="widgets.brease.CheckBox" id="ShowCurrent4" top="22" left="540" width="160" zIndex="0" text="$IAT/Service/FanPWMtxt" textColor="rgba(0, 0, 255, 1)" />
         <Widget xsi:type="widgets.brease.CheckBox" id="ShowCurrent3" top="21" left="360" width="140" zIndex="1" text="$IAT/Service/HeaterPWMtxt" textColor="rgba(255, 0, 0, 1)" />
@@ -113,5 +113,6 @@
         </cursor>
       </Properties>
     </Widget>
+    <Widget xsi:type="widgets.brease.ToggleButton" id="RecordMappDataToggleButton" top="803" left="1305" width="195" height="75" zIndex="7" text="$IAT/Service/RecordBtntxt" fontSize="18px" />
   </Widgets>
 </Content>

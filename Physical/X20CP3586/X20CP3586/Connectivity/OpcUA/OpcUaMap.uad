@@ -302,6 +302,11 @@
         <Variable Name="Clear" />
         <Variable Name="Export" />
       </Task>
+      <Task Name="DataMgmt">
+        <Variable Name="MpDataRecorder_0">
+          <Variable Name="Record" />
+        </Variable>
+      </Task>
     </Module>
   </DefaultView>
 </OpcUaSource>
