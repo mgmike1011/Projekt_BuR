@@ -45,6 +45,7 @@
     <EventBindingsSet refId="ConfirmDeleteFolderContent_eventbinding" />
     <EventBindingsSet refId="ConfirmDeleteFileContent_eventbinding" />
     <EventBindingsSet refId="ConfirmDeleteItemsContent_eventbinding" />
+    <EventBindingsSet refId="ConfirmOverwriteContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />
@@ -56,6 +57,7 @@
     <Dialog refId="PDF" />
     <Dialog refId="ConfirmDeleteFileDialog" />
     <Dialog refId="ConfirmDeleteItemsDialog" />
+    <Dialog refId="ConfirmOverwriteDialog" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -79,6 +81,7 @@
     <Content refId="PDF" />
     <Content refId="ConfirmDeleteFileContent" />
     <Content refId="ConfirmDeleteItemsContent" />
+    <Content refId="ConfirmOverwriteContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
