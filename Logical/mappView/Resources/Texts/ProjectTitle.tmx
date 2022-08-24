@@ -20,5 +20,16 @@
         <seg>Bonjour tout le monde!</seg>
       </tuv>
     </tu>
+    <tu tuid="Logout">
+      <tuv xml:lang="de">
+        <seg>Ausloggen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wyloguj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Log out</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

@@ -43,6 +43,13 @@
           </Step>
         </Sequence>
       </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.Navigate" pageId="MainPage" />
+          </Target>
+        </Action>
+      </EventHandler>
     </EventBinding>
     <EventBinding id="EventBinding_9">
       <Source xsi:type="opcUa.Event" refId="::AsGlobalPV:gError" event="ValueChanged" />

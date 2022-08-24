@@ -404,5 +404,27 @@
         <seg>Choice</seg>
       </tuv>
     </tu>
+    <tu tuid="ConfirmDelAll">
+      <tuv xml:lang="de">
+        <seg>Möchten Sie diese Elemente wirklich löschen?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czy na pewno chcesz usunąć te rzeczy?</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Are you sure you want to delete these items?</seg>
+      </tuv>
+    </tu>
+    <tu tuid="OpenPDF">
+      <tuv xml:lang="de">
+        <seg>PDF öffnen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Otwórz PDF</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Open PDF</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

@@ -201,5 +201,49 @@
         <seg>OEE indicators</seg>
       </tuv>
     </tu>
+    <tu tuid="AveragesingleCycleTime">
+      <tuv xml:lang="de">
+        <seg>Durchschnittliche Einzelzykluszeit</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Średni czas jednego cyklu</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Average single cycle time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="worktime">
+      <tuv xml:lang="de">
+        <seg>Produktionszeit</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas produkcji</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Production time</seg>
+      </tuv>
+    </tu>
+    <tu tuid="planned">
+      <tuv xml:lang="de">
+        <seg>Geplant</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Planowany</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Planned</seg>
+      </tuv>
+    </tu>
+    <tu tuid="ACTUAL">
+      <tuv xml:lang="de">
+        <seg>Aktuell</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Aktualny</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Actual</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

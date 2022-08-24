@@ -1,24 +1,42 @@
 (*Current zone temperature*)
 VAR
-	CurrentZone1Temp : REAL;
-	CurrentZone2Temp : REAL;
-	CurrentZone3Temp : REAL;
-	CurrentZone4Temp : REAL;
+	CurrentZone1Temp : REAL := 0; (*Current temperature of zone 1 - real or simulated values.*)
+	CurrentZone2Temp : REAL := 0; (*Current temperature of zone 2 - real or simulated values.*)
+	CurrentZone3Temp : REAL := 0; (*Current temperature of zone 3 - real or simulated values.*)
+	CurrentZone4Temp : REAL := 0; (*Current temperature of zone 4 - real or simulated values.*)
 END_VAR
 (*Automatic mode timers*)
 VAR
-	TimeStep5Int : UINT;
-	TimeStep4Int : UINT;
-	TimeStep3Int : UINT;
-	TimeStep2Int : UINT;
-	TimeStep1Int : UINT;
+	TimeStep5Int : UINT := 5; (*Time of step 5 in automatic mode in seconds.*)
+	TimeStep4Int : UINT := 5; (*Time of step 4 in automatic mode in seconds.*)
+	TimeStep3Int : UINT := 5; (*Time of step 3 in automatic mode in seconds.*)
+	TimeStep2Int : UINT := 5; (*Time of step 2 in automatic mode in seconds.*)
+	TimeStep1Int : UINT := 5; (*Time of step 1 in automatic mode in seconds.*)
 END_VAR
 (*MachineState*)
 VAR
-	isIDLE_ : BOOL;
-	isManual : BOOL;
-	isTuning : BOOL;
-	isERROR : BOOL;
-	isSTOP : BOOL;
-	isAutomatic : BOOL;
+	isIDLE_ : BOOL := TRUE; (*Is machine state IDLE.*)
+	isManual : BOOL := FALSE; (*Is machine state manual.*)
+	isTuning : BOOL := FALSE; (*Is machine state tuning.*)
+	isERROR : BOOL := FALSE; (*Is machine state error.*)
+	isSTOP : BOOL := FALSE; (*Is machine state stop.*)
+	isAutomatic : BOOL := FALSE; (*Is machine state automatic.*)
+END_VAR
+(*Heat Value PWM*)
+VAR
+	HeatPWMZone1 : REAL := 0; (*Heat PWM % value for zone 1.*)
+	HeatPWMZone2 : REAL := 0; (*Heat PWM % value for zone 2.*)
+	HeatPWMZone3 : REAL := 0; (*Heat PWM % value for zone 3.*)
+	HeatPWMZone4 : REAL := 0; (*Heat PWM % value for zone 4.*)
+END_VAR
+(*Cool Value PWM*)
+VAR
+	CoolPWMZone1 : REAL := 0; (*Cool PWM % value for zone 1.*)
+	CoolPWMZone2 : REAL := 0; (*Cool PWM % value for zone 2.*)
+	CoolPWMZone3 : REAL := 0; (*Cool PWM % value for zone 3.*)
+	CoolPWMZone4 : REAL := 0; (*Cool PWM % value for zone 4.*)
+END_VAR
+(*Manual SetTemp Input*)
+VAR
+	isIDLEorManual : BOOL := TRUE; (*Flag for changing temp in manual page.*)
 END_VAR

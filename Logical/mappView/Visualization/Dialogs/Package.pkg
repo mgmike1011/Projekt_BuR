@@ -5,9 +5,12 @@
     <Object Type="Package" Description="AreaContents">AreaContents</Object>
     <Object Type="Package">Dialog</Object>
     <Object Type="Package">SystemInfoDialog</Object>
-    <Object Type="Package">ConfirmDeleteDialog</Object>
+    <Object Type="Package">ConfirmDeleteFolderDialog</Object>
     <Object Type="Package">SortDialog</Object>
     <Object Type="Package">ErrorDialog</Object>
     <Object Type="Package">TunningSetpointsDialog</Object>
+    <Object Type="Package">PDF</Object>
+    <Object Type="Package">ConfirmDeleteFileDialog</Object>
+    <Object Type="Package">ConfirmDeleteItemsDialog</Object>
   </Objects>
 </Package>

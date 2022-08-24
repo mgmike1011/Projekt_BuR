@@ -31,10 +31,19 @@ PROGRAM _INIT
 		TempControllerPar[iCnt].PID.Cool.DerivativeTime := PIDDerivativeTimeCOOL[iCnt];
 	END_FOR;
 	// Integrator preloading
-//	TempControllerPar[0].PID.IntegratorPreloading := 0;
-//	TempControllerPar[1].PID.IntegratorPreloading := 0;
-//	TempControllerPar[2].PID.IntegratorPreloading := 0;
-//	TempControllerPar[3].PID.IntegratorPreloading := 0;
+	TempControllerPar[0].PID.IntegratorPreloading := -0.2;
+	TempControllerPar[1].PID.IntegratorPreloading := -0.2;
+	TempControllerPar[2].PID.IntegratorPreloading := -0.2;
+	TempControllerPar[3].PID.IntegratorPreloading := -0.2;
+	// Hysteresis
+	TempControllerPar[0].Hysteresis.Band.CoolToHeat := 5;
+	TempControllerPar[0].Hysteresis.Band.HeatToCool := 5;
+	TempControllerPar[1].Hysteresis.Band.CoolToHeat := 5;
+	TempControllerPar[1].Hysteresis.Band.HeatToCool := 5;
+	TempControllerPar[2].Hysteresis.Band.CoolToHeat := 5;
+	TempControllerPar[2].Hysteresis.Band.HeatToCool := 5;
+	TempControllerPar[3].Hysteresis.Band.CoolToHeat := 5;
+	TempControllerPar[3].Hysteresis.Band.HeatToCool := 5;
 	// Temperature Controller 
 	TempController[0].MpLink := ADR(gTempController_1);
 	TempController[0].Parameters := ADR(TempControllerPar[0]);
@@ -194,6 +203,10 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		STATE_WORKING_AUTOMATIC:
+			EnableZone1 := TRUE;
+			EnableZone2 := TRUE;
+			EnableZone3 := TRUE;
+			EnableZone4 := TRUE;
 			TempGroup.Control := TRUE;
 			AutomaticMode;
 			// Switch state conditions
@@ -247,12 +260,6 @@ PROGRAM _CYCLIC
 				STATUS := STATE_IDLE;
 			END_IF;
 	END_CASE;
-	// Error switch
-	//IF (TempController[0].Control AND NOT TempController[0].ControlActive) OR (TempController[1].Control AND NOT TempController[1].ControlActive) OR 
-	//	(TempController[2].Control AND NOT TempController[2].ControlActive) OR (TempController[3].Control AND NOT TempController[3].ControlActive) THEN
-	//	STATUS := STATE_ERROR;
-	//	gError := TRUE;
-	//END_IF;
 	// Update info about zone state
 	ZoneStateUpdate;
 	// Calling functionblocks

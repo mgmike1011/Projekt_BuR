@@ -54,6 +54,13 @@
           </Step>
         </Sequence>
       </EventHandler>
+      <EventHandler>
+        <Action>
+          <Target xsi:type="clientSystem.Action">
+            <Method xsi:type="clientSystem.Action.Navigate" pageId="MainPage" />
+          </Target>
+        </Action>
+      </EventHandler>
     </EventBinding>
     <EventBinding id="LoginFailed">
       <Source xsi:type="widgets.brease.LoginButton.Event" contentRefId="LoginDialogC" widgetRefId="LoginButton1" event="AuthentificationFailed" />

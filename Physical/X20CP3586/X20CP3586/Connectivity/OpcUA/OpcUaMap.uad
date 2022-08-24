@@ -55,21 +55,9 @@
         <Variable Name="EnableZone2" />
         <Variable Name="EnableZone3" />
         <Variable Name="EnableZone4" />
-        <Variable Name="gAlarmXCore" />
-        <Variable Name="gAlarmXHistory" />
-        <Variable Name="gAuditTrail" />
-        <Variable Name="gDataRecorder" />
         <Variable Name="gError" />
-        <Variable Name="gOeeCore" />
         <Variable Name="gStart" />
         <Variable Name="gSTOP" />
-        <Variable Name="gTempController_1">
-          <Variable Name="Internal" EnableArrayElements="True" />
-        </Variable>
-        <Variable Name="gTempController_2" />
-        <Variable Name="gTempController_3" />
-        <Variable Name="gTempController_4" />
-        <Variable Name="gTempGroup_1" />
         <Variable Name="Manual_work" />
         <Variable Name="PIDDerivativeTimeCOOL" EnableArrayElements="True" EngineeringUnitId="1" />
         <Variable Name="PIDDerivativeTimeHEAT" EnableArrayElements="True" EngineeringUnitId="1" />
@@ -122,18 +110,28 @@
         <Variable Name="TimeStep3" />
         <Variable Name="TimeStep4" />
         <Variable Name="TimeStep5" />
-        <Variable Name="TimStep1" />
-        <Variable Name="TimStep2" />
-        <Variable Name="TimStep3" />
-        <Variable Name="TimStep4" />
-        <Variable Name="TimStep5" />
+        <Variable Name="TimStep1">
+          <Variable Name="IN" />
+        </Variable>
+        <Variable Name="TimStep2">
+          <Variable Name="IN" />
+        </Variable>
+        <Variable Name="TimStep3">
+          <Variable Name="IN" />
+        </Variable>
+        <Variable Name="TimStep4">
+          <Variable Name="IN" />
+        </Variable>
+        <Variable Name="TimStep5">
+          <Variable Name="IN" />
+        </Variable>
         <Variable Name="ZoneStatus" EnableArrayElements="True" />
         <Variable Name="TuneEnable" />
         <Variable Name="ParametersMachine">
-          <Variable Name="Temp1" />
-          <Variable Name="Temp2" />
-          <Variable Name="Temp3" />
-          <Variable Name="Temp4" />
+          <Variable Name="Temp1" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+          <Variable Name="Temp2" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+          <Variable Name="Temp3" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
+          <Variable Name="Temp4" Historizing="True" HistoryBufferSize="3000" HistorySamplingInterval="Timer5" EURangesId="1" EngineeringUnitId="2" />
           <Variable Name="Time1" />
           <Variable Name="Time2" />
           <Variable Name="Time3" />
@@ -179,6 +177,21 @@
           <Variable Name="Performance" />
           <Variable Name="Quality" />
           <Variable Name="OEE" />
+          <Variable Name="Info">
+            <Variable Name="ShiftStatistics">
+              <Variable Name="Uptime">
+                <Variable Name="Hours" />
+                <Variable Name="Minutes" />
+                <Variable Name="Seconds" />
+              </Variable>
+              <Variable Name="TotalTime">
+                <Variable Name="Hours" />
+                <Variable Name="Minutes" />
+                <Variable Name="Seconds" />
+              </Variable>
+              <Variable Name="AverageCycleTime" />
+            </Variable>
+          </Variable>
         </Variable>
         <Variable Name="RsetOEE" />
         <Variable Name="IdealCycleTime_1">
@@ -192,6 +205,7 @@
         <Variable Name="StatusString" />
         <Variable Name="StateIdle" />
         <Variable Name="BtnEnable" />
+        <Variable Name="avSCTwithoutTrash" />
       </Task>
       <Task Name="MpReport1">
         <Variable Name="MpReportCore_1">
@@ -246,7 +260,13 @@
         <Variable Name="ElementType" EnableArrayElements="True" />
         <Variable Name="SortType" EnableArrayElements="True" />
         <Variable Name="Folder" EnableArrayElements="True" />
-        <Variable Name="Item" />
+        <Variable Name="SingleSelect" />
+        <Variable Name="Items" />
+        <Variable Name="File" />
+        <Variable Name="FileName" />
+        <Variable Name="OpenDialogPDF" />
+        <Variable Name="OpenPDF" />
+        <Variable Name="DeactivatedBoxes" />
       </Task>
       <Task Name="VisuAdj">
         <Variable Name="CurrentZone1Temp" EngineeringUnitId="2" />
@@ -264,6 +284,15 @@
         <Variable Name="isManual" />
         <Variable Name="isSTOP" />
         <Variable Name="isTuning" />
+        <Variable Name="CoolPWMZone1" />
+        <Variable Name="CoolPWMZone2" />
+        <Variable Name="CoolPWMZone3" />
+        <Variable Name="CoolPWMZone4" />
+        <Variable Name="HeatPWMZone1" />
+        <Variable Name="HeatPWMZone2" />
+        <Variable Name="HeatPWMZone3" />
+        <Variable Name="HeatPWMZone4" />
+        <Variable Name="isIDLEorManual" />
       </Task>
       <Task Name="AuditTrail">
         <Variable Name="User_name" />
