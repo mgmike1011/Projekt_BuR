@@ -198,15 +198,15 @@
 		fontSize="16px" 
 		bold="true" 
 		textColor="#000000" 
-		mouseDownTextColor="#FFFFFF" 
-		cornerRadius="5px" 
+		mouseDownTextColor="#fe8c00" 
+		cornerRadius="5px"
 		borderWidth="0px" 
 		mouseDownBorderWidth="0px" 
-		backColor="#3388CC" 
-		mouseDownBackColor="#FF8500" 
-		checkedBackColor="#FF8500" 
-		shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" 
-		mouseDownShadow="1px 1px 14px 0px rgba(255, 113, 0, 0.75)" />
+		backColor="#f6f6f6" 
+		mouseDownBackColor="#fecc99" 
+		checkedBackColor="#fecc99" 
+		shadow="1px 1px 8px rgba(58, 58, 58, 0.75)" 
+	mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
 
 	<Style id="Command1" xsi:type="widgets.brease.ToggleButton" 
 		fontSize="16px"

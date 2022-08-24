@@ -13,7 +13,7 @@
     </Widget>
     <Widget xsi:type="widgets.brease.Button" id="ButtonAck" top="465" left="1150" width="220" height="40" zIndex="1" text="$IAT/AlarmPage/AckButton" mouseDownTextColor="rgba(255, 140, 0, 1)" mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
     <Widget xsi:type="widgets.brease.Button" id="ButtonAckAll" top="465" left="1420" width="220" height="40" zIndex="2" text="$IAT/AlarmPage/AckAllButton" mouseDownTextColor="rgba(255, 140, 0, 1)" mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
-    <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistory" top="540" left="80" width="1560" height="310" zIndex="3" itemsPerPage="4" nextText="$IAT/AlarmPage/NextListButton" previousText="$IAT/AlarmPage/PreviousListButton" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" headerTextColor="rgba(0, 0, 0, 1)" sortingButtonActiveColor="rgba(255, 204, 153, 1)">
+    <Widget xsi:type="widgets.brease.AlarmHistory" id="AlarmHistory" top="540" left="80" width="1560" height="310" zIndex="3" itemsPerPage="4" nextText="$IAT/AlarmPage/NextListButton" previousText="$IAT/AlarmPage/PreviousListButton" backColor="rgba(255, 245, 238, 1)" headerBackColor="rgba(255, 204, 153, 1)" headerTextColor="rgba(0, 0, 0, 1)" mouseDownTextColor="rgba(255, 204, 153, 1)" sortingButtonActiveColor="rgba(255, 204, 153, 1)">
       <Widgets>
         <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItemDate" width="290" zIndex="0" columnType="timestamp" text="$IAT/AlarmPage/DateList" />
         <Widget xsi:type="widgets.brease.AlarmHistoryItem" id="AlarmHistoryItemName" width="240" zIndex="1" columnType="name" text="$IAT/AlarmPage/NameList" />
