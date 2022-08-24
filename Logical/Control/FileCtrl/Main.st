@@ -128,35 +128,50 @@ PROGRAM _CYCLIC
 	
 	IF OpenPDF THEN
 		
-		IF test = 0 AND OpenDialogPDFchange = 0 THEN
+		FOR i:=0 TO 50 BY 1 DO
+			IF MpFileMngConnect.File.List.Items[i].IsSelected = TRUE THEN
+				FileName := MpFileMngConnect.File.List.Items[i].Name;
+				
+				IF ElementType[i] = 'pdf' THEN 
+					PDFtrue := TRUE;
+				ELSE
+					PDFtrue := FALSE;
+					OpenPDF := FALSE;
+				END_IF
+				
+			END_IF;
+		END_FOR;
+		
+		IF test = 0 AND OpenDialogPDFchange = 0 AND PDFtrue = TRUE THEN
 			PathFinder;
 		END_IF;
 		
-		IF test = 1 AND OpenDialogPDFchange = 0 THEN
+		IF test = 1 AND OpenDialogPDFchange = 0 AND PDFtrue = TRUE THEN
 			FileCopy_PDF();
 		END_IF;
 		
-		IF FileCopy_PDF.status = 0 THEN
+		IF FileCopy_PDF.status = 0 AND PDFtrue = TRUE THEN
 			FileCopy_PDF.enable := FALSE;
 			FileCopy_PDF();
 			OpenDialogPDF := 1;
 			OpenDialogPDFchange := 1;
 		END_IF;
 		
-        IF OpenDialogPDF = 0 AND OpenDialogPDFchange = 1 THEN
+        IF OpenDialogPDF = 0 AND OpenDialogPDFchange = 1 AND PDFtrue = TRUE THEN
             IF closeDelete = 0 THEN
                 DeleteCopied;
             ELSE
                 FileDelete_PDF();
 			END_IF
 			
-			IF FileDelete_PDF.status = 0 THEN
+			IF FileDelete_PDF.status = 0 AND PDFtrue = TRUE THEN
 				FileDelete_PDF.enable := FALSE;
 				FileDelete_PDF();
 				OpenDialogPDFchange := 0;
 				test := 0;
 				OpenPDF := 0;
 				closeDelete := 0;
+				PDFtrue := FALSE;
             END_IF
 		END_IF
 	END_IF;

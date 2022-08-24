@@ -11,16 +11,18 @@
 * Klient kontroli wersji GIT – GitHub,
 
 *Hardware:*
-* Sterownik PLC - B&R X20 CP3586
-* Moduły rozszerzeń: X20BB80, X20BC8083, X20PS9400a, X20DOF322,	X20cAT6402.
-* 4x czujnik temperatury termopara typ J
+* Sterownik PLC - B&R X20 CP3586,
+* Moduły rozszerzeń: X20BB80, X20BC8083, X20PS9400a, X20DOF322,	X20cAT6402,
+* 4x czujnik temperatury termopara typ J,
 * 4x grzałka patronowa,
 * 4x wentylator,
-* 4x przekaźniki typu SSR
+* 4x przekaźniki typu SSR,
 * Zasilacz 24V,
-* Stałe elementy fizyczne układu
+* Stałe elementy fizyczne układu.
 
 **Odnośniki**
 
 * [Dokumentacja części oprogramowania projektu]()
 * [Dokumnetacja części fizycznej projektu]()
+
+[Automatyka przemysłowa | B&R Industrial Automation](https://www.br-automation.com/pl/)

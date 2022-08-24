@@ -5,14 +5,26 @@
     <Group ID="Audit">
       <Group ID="Events">
         <Property ID="[0]" Value="16" />
-        <Property ID="[1]" Value="2" />
-        <Property ID="[2]" Value="18" />
+        <Property ID="[1]" Value="18" />
+        <Property ID="[2]" Value="33" />
+        <Property ID="[3]" Value="48" />
       </Group>
-      <Selector ID="TextSource">
-        <Property ID="OutputFormat" Value="[%[TIME=%c]] [%msg]" />
+      <Property ID="SramBufferSize" Value="40" />
+      <Selector ID="TextSource" Value="TXT">
+        <Property ID="Name" Value="Audit" />
+        <Property ID="OutputFormat" Value="SysF/Event/Root" />
+        <Selector ID="Display" Value="Ne">
+          <Property ID="Format" Value="SysF/Event/Root_disp" />
+        </Selector>
       </Selector>
       <Group ID="Export">
+        <Property ID="FileType" Value="2" />
         <Property ID="Encrypt" Value="FALSE" />
+        <Group ID="PDF">
+          <Property ID="DefaultFont" Value="2" />
+          <Property ID="AllowCopy" Value="TRUE" />
+          <Selector ID="Title" Value="0" />
+        </Group>
       </Group>
     </Group>
   </Element>

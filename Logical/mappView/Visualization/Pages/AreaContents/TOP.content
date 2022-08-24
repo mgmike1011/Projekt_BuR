@@ -2,11 +2,12 @@
 <Content id="TOP" height="170" width="1920" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.Image" id="LogoBR" top="0" left="-22" width="420" height="169" zIndex="0" image="Media/BiRlong.png" />
-    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelector" top="90" left="375" width="120" height="50" zIndex="1" mouseDownBackColor="rgba(255, 158, 12, 1)" mouseDownTextColor="rgba(0, 0, 0, 1)" activeBackColor="rgba(255, 158, 12, 1)" activeBackGroundGradient="linear-gradient(to bottom,#ff9900 100%,#ff9900 100%)" />
+    <Widget xsi:type="widgets.brease.LanguageSelector" id="LanguageSelector" top="90" left="375" width="120" height="50" zIndex="1" mouseDownBackColor="rgba(255, 158, 12, 1)" borderWidth="0px" mouseDownBorderWidth="0px" borderColor="rgba(0, 0, 0, 1)" mouseDownBorderColor="rgba(0, 0, 0, 1)" mouseDownTextColor="rgba(0, 0, 0, 1)" listBackColor="rgba(246, 246, 246, 1)" activeBackColor="rgba(255, 158, 12, 1)" activeBackGroundGradient="linear-gradient(to bottom,#ff9900 100%,#ff9900 100%)" listBorderWidth="1px" />
     <Widget xsi:type="widgets.brease.Image" id="login" top="20" left="1580" width="120" height="120" zIndex="2" image="Media/SymbolLib/User/User.svg" />
     <Widget xsi:type="widgets.brease.Image" id="logout" top="20" left="1740" width="120" height="120" zIndex="3" image="Media/SymbolLib/User/Logout.svg" />
     <Widget xsi:type="widgets.brease.LoginInfo" id="LoginInfo1" top="140" left="1560" width="160" zIndex="4" textAlign="center" />
     <Widget xsi:type="widgets.brease.Label" id="ProjectTitle" top="50" left="520" width="1040" height="70" zIndex="5" text="$IAT/top/ProTitle" textAlign="center" fontName="Arial" fontSize="40px" bold="true" italic="false" />
-    <Widget xsi:type="widgets.brease.MeasurementSystemSelector" id="MeasurementSystemSelector1" top="30" left="375" width="120" height="50" zIndex="6" mouseDownBackColor="rgba(255, 158, 12, 1)" mouseDownTextColor="rgba(0, 0, 0, 1)" activeBackColor="rgba(255, 158, 12, 1)" activeBackGroundGradient="linear-gradient(to bottom,#ff9900 100%,#ff9900 100%)" />
+    <Widget xsi:type="widgets.brease.MeasurementSystemSelector" id="MeasurementSystemSelector1" top="30" left="375" width="120" height="50" zIndex="6" mouseDownBackColor="rgba(255, 158, 12, 1)" borderWidth="0px" mouseDownBorderWidth="0px" borderColor="rgba(0, 0, 0, 1)" mouseDownBorderColor="rgba(0, 0, 0, 1)" mouseDownTextColor="rgba(0, 0, 0, 1)" activeBackColor="rgba(255, 158, 12, 1)" activeBackGroundGradient="linear-gradient(to bottom,#ff9900 100%,#ff9900 100%)" listBorderWidth="1px" />
+    <Widget xsi:type="widgets.brease.Label" id="LogoutLable" top="140" left="1740" width="120" zIndex="7" text="$IAT/top/Logout" textAlign="center" bold="true" />
   </Widgets>
 </Content>

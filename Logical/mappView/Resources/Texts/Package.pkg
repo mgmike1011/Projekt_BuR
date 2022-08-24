@@ -18,5 +18,7 @@
     <Object Type="File">ManualPageTexts.tmx</Object>
     <Object Type="File">ErrorDialogTexts.tmx</Object>
     <Object Type="File">TunningSetpointsDialogTexts.tmx</Object>
+    <Object Type="File">AuditPage.tmx</Object>
+    <Object Type="Package">AuditTexts</Object>
   </Objects>
 </Package>

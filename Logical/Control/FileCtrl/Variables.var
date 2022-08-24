@@ -30,4 +30,5 @@ VAR
 	FileDelete_PDF : FileDelete;
 	closeDelete : BOOL;
 	test : BOOL;
+	PDFtrue : BOOL;
 END_VAR
