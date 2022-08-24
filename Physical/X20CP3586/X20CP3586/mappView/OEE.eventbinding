@@ -80,5 +80,5 @@
         </Action>
       </EventHandler>
     </EventBinding>
-	</Bindings>
+  </Bindings>
 </EventBindingSet>

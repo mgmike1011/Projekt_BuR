@@ -42,6 +42,7 @@
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
     <EventBindingsSet refId="MANUAL_eventbinding" />
     <EventBindingsSet refId="ErrorDialogContent_eventbinding" />
+    <EventBindingsSet refId="PDF_eventbinding" />
     <EventBindingsSet refId="ConfirmDeleteFolderContent_eventbinding" />
     <EventBindingsSet refId="ConfirmDeleteFileContent_eventbinding" />
     <EventBindingsSet refId="ConfirmDeleteItemsContent_eventbinding" />

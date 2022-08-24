@@ -411,5 +411,6 @@
         <Widget xsi:type="widgets.brease.TextInput" id="SearchTextInput" top="18" left="78" width="220" zIndex="1" shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
       </Widgets>
     </Widget>
+    <Widget xsi:type="widgets.brease.Button" id="BtnOpenPDF" top="660" left="100" width="160" zIndex="21" text="$IAT/FILEMNG/OpenPDF" />
   </Widgets>
 </Content>

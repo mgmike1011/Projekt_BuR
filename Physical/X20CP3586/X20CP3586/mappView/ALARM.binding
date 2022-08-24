@@ -85,10 +85,7 @@
 <Source xsi:type="opcUa" refId="::OEE:BtnEnable" attribute="value" />
 <Target xsi:type="brease" contentRefId="OEE" widgetRefId="BtnRsetStat" attribute="enable" />
 </Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::FileCtrl:Path" attribute="value" />
-<Target xsi:type="brease" contentRefId="PDF" widgetRefId="PDFViewer1" attribute="src" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Info.ShiftStatistics.TotalTime.Hours" attribute="value" />
 <Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTminICT1" attribute="value" />
@@ -116,6 +113,10 @@
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::OEE:avSCTwithoutTrash" attribute="value" />
 <Target xsi:type="brease" contentRefId="OEE" widgetRefId="TextOutput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:FileName" attribute="value" />
+<Target xsi:type="brease" contentRefId="PDF" widgetRefId="PDFViewer1" attribute="src" />
 </Binding>
 </Bindings>
 </BindingsSet>

@@ -16,7 +16,13 @@ PROGRAM _INIT
 	StopValueFor3 := 49;
 	Step := 1;
 	SortType[0] := TRUE;
+	
 	OpenPDF := 0;
+	OpenDialogPDF := 0;
+	FileCopy_PDF.enable := TRUE;
+	test := 0;
+	OpenDialogPDFchange := 0;
+	closeDelete := 0;
 	
 END_PROGRAM
 
@@ -114,9 +120,39 @@ PROGRAM _CYCLIC
 	MpFileManagerUI_0();
 	
 	IF OpenPDF THEN
-		PathFinder;
-		OpenPDF := 0;
-	END_IF;
+		
+		IF test = 0 AND OpenDialogPDFchange = 0 THEN
+			PathFinder;
+		END_IF;
+		
+		IF test = 1 AND OpenDialogPDFchange = 0 THEN
+			FileCopy_PDF();
+		END_IF;
+		
+		IF FileCopy_PDF.status = 0 THEN
+			FileCopy_PDF.enable := FALSE;
+			FileCopy_PDF();
+			OpenDialogPDF := 1;
+			OpenDialogPDFchange := 1;
+		END_IF;
+		
+        IF OpenDialogPDF = 0 AND OpenDialogPDFchange = 1 THEN
+            IF closeDelete = 0 THEN
+                DeleteCopied;
+            ELSE
+                FileDelete_PDF();
+			END_IF
+			
+			IF FileDelete_PDF.status = 0 THEN
+				FileDelete_PDF.enable := FALSE;
+				FileDelete_PDF();
+				OpenDialogPDFchange := 0;
+				test := 0;
+				OpenPDF := 0;
+				closeDelete := 0;
+            END_IF
+		END_IF
+			END_IF;
 	
 END_PROGRAM
 
@@ -126,5 +162,12 @@ PROGRAM _EXIT
 	MpFileManagerUI_0.Enable := FALSE;
 	MpFileManagerUI_0();
 	 
+	FileCopy_PDF.enable := FALSE;
+	FileCopy_PDF();
+	FileDelete_PDF.enable := FALSE;
+	FileDelete_PDF();
+	
+	//OpenDialogPDF := 0;
+	
 END_PROGRAM
 

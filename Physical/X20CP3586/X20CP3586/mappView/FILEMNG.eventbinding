@@ -378,6 +378,16 @@
         </Sequence>
       </EventHandler>
     </EventBinding>
+    <EventBinding id="FILEMNG.BtnOpenPDF.Click">
+      <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="BtnOpenPDF" event="Click" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:OpenPDF">
+                 <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
     <EventBinding id="FILEMNG.SearchTextInput.ValueChanged">
       <Source xsi:type="widgets.brease.TextInput.Event" contentRefId="FILEMNG" widgetRefId="SearchTextInput" event="ValueChanged" />
       <EventHandler>

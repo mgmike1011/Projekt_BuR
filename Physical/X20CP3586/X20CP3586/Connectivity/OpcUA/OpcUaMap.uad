@@ -271,9 +271,13 @@
         <Variable Name="ElementType" EnableArrayElements="True" />
         <Variable Name="SortType" EnableArrayElements="True" />
         <Variable Name="Folder" EnableArrayElements="True" />
+        <Variable Name="Path" />
         <Variable Name="SingleSelect" />
         <Variable Name="Items" />
         <Variable Name="File" />
+        <Variable Name="FileName" />
+        <Variable Name="OpenDialogPDF" />
+        <Variable Name="OpenPDF" />
         <Variable Name="DeactivatedBoxes" />
       </Task>
       <Task Name="VisuAdj">
