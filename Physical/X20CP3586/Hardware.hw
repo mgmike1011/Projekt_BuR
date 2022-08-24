@@ -20,22 +20,21 @@
       <Parameter ID="ActivateSnmp" Value="2" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="Projekt_BuR_X20CP3586" />
-    <Parameter ID="Simulation" Value="1" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="AUDIT" />
-    <Parameter ID="FileDevicePath1" Value="C:/BRAudit" />
+    <Parameter ID="FileDevicePath1" Value="F:/BRAudit" />
     <Group ID="FileDevice2" />
     <Parameter ID="FileDeviceName2" Value="DATA" />
-    <Parameter ID="FileDevicePath2" Value="C:/BRmappData" />
+    <Parameter ID="FileDevicePath2" Value="F:/BRmappData" />
     <Group ID="FileDevice3" />
     <Parameter ID="FileDeviceName3" Value="PDF" />
-    <Parameter ID="FileDevicePath3" Value="C:/PDF" />
+    <Parameter ID="FileDevicePath3" Value="F:/PDF" />
     <Group ID="FileDevice4" />
     <Parameter ID="FileDeviceName4" Value="DISK" />
-    <Parameter ID="FileDevicePath4" Value="C:/" />
+    <Parameter ID="FileDevicePath4" Value="F:/" />
     <Group ID="FileDevice5" />
     <Parameter ID="FileDeviceName5" Value="RECIPE" />
-    <Parameter ID="FileDevicePath5" Value="C:/BrRecipe" />
+    <Parameter ID="FileDevicePath5" Value="F:/BrRecipe" />
     <Group ID="FileDevice6" />
     <Parameter ID="FileDeviceName6" Value="BRVisu" />
     <Parameter ID="FileDevicePath6" Value="C:/ADDONS/DATA/IAT_Data/wwwRoot/BRVisu" />
