@@ -139,6 +139,7 @@
           <Variable Name="Time5" />
         </Variable>
         <Variable Name="RecipeListName" />
+        <Variable Name="MpAuditTrail_0" />
       </GlobalVariables>
       <Task Name="Recipe">
         <Variable Name="RecipeUIConnect">
@@ -292,6 +293,13 @@
         <Variable Name="HeatPWMZone3" />
         <Variable Name="HeatPWMZone4" />
         <Variable Name="isIDLEorManual" />
+      </Task>
+      <Task Name="AuditTrail">
+        <Variable Name="User_name" />
+        <Variable Name="LOGIN" />
+        <Variable Name="LOGOUT" />
+        <Variable Name="Clear" />
+        <Variable Name="Export" />
       </Task>
     </Module>
   </DefaultView>

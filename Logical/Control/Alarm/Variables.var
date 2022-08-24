@@ -1,8 +1,8 @@
 VAR
 	MpAlarmXHistory_0 : MpAlarmXHistory;
 	mpAlarmXlist : MpAlarmXListUI;
-	mpAlarmXlistConnect : MpAlarmXListUIConnectType;
 	i : UDINT;
 	stringBuffer : STRING[256];
 	MpAlarmXlistSetup : MpAlarmXListUISetupType;
+	mpAlarmXlistConnect : MpAlarmXListUIConnectType;
 END_VAR

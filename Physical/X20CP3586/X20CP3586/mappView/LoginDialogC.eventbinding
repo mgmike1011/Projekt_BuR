@@ -3,34 +3,49 @@
   <Bindings>
     <EventBinding id="LoginSuccess">
       <Source xsi:type="widgets.brease.LoginButton.Event" contentRefId="LoginDialogC" widgetRefId="LoginButton1" event="LoginSuccess" />
+      <Operand datatype="ANY_STRING" name="Get_User">
+        <ReadTarget xsi:type="session.VariableAction.Read" refId="::SYSTEM:clientInfo.userId">
+          <Method xsi:type="session.VariableAction.GetValue" />
+        </ReadTarget>
+      </Operand>
       <EventHandler>
         <Sequence>
           <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AuditTrail:LOGIN">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AuditTrail:User_name">
+                <Method xsi:type="opcUa.NodeAction.SetValueString" value="=Get_User" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="2">
             <Action>
               <Target xsi:type="widgets.brease.Password.Action" contentRefId="LoginDialogC" widgetRefId="PasswordInput">
                 <Method xsi:type="widgets.brease.Password.Action.SetValue" value="" />
               </Target>
             </Action>
           </Step>
-          <Step order="1">
+          <Step order="3">
             <Action>
               <Target xsi:type="clientSystem.Action">
                 <Method xsi:type="clientSystem.Action.CloseDialog" dialogId="LoginDialogP" />
               </Target>
             </Action>
           </Step>
-        </Sequence>
-      </EventHandler>
-      <EventHandler>
-        <Sequence>
-          <Step order="0">
+          <Step order="4">
             <Action>
               <Target xsi:type="widgets.brease.Label.Action" contentRefId="LoginDialogC" widgetRefId="FailedInfo">
                 <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="false" />
               </Target>
             </Action>
           </Step>
-          <Step order="1">
+          <Step order="5">
             <Action>
               <Target xsi:type="widgets.brease.TextInput.Action" contentRefId="LoginDialogC" widgetRefId="UsernameInput">
                 <Method xsi:type="widgets.brease.TextInput.Action.SetValue" value="" />
@@ -50,22 +65,22 @@
     <EventBinding id="LoginFailed">
       <Source xsi:type="widgets.brease.LoginButton.Event" contentRefId="LoginDialogC" widgetRefId="LoginButton1" event="AuthentificationFailed" />
       <EventHandler>
-        <Action>
-          <Target xsi:type="widgets.brease.Label.Action" contentRefId="LoginDialogC" widgetRefId="FailedInfo">
-            <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="true" />
-          </Target>
-        </Action>
-      </EventHandler>
-      <EventHandler>
         <Sequence>
           <Step order="0">
+            <Action>
+              <Target xsi:type="widgets.brease.Label.Action" contentRefId="LoginDialogC" widgetRefId="FailedInfo">
+                <Method xsi:type="widgets.brease.Label.Action.SetVisible" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
             <Action>
               <Target xsi:type="widgets.brease.TextInput.Action" contentRefId="LoginDialogC" widgetRefId="UsernameInput">
                 <Method xsi:type="widgets.brease.TextInput.Action.SetValue" value="" />
               </Target>
             </Action>
           </Step>
-          <Step order="1">
+          <Step order="2">
             <Action>
               <Target xsi:type="widgets.brease.Password.Action" contentRefId="LoginDialogC" widgetRefId="PasswordInput">
                 <Method xsi:type="widgets.brease.Password.Action.SetValue" value="" />
