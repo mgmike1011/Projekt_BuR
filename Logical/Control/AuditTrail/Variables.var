@@ -1,8 +1,18 @@
 VAR
-	MpAuditTrail_0 : MpAuditTrail;
-	TypeVar : WSTRING[100];
-	MessageVar : WSTRING[100] := "Hello World";
 	CommentVar : WSTRING[100];
-	TriggerEvent : BOOL;
 	CustomEventStatus : DINT;
+	TypeVar : WSTRING[100];
+	LOGIN : BOOL;
+	User_name : STRING[80];
+	String_bufer : STRING[80];
+	prev_machine_state : DINT;
+	LOGOUT : BOOL;
+	export_timer : TON;
+END_VAR
+VAR CONSTANT
+	EXPORT_PERIOD : TIME := T#1M;
+END_VAR
+VAR
+	Clear : BOOL;
+	Export : BOOL;
 END_VAR

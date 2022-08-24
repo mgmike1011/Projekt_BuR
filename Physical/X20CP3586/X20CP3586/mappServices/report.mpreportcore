@@ -4,7 +4,7 @@
   <Element ID="gReport" Type="mpreportcore">
     <Group ID="MpReport">
       <Group ID="Settings">
-        <Property ID="ResourceDeviceName" Value="OEERaport" />
+        <Property ID="ResourceDeviceName" Value="PDF" />
         <Group ID="LanguageDependent">
           <Group ID="[0]">
             <Property ID="Language" Value="en" />
@@ -221,7 +221,7 @@
           </Group>
           <Group ID="[4]">
             <Selector ID="[0]" Value="TextId">
-              <Property ID="Source" Value="Actual single cycle time" />
+              <Property ID="Source" Value="Average single cycle time" />
               <Property ID="Width" Value="30" />
             </Selector>
             <Selector ID="[1]" Value="ValueId">
@@ -269,7 +269,7 @@
         <Group ID="[0]">
           <Property ID="Name" Value="ContentHeader" />
           <Selector ID="[0]">
-            <Property ID="Text" Value="Raport OEE" />
+            <Property ID="Text" Value="Report OEE" />
             <Property ID="TextStyle" Value="Default" />
           </Selector>
           <Selector ID="[1]" Value="DateTime" />

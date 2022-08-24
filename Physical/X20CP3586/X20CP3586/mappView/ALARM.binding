@@ -85,5 +85,38 @@
 <Source xsi:type="opcUa" refId="::OEE:BtnEnable" attribute="value" />
 <Target xsi:type="brease" contentRefId="OEE" widgetRefId="BtnRsetStat" attribute="enable" />
 </Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Info.ShiftStatistics.TotalTime.Hours" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTminICT1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Info.ShiftStatistics.TotalTime.Minutes" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTsekICT1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Info.ShiftStatistics.TotalTime.Seconds" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTmsICT1" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Info.ShiftStatistics.Uptime.Hours" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTminICT2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Info.ShiftStatistics.Uptime.Minutes" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTsekICT2" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::OEE:MpOEECore_1.Info.ShiftStatistics.Uptime.Seconds" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="NumOUTmsICT2" attribute="value" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::OEE:avSCTwithoutTrash" attribute="value" />
+<Target xsi:type="brease" contentRefId="OEE" widgetRefId="TextOutput1" attribute="value" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::FileCtrl:FileName" attribute="value" />
+<Target xsi:type="brease" contentRefId="PDF" widgetRefId="PDFViewer1" attribute="src" />
+</Binding>
 </Bindings>
 </BindingsSet>

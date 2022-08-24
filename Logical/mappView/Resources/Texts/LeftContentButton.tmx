@@ -120,13 +120,13 @@
     </tu>
     <tu tuid="ServicePafeButton">
       <tuv xml:lang="de">
-        <seg>Service</seg>
+        <seg>Info</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Serwis</seg>
+        <seg>Informacje</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Service</seg>
+        <seg>Info</seg>
       </tuv>
     </tu>
   </body>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">Audit/Custom</prop>
+  </header>
+  <body>
+    <tu tuid="LOGOUT">
+      <tuv xml:lang="de">
+        <seg>abgemeldet von {&amp;msg} </seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>
+wylogowano z {&amp;msg} 
+
+</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>logged out from {&amp;msg} </seg>
+      </tuv>
+    </tu>
+    <tu tuid="LOGIN">
+      <tuv xml:lang="de">
+        <seg>Eingeloggt als {&amp;msg}</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>zalogowano jako {&amp;msg}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>logged in as {&amp;msg}</seg>
+      </tuv>
+    </tu>
+    <tu tuid="STATE_CHANGED">
+      <tuv xml:lang="de">
+        <seg>Maschine ist in den Zustand eingetreten {=${&amp;msg}}</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Maszyna weszła w stan {=${&amp;msg}}</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Machine entered state  {=${&amp;msg}}</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

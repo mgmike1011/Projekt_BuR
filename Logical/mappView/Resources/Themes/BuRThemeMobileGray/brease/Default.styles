@@ -74,10 +74,10 @@
 		borderWidth="0px" 
 		mouseDownBorderWidth="0px" 
 		backColor="#F6F6F6" 
-		mouseDownBackColor="#EDEDED" 
+		mouseDownBackColor="#ffcc99" 
 		checkedBackColor="#EDEDED" 
-		shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" 
-		mouseDownShadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
+		shadow="1px 1px 8px rgba(58, 58, 58, 0.75)" 
+		mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
 	
 	<!--toggle switch-->
 	
@@ -85,15 +85,15 @@
 		fontSize="20px" 
 		bold="true" 
 		textColor="#000000" 
-		mouseDownTextColor="#FFFFFF" 
+		mouseDownTextColor="#000000" 
 		cornerRadius="4px" 
 		foreColor="#FFFFFF" 
 		borderWidth="0px 0px 0px 0px"
 		mouseDownBorderWidth="0px 0px 0px 0px" 
 		backColor="#EDEDED" 
-		mouseDownBackColor="#3388CC" 
-		shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" 
-		mouseDownShadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
+		mouseDownBackColor="#ffcc99" 
+		shadow="1px 1px 8px rgba(58, 58, 58, 0.75)" 
+		mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
 		
 	<!--push button-->
 	
@@ -176,19 +176,19 @@
 	<!--alphanumeric keyboard-->
 	
 	<Style id="default" xsi:type="widgets.brease.KeyBoard" 
-		backColor="#ebf3fa" 
-		borderColor="#3388CC" 
-		mouseDownBackColor="#3388CC" 
+		backColor="#f5f5f5" 
+		borderColor="#ff8c00" 
+		mouseDownBackColor="#ffcc99" 
 		mouseDownTextColor="#FFFFFF" 
 		textColor="#000000" />
 	
 	<!--numeric keyboard-->
 	
 	<Style id="default" xsi:type="widgets.brease.NumPad" 
-		backColor="#FFFFFF" 
-		borderColor="#3388CC" 
-		mouseDownBackColor="#3388CC" 
-		mouseDownTextColor="#FFFFFF" 
+		backColor="#f5f5f5" 
+		borderColor="#ff8c00" 
+		mouseDownBackColor="#ffcc99" 
+		mouseDownTextColor="#FFFFFF"  
 		textColor="#000000" />
 	
 	<!--date time picker keyboard-->
@@ -241,7 +241,7 @@
 		activeTextColor="#555555" 
 		bold="true" 
 		activeBorderColor="transparent" 
-		shadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
+		shadow="1px 1px 8px rgba(64, 64, 64, 1)" />
 	
 	<!--numeric output-->
 	
@@ -264,7 +264,7 @@
 		activeTextColor="#555555" 
 		bold="true" 
 		activeBorderColor="transparent" 
-		shadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" 
+		shadow="1px 1px 8px rgba(64, 64, 64, 1)" 
 		textAlign="left" />
 	
 	<!--text output-->
@@ -289,7 +289,7 @@
 		activeTextColor="#555555" 
 		bold="true" 
 		activeBorderColor="transparent" 
-		shadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" 
+		shadow="1px 1px 8px rgba(64, 64, 64, 1)" 
 		textAlign="left" />
 	
 	<!--dropdown box-->
@@ -757,9 +757,9 @@
 	/>	
 	
 	<Style id="default" xsi:type="widgets.brease.AuditList" 
-		headerBackColor="#3388CC" 
-		headerTextColor="#FFFFFF" 
-		backColorSelectedRow="#ff9900"
+		headerBackColor="#ffcc99" 
+		headerTextColor="#000000" 
+		backColorSelectedRow="#ff8800"
 	/>
 	
 	<!--version 5.4 widgets-->

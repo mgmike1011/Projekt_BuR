@@ -1,28 +1,28 @@
 (*Temperature setpoints to all zones.*)
 VAR
-	SetTemp1 : REAL := 30;
-	SetTemp2 : REAL := 30;
-	SetTemp3 : REAL := 30;
-	SetTemp4 : REAL := 30;
+	SetTemp1 : REAL := 30; (*Set temperature for zone 1.*)
+	SetTemp2 : REAL := 30; (*Set temperature for zone 2.*)
+	SetTemp3 : REAL := 30; (*Set temperature for zone 3.*)
+	SetTemp4 : REAL := 30; (*Set temperature for zone 4.*)
 END_VAR
 (*Temperature tuning setpoints to all zones.*)
 VAR
-	SetTempHeatTuning1 : REAL := 100;
-	SetTempHeatTuning2 : REAL := 100;
-	SetTempHeatTuning3 : REAL := 100;
-	SetTempHeatTuning4 : REAL := 100;
-	SetTempCoolTuning1 : REAL := 30;
-	SetTempCoolTuning2 : REAL := 30;
-	SetTempCoolTuning3 : REAL := 30;
-	SetTempCoolTuning4 : REAL := 30;
+	SetTempHeatTuning1 : REAL := 100; (*Set heating temperature for zone 1.*)
+	SetTempHeatTuning2 : REAL := 100; (*Set heating temperature for zone 2.*)
+	SetTempHeatTuning3 : REAL := 100; (*Set heating temperature for zone 3.*)
+	SetTempHeatTuning4 : REAL := 100; (*Set  heating temperature for zone 4.*)
+	SetTempCoolTuning1 : REAL := 30; (*Set cooling temperature for zone 1.*)
+	SetTempCoolTuning2 : REAL := 30; (*Set cooling temperature for zone 2.*)
+	SetTempCoolTuning3 : REAL := 30; (*Set cooling temperature for zone 3.*)
+	SetTempCoolTuning4 : REAL := 30; (*Set cooling temperature for zone 4.*)
 END_VAR
 (*Machine status - step.*)
 VAR
-	STATUS : MACHINE_WORKING_STATE := STATE_IDLE; (*Whole machine working status *)
+	STATUS : MACHINE_WORKING_STATE := STATE_IDLE; (*Whole machine working status.*)
 END_VAR
 (*Zones status*)
 VAR
-	ZoneStatus : ARRAY[0..ELEMENTS_NUMBER] OF ZONE_WORKING_STATE;
+	ZoneStatus : ARRAY[0..ELEMENTS_NUMBER] OF ZONE_WORKING_STATE; (*Each zone working status.*)
 END_VAR
 (*Temperature controller functionblocks.*)
 VAR
@@ -37,16 +37,16 @@ VAR CONSTANT
 END_VAR
 (*Machine working type*)
 VAR
-	Automatic_work : BOOL := FALSE;
-	Manual_work : BOOL := FALSE;
-	TuneEnable : BOOL := FALSE;
+	Automatic_work : BOOL := FALSE; (*Enable automatic work mode.*)
+	Manual_work : BOOL := FALSE; (*Enable manual work mode.*)
+	TuneEnable : BOOL := FALSE; (*Enable tune work mode.*)
 END_VAR
 (*Manual control*)
 VAR
-	EnableZone1 : BOOL := TRUE;
-	EnableZone2 : BOOL := TRUE;
-	EnableZone3 : BOOL := TRUE;
-	EnableZone4 : BOOL := TRUE;
+	EnableZone1 : BOOL := TRUE; (*Enable zone 1.*)
+	EnableZone2 : BOOL := TRUE; (*Enable zone 2.*)
+	EnableZone3 : BOOL := TRUE; (*EnableZone 3.*)
+	EnableZone4 : BOOL := TRUE; (*Enable zone 4.*)
 END_VAR
 (*Automatic control*)
 VAR
@@ -56,19 +56,19 @@ VAR
 	TimeStep3 : TIME := T#5s; (*Min time of step 3*)
 	TimeStep4 : TIME := T#5s; (*Min time of step 4*)
 	TimeStep5 : TIME := T#5s; (*Min time of step 5*)
-	TimStep1 : TON;
-	TimStep2 : TON;
-	TimStep3 : TON;
-	TimStep4 : TON;
-	TimStep5 : TON;
-	CycleNumber : DINT := 0;
+	TimStep1 : TON; (*Timer for step 1 in automatic work.*)
+	TimStep2 : TON; (*Timer for step 2 in automatic work.*)
+	TimStep3 : TON; (*Timer for step 3 in automatic work.*)
+	TimStep4 : TON; (*Timer for step 4 in automatic work.*)
+	TimStep5 : TON; (*Timer in step 5 for automatic work.*)
+	CycleNumber : DINT := 0; (*Number of full done cycles in automatic work.*)
 END_VAR
 (*Simulation mode*)
 VAR
-	SimulateZone1Enable : BOOL := FALSE;
-	SimulateZone2Enable : BOOL := FALSE;
-	SimulateZone3Enable : BOOL := FALSE;
-	SimulateZone4Enable : BOOL := FALSE;
+	SimulateZone1Enable : BOOL := FALSE; (*Simulation enable of zone 1.*)
+	SimulateZone2Enable : BOOL := FALSE; (*Simulation enable of zone 2.*)
+	SimulateZone3Enable : BOOL := FALSE; (*Simulation enable of zone 3.*)
+	SimulateZone4Enable : BOOL := FALSE; (*Simulation enable of zone 4.*)
 END_VAR
 (*Tuning parameters HEAT*)
 VAR RETAIN
@@ -124,5 +124,10 @@ END_VAR
 (*Recipe*)
 VAR
 	RecipeListName : ARRAY[0..9] OF STRING[255];
+END_VAR
+(*Audit*)
+VAR
+	MpAuditTrail_0 : MpAuditTrail;
+	MessageVar : WSTRING[100] := "Hello World";
 END_VAR
 (**)

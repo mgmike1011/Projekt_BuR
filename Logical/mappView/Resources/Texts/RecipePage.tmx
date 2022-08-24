@@ -272,5 +272,16 @@
         <seg>Time</seg>
       </tuv>
     </tu>
+    <tu tuid="RecipeLabel">
+      <tuv xml:lang="de">
+        <seg>Rezepturen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Receptury</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Recipes</seg>
+      </tuv>
+    </tu>
   </body>
 </tmx>

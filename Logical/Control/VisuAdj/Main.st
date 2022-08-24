@@ -8,40 +8,56 @@ END_PROGRAM
 
 PROGRAM _CYCLIC
 	//
-	// Cyclic code - variables adjustment to visualization
+	// Cyclic code - variables adjustment to visualization.
 	//
-	// Current temperature
-	//Zone 1
+	// Current temperature - switch between real values and simulation.
+	// Zone 1
 	IF SimulateZone1Enable THEN
 		CurrentZone1Temp := TempController[0].Info.Simulation.ActualTemperature;
+		CoolPWMZone1 := TempController[0].Info.Simulation.CoolValue;
+		HeatPWMZone1 := TempController[0].Info.Simulation.HeatValue;
 	ELSE
 		CurrentZone1Temp := gTemp1;
+		CoolPWMZone1 := TempController[0].CoolValue;
+		HeatPWMZone1 := TempController[0].HeatValue;
 	END_IF;
-	
+	// Zone 2
 	IF SimulateZone2Enable THEN
 		CurrentZone2Temp := TempController[1].Info.Simulation.ActualTemperature;
+		CoolPWMZone2 := TempController[1].Info.Simulation.CoolValue;
+		HeatPWMZone2 := TempController[1].Info.Simulation.HeatValue;
 	ELSE
 		CurrentZone2Temp := gTemp2;
+		CoolPWMZone2 := TempController[1].CoolValue;
+		HeatPWMZone2 := TempController[1].HeatValue;
 	END_IF;
 	// Zone 3
 	IF SimulateZone3Enable THEN
 		CurrentZone3Temp := TempController[2].Info.Simulation.ActualTemperature;
+		CoolPWMZone3 := TempController[2].Info.Simulation.CoolValue;
+		HeatPWMZone3 := TempController[2].Info.Simulation.HeatValue;
 	ELSE
 		CurrentZone3Temp := gTemp3;
+		CoolPWMZone3 := TempController[2].CoolValue;
+		HeatPWMZone3 := TempController[2].HeatValue;
 	END_IF;
 	// Zone 4
 	IF SimulateZone4Enable THEN
 		CurrentZone4Temp := TempController[3].Info.Simulation.ActualTemperature;
+		CoolPWMZone4 := TempController[3].Info.Simulation.CoolValue;
+		HeatPWMZone4 := TempController[3].Info.Simulation.HeatValue;
 	ELSE
 		CurrentZone4Temp := gTemp4;
+		CoolPWMZone4 := TempController[3].CoolValue;
+		HeatPWMZone4 := TempController[3].HeatValue;
 	END_IF;
-	// Step time 
+	// Step time  - timer for each step visualization
 	TimeStep1Int := TIME_TO_UINT(TimeStep1)/1000;
 	TimeStep2Int := TIME_TO_UINT(TimeStep2)/1000;
 	TimeStep3Int := TIME_TO_UINT(TimeStep3)/1000;
 	TimeStep4Int := TIME_TO_UINT(TimeStep4)/1000;
 	TimeStep5Int := TIME_TO_UINT(TimeStep5)/1000;
-	// Machine State
+	// Machine working state
 	CASE STATUS OF
 		STATE_IDLE:
 			isIDLE_ := TRUE;
@@ -86,10 +102,18 @@ PROGRAM _CYCLIC
 			isSTOP := TRUE;
 			isERROR := FALSE;
 	END_CASE;
+	// Set temperature button in manual mode
+	IF STATUS = STATE_IDLE OR STATUS = STATE_WORKING_MANUAL THEN
+		isIDLEorManual := TRUE;
+	ELSE
+		isIDLEorManual := FALSE;
+	END_IF;
 END_PROGRAM
 
 PROGRAM _EXIT
-	(* Insert code here *)
+	//
+	// Exit code
+	//
 	 
 END_PROGRAM
 

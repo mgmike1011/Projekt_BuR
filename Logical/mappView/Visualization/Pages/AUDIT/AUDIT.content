@@ -1,4 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Content id="AUDIT" height="910" width="1720" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Widgets />
+  <Widgets>
+    <Widget xsi:type="widgets.brease.AuditList" id="AuditList1" top="60" left="59" width="1162" height="803" zIndex="0" itemsPerPage="21" backColor="rgba(255, 245, 238, 1)">
+      <Widgets>
+        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItem1" zIndex="0" columnType="id" text="$IAT/AuditPage/LP" />
+        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItem3" width="300" zIndex="1" columnType="timestamp" text="$IAT/AuditPage/TimeStamp" />
+        <Widget xsi:type="widgets.brease.AuditListItem" id="AuditListItem4" width="660" zIndex="2" text="$IAT/AuditPage/Message" />
+      </Widgets>
+    </Widget>
+    <Widget xsi:type="widgets.brease.ToggleButton" id="Export_audit" top="200" left="1380" width="220" height="120" zIndex="1" text="$IAT/AuditPage/Export" mouseDownBackColor="rgba(237, 237, 237, 1)" mouseDownTextColor="rgba(255, 140, 0, 1)" tabIndex="3" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="Clear_audit" top="580" left="1380" width="220" height="120" zIndex="2" text="$IAT/AuditPage/Clear" mouseDownBackColor="rgba(237, 237, 237, 1)" mouseDownTextColor="rgba(255, 140, 0, 1)" tabIndex="4" />
+    <Widget xsi:type="widgets.brease.Label" id="Audit_title" top="20" left="0" width="1720" zIndex="3" text="$IAT/AuditPage/TItle" textAlign="center" fontSize="25px" bold="true" />
+  </Widgets>
 </Content>

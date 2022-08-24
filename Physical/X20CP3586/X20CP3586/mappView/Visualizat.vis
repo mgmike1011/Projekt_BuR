@@ -12,7 +12,6 @@
     <Page refId="OEE" />
     <Page refId="FILEMNG" />
     <Page refId="SERVICE" />
-    <Page refId="PdfP" />
   </Pages>
   <Navigations />
   <BindingsSets>
@@ -28,7 +27,7 @@
     <BindingsSet refId="MANUAL_binding" />
     <BindingsSet refId="ErrorDialogContent_binding" />
     <BindingsSet refId="TunningSetpointsDialogContent_binding" />
-    <BindingsSet refId="ConfirmDeleteContent_binding" />
+    <BindingsSet refId="AUDIT_binding" />
   </BindingsSets>
   <EventBindingsSets>
     <EventBindingsSet refId="ALARM_eventbinding" />
@@ -38,22 +37,30 @@
     <EventBindingsSet refId="Tuning_eventbinding" />
     <EventBindingsSet refId="RECEPT_eventbinding" />
     <EventBindingsSet refId="FILEMNG_eventbinding" />
-    <EventBindingsSet refId="ConfirmDeleteContent_eventbinding" />
     <EventBindingsSet refId="SERVICE_eventbinding" />
     <EventBindingsSet refId="START_PAGE_eventbinding" />
     <EventBindingsSet refId="AUTOMATIC_eventbinding" />
     <EventBindingsSet refId="MANUAL_eventbinding" />
     <EventBindingsSet refId="ErrorDialogContent_eventbinding" />
+    <EventBindingsSet refId="PDF_eventbinding" />
+    <EventBindingsSet refId="ConfirmDeleteFolderContent_eventbinding" />
+    <EventBindingsSet refId="ConfirmDeleteFileContent_eventbinding" />
+    <EventBindingsSet refId="ConfirmDeleteItemsContent_eventbinding" />
+    <EventBindingsSet refId="ConfirmOverwriteContent_eventbinding" />
   </EventBindingsSets>
   <Dialogs>
     <Dialog refId="LoginDialogP" />
     <Dialog refId="SystemInfoDialog" />
     <Dialog refId="ErrorDialog" />
     <Dialog refId="TunningSetpointsDialog" />
-    <Dialog refId="ConfirmDeleteDialog" />
+    <Dialog refId="ConfirmDeleteFolderDialog" />
     <Dialog refId="SortDialog" />
     <Dialog refId="RecipeDelConfirmID" />
     <Dialog refId="RecipeSaveConfirm" />
+    <Dialog refId="PDF" />
+    <Dialog refId="ConfirmDeleteFileDialog" />
+    <Dialog refId="ConfirmDeleteItemsDialog" />
+    <Dialog refId="ConfirmOverwriteDialog" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -72,11 +79,15 @@
     <Content refId="SERVICE" />
     <Content refId="ErrorDialogContent" />
     <Content refId="TunningSetpointsDialogContent" />
-    <Content refId="ConfirmDeleteContent" />
+    <Content refId="ConfirmDeleteFolderContent" />
     <Content refId="SortContent" />
     <Content refId="PdfC" />
     <Content refId="RecipeDelConfirm" />
     <Content refId="RecipeSaveContent" />
+    <Content refId="PDF" />
+    <Content refId="ConfirmDeleteFileContent" />
+    <Content refId="ConfirmDeleteItemsContent" />
+    <Content refId="ConfirmOverwriteContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
