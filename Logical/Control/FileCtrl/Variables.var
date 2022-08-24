@@ -29,4 +29,5 @@ VAR
 	StopValueFor3 : INT;
 	iFor3 : INT;
 	NumSelBox : INT;
+	PDFtrue : BOOL;
 END_VAR
