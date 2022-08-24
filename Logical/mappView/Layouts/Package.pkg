@@ -9,5 +9,6 @@
     <Object Type="File">SortLayout.layout</Object>
     <Object Type="File">ErrorDialogLayout.layout</Object>
     <Object Type="File">TunningSetpointsDialogLayout.layout</Object>
+    <Object Type="File">RecipeDelConfirm.layout</Object>
   </Objects>
 </Package>

@@ -55,6 +55,8 @@
     <Dialog refId="TunningSetpointsDialog" />
     <Dialog refId="ConfirmDeleteFolderDialog" />
     <Dialog refId="SortDialog" />
+    <Dialog refId="RecipeDelConfirmID" />
+    <Dialog refId="RecipeSaveConfirm" />
     <Dialog refId="PDF" />
     <Dialog refId="ConfirmDeleteFileDialog" />
     <Dialog refId="ConfirmDeleteItemsDialog" />
@@ -79,6 +81,9 @@
     <Content refId="TunningSetpointsDialogContent" />
     <Content refId="ConfirmDeleteFolderContent" />
     <Content refId="SortContent" />
+    <Content refId="PdfC" />
+    <Content refId="RecipeDelConfirm" />
+    <Content refId="RecipeSaveContent" />
     <Content refId="PDF" />
     <Content refId="ConfirmDeleteFileContent" />
     <Content refId="ConfirmDeleteItemsContent" />
