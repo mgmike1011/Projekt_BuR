@@ -34,6 +34,13 @@ PROGRAM _CYCLIC
 		SingleSelect := TRUE;
 	END_IF
 	
+	// Confirmation of replacing an item
+	IF MpFileMngConnect.MessageBox.Type = mpFILE_MSG_CONFIRM_OVERWRITE THEN
+		OpenConOveDia := TRUE;
+	ELSE
+		OpenConOveDia := FALSE;
+	END_IF
+	
 	// Sorting
 	IF SortType[0] THEN
 		MpFileMngConnect.File.SortOrder := 0;
@@ -117,7 +124,7 @@ PROGRAM _CYCLIC
 		END_IF
 	END_FOR	
 	
-	MpFileManagerUI_0();
+	//////////////////////////////////////////////////////
 	
 	IF OpenPDF THEN
 		
@@ -167,7 +174,11 @@ PROGRAM _CYCLIC
 				PDFtrue := FALSE;
             END_IF
 		END_IF
-			END_IF;
+	END_IF;
+	
+	///////////////////////////////////////////////////////
+	
+	MpFileManagerUI_0();
 	
 END_PROGRAM
 

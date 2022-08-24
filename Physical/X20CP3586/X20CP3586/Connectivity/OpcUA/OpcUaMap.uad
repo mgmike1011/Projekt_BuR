@@ -267,6 +267,7 @@
         <Variable Name="OpenDialogPDF" />
         <Variable Name="OpenPDF" />
         <Variable Name="DeactivatedBoxes" />
+        <Variable Name="OpenConOveDia" />
       </Task>
       <Task Name="VisuAdj">
         <Variable Name="CurrentZone1Temp" EngineeringUnitId="2" />

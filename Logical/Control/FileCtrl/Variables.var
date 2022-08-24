@@ -1,23 +1,18 @@
 VAR
-	DeactivatedBoxes : BOOL;
-	OpenPDF : BOOL;
-	File : BOOL;
-	Folder : BOOL;
-	SingleSelect : BOOL;
-	Items : BOOL;
-	SortType : ARRAY[0..5] OF BOOL;
-	FileCopy_PDF : FileCopy;
-	Step : INT;
 	MpFileManagerUI_0 : MpFileManagerUI;
 	MpFileMngConnect : MpFileManagerUIConnectType;
 	MpFileMngSetup : MpFileManagerUISetupType;
 	FileName : STRING[255];
 	ElementType : ARRAY[0..49] OF STRING[255];
-	OpenDialogPDF : BOOL;
-	FileDelete_PDF : FileDelete;
-	closeDelete : BOOL;
-	OpenDialogPDFchange : BOOL;
-	test : BOOL;
+	SingleSelect : BOOL;
+	DeactivatedBoxes : BOOL;
+	File : BOOL;
+	Folder : BOOL;
+	Items : BOOL;
+	SortType : ARRAY[0..5] OF BOOL;
+	NumSelBox : INT;
+	OpenConOveDia : BOOL;
+	Step : INT;
 	i : USINT;
 	StartValueFor1 : INT;
 	StopValueFor1 : INT;
@@ -28,6 +23,12 @@ VAR
 	StartValueFor3 : INT;
 	StopValueFor3 : INT;
 	iFor3 : INT;
-	NumSelBox : INT;
+	OpenDialogPDFchange : BOOL;
+	OpenPDF : BOOL;
+	OpenDialogPDF : BOOL;
+	FileCopy_PDF : FileCopy;
+	FileDelete_PDF : FileDelete;
+	closeDelete : BOOL;
+	test : BOOL;
 	PDFtrue : BOOL;
 END_VAR

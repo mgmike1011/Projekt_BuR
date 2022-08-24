@@ -34,5 +34,6 @@
     <Object Type="File">ConfirmDeleteFolderContent.eventbinding</Object>
     <Object Type="File">ConfirmDeleteFileContent.eventbinding</Object>
     <Object Type="File">ConfirmDeleteItemsContent.eventbinding</Object>
+    <Object Type="File">ConfirmOverwriteContent.eventbinding</Object>
   </Objects>
 </Package>

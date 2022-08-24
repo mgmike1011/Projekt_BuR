@@ -12,5 +12,6 @@
     <Object Type="Package">PDF</Object>
     <Object Type="Package">ConfirmDeleteFileDialog</Object>
     <Object Type="Package">ConfirmDeleteItemsDialog</Object>
+    <Object Type="Package">ConfirmOverwriteDialog</Object>
   </Objects>
 </Package>
