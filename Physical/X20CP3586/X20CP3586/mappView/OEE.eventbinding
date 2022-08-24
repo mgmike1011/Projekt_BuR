@@ -4,11 +4,22 @@
     <EventBinding id="OEE.BtnRsetStat.Click">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="OEE" widgetRefId="BtnRsetStat" event="Click" />
       <EventHandler>
-        <Action>
-          <Target xsi:type="opcUa.NodeAction" refId="::OEE:RsetOEE">
-            <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
-          </Target>
-        </Action>
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::OEE:RsetOEE">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::AsGlobalPV:CycleNumber">
+                <Method xsi:type="opcUa.NodeAction.SetValueNumber" value="0" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
       </EventHandler>
     </EventBinding>
     <EventBinding id="OEE.BtnRepGenerate.Click">
