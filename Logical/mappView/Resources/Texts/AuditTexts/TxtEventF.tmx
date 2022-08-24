@@ -7,13 +7,13 @@
   <body>
     <tu tuid="Root">
       <tuv xml:lang="de">
-        <seg>{&amp;evtime[TIME=%u%R]} {&amp;op} {=$Audit/SysF/Event/{&amp;ev}}</seg>
+        <seg>{&amp;evtime[TIME=%F %T]}  {=$Audit/SysF/Event/{&amp;ev}}</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>{&amp;evtime[TIME=%u%R]} {&amp;op} {=$Audit/SysF/Event/{&amp;ev}}</seg>
+        <seg>{&amp;evtime[TIME=%F %T]}  {=$Audit/SysF/Event/{&amp;ev}}</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>{&amp;evtime[TIME=%u%R]} {&amp;op} {=$Audit/SysF/Event/{&amp;ev}}</seg>
+        <seg>{&amp;evtime[TIME=%F %T]} {=$Audit/SysF/Event/{&amp;ev}}</seg>
       </tuv>
     </tu>
     <tu tuid="Root_disp">
@@ -75,16 +75,22 @@
       <tuv xml:lang="de">
         <seg>Alarm {&amp;name} Status geändert: {&amp;stold} -&gt; {&amp;stnew}</seg>
       </tuv>
+      <tuv xml:lang="pl">
+        <seg>alarm {&amp;name} zmienił stan z: {&amp;stold} na {&amp;stnew}</seg>
+      </tuv>
       <tuv xml:lang="en">
         <seg>alarm {&amp;name} changed state: {&amp;stold} to {&amp;stnew}</seg>
       </tuv>
     </tu>
     <tu tuid="48">
       <tuv xml:lang="de">
-        <seg>{=$MpAudit/SysF/Recipe/{&amp;act}}</seg>
+        <seg>{=$Audit/SysF/Recipe/{&amp;act}}</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>{=$Audit/SysF/Recipe/{&amp;act}}</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>{=$MpAudit/SysF/Recipe/{&amp;act}}</seg>
+        <seg>{=$Audit/SysF/Recipe/{&amp;act}}</seg>
       </tuv>
     </tu>
     <tu tuid="64">

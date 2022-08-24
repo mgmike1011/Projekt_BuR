@@ -38,8 +38,7 @@ wylogowano z {&amp;msg}
         <seg>Maszyna weszła w stan {=${&amp;msg}}</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>
-Machine entered state  {=${&amp;msg}}</seg>
+        <seg>Machine entered state  {=${&amp;msg}}</seg>
       </tuv>
     </tu>
   </body>

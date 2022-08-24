@@ -31,5 +31,6 @@
     <Object Type="File">TunningSetpointsDialogContent.binding</Object>
     <Object Type="File">ConfirmDeleteContent.binding</Object>
     <Object Type="File">AUDIT.binding</Object>
+    <Object Type="File">AUDIT.eventbinding</Object>
   </Objects>
 </Package>

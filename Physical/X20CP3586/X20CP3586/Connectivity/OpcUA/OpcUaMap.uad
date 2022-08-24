@@ -269,6 +269,8 @@
         <Variable Name="User_name" />
         <Variable Name="LOGIN" />
         <Variable Name="LOGOUT" />
+        <Variable Name="Clear" />
+        <Variable Name="Export" />
       </Task>
     </Module>
   </DefaultView>

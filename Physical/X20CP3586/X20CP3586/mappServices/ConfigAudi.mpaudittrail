@@ -9,6 +9,7 @@
         <Property ID="[2]" Value="33" />
         <Property ID="[3]" Value="48" />
       </Group>
+      <Property ID="SramBufferSize" Value="40" />
       <Selector ID="TextSource" Value="TXT">
         <Property ID="Name" Value="Audit" />
         <Property ID="OutputFormat" Value="SysF/Event/Root" />
@@ -19,6 +20,11 @@
       <Group ID="Export">
         <Property ID="FileType" Value="2" />
         <Property ID="Encrypt" Value="FALSE" />
+        <Group ID="PDF">
+          <Property ID="DefaultFont" Value="2" />
+          <Property ID="AllowCopy" Value="TRUE" />
+          <Selector ID="Title" Value="0" />
+        </Group>
       </Group>
     </Group>
   </Element>

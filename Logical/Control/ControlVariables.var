@@ -128,7 +128,6 @@ END_VAR
 (*Audit*)
 VAR
 	MpAuditTrail_0 : MpAuditTrail;
-	TriggerEvent : BOOL;
 	MessageVar : WSTRING[100] := "Hello World";
 END_VAR
 (**)

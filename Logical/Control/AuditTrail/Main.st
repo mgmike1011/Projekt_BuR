@@ -12,6 +12,7 @@ END_PROGRAM
 PROGRAM _CYCLIC
 	export_timer.IN := NOT(export_timer.Q);
 	String_bufer :='';
+	MpAuditTrail_0.Export := FALSE;
 	IF LOGIN THEN
 		String_bufer:=User_name;
 		TypeVar :=STRING_TO_WSTRING('LOGIN');
@@ -39,18 +40,22 @@ PROGRAM _CYCLIC
 			STATE_ERROR:
 				String_bufer :='IAT/AutomaticControlPage/StateErrortxt';
 			STATE_STOP:
-			String_bufer :='IAT/AutomaticControlPage/StateStoptxt';
+				String_bufer :='IAT/AutomaticControlPage/StateStoptxt';
 		END_CASE
 		MessageVar:=STRING_TO_WSTRING(String_bufer);
 		CustomEventStatus := MpAuditCustomEvent(gAuditTrail,TypeVar ,MessageVar , CommentVar);
 	END_IF
-//	IF export_timer.Q THEN
-//		
-//	END_IF
+	IF Export THEN
+		MpAuditTrail_0.Export := TRUE;
+		Export := FALSE;
+	END_IF
+	IF Clear THEN
+		MpAuditClearBuffer(gAuditTrail);
+		Clear := FALSE;
+	END_IF
 	LOGOUT :=FALSE;
 	prev_machine_state :=STATUS;
 	MpAuditTrail_0();
-	export_timer();
 END_PROGRAM
 
 

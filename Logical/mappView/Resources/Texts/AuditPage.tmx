@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<tmx version="1.4">
+  <header creationtool="B&amp;R Automation Studio" creationtoolversion="4.2" datatype="unknown" segtype="sentence" adminlang="en" srclang="en" o-tmf="TMX">
+    <note>Change the namespace to define where this text module should be located within the logical structure of your texts</note>
+    <prop type="x-BR-TS:Namespace">IAT/AuditPage</prop>
+  </header>
+  <body>
+    <tu tuid="Export">
+      <tuv xml:lang="de">
+        <seg>Export</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Eksportuj</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Export</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Clear">
+      <tuv xml:lang="de">
+        <seg>klare Aufzeichnungen</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wyczyść zapisy</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Clear records</seg>
+      </tuv>
+    </tu>
+    <tu tuid="LP">
+      <tuv xml:lang="de">
+        <seg>Index</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Indeks</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Index</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TimeStamp">
+      <tuv xml:lang="de">
+        <seg>Zeitstempel</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Czas</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>TimeStamp</seg>
+      </tuv>
+    </tu>
+    <tu tuid="Message">
+      <tuv xml:lang="de">
+        <seg>Botschaft</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wiadomość</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Message</seg>
+      </tuv>
+    </tu>
+    <tu tuid="TItle">
+      <tuv xml:lang="de">
+        <seg>Prüfung</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Audyt</seg>
+      </tuv>
+      <tuv xml:lang="en">
+        <seg>Audit</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
