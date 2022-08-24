@@ -44,8 +44,6 @@ PROGRAM _INIT
 	TempControllerPar[2].Hysteresis.Band.HeatToCool := 5;
 	TempControllerPar[3].Hysteresis.Band.CoolToHeat := 5;
 	TempControllerPar[3].Hysteresis.Band.HeatToCool := 5;
-	
-	
 	// Temperature Controller 
 	TempController[0].MpLink := ADR(gTempController_1);
 	TempController[0].Parameters := ADR(TempControllerPar[0]);
@@ -205,6 +203,10 @@ PROGRAM _CYCLIC
 			END_IF;
 			
 		STATE_WORKING_AUTOMATIC:
+			EnableZone1 := TRUE;
+			EnableZone2 := TRUE;
+			EnableZone3 := TRUE;
+			EnableZone4 := TRUE;
 			TempGroup.Control := TRUE;
 			AutomaticMode;
 			// Switch state conditions

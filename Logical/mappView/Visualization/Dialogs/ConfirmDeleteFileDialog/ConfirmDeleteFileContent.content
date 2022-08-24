@@ -1,13 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Content id="ConfirmDeleteContent" height="120" width="400" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Content id="ConfirmDeleteFileContent" height="120" width="400" xmlns="http://www.br-automation.com/iat2015/contentDefinition/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Widgets>
     <Widget xsi:type="widgets.brease.GroupBox" id="ConfirmDeleteGroupBox" top="0" left="0" width="400" height="120" zIndex="0" borderWidth="0px" headerBackColor="rgba(255, 255, 255, 1)">
       <Widgets>
         <Widget xsi:type="widgets.brease.Button" id="ConfirmButton" top="60" left="70" width="119" zIndex="0" text="$IAT/FILEMNG/Yes" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
         <Widget xsi:type="widgets.brease.Button" id="CancelButton" top="60" left="210" width="121" zIndex="1" text="$IAT/FILEMNG/No" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
-        <Widget xsi:type="widgets.brease.Label" id="ConfirmDeleteItemLabel" top="20" left="20" width="360" zIndex="2" text="$IAT/FILEMNG/ConfirmDelItem" style="Caption" visible="false" />
-        <Widget xsi:type="widgets.brease.Label" id="ConfirmDeleteFolderLabel" top="20" left="20" width="360" zIndex="3" text="$IAT/FILEMNG/ConfirmDelFolder" style="Caption" visible="false" />
-        <Widget xsi:type="widgets.brease.Label" id="ConfirmDeleteFolderLabel3" top="20" left="20" width="360" zIndex="4" text="$IAT/FILEMNG/ConfirmDelAll" style="Caption" visible="false" />
+        <Widget xsi:type="widgets.brease.Label" id="ConfirmDeleteFileLabel" top="20" left="20" width="360" zIndex="2" text="$IAT/FILEMNG/ConfirmDelItem" style="Caption" />
       </Widgets>
     </Widget>
   </Widgets>

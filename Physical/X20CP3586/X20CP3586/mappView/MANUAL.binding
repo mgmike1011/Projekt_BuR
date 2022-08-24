@@ -65,38 +65,14 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:EnableZone2" attribute="value" />
 <Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="EnableZone2ToggleButton" attribute="value" />
 </Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[0].CoolValue" attribute="node" />
-<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput2" attribute="node" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[0].HeatValue" attribute="node" />
-<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput1" attribute="node" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[3].CoolValue" attribute="node" />
-<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput8" attribute="node" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[3].HeatValue" attribute="node" />
-<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput7" attribute="node" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[2].CoolValue" attribute="node" />
-<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput6" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[2].HeatValue" attribute="node" />
-<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput5" attribute="node" />
-</Binding>
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[1].CoolValue" attribute="node" />
-<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput4" attribute="node" />
-</Binding>
-<Binding mode="oneWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:TempController[1].HeatValue" attribute="node" />
-<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput3" attribute="node" />
-</Binding>
+
+
+
+
+
+
+
+
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::AsGlobalPV:STATUS" attribute="value" />
 <Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="TextPicker2" attribute="selectedIndex" />
@@ -128,6 +104,54 @@
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::VisuAdj:isIDLE_" attribute="value" />
 <Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="StartButton" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:HeatPWMZone1" attribute="node" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput1" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:CoolPWMZone1" attribute="node" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput2" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:CoolPWMZone2" attribute="node" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput4" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:HeatPWMZone2" attribute="node" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput3" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:HeatPWMZone3" attribute="node" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput5" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:CoolPWMZone3" attribute="node" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput6" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:HeatPWMZone4" attribute="node" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput7" attribute="node" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:CoolPWMZone4" attribute="node" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="NumericOutput8" attribute="node" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLEorManual" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="SetTempZone3" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLEorManual" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="SetTempZone2" attribute="enable" />
+</Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLEorManual" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="SetTempZone1" attribute="enable" />
+</Binding>
+<Binding mode="oneWay">
+<Source xsi:type="opcUa" refId="::VisuAdj:isIDLEorManual" attribute="value" />
+<Target xsi:type="brease" contentRefId="MANUAL" widgetRefId="SetTempZone1NumericInput" attribute="enable" />
 </Binding>
 </Bindings>
 </BindingsSet>

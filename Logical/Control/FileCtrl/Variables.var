@@ -9,7 +9,6 @@ VAR
 	FileCopy_PDF : FileCopy;
 	Step : INT;
 	StopValue : INT;
-	i : INT;
 	StartValue : INT;
 	MpFileManagerUI_0 : MpFileManagerUI;
 	MpFileMngConnect : MpFileManagerUIConnectType;
@@ -23,4 +22,17 @@ VAR
 	closeDelete : BOOL;
 	OpenDialogPDFchange : BOOL;
 	test : BOOL;
+	i : USINT;
+	OpenPDF : BOOL;
+	StartValueFor1 : INT;
+	StopValueFor1 : INT;
+	iFor1 : INT;
+	StartValueFor2 : INT;
+	StopValueFor2 : INT;
+	iFor2 : INT;
+	StartValueFor3 : INT;
+	StopValueFor3 : INT;
+	iFor3 : INT;
+	Step : INT;
+	NumSelBox : INT;
 END_VAR

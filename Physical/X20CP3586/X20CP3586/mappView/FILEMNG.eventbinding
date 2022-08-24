@@ -33,7 +33,27 @@
     </EventBinding>
     <EventBinding id="FILEMNG.DeleteButton.Click">
       <Source xsi:type="widgets.brease.Button.Event" contentRefId="FILEMNG" widgetRefId="DeleteButton" event="Click" />
-      <EventHandler>
+      <Operand datatype="BOOL" name="DeactivatedBoxesEvent">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::FileCtrl:DeactivatedBoxes">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="FolderEvent">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::FileCtrl:Folder">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="FileEvent">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::FileCtrl:File">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <Operand datatype="BOOL" name="ItemsEvent">
+        <ReadTarget xsi:type="opcUa.NodeAction.Read" refId="::FileCtrl:Items">
+          <Method xsi:type="opcUa.NodeAction.GetValue" />
+        </ReadTarget>
+      </Operand>
+      <EventHandler condition="DeactivatedBoxesEvent = FALSE AND FolderEvent = TRUE">
         <Sequence>
           <Step order="0">
             <Action>
@@ -45,7 +65,43 @@
           <Step order="1">
             <Action>
               <Target xsi:type="clientSystem.Action">
-                <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ConfirmDeleteDialog" headerText="$IAT/FILEMNG/Warning" />
+                <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ConfirmDeleteFolderDialog" headerText="$IAT/FILEMNG/Warning" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="DeactivatedBoxesEvent = FALSE AND FileEvent = TRUE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.Delete">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ConfirmDeleteFileDialog" headerText="$IAT/FILEMNG/Warning" />
+              </Target>
+            </Action>
+          </Step>
+        </Sequence>
+      </EventHandler>
+      <EventHandler condition="DeactivatedBoxesEvent = FALSE AND ItemsEvent = TRUE">
+        <Sequence>
+          <Step order="0">
+            <Action>
+              <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.Delete">
+                <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+              </Target>
+            </Action>
+          </Step>
+          <Step order="1">
+            <Action>
+              <Target xsi:type="clientSystem.Action">
+                <Method xsi:type="clientSystem.Action.OpenDialog" dialogId="ConfirmDeleteItemsDialog" headerText="$IAT/FILEMNG/Warning" />
               </Target>
             </Action>
           </Step>
@@ -327,6 +383,16 @@
       <EventHandler>
         <Action>
           <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:OpenPDF">
+                 <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
+          </Target>
+        </Action>
+      </EventHandler>
+    </EventBinding>
+    <EventBinding id="FILEMNG.SearchTextInput.ValueChanged">
+      <Source xsi:type="widgets.brease.TextInput.Event" contentRefId="FILEMNG" widgetRefId="SearchTextInput" event="ValueChanged" />
+      <EventHandler>
+        <Action>
+          <Target xsi:type="opcUa.NodeAction" refId="::FileCtrl:MpFileMngConnect.File.Refresh">
             <Method xsi:type="opcUa.NodeAction.SetValueBool" value="true" />
           </Target>
         </Action>
