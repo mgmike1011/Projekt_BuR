@@ -17,4 +17,6 @@ VAR
 	AllCycles : UDINT;
 	avSCTwithTrash : STRING[80];
 	avSCTwithoutTrash : STRING[80];
+	i : UDINT;
+	char : REFERENCE TO USINT;
 END_VAR

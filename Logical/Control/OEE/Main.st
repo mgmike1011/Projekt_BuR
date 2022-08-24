@@ -82,7 +82,13 @@ PROGRAM	_CYCLIC
 	
 	avSCTwithTrash := TIME_TO_STRING(MpOEECore_1.Info.ShiftStatistics.AverageCycleTime);
 	brsmemcpy(ADR(avSCTwithoutTrash),ADR(avSCTwithTrash)+2,brsstrlen(ADR(avSCTwithTrash))-2);
-
+	FOR i:=0 TO brsstrlen(ADR(avSCTwithoutTrash)) DO
+		char ACCESS (ADR(avSCTwithoutTrash)+i);
+		IF char = 95 THEN
+			char := 32;
+		END_IF
+	END_FOR
+	
 END_PROGRAM
 
 PROGRAM	_EXIT
