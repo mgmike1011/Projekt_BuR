@@ -53,6 +53,7 @@
     <Dialog refId="ConfirmDeleteDialog" />
     <Dialog refId="SortDialog" />
     <Dialog refId="RecipeDelConfirmID" />
+    <Dialog refId="RecipeSaveConfirm" />
   </Dialogs>
   <Contents>
     <Content refId="TOP" />
@@ -75,6 +76,7 @@
     <Content refId="SortContent" />
     <Content refId="PdfC" />
     <Content refId="RecipeDelConfirm" />
+    <Content refId="RecipeSaveContent" />
   </Contents>
   <SnippetsSets />
   <VariablesSets>
