@@ -3,7 +3,7 @@ PROGRAM _INIT
 	
 	MpAuditTrail_0.MpLink := ADR(gAuditTrail);
 	MpAuditTrail_0.Enable := TRUE;
-	MpAuditTrail_0.DeviceName := ADR('AUDIT');
+	MpAuditTrail_0.DeviceName := ADR('PDF');
 	MpAuditTrail_0();
 	export_timer.PT := EXPORT_PERIOD;
 END_PROGRAM

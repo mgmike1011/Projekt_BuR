@@ -81,8 +81,7 @@
     <Content refId="TunningSetpointsDialogContent" />
     <Content refId="ConfirmDeleteFolderContent" />
     <Content refId="SortContent" />
-    <Content refId="PdfC" />
-    <Content refId="RecipeDelConfirm" />
+		<Content refId="RecipeDelConfirm" />
     <Content refId="RecipeSaveContent" />
     <Content refId="PDF" />
     <Content refId="ConfirmDeleteFileContent" />
