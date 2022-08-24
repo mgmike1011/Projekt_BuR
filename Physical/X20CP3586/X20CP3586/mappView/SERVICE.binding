@@ -248,5 +248,9 @@
 <Source xsi:type="opcUa" refId="::AsGlobalPV:SimulateZone4Enable" attribute="value" />
 <Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="SimulationToggle4" attribute="value" />
 </Binding>
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::DataMgmt:MpDataRecorder_0.Record" attribute="value" />
+<Target xsi:type="brease" contentRefId="SERVICE" widgetRefId="RecordMappDataToggleButton" attribute="value" />
+</Binding>
 </Bindings>
 </BindingsSet>
