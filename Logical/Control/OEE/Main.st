@@ -11,14 +11,16 @@ PROGRAM	_INIT
 	ICTs := 0;
 	ICTms := 0;
 	StatusString := '';
+	Reset5cycles := 0;
+	
 
 END_PROGRAM
 
 PROGRAM	_CYCLIC
+	avSCTwithoutTrash := '';
 	Update_mqtt_struct;
-//	MpOEECore_1.Update := FALSE;
 	MpOEECore_1.Downtime := NOT(STATUS = STATE_WORKING_AUTOMATIC) ;
-	MpOEECore_1.Reset := (RsetOEE);//resetowanie statystyk
+	MpOEECore_1.Reset := (RsetOEE);
 	MpOEECore_1.PieceCounter := CycleNumber;
 	
 	avSCTwithoutTrash := '';
@@ -82,6 +84,14 @@ PROGRAM	_CYCLIC
 	
 	avSCTwithTrash := TIME_TO_STRING(MpOEECore_1.Info.ShiftStatistics.AverageCycleTime);
 	brsmemcpy(ADR(avSCTwithoutTrash),ADR(avSCTwithTrash)+2,brsstrlen(ADR(avSCTwithTrash))-2);
+	
+	IF RsetOEE THEN
+		Reset5cycles := Reset5cycles +1;
+		IF Reset5cycles = 5 THEN
+			RsetOEE := 0;
+			Reset5cycles := 0;
+		END_IF;		
+	END_IF;
 
 END_PROGRAM
 
