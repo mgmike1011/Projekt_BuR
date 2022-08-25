@@ -24,10 +24,6 @@ PROGRAM _INIT
 	OpenDialogPDFchange := 0;
 	closeDelete := 0;
 	
-	
-//	del1 := 0;
-//	del2 := 0;
-//	del3 := 0;
 END_PROGRAM
 
 
@@ -49,7 +45,7 @@ PROGRAM _CYCLIC
 	IF MpFileMngConnect.File.MultiSelect THEN
 		ItemsEnabled := FALSE;
 	END_IF
-	IF EDGEPOS(MpFileMngConnect.File.Delete) OR EDGEPOS(MpFileMngConnect.File.Paste) OR EDGEPOS(MpFileMngConnect.MessageBox.Confirm) OR EDGEPOS(MpFileMngConnect.MessageBox.Cancel) THEN
+	IF EDGEPOS(MpFileMngConnect.File.Paste) OR EDGEPOS(MpFileMngConnect.MessageBox.Confirm) OR EDGEPOS(MpFileMngConnect.MessageBox.Cancel) THEN
 		MpFileMngConnect.File.MultiSelect := FALSE;
 		SingleSelect := TRUE;
 		ItemsEnabled := TRUE;

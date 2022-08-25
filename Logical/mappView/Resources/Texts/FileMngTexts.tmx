@@ -428,13 +428,13 @@
     </tu>
     <tu tuid="ConOverwrite">
       <tuv xml:lang="de">
-        <seg>Möchten Sie den Artikel wirklich ersetzen?</seg>
+        <seg>Möchten Sie den(die) Artikel wirklich ersetzen?</seg>
       </tuv>
       <tuv xml:lang="pl">
-        <seg>Czy na pewno chcesz zastąpić element?</seg>
+        <seg>Czy na pewno chcesz zastąpić element(y)?</seg>
       </tuv>
       <tuv xml:lang="en">
-        <seg>Are you sure you want to replace the item?</seg>
+        <seg>Are you sure you want to replace the item(s)?</seg>
       </tuv>
     </tu>
   </body>
