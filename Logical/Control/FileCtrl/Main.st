@@ -45,7 +45,7 @@ PROGRAM _CYCLIC
 	IF MpFileMngConnect.File.MultiSelect THEN
 		ItemsEnabled := FALSE;
 	END_IF
-	IF EDGEPOS(MpFileMngConnect.File.Delete) OR EDGEPOS(MpFileMngConnect.File.Paste) OR EDGEPOS(MpFileMngConnect.MessageBox.Confirm) OR EDGEPOS(MpFileMngConnect.MessageBox.Cancel) THEN
+	IF EDGEPOS(MpFileMngConnect.File.Paste) OR EDGEPOS(MpFileMngConnect.MessageBox.Confirm) OR EDGEPOS(MpFileMngConnect.MessageBox.Cancel) THEN
 		MpFileMngConnect.File.MultiSelect := FALSE;
 		SingleSelect := TRUE;
 		ItemsEnabled := TRUE;
