@@ -24,10 +24,6 @@ PROGRAM _INIT
 	OpenDialogPDFchange := 0;
 	closeDelete := 0;
 	
-	
-//	del1 := 0;
-//	del2 := 0;
-//	del3 := 0;
 END_PROGRAM
 
 
@@ -144,12 +140,9 @@ PROGRAM _CYCLIC
 		
 		FOR i:=0 TO 50 BY 1 DO
 			IF MpFileMngConnect.File.List.Items[i].IsSelected = TRUE THEN
-				
 				FileName := MpFileMngConnect.File.List.Items[i].Name;
-				//del1 := 1;////////////////////////////////////////////////////
 				IF ElementType[i] = 'pdf' THEN 
 					PDFtrue := TRUE;
-					//del2 := 1;///////////////////////////////////////////////
 				ELSE
 					PDFtrue := FALSE;
 					OpenPDF := FALSE;
@@ -170,7 +163,9 @@ PROGRAM _CYCLIC
 		
 		IF FileCopy_PDF.status = 0 AND PDFtrue = TRUE THEN
 			FileCopy_PDF.enable := FALSE;
+			DevLinkOpenPDF.enable := FALSE;
 			FileCopy_PDF();
+			DevLinkOpenPDF();
 			OpenDialogPDF := 1;
 			OpenDialogPDFchange := 1;
 		END_IF;
@@ -205,6 +200,9 @@ PROGRAM _EXIT
 	
 	MpFileManagerUI_0.Enable := FALSE;
 	MpFileManagerUI_0();
+	
+	DevLinkOpenPDF.enable := FALSE;
+	DevLinkOpenPDF();
 	 
 	FileCopy_PDF.enable := FALSE;
 	FileCopy_PDF();

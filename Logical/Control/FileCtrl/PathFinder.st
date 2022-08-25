@@ -1,6 +1,14 @@
 
 ACTION PathFinder: 
 	
+	Path := 'F:/';
+	brsstrcat(ADR(Path),ADR(MpFileMngConnect.File.PathInfo.CurrentDir));
+	
+	DevLinkOpenPDF.enable := TRUE;
+	DevLinkOpenPDF.pDevice := ADR('PDF');
+	DevLinkOpenPDF.pParam := ADR(Path);
+	DevLinkOpenPDF();
+	
 	FileCopy_PDF.enable := TRUE;
 	
 	FileCopy_PDF.pDestDev := ADR('BRVisu');
@@ -10,5 +18,6 @@ ACTION PathFinder:
 	FileCopy_PDF.option := fiOVERWRITE;
 	FileCopy_PDF();
 	test:=1;
+	
 	
 END_ACTION

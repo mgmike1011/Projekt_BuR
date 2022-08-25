@@ -1,4 +1,6 @@
 VAR
+	DevLinkOpenPDF : DevLink;
+	Path : STRING[80];
 	MpFileManagerUI_0 : MpFileManagerUI;
 	MpFileMngConnect : MpFileManagerUIConnectType;
 	MpFileMngSetup : MpFileManagerUISetupType;
