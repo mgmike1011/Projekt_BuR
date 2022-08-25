@@ -39,10 +39,7 @@
 
 
 
-<Binding mode="twoWay">
-<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time5" attribute="value" />
-<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time5Recipe" attribute="value" />
-</Binding>
+
 <Binding mode="twoWay">
 <Source xsi:type="opcUa" refId="::Recipe:RecipeUIConnect.New.FileName" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="TextInName" attribute="value" />
@@ -159,6 +156,11 @@
 <Binding mode="oneWay">
 <Source xsi:type="opcUa" refId="::VisuAdj:isIDLEorManual" attribute="value" />
 <Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="BtnLoad" attribute="enable" />
+</Binding>
+
+<Binding mode="twoWay">
+<Source xsi:type="opcUa" refId="::AsGlobalPV:ParametersMachine.Time5" attribute="value" />
+<Target xsi:type="brease" contentRefId="RECEPT" widgetRefId="Time5Recipe" attribute="value" />
 </Binding>
 </Bindings>
 </BindingsSet>
