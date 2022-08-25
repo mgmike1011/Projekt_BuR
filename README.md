@@ -23,5 +23,4 @@
 **Odnośniki**
 
 * [Dokumentacja części oprogramowania projektu](https://github.com/mgmike1011/Projekt_BuR/blob/main/Obiekt%20temperaturowy%20z%20akwizycj%C4%85%20danych%20do%20chmury.pdf)
-
-[Automatyka przemysłowa | B&R Industrial Automation](https://www.br-automation.com/pl/)
+* [Automatyka przemysłowa | B&R Industrial Automation](https://www.br-automation.com/pl/)
