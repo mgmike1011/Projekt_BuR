@@ -15,6 +15,8 @@ VAR
 	SortType : ARRAY[0..5] OF BOOL;
 	NumSelBox : INT;
 	OpenConOveDia : BOOL;
+	TON_0 : TON;
+	Waiting : BOOL;
 	Step : INT;
 	i : USINT;
 	StartValueFor1 : INT;

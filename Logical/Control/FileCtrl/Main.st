@@ -8,6 +8,7 @@ PROGRAM _INIT
 	MpFileManagerUI_0.UIConnect := ADR(MpFileMngConnect);
 	MpFileMngConnect.DeviceList.DeviceNames[0] := 'DISK';
 	
+	// File explorer support
 	StartValueFor1 := 0;
 	StopValueFor1 := 49;
 	StartValueFor2 := 0;
@@ -17,6 +18,7 @@ PROGRAM _INIT
 	Step := 1;
 	SortType[0] := TRUE;
 	
+	// PDFViewer support
 	OpenPDF := 0;
 	OpenDialogPDF := 0;
 	FileCopy_PDF.enable := TRUE;
@@ -49,6 +51,21 @@ PROGRAM _CYCLIC
 		MpFileMngConnect.File.MultiSelect := FALSE;
 		SingleSelect := TRUE;
 		ItemsEnabled := TRUE;
+	END_IF
+	
+	// Clearing the new name after creating a new folder or renaming
+	IF EDGEPOS(MpFileMngConnect.File.CreateFolder) OR EDGEPOS(MpFileMngConnect.File.Rename) THEN
+		Waiting:=TRUE;
+	END_IF
+	IF  Waiting THEN
+		TON_0.IN:= TRUE;
+		TON_0.PT :=T#10ms;
+		IF TON_0.Q  THEN
+			MpFileMngConnect.File.NewName := '';
+			TON_0.IN:= FALSE;
+			Waiting :=FALSE;
+		END_IF
+		TON_0();
 	END_IF
 	
 	// Sorting
@@ -134,8 +151,7 @@ PROGRAM _CYCLIC
 		END_IF
 	END_FOR	
 	
-	//////////////////////////////////////////////////////
-	
+	// PDFViewer
 	IF OpenPDF THEN
 		
 		FOR i:=0 TO 50 BY 1 DO
@@ -188,8 +204,6 @@ PROGRAM _CYCLIC
             END_IF
 		END_IF
 	END_IF;
-	
-	///////////////////////////////////////////////////////
 	
 	MpFileManagerUI_0();
 	

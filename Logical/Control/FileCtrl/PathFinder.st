@@ -19,5 +19,4 @@ ACTION PathFinder:
 	FileCopy_PDF();
 	test:=1;
 	
-	
 END_ACTION

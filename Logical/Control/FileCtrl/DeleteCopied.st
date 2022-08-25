@@ -7,5 +7,4 @@ ACTION DeleteCopied:
 	FileDelete_PDF();
 	closeDelete := 1;
 	
-	
 END_ACTION
