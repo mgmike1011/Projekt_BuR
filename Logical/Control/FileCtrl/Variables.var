@@ -1,7 +1,4 @@
 VAR
-	del3 : BOOL;
-	del2 : BOOL;
-	del1 : BOOL;
 	MpFileManagerUI_0 : MpFileManagerUI;
 	MpFileMngConnect : MpFileManagerUIConnectType;
 	MpFileMngSetup : MpFileManagerUISetupType;
