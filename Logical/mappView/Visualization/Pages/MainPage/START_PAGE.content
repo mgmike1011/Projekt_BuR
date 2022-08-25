@@ -20,7 +20,7 @@
             <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge1" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
             <Widget xsi:type="widgets.brease.Label" id="CTemperatureText1" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
             <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone1" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart" top="104" left="-6" width="432" height="380" zIndex="3" updateBufferTime="200" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
@@ -58,7 +58,7 @@
             <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge2" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
             <Widget xsi:type="widgets.brease.Label" id="CTemperatureText2" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
             <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone2" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart1" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart1" top="104" left="-6" width="432" height="380" zIndex="3" updateBufferTime="200" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
@@ -96,7 +96,7 @@
             <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge3" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
             <Widget xsi:type="widgets.brease.Label" id="CTemperatureText3" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
             <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone3" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart2" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart2" top="104" left="-6" width="432" height="380" zIndex="3" updateBufferTime="200" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />
@@ -134,7 +134,7 @@
             <Widget xsi:type="widgets.brease.LinearGauge" id="LinearGauge4" top="64" left="-6" width="426" zIndex="0" maxValue="150" scaleArea1="25" scaleArea2="50" scaleArea3="75" scaleArea4="100" scaleArea5="150" />
             <Widget xsi:type="widgets.brease.Label" id="CTemperatureText4" top="24" left="5" width="210" height="28" zIndex="1" text="$IAT/START_PAGE/CurrentlyTemperature" textAlign="center" />
             <Widget xsi:type="widgets.brease.NumericOutput" id="TemperatureStartPageZone4" top="24" left="255" zIndex="2" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" unitAlign="right" textAlign="center" />
-            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart3" top="104" left="-6" width="432" height="380" zIndex="3" borderWidth="0px">
+            <Widget xsi:type="widgets.brease.OnlineChartHDA" id="TempChart3" top="104" left="-6" width="432" height="380" zIndex="3" updateBufferTime="200" borderWidth="0px">
               <Properties>
                 <yAxis>
                   <Element id="yAxis1" max="250" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'FAH'}" />

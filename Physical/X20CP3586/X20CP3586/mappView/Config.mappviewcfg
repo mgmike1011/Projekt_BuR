@@ -37,7 +37,7 @@
       </Group>
       <Property ID="defaultVisu" Value="ProjectVizu" />
       <Group ID="Widget">
-        <Selector ID="renderingPolicy" Value="1" />
+        <Selector ID="renderingPolicy" Value="2" />
         <Selector ID="securityPolicy" Value="1" />
       </Group>
     </Group>
