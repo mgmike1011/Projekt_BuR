@@ -52,11 +52,11 @@ PROGRAM _CYCLIC
 		HeatPWMZone4 := TempController[3].HeatValue;
 	END_IF;
 	// Step time  - timer for each step visualization
-	TimeStep1Int := TIME_TO_UINT(TimeStep1)/1000;
-	TimeStep2Int := TIME_TO_UINT(TimeStep2)/1000;
-	TimeStep3Int := TIME_TO_UINT(TimeStep3)/1000;
-	TimeStep4Int := TIME_TO_UINT(TimeStep4)/1000;
-	TimeStep5Int := TIME_TO_UINT(TimeStep5)/1000;
+	TimeStep1Int := TIME_TO_UDINT(TimeStep1)/1000;
+	TimeStep2Int := TIME_TO_UDINT(TimeStep2)/1000;
+	TimeStep3Int := TIME_TO_UDINT(TimeStep3)/1000;
+	TimeStep4Int := TIME_TO_UDINT(TimeStep4)/1000;
+	TimeStep5Int := TIME_TO_UDINT(TimeStep5)/1000;
 	// Machine working state
 	CASE STATUS OF
 		STATE_IDLE:

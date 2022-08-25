@@ -7,11 +7,11 @@ VAR
 END_VAR
 (*Automatic mode timers*)
 VAR
-	TimeStep5Int : UINT := 5; (*Time of step 5 in automatic mode in seconds.*)
-	TimeStep4Int : UINT := 5; (*Time of step 4 in automatic mode in seconds.*)
-	TimeStep3Int : UINT := 5; (*Time of step 3 in automatic mode in seconds.*)
-	TimeStep2Int : UINT := 5; (*Time of step 2 in automatic mode in seconds.*)
-	TimeStep1Int : UINT := 5; (*Time of step 1 in automatic mode in seconds.*)
+	TimeStep5Int : UDINT := 5; (*Time of step 5 in automatic mode in seconds.*)
+	TimeStep4Int : UDINT := 5; (*Time of step 4 in automatic mode in seconds.*)
+	TimeStep3Int : UDINT := 5; (*Time of step 3 in automatic mode in seconds.*)
+	TimeStep2Int : UDINT := 5; (*Time of step 2 in automatic mode in seconds.*)
+	TimeStep1Int : UDINT := 5; (*Time of step 1 in automatic mode in seconds.*)
 END_VAR
 (*MachineState*)
 VAR
