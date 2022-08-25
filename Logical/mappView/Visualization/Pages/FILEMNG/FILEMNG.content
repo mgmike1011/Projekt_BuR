@@ -80,7 +80,7 @@
       </Widgets>
     </Widget>
     <Widget xsi:type="widgets.brease.Button" id="RefreshButton" top="40" left="985" width="160" zIndex="9" text="$IAT/FILEMNG/Refresh" disabledBackColor="rgba(192, 192, 192, 1)" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
-    <Widget xsi:type="widgets.brease.Button" id="SortButton" top="40" left="1165" width="160" zIndex="10" text="$IAT/FILEMNG/Sort" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
+    <Widget xsi:type="widgets.brease.Button" id="SortButton" top="40" left="1165" width="160" zIndex="10" text="$IAT/FILEMNG/Sort" disabledBackColor="rgba(192, 192, 192, 1)" mouseDownTextColor="rgba(255, 140, 0, 1)" shadow="1px 1px 8px rgba(64, 64, 64, 1)" mouseDownShadow="1px 1px 8px rgba(64, 64, 64, 1)" />
     <Widget xsi:type="widgets.brease.GroupBox" id="Item31-40GroupBox" top="120" left="380" width="1300" height="660" zIndex="11" cornerRadius="15px" visible="false">
       <Widgets>
         <Widget xsi:type="widgets.brease.Label" id="Item31Label" top="58" left="18" width="42" zIndex="0" text="31." style="Caption" />

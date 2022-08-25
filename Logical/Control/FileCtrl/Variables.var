@@ -1,4 +1,7 @@
 VAR
+	del3 : BOOL;
+	del2 : BOOL;
+	del1 : BOOL;
 	MpFileManagerUI_0 : MpFileManagerUI;
 	MpFileMngConnect : MpFileManagerUIConnectType;
 	MpFileMngSetup : MpFileManagerUISetupType;
@@ -9,6 +12,7 @@ VAR
 	File : BOOL;
 	Folder : BOOL;
 	Items : BOOL;
+	ItemsEnabled : BOOL;
 	SortType : ARRAY[0..5] OF BOOL;
 	NumSelBox : INT;
 	OpenConOveDia : BOOL;
@@ -24,11 +28,11 @@ VAR
 	StopValueFor3 : INT;
 	iFor3 : INT;
 	OpenDialogPDFchange : BOOL;
+	PDFtrue : BOOL;
 	OpenPDF : BOOL;
 	OpenDialogPDF : BOOL;
 	FileCopy_PDF : FileCopy;
 	FileDelete_PDF : FileDelete;
 	closeDelete : BOOL;
 	test : BOOL;
-	PDFtrue : BOOL;
 END_VAR

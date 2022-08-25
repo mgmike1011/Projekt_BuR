@@ -8,14 +8,14 @@
 		fontSize="16px" 
 		bold="true" 
 		textColor="#000000" 
-		mouseDownTextColor="#000000" 
+		mouseDownTextColor="#ff8c00" 
 		cornerRadius="5px" 
 		borderWidth="0px" 
 		mouseDownBorderWidth="0px" 
 		backColor="#F6F6F6" 
 		mouseDownBackColor="#EDEDED" 
 		shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" 
-		mouseDownShadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
+		mouseDownShadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" />
 	
 	<!--momentary push button-->
 	
@@ -27,7 +27,7 @@
 		cornerRadius="5px" 
 		borderWidth="0px" 
 		mouseDownBorderWidth="0px" 
-		backColor="#F6F6F6"	
+		backColor="#f6f6f6"	
 		mouseDownBackColor="#EDEDED" 
 		shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" 
 		mouseDownShadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
@@ -38,15 +38,15 @@
 		fontSize="16px" 
 		bold="true" 
 		textColor="#000000" 
-		mouseDownTextColor="#3388CC" 
+		mouseDownTextColor="#fe8c00" 
 		cornerRadius="5px" 
 		borderWidth="0px" 
 		mouseDownBorderWidth="0px" 
-		backColor="#F6F6F6" 
+		backColor="#f6f6f6" 
 		mouseDownBackColor="#EDEDED" 
-		checkedBackColor="#EDEDED" 
+		checkedBackColor="#fecc99" 
 		shadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" 
-		mouseDownShadow="1px 1px 8px 0px rgba(5, 112, 193, 0.75)" />
+		mouseDownShadow="1px 1px 8px 0px rgba(58, 58, 58, 0.75)" />
 	
 	<Style id="default" xsi:type="widgets.brease.SystemNavButton" 
 		fontSize="16px" 
@@ -74,8 +74,8 @@
 		borderWidth="0px" 
 		mouseDownBorderWidth="0px" 
 		backColor="#F6F6F6" 
-		mouseDownBackColor="#ffcc99" 
-		checkedBackColor="#EDEDED" 
+		mouseDownBackColor="#fecc99" 
+		checkedBackColor="#fecc99" 
 		shadow="1px 1px 8px rgba(58, 58, 58, 0.75)" 
 		mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
 	
@@ -90,7 +90,7 @@
 		foreColor="#FFFFFF" 
 		borderWidth="0px 0px 0px 0px"
 		mouseDownBorderWidth="0px 0px 0px 0px" 
-		backColor="#EDEDED" 
+		backColor="#f6f6f6" 
 		mouseDownBackColor="#ffcc99" 
 		shadow="1px 1px 8px rgba(58, 58, 58, 0.75)" 
 		mouseDownShadow="1px 1px 8px rgba(58, 58, 58, 0.75)" />
@@ -134,8 +134,8 @@
 		textColor="#000000" 
 		backColor="#F6F6F6"
 		mouseDownBackColor="#F6F6F6" 
-		disabledBackColor="#F8F8F8" 
-		disabledTextColor="#BEBEBE" 
+		disabledBackColor="#c0c0c0" 
+		disabledTextColor="#989898" 
 		mouseDownBorderColor="#DDDDDD" 
 		bold="false" />		
 		
@@ -400,7 +400,7 @@
 		textColor="#000000" 
 		backColor="transparent" 
 		mouseDownBackColor="transparent" 
-		disabledBackColor="#F8F8F8" 
+		disabledBackColor="#c0c0c0" 
 		disabledTextColor="#BEBEBE" 
 		mouseDownBorderColor="#DDDDDD" 
 		bold="false" />		

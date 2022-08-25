@@ -1,6 +1,7 @@
 VAR
 	BtnEnable : BOOL;
 	StateIdle : BOOL;
+	Reset5cycles : USINT;
 	RejectCycle : BOOL;
 	RsetOEE : BOOL;
 	startOEE : BOOL;

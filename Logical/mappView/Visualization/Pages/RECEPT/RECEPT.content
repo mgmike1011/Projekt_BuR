@@ -6,24 +6,24 @@
         <Widget xsi:type="widgets.brease.TableItem" id="TabItemRecipe" zIndex="0" columnWidth="950" text="$IAT/RecipePage/SelectTab" headerTextColor="rgba(0, 0, 0, 1)" textColorOdd="rgba(0, 0, 0, 1)" textColorEven="rgba(0, 0, 0, 1)" />
       </Widgets>
     </Widget>
-    <Widget xsi:type="widgets.brease.Button" id="BtnLoad" top="160" left="250" width="220" height="40" zIndex="1" text="$IAT/RecipePage/BtnLoad" />
+    <Widget xsi:type="widgets.brease.Button" id="BtnLoad" top="160" left="250" width="220" height="40" zIndex="1" text="$IAT/RecipePage/BtnLoad" disabledBackColor="rgba(192, 192, 192, 1)" />
     <Widget xsi:type="widgets.brease.Button" id="BtnDelete" top="160" left="500" width="220" height="40" zIndex="2" text="$IAT/RecipePage/BtnDelete" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnRecCreate" top="220" left="500" width="220" height="40" zIndex="3" text="$IAT/RecipePage/BtnToggle" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Temp1Recipe" top="230" left="1360" width="220" height="40" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" disabledTextColor="rgba(0, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Temp2Recipe" top="290" left="1360" width="220" height="40" zIndex="5" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" disabledTextColor="rgba(0, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Temp3Recipe" top="350" left="1360" width="220" height="40" zIndex="6" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" disabledTextColor="rgba(0, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Temp4Recipe" top="410" left="1360" width="220" height="40" zIndex="7" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" disabledTextColor="rgba(0, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Time5Recipe" top="750" left="1360" width="220" height="40" zIndex="8" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledTextColor="rgba(0, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Time1Recipe" top="510" left="1360" width="220" height="40" zIndex="9" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledTextColor="rgba(0, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Time2Recipe" top="570" left="1360" width="220" height="40" zIndex="10" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledTextColor="rgba(0, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Time3Recipe" top="630" left="1360" width="220" height="40" zIndex="11" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledTextColor="rgba(0, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.NumericInput" id="Time4Recipe" top="690" left="1360" width="220" height="40" zIndex="12" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledTextColor="rgba(0, 0, 0, 1)" />
-    <Widget xsi:type="widgets.brease.TextInput" id="TextInName" top="130" left="1360" width="220" height="40" zIndex="13" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnRecCreate" top="220" left="500" width="220" height="40" zIndex="3" text="$IAT/RecipePage/BtnToggle" mouseDownBackColor="rgba(237, 237, 237, 1)" style="Command" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Temp1Recipe" top="230" left="1360" width="220" height="40" zIndex="4" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" disabledBackColor="rgba(192, 192, 192, 1)" disabledTextColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Temp2Recipe" top="290" left="1360" width="220" height="40" zIndex="5" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" disabledBackColor="rgba(192, 192, 192, 1)" disabledTextColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Temp3Recipe" top="350" left="1360" width="220" height="40" zIndex="6" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" disabledBackColor="rgba(192, 192, 192, 1)" disabledTextColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Temp4Recipe" top="410" left="1360" width="220" height="40" zIndex="7" unit="{'metric':'CEL','imperial':'FAH','imperial-us':'KEL'}" unitAlign="right" disabledBackColor="rgba(192, 192, 192, 1)" disabledTextColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time5Recipe" top="750" left="1360" width="220" height="40" zIndex="8" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledBackColor="rgba(192, 192, 192, 1)" disabledTextColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time1Recipe" top="510" left="1360" width="220" height="40" zIndex="9" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledBackColor="rgba(192, 192, 192, 1)" disabledTextColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time2Recipe" top="570" left="1360" width="220" height="40" zIndex="10" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledBackColor="rgba(192, 192, 192, 1)" disabledTextColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time3Recipe" top="630" left="1360" width="220" height="40" zIndex="11" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledBackColor="rgba(192, 192, 192, 1)" disabledTextColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.NumericInput" id="Time4Recipe" top="690" left="1360" width="220" height="40" zIndex="12" maxValue="100000" unit="{'metric':'C26','imperial':'C26','imperial-us':'C26'}" unitAlign="right" disabledBackColor="rgba(192, 192, 192, 1)" disabledTextColor="rgba(0, 0, 0, 1)" />
+    <Widget xsi:type="widgets.brease.TextInput" id="TextInName" top="130" left="1360" width="220" height="40" zIndex="13" disabledBackColor="rgba(192, 192, 192, 1)" />
     <Widget xsi:type="widgets.brease.Button" id="BtnSave" top="160" left="750" width="220" height="40" zIndex="14" text="$IAT/RecipePage/BtnSave" />
     <Widget xsi:type="widgets.brease.Button" id="BtnCreate" top="220" left="750" width="220" height="40" zIndex="15" text="$IAT/RecipePage/BtnCreate" />
     <Widget xsi:type="widgets.brease.Button" id="BtnPageUp" top="760" left="140" width="220" height="40" zIndex="16" text="$IAT/RecipePage/BtnPageUp" />
     <Widget xsi:type="widgets.brease.Button" id="BtnPageDown" top="760" left="870" width="220" height="40" zIndex="17" text="$IAT/RecipePage/BtnPageDown" />
-    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnRename" top="220" left="250" width="220" height="40" zIndex="18" text="$IAT/RecipePage/BtnTogRename" />
+    <Widget xsi:type="widgets.brease.ToggleButton" id="TogBtnRename" top="220" left="250" width="220" height="40" zIndex="18" text="$IAT/RecipePage/BtnTogRename" mouseDownBackColor="rgba(237, 237, 237, 1)" style="Command" />
     <Widget xsi:type="widgets.brease.TextInput" id="TxtInRename" top="280" left="250" width="220" height="40" zIndex="19" visible="false" />
     <Widget xsi:type="widgets.brease.Label" id="LabelSetTemp" top="180" left="1350" width="200" height="40" zIndex="20" text="$IAT/RecipePage/LabelTemp2" fontSize="22px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="LabelSetTime" top="460" left="1360" width="287" height="41" zIndex="21" text="$IAT/RecipePage/LabelTime_1" fontSize="22px" bold="true" />
@@ -37,5 +37,6 @@
     <Widget xsi:type="widgets.brease.Label" id="LabelStepTime3" top="610" left="1210" width="140" height="75" zIndex="29" text="$IAT/RecipePage/LblTimeStep3" fontSize="22px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="LabelStepTime4" top="670" left="1210" width="140" height="75" zIndex="30" text="$IAT/RecipePage/LblTimeStep4" fontSize="22px" bold="true" />
     <Widget xsi:type="widgets.brease.Label" id="LabelStepTime5" top="730" left="1210" width="150" height="75" zIndex="31" text="$IAT/RecipePage/LblTimeStep5" fontSize="22px" bold="true" />
+    <Widget xsi:type="widgets.brease.Label" id="PageTitleLabel" top="0" left="0" width="1710" height="75" zIndex="32" text="$IAT/left/AlarmPageButton" textAlign="center" fontSize="25px" bold="true" margin="5px" />
   </Widgets>
 </Content>
