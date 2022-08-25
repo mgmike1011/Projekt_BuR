@@ -84,7 +84,12 @@ PROGRAM	_CYCLIC
 	
 	avSCTwithTrash := TIME_TO_STRING(MpOEECore_1.Info.ShiftStatistics.AverageCycleTime);
 	brsmemcpy(ADR(avSCTwithoutTrash),ADR(avSCTwithTrash)+2,brsstrlen(ADR(avSCTwithTrash))-2);
-	
+	FOR i:=0 TO brsstrlen(ADR(avSCTwithoutTrash)) DO
+		char ACCESS (ADR(avSCTwithoutTrash)+i);
+		IF char = 95 THEN
+			char := 32;
+		END_IF
+	END_FOR
 	IF RsetOEE THEN
 		Reset5cycles := Reset5cycles +1;
 		IF Reset5cycles = 5 THEN
@@ -92,7 +97,6 @@ PROGRAM	_CYCLIC
 			Reset5cycles := 0;
 		END_IF;		
 	END_IF;
-
 END_PROGRAM
 
 PROGRAM	_EXIT

@@ -7,3 +7,4 @@ Temp/
 !NodeRed/
 NodeRed/*
 !NodeRed/flows.json
+!NodeRed/Test 0.0.1.msi

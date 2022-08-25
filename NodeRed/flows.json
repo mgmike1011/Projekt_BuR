@@ -590,7 +590,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "3",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -651,7 +651,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "3",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -712,7 +712,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "3",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -773,7 +773,7 @@
         "dot": false,
         "ymin": "",
         "ymax": "",
-        "removeOlder": 1,
+        "removeOlder": "3",
         "removeOlderPoints": "",
         "removeOlderUnit": "60",
         "cutout": 0,
@@ -1399,7 +1399,7 @@
         "type": "function",
         "z": "12421ff9dde586d7",
         "name": "function 2",
-        "func": "var idealTime = msg.payload.IdealCycleTime;\nvar newMsg = { payload: msg.payload.length };\n\nnewMsg.payload = idealTime.slice(2);\n\nreturn newMsg;",
+        "func": "var idealTime = msg.payload.IdealCycleTime;\nvar newMsg = { payload: msg.payload.length };\n\nidealTime = idealTime.slice(2);\nnewMsg.payload = idealTime.replace(/_/gi,\" \");\nreturn newMsg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -2154,7 +2154,7 @@
         "type": "debug",
         "z": "12421ff9dde586d7",
         "name": "debug 4",
-        "active": true,
+        "active": false,
         "tosidebar": true,
         "console": false,
         "tostatus": false,
@@ -2181,10 +2181,14 @@
         "dburl": "",
         "usetls": false,
         "x": 150,
-        "y": 40,
+        "y": 60,
         "wires": [
-            [],
-            []
+            [
+                "18526b83d7536b0a"
+            ],
+            [
+                "fa80e1cacc3ed2e6"
+            ]
         ]
     },
     {
@@ -2323,5 +2327,37 @@
                 "8e7cb7b23464dc75"
             ]
         ]
+    },
+    {
+        "id": "18526b83d7536b0a",
+        "type": "debug",
+        "z": "352fcc860ddcd8e8",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "fa80e1cacc3ed2e6",
+        "type": "debug",
+        "z": "352fcc860ddcd8e8",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 80,
+        "wires": []
     }
 ]
