@@ -20,6 +20,14 @@
           <Property ID="DelayTime" Value="8.0" />
         </Group>
       </Group>
+      <Group ID="PWMParameters">
+        <Group ID="Heat">
+          <Property ID="Period" Value="1" />
+        </Group>
+        <Group ID="Cool">
+          <Property ID="Period" Value="0.1" />
+        </Group>
+      </Group>
     </Group>
   </Element>
 </Configuration>

@@ -20,7 +20,6 @@
       <Parameter ID="ActivateSnmp" Value="2" />
     </Connector>
     <Parameter ID="ConfigurationID" Value="Projekt_BuR_X20CP3586" />
-    <Parameter ID="Simulation" Value="1" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="AUDIT" />
     <Parameter ID="FileDevicePath1" Value="F:/BRAudit" />
