@@ -6,5 +6,11 @@ Temp/
 *.orig
 !NodeRed/
 NodeRed/*
+!NodeRed/main.js
+!NodeRed/package.json
 !NodeRed/flows.json
+!NodeRed/build/
+!NodeRed/nrtray.png
+!NodeRed/loading.gif
+!NodeRed/nodered.png
 !NodeRed/Test 0.0.1.msi
