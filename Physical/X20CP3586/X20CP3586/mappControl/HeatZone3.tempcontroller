@@ -25,7 +25,7 @@
           <Property ID="Period" Value="1" />
         </Group>
         <Group ID="Cool">
-          <Property ID="Period" Value="0.1" />
+          <Property ID="Period" Value="0.01" />
         </Group>
       </Group>
     </Group>
