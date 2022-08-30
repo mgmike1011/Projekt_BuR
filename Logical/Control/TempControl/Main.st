@@ -466,7 +466,7 @@ PROGRAM _CYCLIC
 		gHeater4 := TempController[3].Heat;
 	END_IF;
 	// Mapping Cooling outputs
-	gFan1 := MTBasicsPWM_COLD[0][0].Out;
+	gFan1 := MTBasicsPWM_COLD[0].Out;
 	gFan2 := MTBasicsPWM_COLD[1].Out;
 	gFan3 := MTBasicsPWM_COLD[2].Out;
 	gFan4 := MTBasicsPWM_COLD[3].Out;
