@@ -64,52 +64,52 @@ PROGRAM _INIT
 	
 	
 	//PID & PWM BLOCK
-	FOR iCnt := 0  TO ELEMENTS_NUMBER DO
-		// Heating PID params
-		ParameterTypePIDHEAT[iCnt].Gain := PIDProportionaGainHEAT[iCnt];
-		ParameterTypePIDHEAT[iCnt].IntegrationTime := PIDIntegrationTimeHEAT[iCnt];
-		ParameterTypePIDHEAT[iCnt].FilterTime := PIDFilterTimeHEAT[iCnt];
-		ParameterTypePIDHEAT[iCnt].DerivativeTime := PIDDerivativeTimeHEAT[iCnt];
-		// Cooling PID params
-		ParameterTypePIDCOLD[iCnt].Gain := PIDProportionaGainCOOL[iCnt];
-		ParameterTypePIDCOLD[iCnt].IntegrationTime := PIDIntegrationTimeCOOL[iCnt];
-		ParameterTypePIDCOLD[iCnt].FilterTime := PIDFilterTimeCOOL[iCnt];
-		ParameterTypePIDCOLD[iCnt].DerivativeTime := PIDDerivativeTimeCOOL[iCnt];
-	END_FOR;
+//	FOR iCnt := 0  TO ELEMENTS_NUMBER DO
+//		// Heating PID params
+//		ParameterTypePIDHEAT[iCnt].Gain := PIDProportionaGainHEAT[iCnt];
+//		ParameterTypePIDHEAT[iCnt].IntegrationTime := PIDIntegrationTimeHEAT[iCnt];
+//		ParameterTypePIDHEAT[iCnt].FilterTime := PIDFilterTimeHEAT[iCnt];
+//		ParameterTypePIDHEAT[iCnt].DerivativeTime := PIDDerivativeTimeHEAT[iCnt];
+//		// Cooling PID params
+//		ParameterTypePIDCOLD[iCnt].Gain := PIDProportionaGainCOOL[iCnt];
+//		ParameterTypePIDCOLD[iCnt].IntegrationTime := PIDIntegrationTimeCOOL[iCnt];
+//		ParameterTypePIDCOLD[iCnt].FilterTime := PIDFilterTimeCOOL[iCnt];
+//		ParameterTypePIDCOLD[iCnt].DerivativeTime := PIDDerivativeTimeCOOL[iCnt];
+//	END_FOR;
 	//HEAT PID
-	MTBasicsPID_HEAT[0].PIDParameters := ParameterTypePIDHEAT[0];
-	MTBasicsPID_HEAT[1].PIDParameters := ParameterTypePIDHEAT[1];
-	MTBasicsPID_HEAT[2].PIDParameters := ParameterTypePIDHEAT[2];
-	MTBasicsPID_HEAT[3].PIDParameters := ParameterTypePIDHEAT[3];
-	MTBasicsPID_HEAT[0].MinOut := 0.0;
-	MTBasicsPID_HEAT[1].MinOut := 0.0;
-	MTBasicsPID_HEAT[2].MinOut := 0.0;
-	MTBasicsPID_HEAT[3].MinOut := 0.0;
-	MTBasicsPID_HEAT[0].MaxOut := 100.0;
-	MTBasicsPID_HEAT[1].MaxOut := 100.0;
-	MTBasicsPID_HEAT[2].MaxOut := 100.0;
-	MTBasicsPID_HEAT[3].MaxOut := 100.0;
-	MTBasicsPID_HEAT[0].Enable := TRUE;
-	MTBasicsPID_HEAT[1].Enable := TRUE;
-	MTBasicsPID_HEAT[2].Enable := TRUE;
-	MTBasicsPID_HEAT[3].Enable := TRUE;
+//	MTBasicsPID_HEAT[0].PIDParameters := ParameterTypePIDHEAT[0];
+//	MTBasicsPID_HEAT[1].PIDParameters := ParameterTypePIDHEAT[1];
+//	MTBasicsPID_HEAT[2].PIDParameters := ParameterTypePIDHEAT[2];
+//	MTBasicsPID_HEAT[3].PIDParameters := ParameterTypePIDHEAT[3];
+//	MTBasicsPID_HEAT[0].MinOut := 0.0;
+//	MTBasicsPID_HEAT[1].MinOut := 0.0;
+//	MTBasicsPID_HEAT[2].MinOut := 0.0;
+//	MTBasicsPID_HEAT[3].MinOut := 0.0;
+//	MTBasicsPID_HEAT[0].MaxOut := 100.0;
+//	MTBasicsPID_HEAT[1].MaxOut := 100.0;
+//	MTBasicsPID_HEAT[2].MaxOut := 100.0;
+//	MTBasicsPID_HEAT[3].MaxOut := 100.0;
+//	MTBasicsPID_HEAT[0].Enable := TRUE;
+//	MTBasicsPID_HEAT[1].Enable := TRUE;
+//	MTBasicsPID_HEAT[2].Enable := TRUE;
+//	MTBasicsPID_HEAT[3].Enable := TRUE;
 	//COLD PID
-	MTBasicsPID_COLD[0].PIDParameters := ParameterTypePIDCOLD[0];
-	MTBasicsPID_COLD[1].PIDParameters := ParameterTypePIDCOLD[1];
-	MTBasicsPID_COLD[2].PIDParameters := ParameterTypePIDCOLD[2];
-	MTBasicsPID_COLD[3].PIDParameters := ParameterTypePIDCOLD[3];
-	MTBasicsPID_COLD[0].MinOut := 0.0;
-	MTBasicsPID_COLD[1].MinOut := 0.0;
-	MTBasicsPID_COLD[2].MinOut := 0.0;
-	MTBasicsPID_COLD[3].MinOut := 0.0;
-	MTBasicsPID_COLD[0].MaxOut := 100.0;
-	MTBasicsPID_COLD[1].MaxOut := 100.0;
-	MTBasicsPID_COLD[2].MaxOut := 100.0;
-	MTBasicsPID_COLD[3].MaxOut := 100.0;
-	MTBasicsPID_COLD[0].Enable := TRUE;
-	MTBasicsPID_COLD[1].Enable := TRUE;
-	MTBasicsPID_COLD[2].Enable := TRUE;
-	MTBasicsPID_COLD[3].Enable := TRUE;
+//	MTBasicsPID_COLD[0].PIDParameters := ParameterTypePIDCOLD[0];
+//	MTBasicsPID_COLD[1].PIDParameters := ParameterTypePIDCOLD[1];
+//	MTBasicsPID_COLD[2].PIDParameters := ParameterTypePIDCOLD[2];
+//	MTBasicsPID_COLD[3].PIDParameters := ParameterTypePIDCOLD[3];
+//	MTBasicsPID_COLD[0].MinOut := 0.0;
+//	MTBasicsPID_COLD[1].MinOut := 0.0;
+//	MTBasicsPID_COLD[2].MinOut := 0.0;
+//	MTBasicsPID_COLD[3].MinOut := 0.0;
+//	MTBasicsPID_COLD[0].MaxOut := 100.0;
+//	MTBasicsPID_COLD[1].MaxOut := 100.0;
+//	MTBasicsPID_COLD[2].MaxOut := 100.0;
+//	MTBasicsPID_COLD[3].MaxOut := 100.0;
+//	MTBasicsPID_COLD[0].Enable := TRUE;
+//	MTBasicsPID_COLD[1].Enable := TRUE;
+//	MTBasicsPID_COLD[2].Enable := TRUE;
+//	MTBasicsPID_COLD[3].Enable := TRUE;
 	//HEAT
 	MTBasicsPWM_HEAT[0].Period := 1;
 	MTBasicsPWM_HEAT[1].Period := 1;
@@ -120,10 +120,10 @@ PROGRAM _INIT
 	MTBasicsPWM_HEAT[2].Enable :=TRUE;
 	MTBasicsPWM_HEAT[3].Enable :=TRUE;
 	//COLD
-	MTBasicsPWM_COLD[0].Period := 0.05;
-	MTBasicsPWM_COLD[1].Period := 0.05;
-	MTBasicsPWM_COLD[2].Period := 0.05;
-	MTBasicsPWM_COLD[3].Period := 0.05;
+	MTBasicsPWM_COLD[0].Period := 0.003;
+	MTBasicsPWM_COLD[1].Period := 0.003;
+	MTBasicsPWM_COLD[2].Period := 0.003;
+	MTBasicsPWM_COLD[3].Period := 0.003;
 	MTBasicsPWM_COLD[0].Enable :=TRUE;
 	MTBasicsPWM_COLD[1].Enable :=TRUE;
 	MTBasicsPWM_COLD[2].Enable :=TRUE;
@@ -137,38 +137,48 @@ PROGRAM _CYCLIC
 	TempController[1].ActualTemperature := gTemp2;
 	TempController[2].ActualTemperature := gTemp3;
 	TempController[3].ActualTemperature := gTemp4;
-	MTBasicsPID_HEAT[0].ActValue := gTemp1;
-	MTBasicsPID_HEAT[1].ActValue := gTemp2;
-	MTBasicsPID_HEAT[2].ActValue := gTemp3;
-	MTBasicsPID_HEAT[3].ActValue := gTemp4;
-	MTBasicsPID_COLD[0].ActValue := SetTemp1;
-	MTBasicsPID_COLD[1].ActValue := SetTemp2;
-	MTBasicsPID_COLD[2].ActValue := SetTemp3;
-	MTBasicsPID_COLD[3].ActValue := SetTemp4;
+//	MTBasicsPID_HEAT[0].ActValue := gTemp1;
+//	MTBasicsPID_HEAT[1].ActValue := gTemp2;
+//	MTBasicsPID_HEAT[2].ActValue := gTemp3;
+//	MTBasicsPID_HEAT[3].ActValue := gTemp4;
+//	MTBasicsPID_COLD[0].ActValue := SetTemp1;
+//	MTBasicsPID_COLD[1].ActValue := SetTemp2;
+//	MTBasicsPID_COLD[2].ActValue := SetTemp3;
+//	MTBasicsPID_COLD[3].ActValue := SetTemp4;
 	
 	// Mapping set temperature
 	TempController[0].SetTemperature := SetTemp1;
 	TempController[1].SetTemperature := SetTemp2;
 	TempController[2].SetTemperature := SetTemp3;
 	TempController[3].SetTemperature := SetTemp4;
-	MTBasicsPID_HEAT[0].SetValue :=  SetTemp1;
-	MTBasicsPID_HEAT[1].SetValue :=  SetTemp2;
-	MTBasicsPID_HEAT[2].SetValue :=  SetTemp3;
-	MTBasicsPID_HEAT[3].SetValue :=  SetTemp4;
-	MTBasicsPID_COLD[0].SetValue :=  gTemp1;
-	MTBasicsPID_COLD[1].SetValue :=  gTemp2;
-	MTBasicsPID_COLD[2].SetValue :=  gTemp3;
-	MTBasicsPID_COLD[3].SetValue :=  gTemp4;
+//	MTBasicsPID_HEAT[0].SetValue :=  SetTemp1;
+//	MTBasicsPID_HEAT[1].SetValue :=  SetTemp2;
+//	MTBasicsPID_HEAT[2].SetValue :=  SetTemp3;
+//	MTBasicsPID_HEAT[3].SetValue :=  SetTemp4;
+//	MTBasicsPID_COLD[0].SetValue :=  gTemp1;
+//	MTBasicsPID_COLD[1].SetValue :=  gTemp2;
+//	MTBasicsPID_COLD[2].SetValue :=  gTemp3;
+//	MTBasicsPID_COLD[3].SetValue :=  gTemp4;
 	
-	MTBasicsPWM_HEAT[0].DutyCycle := MTBasicsPID_HEAT[0].Out;
-	MTBasicsPWM_HEAT[1].DutyCycle := MTBasicsPID_HEAT[1].Out;  
-	MTBasicsPWM_HEAT[2].DutyCycle := MTBasicsPID_HEAT[2].Out;
-	MTBasicsPWM_HEAT[3].DutyCycle := MTBasicsPID_HEAT[3].Out;
+//	MTBasicsPWM_HEAT[0].DutyCycle := MTBasicsPID_HEAT[0].Out;
+//	MTBasicsPWM_HEAT[1].DutyCycle := MTBasicsPID_HEAT[1].Out;  
+//	MTBasicsPWM_HEAT[2].DutyCycle := MTBasicsPID_HEAT[2].Out;
+//	MTBasicsPWM_HEAT[3].DutyCycle := MTBasicsPID_HEAT[3].Out;
+//	
+//	MTBasicsPWM_COLD[0].DutyCycle := MTBasicsPID_COLD[0].Out;
+//	MTBasicsPWM_COLD[1].DutyCycle := MTBasicsPID_COLD[1].Out;
+//	MTBasicsPWM_COLD[2].DutyCycle := MTBasicsPID_COLD[2].Out;
+//	MTBasicsPWM_COLD[3].DutyCycle := MTBasicsPID_COLD[3].Out;
 	
-	MTBasicsPWM_COLD[0].DutyCycle := MTBasicsPID_COLD[0].Out;
-	MTBasicsPWM_COLD[1].DutyCycle := MTBasicsPID_COLD[1].Out;
-	MTBasicsPWM_COLD[2].DutyCycle := MTBasicsPID_COLD[2].Out;
-	MTBasicsPWM_COLD[3].DutyCycle := MTBasicsPID_COLD[3].Out;
+	MTBasicsPWM_HEAT[0].DutyCycle := TempController[0].HeatValue;
+	MTBasicsPWM_HEAT[1].DutyCycle := TempController[1].HeatValue;  
+	MTBasicsPWM_HEAT[2].DutyCycle := TempController[2].HeatValue;
+	MTBasicsPWM_HEAT[3].DutyCycle := TempController[3].HeatValue;
+	
+	MTBasicsPWM_COLD[0].DutyCycle := TempController[0].CoolValue;
+	MTBasicsPWM_COLD[1].DutyCycle := TempController[1].CoolValue;
+	MTBasicsPWM_COLD[2].DutyCycle := TempController[2].CoolValue;
+	MTBasicsPWM_COLD[3].DutyCycle := TempController[3].CoolValue;
 	
 	// Machine working status
 	CASE STATUS OF
@@ -185,14 +195,14 @@ PROGRAM _CYCLIC
 			TempController[2].Simulate := FALSE;
 			TempController[3].Simulate := FALSE;
 			
-			MTBasicsPID_HEAT[0].Enable := FALSE;
-			MTBasicsPID_HEAT[1].Enable := FALSE;
-			MTBasicsPID_HEAT[2].Enable := FALSE;
-			MTBasicsPID_HEAT[3].Enable := FALSE;
-			MTBasicsPID_COLD[0].Enable := FALSE;
-			MTBasicsPID_COLD[1].Enable := FALSE;
-			MTBasicsPID_COLD[2].Enable := FALSE;
-			MTBasicsPID_COLD[3].Enable := FALSE;
+//			MTBasicsPID_HEAT[0].Enable := FALSE;
+//			MTBasicsPID_HEAT[1].Enable := FALSE;
+//			MTBasicsPID_HEAT[2].Enable := FALSE;
+//			MTBasicsPID_HEAT[3].Enable := FALSE;
+//			MTBasicsPID_COLD[0].Enable := FALSE;
+//			MTBasicsPID_COLD[1].Enable := FALSE;
+//			MTBasicsPID_COLD[2].Enable := FALSE;
+//			MTBasicsPID_COLD[3].Enable := FALSE;
 			
 			MTBasicsPWM_HEAT[0].Enable := FALSE;
 			MTBasicsPWM_HEAT[1].Enable := FALSE;
@@ -257,8 +267,8 @@ PROGRAM _CYCLIC
 			// Zone 1
 			IF EnableZone1 THEN
 				TempController[0].Enable := TRUE;
-				MTBasicsPID_HEAT[0].Enable := TRUE;
-				MTBasicsPID_COLD[0].Enable := TRUE;
+//				MTBasicsPID_HEAT[0].Enable := TRUE;
+//				MTBasicsPID_COLD[0].Enable := TRUE;
 				// Simulation zone 1
 				IF SimulateZone1Enable THEN
 					TempController[0].Control := TRUE;
@@ -266,13 +276,13 @@ PROGRAM _CYCLIC
 				ELSE
 					MTBasicsPWM_HEAT[0].Enable := TRUE;
 					MTBasicsPWM_COLD[0].Enable := TRUE;
-					//TempController[0].Control := TRUE;
+					TempController[0].Control := TRUE;
 					TempController[0].Simulate := FALSE;
 				END_IF;
 			ELSE
 				TempController[0].Enable := FALSE;
-				MTBasicsPID_HEAT[0].Enable := FALSE;
-				MTBasicsPID_COLD[0].Enable := FALSE;
+//				MTBasicsPID_HEAT[0].Enable := FALSE;
+//				MTBasicsPID_COLD[0].Enable := FALSE;
 				MTBasicsPWM_HEAT[0].Enable := FALSE;
 				MTBasicsPWM_COLD[0].Enable := FALSE;
 				ZoneStatus[0] := STATE_IDLE_ZONE;	
@@ -280,8 +290,8 @@ PROGRAM _CYCLIC
 			// Zone 2
 			IF EnableZone2 THEN
 				TempController[1].Enable := TRUE;
-				MTBasicsPID_HEAT[1].Enable := TRUE;
-				MTBasicsPID_COLD[1].Enable := TRUE;
+//				MTBasicsPID_HEAT[1].Enable := TRUE;
+//				MTBasicsPID_COLD[1].Enable := TRUE;
 				// Simulation zone 2
 				IF SimulateZone2Enable THEN
 					TempController[1].Control := TRUE;
@@ -289,13 +299,13 @@ PROGRAM _CYCLIC
 				ELSE
 					MTBasicsPWM_HEAT[1].Enable := TRUE;
 					MTBasicsPWM_COLD[1].Enable := TRUE;
-					//TempController[1].Control := TRUE;
+					TempController[1].Control := TRUE;
 					TempController[1].Simulate := FALSE;
 				END_IF;
 			ELSE
 				TempController[1].Enable := FALSE;
-				MTBasicsPID_HEAT[1].Enable := FALSE;
-				MTBasicsPID_COLD[1].Enable := FALSE;
+//				MTBasicsPID_HEAT[1].Enable := FALSE;
+//				MTBasicsPID_COLD[1].Enable := FALSE;
 				MTBasicsPWM_HEAT[1].Enable := FALSE;
 				MTBasicsPWM_COLD[1].Enable := FALSE;
 				ZoneStatus[1] := STATE_IDLE_ZONE;	
@@ -303,8 +313,8 @@ PROGRAM _CYCLIC
 			// Zone 3
 			IF EnableZone3 THEN
 				TempController[2].Enable := TRUE;
-				MTBasicsPID_HEAT[2].Enable := TRUE;
-				MTBasicsPID_COLD[2].Enable := TRUE;
+//				MTBasicsPID_HEAT[2].Enable := TRUE;
+//				MTBasicsPID_COLD[2].Enable := TRUE;
 				// Simulation zone 3
 				IF SimulateZone3Enable THEN
 					TempController[2].Control := TRUE;
@@ -312,12 +322,13 @@ PROGRAM _CYCLIC
 				ELSE
 					MTBasicsPWM_HEAT[2].Enable := TRUE;
 					MTBasicsPWM_COLD[2].Enable := TRUE;
-					//TempController[2].Control := TRUE;
+					TempController[2].Control := TRUE;
 					TempController[2].Simulate := FALSE;
 				END_IF;
 			ELSE
 				TempController[2].Enable := FALSE;
-				
+//				MTBasicsPID_HEAT[2].Enable := FALSE;
+//				MTBasicsPID_COLD[2].Enable := FALSE;
 				MTBasicsPWM_HEAT[2].Enable := FALSE;
 				MTBasicsPWM_COLD[2].Enable := FALSE;
 				ZoneStatus[2] := STATE_IDLE_ZONE;	
@@ -325,8 +336,8 @@ PROGRAM _CYCLIC
 			// Zone 4
 			IF EnableZone4 THEN
 				TempController[3].Enable := TRUE;
-				MTBasicsPID_HEAT[3].Enable := TRUE;
-				MTBasicsPID_COLD[3].Enable := TRUE;
+//				MTBasicsPID_HEAT[3].Enable := TRUE;
+//				MTBasicsPID_COLD[3].Enable := TRUE;
 				// Simulation zone 4
 				IF SimulateZone4Enable THEN
 					TempController[3].Control := TRUE;
@@ -334,13 +345,13 @@ PROGRAM _CYCLIC
 				ELSE
 					MTBasicsPWM_HEAT[3].Enable := TRUE;
 					MTBasicsPWM_COLD[3].Enable := TRUE;
-					//TempController[3].Control := TRUE;
+					TempController[3].Control := TRUE;
 					TempController[3].Simulate := FALSE;
 				END_IF;
 			ELSE
 				TempController[3].Enable := FALSE;
-				MTBasicsPID_HEAT[3].Enable := FALSE;
-				MTBasicsPID_COLD[3].Enable := FALSE;
+//				MTBasicsPID_HEAT[3].Enable := FALSE;
+//				MTBasicsPID_COLD[3].Enable := FALSE;
 				MTBasicsPWM_HEAT[3].Enable := FALSE;
 				MTBasicsPWM_COLD[3].Enable := FALSE;
 				ZoneStatus[3] := STATE_IDLE_ZONE;	
@@ -380,14 +391,14 @@ PROGRAM _CYCLIC
 			TempController[2].Simulate := FALSE;
 			TempController[3].Simulate := FALSE;
 			
-			MTBasicsPID_HEAT[0].Enable := FALSE;
-			MTBasicsPID_HEAT[1].Enable := FALSE;
-			MTBasicsPID_HEAT[2].Enable := FALSE;
-			MTBasicsPID_HEAT[3].Enable := FALSE;
-			MTBasicsPID_COLD[0].Enable := FALSE;
-			MTBasicsPID_COLD[1].Enable := FALSE;
-			MTBasicsPID_COLD[2].Enable := FALSE;
-			MTBasicsPID_COLD[3].Enable := FALSE;
+//			MTBasicsPID_HEAT[0].Enable := FALSE;
+//			MTBasicsPID_HEAT[1].Enable := FALSE;
+//			MTBasicsPID_HEAT[2].Enable := FALSE;
+//			MTBasicsPID_HEAT[3].Enable := FALSE;
+//			MTBasicsPID_COLD[0].Enable := FALSE;
+//			MTBasicsPID_COLD[1].Enable := FALSE;
+//			MTBasicsPID_COLD[2].Enable := FALSE;
+//			MTBasicsPID_COLD[3].Enable := FALSE;
 			
 			MTBasicsPWM_HEAT[0].Enable := FALSE;
 			MTBasicsPWM_HEAT[1].Enable := FALSE;
@@ -412,14 +423,14 @@ PROGRAM _CYCLIC
 			TempController[2].Simulate := FALSE;
 			TempController[3].Simulate := FALSE;
 			
-			MTBasicsPID_HEAT[0].Enable := FALSE;
-			MTBasicsPID_HEAT[1].Enable := FALSE;
-			MTBasicsPID_HEAT[2].Enable := FALSE;
-			MTBasicsPID_HEAT[3].Enable := FALSE;
-			MTBasicsPID_COLD[0].Enable := FALSE;
-			MTBasicsPID_COLD[1].Enable := FALSE;
-			MTBasicsPID_COLD[2].Enable := FALSE;
-			MTBasicsPID_COLD[3].Enable := FALSE;
+//			MTBasicsPID_HEAT[0].Enable := FALSE;
+//			MTBasicsPID_HEAT[1].Enable := FALSE;
+//			MTBasicsPID_HEAT[2].Enable := FALSE;
+//			MTBasicsPID_HEAT[3].Enable := FALSE;
+//			MTBasicsPID_COLD[0].Enable := FALSE;
+//			MTBasicsPID_COLD[1].Enable := FALSE;
+//			MTBasicsPID_COLD[2].Enable := FALSE;
+//			MTBasicsPID_COLD[3].Enable := FALSE;
 			
 			MTBasicsPWM_HEAT[0].Enable := FALSE;
 			MTBasicsPWM_HEAT[1].Enable := FALSE;
@@ -446,25 +457,25 @@ PROGRAM _CYCLIC
 	// Calling functionblocks
 	FOR iCnt := 0 TO ELEMENTS_NUMBER DO
 		TempController[iCnt]();
-		MTBasicsPID_HEAT[iCnt]();
-		MTBasicsPID_COLD[iCnt]();
+//		MTBasicsPID_HEAT[iCnt]();
+//		MTBasicsPID_COLD[iCnt]();
 		MTBasicsPWM_HEAT[iCnt]();
 		MTBasicsPWM_COLD[iCnt]();
 	END_FOR;
 	TempGroup();
 	// Mapping outputs
-	IF SimulateZone1Enable OR SimulateZone2Enable OR SimulateZone3Enable OR SimulateZone4Enable THEN
-		// Mapping Cooling outputs
-		gFan1 := TempController[0].Cool;
-		gFan2 := TempController[1].Cool;
-		gFan3 := TempController[2].Cool;
-		gFan4 := TempController[3].Cool;
-		// Mapping heating outputs
-		gHeater1 := TempController[0].Heat;
-		gHeater2 := TempController[1].Heat;
-		gHeater3 := TempController[2].Heat;
-		gHeater4 := TempController[3].Heat;
-	END_IF;
+//	IF SimulateZone1Enable OR SimulateZone2Enable OR SimulateZone3Enable OR SimulateZone4Enable THEN
+//		// Mapping Cooling outputs
+//		gFan1 := TempController[0].Cool;
+//		gFan2 := TempController[1].Cool;
+//		gFan3 := TempController[2].Cool;
+//		gFan4 := TempController[3].Cool;
+//		// Mapping heating outputs
+//		gHeater1 := TempController[0].Heat;
+//		gHeater2 := TempController[1].Heat;
+//		gHeater3 := TempController[2].Heat;
+//		gHeater4 := TempController[3].Heat;
+//	END_IF;
 	// Mapping Cooling outputs
 	gFan1 := MTBasicsPWM_COLD[0].Out;
 	gFan2 := MTBasicsPWM_COLD[1].Out;
@@ -484,10 +495,10 @@ PROGRAM _EXIT
 	FOR iCnt := 0 TO ELEMENTS_NUMBER DO
 		TempController[iCnt].Enable := FALSE;
 		TempController[iCnt]();
-		MTBasicsPID_HEAT[iCnt].Enable := FALSE;
-		MTBasicsPID_HEAT[iCnt]();
-		MTBasicsPID_COLD[iCnt].Enable := FALSE;
-		MTBasicsPID_COLD[iCnt]();
+//		MTBasicsPID_HEAT[iCnt].Enable := FALSE;
+//		MTBasicsPID_HEAT[iCnt]();
+//		MTBasicsPID_COLD[iCnt].Enable := FALSE;
+//		MTBasicsPID_COLD[iCnt]();
 		MTBasicsPWM_HEAT[iCnt].Enable := FALSE;
 		MTBasicsPWM_HEAT[iCnt]();
 		MTBasicsPWM_COLD[iCnt].Enable := FALSE;

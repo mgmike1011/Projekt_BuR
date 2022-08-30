@@ -23,14 +23,14 @@ ACTION TuningAction:
 		TempControllerPar[iCnt].PID.Cool.DerivativeTime := PIDDerivativeTimeCOOL[iCnt];
 		
 		// Heating PID params
-		ParameterTypePIDHEAT[iCnt].Gain := PIDProportionaGainHEAT[iCnt];
-		ParameterTypePIDHEAT[iCnt].IntegrationTime := PIDIntegrationTimeHEAT[iCnt];
-		ParameterTypePIDHEAT[iCnt].FilterTime := PIDFilterTimeHEAT[iCnt];
-		ParameterTypePIDHEAT[iCnt].DerivativeTime := PIDDerivativeTimeHEAT[iCnt];
+//		ParameterTypePIDHEAT[iCnt].Gain := PIDProportionaGainHEAT[iCnt];
+//		ParameterTypePIDHEAT[iCnt].IntegrationTime := PIDIntegrationTimeHEAT[iCnt];
+//		ParameterTypePIDHEAT[iCnt].FilterTime := PIDFilterTimeHEAT[iCnt];
+//		ParameterTypePIDHEAT[iCnt].DerivativeTime := PIDDerivativeTimeHEAT[iCnt];
 		// Cooling PID params
-		ParameterTypePIDCOLD[iCnt].Gain := PIDProportionaGainCOOL[iCnt];
-		ParameterTypePIDCOLD[iCnt].IntegrationTime := PIDIntegrationTimeCOOL[iCnt];
-		ParameterTypePIDCOLD[iCnt].FilterTime := PIDFilterTimeCOOL[iCnt];
-		ParameterTypePIDCOLD[iCnt].DerivativeTime := PIDDerivativeTimeCOOL[iCnt];
+//		ParameterTypePIDCOLD[iCnt].Gain := PIDProportionaGainCOOL[iCnt];
+//		ParameterTypePIDCOLD[iCnt].IntegrationTime := PIDIntegrationTimeCOOL[iCnt];
+//		ParameterTypePIDCOLD[iCnt].FilterTime := PIDFilterTimeCOOL[iCnt];
+//		ParameterTypePIDCOLD[iCnt].DerivativeTime := PIDDerivativeTimeCOOL[iCnt];
 	END_FOR;
 END_ACTION
