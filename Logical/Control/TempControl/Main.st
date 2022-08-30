@@ -120,10 +120,10 @@ PROGRAM _INIT
 	MTBasicsPWM_HEAT[2].Enable :=TRUE;
 	MTBasicsPWM_HEAT[3].Enable :=TRUE;
 	//COLD
-	MTBasicsPWM_COLD[0].Period := 0.01;
-	MTBasicsPWM_COLD[1].Period := 0.01;
-	MTBasicsPWM_COLD[2].Period := 0.01;
-	MTBasicsPWM_COLD[3].Period := 0.01;
+	MTBasicsPWM_COLD[0].Period := 0.05;
+	MTBasicsPWM_COLD[1].Period := 0.05;
+	MTBasicsPWM_COLD[2].Period := 0.05;
+	MTBasicsPWM_COLD[3].Period := 0.05;
 	MTBasicsPWM_COLD[0].Enable :=TRUE;
 	MTBasicsPWM_COLD[1].Enable :=TRUE;
 	MTBasicsPWM_COLD[2].Enable :=TRUE;
@@ -141,10 +141,10 @@ PROGRAM _CYCLIC
 	MTBasicsPID_HEAT[1].ActValue := gTemp2;
 	MTBasicsPID_HEAT[2].ActValue := gTemp3;
 	MTBasicsPID_HEAT[3].ActValue := gTemp4;
-	MTBasicsPID_COLD[0].ActValue := gTemp1;
-	MTBasicsPID_COLD[1].ActValue := gTemp2;
-	MTBasicsPID_COLD[2].ActValue := gTemp3;
-	MTBasicsPID_COLD[3].ActValue := gTemp4;
+	MTBasicsPID_COLD[0].ActValue := SetTemp1;
+	MTBasicsPID_COLD[1].ActValue := SetTemp2;
+	MTBasicsPID_COLD[2].ActValue := SetTemp3;
+	MTBasicsPID_COLD[3].ActValue := SetTemp4;
 	
 	// Mapping set temperature
 	TempController[0].SetTemperature := SetTemp1;
@@ -155,10 +155,10 @@ PROGRAM _CYCLIC
 	MTBasicsPID_HEAT[1].SetValue :=  SetTemp2;
 	MTBasicsPID_HEAT[2].SetValue :=  SetTemp3;
 	MTBasicsPID_HEAT[3].SetValue :=  SetTemp4;
-	MTBasicsPID_COLD[0].SetValue :=  SetTemp1;
-	MTBasicsPID_COLD[1].SetValue :=  SetTemp2;
-	MTBasicsPID_COLD[2].SetValue :=  SetTemp3;
-	MTBasicsPID_COLD[3].SetValue :=  SetTemp4;
+	MTBasicsPID_COLD[0].SetValue :=  gTemp1;
+	MTBasicsPID_COLD[1].SetValue :=  gTemp2;
+	MTBasicsPID_COLD[2].SetValue :=  gTemp3;
+	MTBasicsPID_COLD[3].SetValue :=  gTemp4;
 	
 	MTBasicsPWM_HEAT[0].DutyCycle := MTBasicsPID_HEAT[0].Out;
 	MTBasicsPWM_HEAT[1].DutyCycle := MTBasicsPID_HEAT[1].Out;  
