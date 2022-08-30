@@ -7,6 +7,16 @@ ACTION AutomaticMode:
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := FALSE;
 			TempController[3].Enable := FALSE;
+			
+			MTBasicsPID_HEAT[0].Enable := FALSE;
+			MTBasicsPID_HEAT[1].Enable := FALSE;
+			MTBasicsPID_HEAT[2].Enable := FALSE;
+			MTBasicsPID_HEAT[3].Enable := FALSE;
+			MTBasicsPID_COLD[0].Enable := FALSE;
+			MTBasicsPID_COLD[1].Enable := FALSE;
+			MTBasicsPID_COLD[2].Enable := FALSE;
+			MTBasicsPID_COLD[3].Enable := FALSE;
+			
 			MTBasicsPWM_HEAT[0].Enable := FALSE;
 			MTBasicsPWM_HEAT[1].Enable := FALSE;
 			MTBasicsPWM_HEAT[2].Enable := FALSE;
@@ -26,6 +36,8 @@ ACTION AutomaticMode:
 			END_IF;
 		STEP1:
 			TempController[0].Enable := TRUE;
+			MTBasicsPID_HEAT[0].Enable := TRUE;
+			MTBasicsPID_COLD[0].Enable := TRUE;
 			TimStep1.PT := TimeStep1;
 			TimStep2.IN := FALSE;
 			// Simulation/control zone 1
@@ -55,6 +67,8 @@ ACTION AutomaticMode:
 			
 		STEP2:
 			TempController[0].Enable := TRUE;
+			MTBasicsPID_HEAT[0].Enable := TRUE;
+			MTBasicsPID_COLD[0].Enable := TRUE;
 			TimStep1.IN := FALSE;
 			TimStep2.PT := TimeStep2;
 			TimStep3.IN := FALSE;
@@ -69,6 +83,8 @@ ACTION AutomaticMode:
 				MTBasicsPWM_COLD[0].Enable := TRUE;
 			END_IF;
 			TempController[1].Enable := TRUE;
+			MTBasicsPID_HEAT[1].Enable := TRUE;
+			MTBasicsPID_COLD[1].Enable := TRUE;
 			// Simulation/control zone 2
 			IF SimulateZone2Enable THEN
 				TempController[1].Control := TRUE;
@@ -97,8 +113,12 @@ ACTION AutomaticMode:
 		STEP3:
 			TempController[0].Enable := FALSE;
 			TempController[1].Enable := TRUE;
+			MTBasicsPID_HEAT[0].Enable := FALSE;
+			MTBasicsPID_COLD[0].Enable := FALSE;
 			MTBasicsPWM_HEAT[0].Enable := FALSE;
 			MTBasicsPWM_COLD[0].Enable := FALSE;
+			MTBasicsPID_HEAT[1].Enable := TRUE;
+			MTBasicsPID_COLD[1].Enable := TRUE;
 			TimStep2.IN := FALSE;
 			TimStep3.PT := TimeStep3;
 			TimStep4.IN := FALSE;
@@ -113,6 +133,8 @@ ACTION AutomaticMode:
 				MTBasicsPWM_COLD[1].Enable := TRUE;
 			END_IF;
 			TempController[2].Enable := TRUE;
+			MTBasicsPID_HEAT[2].Enable := TRUE;
+			MTBasicsPID_COLD[2].Enable := TRUE;
 			// Simulation/Control zone 3
 			IF SimulateZone3Enable THEN
 				TempController[2].Control := TRUE;
@@ -141,8 +163,12 @@ ACTION AutomaticMode:
 		STEP4:
 			TempController[1].Enable := FALSE;
 			TempController[2].Enable := TRUE;
+			MTBasicsPID_HEAT[1].Enable := FALSE;
+			MTBasicsPID_COLD[1].Enable := FALSE;
 			MTBasicsPWM_HEAT[1].Enable := FALSE;
 			MTBasicsPWM_COLD[1].Enable := FALSE;
+			MTBasicsPID_HEAT[2].Enable := TRUE;
+			MTBasicsPID_COLD[2].Enable := TRUE;
 			TimStep3.IN := FALSE;
 			TimStep4.PT := TimeStep4;
 			TimStep5.IN := FALSE;
@@ -157,6 +183,8 @@ ACTION AutomaticMode:
 				MTBasicsPWM_COLD[2].Enable := TRUE;
 			END_IF;
 			TempController[3].Enable := TRUE;
+			MTBasicsPID_HEAT[3].Enable := TRUE;
+			MTBasicsPID_COLD[3].Enable := TRUE;
 			// Simulation/Control zone 4
 			IF SimulateZone4Enable THEN
 				TempController[3].Control := TRUE;
@@ -185,8 +213,12 @@ ACTION AutomaticMode:
 		STEP5:
 			TempController[2].Enable := FALSE;
 			TempController[3].Enable := TRUE;
+			MTBasicsPID_HEAT[2].Enable := FALSE;
+			MTBasicsPID_COLD[2].Enable := FALSE;
 			MTBasicsPWM_HEAT[2].Enable := FALSE;
 			MTBasicsPWM_COLD[2].Enable := FALSE;
+			MTBasicsPID_HEAT[3].Enable := TRUE;
+			MTBasicsPID_COLD[3].Enable := TRUE;
 			TimStep4.IN := FALSE;
 			TimStep5.PT := TimeStep5;
 			TimStep5.IN := TRUE;
