@@ -19,7 +19,15 @@
       <Parameter ID="SubnetMask" Value="255.255.255.0" />
       <Parameter ID="ActivateSnmp" Value="2" />
     </Connector>
+    <Connector Name="IF3">
+      <Parameter ID="CycleTime" Value="400" />
+    </Connector>
     <Parameter ID="ConfigurationID" Value="Projekt_BuR_X20CP3586" />
+    <Parameter ID="TimerDeviceType" Value="EPLX2X" />
+    <Parameter ID="TimerDevice" Value="X20CP3586.IF3" />
+    <Parameter ID="TaskClassIdleTime" Value="2000" />
+    <Parameter ID="Cyclic1Duration" Value="2000" />
+    <Parameter ID="Cyclic1Tolerance" Value="0" />
     <Group ID="FileDevice1" />
     <Parameter ID="FileDeviceName1" Value="AUDIT" />
     <Parameter ID="FileDevicePath1" Value="F:/BRAudit" />
